@@ -492,6 +492,13 @@ def start(preferred_port=8765, token=None):
     httpd.daemon_threads = True
     app.port = httpd.server_address[1]
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    # Pencere açılırken dersleri arka planda bir kez oku: ilk menü açılışı beklemesin.
+    def _isit():
+        try:
+            app.state()
+        except Exception:
+            pass
+    threading.Thread(target=_isit, daemon=True).start()
     return app, httpd
 
 

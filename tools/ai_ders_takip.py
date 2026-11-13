@@ -25,7 +25,9 @@ import sys
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-YOLLAR = ["ai-temel", "ai-uretim", "ai-saldiri", "ai-savunma", "ai-guvence", "ai-ile-guvenlik", "kuantum", "ai-matematik", "ai-ctf", "ai-olay", "ai-bulut"]
+# python yolunun yalnız ilk 30 dersi AI uygulamasına girer (YAPILACAKLAR.md, iş 1)
+YOL_SINIRI = {"python": 30}
+YOLLAR = ["ai-temel", "ai-uretim", "ai-saldiri", "ai-savunma", "ai-guvence", "ai-ile-guvenlik", "kuantum", "ai-matematik", "ai-ctf", "ai-olay", "ai-bulut", "python"]
 KLASOR = os.path.join(ROOT, "docs", "ai-gercek")
 DURUM_JSON = os.path.join(KLASOR, "takip.json")
 CIKTI = os.path.join(KLASOR, "TAKIP.html")
@@ -102,11 +104,16 @@ def ders_tara():
             iz = json.load(f)
         dosyalar = {}
         for ad in os.listdir(os.path.join(ROOT, "tracks", yol, "lessons")):
-            m = re.match(r"((?:ai-[a-z-]+|kuantum)-\d+)", ad)
+            m = re.match(r"((?:ai-[a-z-]+|kuantum)-\d+|p\d{2,3})(?=-)", ad)
             if m and ad.endswith(".md"):
                 dosyalar[m.group(1)] = os.path.join(ROOT, "tracks", yol, "lessons", ad)
+        sinir = YOL_SINIRI.get(yol)
+        sayac = 0
         for modul in iz["modules"]:
             for lid in modul["lessons"]:
+                sayac += 1
+                if sinir and sayac > sinir:
+                    break
                 d = {"id": lid, "yol": yol, "modul": modul["title"], "baslik": "", "adim": 0,
                      "gercek_adim": 0, "dosya": None}
                 yolu = dosyalar.get(lid)
@@ -213,7 +220,7 @@ def liste(args):
         print(f'{lid:15} {k["durum"]:15} {k["kim"] or "-":8} {k["gereksinim"]:13} {k["baslik"][:60]}')
 
 
-YOL_ADLARI = {"ai-temel": "AI Temel", "ai-saldiri": "AI Saldırı", "ai-savunma": "AI Savunma", "ai-guvence": "AI Güvence"}
+YOL_ADLARI = {"ai-temel": "AI Temel", "ai-saldiri": "AI Saldırı", "ai-savunma": "AI Savunma", "ai-guvence": "AI Güvence", "python": "Python (AI için)"}
 # Ana Pafta'nın docs/DURUM.html paftasıyla aynı görsel dil: durum → parsel sınıfı
 SINIF = {"bitti": "bitti", "denetime-hazir": "hazir", "alindi": "calis", "calisiliyor": "calis", "engelli": "kirmizi",
          "gerekmez": "atl", "eksik": "taslak", "bekliyor": "bos"}

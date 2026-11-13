@@ -156,6 +156,7 @@ class Library:
         self.root = root
         self._lock = threading.Lock()
         self._cache = {}  # yol -> (mtime, ders)
+        self._dosya_cache = {}  # yol kimliği -> (klasör mtime, {ders kimliği: dosya})
 
     def track_ids(self):
         ids = []
@@ -180,8 +181,16 @@ class Library:
 
     def _lesson_files(self, tid):
         d = os.path.join(self.root, tid, "lessons")
-        if not os.path.isdir(d):
+        try:
+            mtime = os.stat(d).st_mtime_ns
+        except OSError:
             return {}
+        # Klasör listesi önbellekte: dosya eklenince, silinince ya da adı değişince klasörün
+        # değişme zamanı değişir ve liste yeniden okunur. (Her ders aramasında listdir pahalıydı.)
+        with self._lock:
+            hit = self._dosya_cache.get(tid)
+            if hit and hit[0] == mtime:
+                return hit[1]
         files = {}
         for name in os.listdir(d):
             if name.endswith(".md"):
@@ -190,6 +199,8 @@ class Library:
                 match = re.match(r"^(.+?\d+)(?:-.*)?\.md$", name)
                 lid = match.group(1) if match else name.split("-", 1)[0]
                 files[lid] = os.path.join(d, name)
+        with self._lock:
+            self._dosya_cache[tid] = (mtime, files)
         return files
 
     def lesson(self, tid, lid):

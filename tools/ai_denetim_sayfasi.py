@@ -46,7 +46,7 @@ def olcutler(d):
 
 
 YOLLAR = [("ai-temel", "AI Temelleri"), ("ai-saldiri", "AI Saldırı"), ("ai-savunma", "AI Savunma"), ("ai-guvence", "AI Güvence"), ("ai-ile-guvenlik", "AI ile Güvenlik"),
-          ("ai-uretim", "AI Üretimi"), ("kuantum", "Kuantum ve Kripto"), ("ai-matematik", "AI Matematiği"), ("ai-ctf", "AI CTF"), ("ai-olay", "AI Olayları"), ("ai-bulut", "AI Bulut")]
+          ("ai-uretim", "AI Üretimi"), ("kuantum", "Kuantum ve Kripto"), ("ai-matematik", "AI Matematiği"), ("ai-ctf", "AI CTF"), ("ai-olay", "AI Olayları"), ("ai-bulut", "AI Bulut"), ("python", "Python (AI için)")]
 DURUM = {"puanlandi": "puanlandı", "denetleniyor": "denetleniyor", "bekliyor": "sırada", "kapsam-disi": "bağımsız denetim bekliyor",
          "oz-puan": "yazar öz puanı · bağımsız değil"}
 KARAR_RENK = {"Tam": "tam", "Kısmen": "kismen", "Eksik": "eksik", "Sorunlu": "sorunlu", "Bekliyor": "bekliyor"}
