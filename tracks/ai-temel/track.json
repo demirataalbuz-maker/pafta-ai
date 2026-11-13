@@ -94,6 +94,16 @@
       ]
     },
     {
+      "title": "RAG, Tool Kullanımı ve Ajan Güvenliği",
+      "rank": "baspehlivan",
+      "lessons": [
+        "ai-temel-21",
+        "ai-temel-22",
+        "ai-temel-23",
+        "ai-temel-24"
+      ]
+    },
+    {
       "title": "Modern Çıkarım, Akıl Yürütme ve Mimariler",
       "rank": "baspehlivan",
       "zen": "Kısıtlı üretim, grup içi politika optimizasyonu, taslak doğrulama, seyrek uzman yönlendirmesi ve durum uzayı modelleri aynı deterministik sözleşmeyle ölçülür.",
@@ -102,7 +112,22 @@
         "ai-temel-26",
         "ai-temel-27",
         "ai-temel-28",
+        "ai-temel-29",
         "ai-temel-30"
+      ]
+    },
+    {
+      "title": "Frontier AI İnşası, Ölçekleme Yasaları ve Zeka Kuramı",
+      "rank": "baspehlivan",
+      "zen": "Bir modeli diğerinden daha zeki kılan ölçekleme yasaları, trilyon-token veri rafinerisi, 3D dağıtık ön-eğitim, doğrulanabilir ödüllü akıl yürütme, yaratıcılık kuramı ve sıfırdan kendi dil modelini üretme hattı.",
+      "lessons": [
+        "ai-temel-31",
+        "ai-temel-32",
+        "ai-temel-33",
+        "ai-temel-34",
+        "ai-temel-35",
+        "ai-temel-36",
+        "ai-temel-37"
       ]
     },
     {

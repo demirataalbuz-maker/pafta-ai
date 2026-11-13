@@ -68,7 +68,62 @@
       "rank": "kucuk-orta",
       "zen": "Veri değişikliğinin etkisi ancak kontrollü karşılaştırmayla kanıtlanır.",
       "lessons": [
-        "ai-guvence-11"
+        "ai-guvence-11",
+        "ai-guvence-12",
+        "ai-guvence-13",
+        "ai-guvence-14",
+        "ai-guvence-15"
+      ]
+    },
+    {
+      "title": "Gizlilik",
+      "rank": "buyuk-orta",
+      "lessons": [
+        "ai-guvence-16",
+        "ai-guvence-17",
+        "ai-guvence-31",
+        "ai-guvence-18",
+        "ai-guvence-19",
+        "ai-guvence-20"
+      ]
+    },
+    {
+      "title": "Tedarik Zinciri Güvencesi",
+      "rank": "basalti",
+      "zen": "Modelin kökeni, biçimi ve çalıştırma katmanı aynı kanıt zincirinde buluşur.",
+      "lessons": [
+        "ai-guvence-21",
+        "ai-guvence-32",
+        "ai-guvence-22",
+        "ai-guvence-23",
+        "ai-guvence-24",
+        "ai-guvence-25"
+      ]
+    },
+    {
+      "title": "Araştırma ve Saha",
+      "rank": "baspehlivan",
+      "lessons": [
+        "ai-guvence-26",
+        "ai-guvence-33",
+        "ai-guvence-34",
+        "ai-guvence-27",
+        "ai-guvence-28",
+        "ai-guvence-29",
+        "ai-guvence-30"
+      ]
+    },
+    {
+      "title": "Uygulamalı ML Matematiği",
+      "rank": "baspehlivan",
+      "zen": "Formül ezberlenmez; koşturulur, ölçülür ve nerede koptuğu kanıtlanır.",
+      "lessons": [
+        "ai-guvence-35",
+        "ai-guvence-36",
+        "ai-guvence-37",
+        "ai-guvence-38",
+        "ai-guvence-39",
+        "ai-guvence-40"
       ]
     },
     {
@@ -77,10 +132,12 @@
       "zen": "İç aktivasyonlardan ağırlık birleştirmeye, gradyan sızıntısından kriptografik çıkarım kanıtına kadar her güvence iddiası sayısal kanıt üretir.",
       "lessons": [
         "ai-guvence-41",
+        "ai-guvence-42",
         "ai-guvence-43",
         "ai-guvence-44",
         "ai-guvence-45",
-        "ai-guvence-46"
+        "ai-guvence-46",
+        "ai-guvence-47"
       ]
     },
     {
