@@ -20,7 +20,7 @@ Her ders önce anlatır, sonra çıktıyı tahmin ettirir, ardından Python ile 
 | `ai-guvence` | Değerlendirme, istatistik, araştırma yöntemi |
 | `kuantum` | Kuantum hesaplama, kuantum sonrası kriptografi |
 
-Derslerin hepsi bağımsız denetimden geçti. Hiçbir ders gerçek bir sisteme saldırmaz: hedefler yereldir, veriler sentetiktir, sırlar kanaryadır.
+Bu depoda yalnız bağımsız denetimden geçmiş dersler var; diğerleri denetlendikçe eklenir. Hiçbir ders gerçek bir sisteme saldırmaz: hedefler yereldir, veriler sentetiktir, sırlar kanaryadır.
 
 ## Çalıştırma
 

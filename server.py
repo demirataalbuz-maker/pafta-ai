@@ -472,6 +472,12 @@ def make_handler(app):
     return Handler
 
 
+class _Sunucu(ThreadingHTTPServer):
+    # Windows'ta SO_REUSEADDR, ikinci bir Pafta kopyasının aynı portu ele geçirmesine izin verir;
+    # kapalıyken port doluysa bağlanma hata verir ve aşağıda boş bir porta geçilir.
+    allow_reuse_address = os.name != "nt"
+
+
 def start(preferred_port=8765, token=None):
     """Sunucuyu arka planda başlatır; (app, httpd) döndürür."""
     app = App(token)
@@ -479,7 +485,7 @@ def start(preferred_port=8765, token=None):
     httpd = None
     for port in (preferred_port, 0):
         try:
-            httpd = ThreadingHTTPServer(("127.0.0.1", port), handler)
+            httpd = _Sunucu(("127.0.0.1", port), handler)
             break
         except OSError:
             continue
