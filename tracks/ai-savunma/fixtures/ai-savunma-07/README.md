@@ -1,0 +1,5 @@
+# Enjeksiyon tespiti çalışma verisi
+
+veri/tespit.json ve veri/ham/ elle hazırlanmış sentetik veri; canlı sunucu çıktısı değildir. İlk Run ham JSON ve üç metni repr ile gösterir; gizleme.txt U+200B içerir. İkinci aynı dosyanın hazır puanlarıyla risk hesaplar: esik-1 yüksek olmalı,belge-1 iki kuraldan yüksektir. Üçüncü ret-cumlesi için ihlalFalse/dogru_gecis,tam-satir için iki neden/incele_ihlal üretir. Kodun yanlış başlangıcı öğretim içindir; görünür çıktısı doğru cevap diye sunulmaz.
+
+ai_savunma_veri.hazirla her Run/Check için yeni geçici kopya kurar; değişiklikler sonraki çalıştırmaya taşınmaz. Haricî editörde kaynak veya kodda yüklenen sözlüğü değiştirip Run deneyebilirsin. Gizli testler ayrıdır. Arayüzde dosya editörü varmış gibi anlatılmaz. Final yerel modele gerçekten iki belge gönderir; sınıflandırıcı puanları hazır fixture,araç uygulamaları yerel taklittir. Dış ağa gönderme veya gerçek engelleme etkisi ölçülmez. engellenen etiketi mevcut sözleşmede ret+ihlal eşleşmesidir; uygulanmış engel kanıtı değildir. Sabit tam-satır işareti ile her koşudaki rastgele canary farklı ölçümlerdir. Yeni indirme/kurulum yok.

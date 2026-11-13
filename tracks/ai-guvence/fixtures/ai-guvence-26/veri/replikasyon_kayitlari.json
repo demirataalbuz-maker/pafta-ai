@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a",
+    "kol": "referans",
+    "veri": "v1",
+    "tohum": 7,
+    "ogrenme_orani": 0.1,
+    "kod_surumu": "a",
+    "basari": 80,
+    "toplam": 100
+  },
+  {
+    "id": "a",
+    "kol": "replikasyon",
+    "veri": "v2",
+    "tohum": 7,
+    "ogrenme_orani": 0.01,
+    "kod_surumu": "a",
+    "basari": 60,
+    "toplam": 100
+  },
+  {
+    "id": "b",
+    "kol": "replikasyon",
+    "veri": "v1",
+    "tohum": 7,
+    "ogrenme_orani": 0.1,
+    "kod_surumu": "b",
+    "basari": 75,
+    "toplam": 100
+  },
+  {
+    "id": "b",
+    "kol": "referans",
+    "veri": "v1",
+    "tohum": 7,
+    "ogrenme_orani": 0.1,
+    "kod_surumu": "a",
+    "basari": 50,
+    "toplam": 100
+  },
+  {
+    "id": "c",
+    "kol": "referans",
+    "veri": "v1",
+    "tohum": 7,
+    "ogrenme_orani": 0.1,
+    "kod_surumu": "a",
+    "basari": 70,
+    "toplam": 100
+  },
+  {
+    "id": "c",
+    "kol": "replikasyon",
+    "veri": "v1",
+    "tohum": 7,
+    "ogrenme_orani": 0.1,
+    "kod_surumu": "a",
+    "basari": 70,
+    "toplam": 100
+  }
+]

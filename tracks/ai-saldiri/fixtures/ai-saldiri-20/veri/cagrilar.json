@@ -1,0 +1,284 @@
+{
+ "aciklama": "Modelin native araç çağrısından gelen sentetik program/args adayları. Hiçbiri çalıştırılmaz. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "c-01",
+   "aciklama": "izinli program, düz argüman",
+   "cagri": {
+    "program": "git",
+    "args": [
+     "status"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": true,
+    "neden": "dogrulandi",
+    "argv": [
+     "git",
+     "status"
+    ]
+   }
+  },
+  {
+   "id": "c-02",
+   "aciklama": "noktalı virgüllü veri tek argüman kalır",
+   "cagri": {
+    "program": "git",
+    "args": [
+     "checkout",
+     "--",
+     "main; echo test"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": true,
+    "neden": "dogrulandi",
+    "argv": [
+     "git",
+     "checkout",
+     "--",
+     "main; echo test"
+    ]
+   }
+  },
+  {
+   "id": "c-03",
+   "aciklama": "boşluklu argüman tek öge kalır",
+   "cagri": {
+    "program": "yazdir",
+    "args": [
+     "a b"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": true,
+    "neden": "dogrulandi",
+    "argv": [
+     "yazdir",
+     "a b"
+    ]
+   }
+  },
+  {
+   "id": "c-04",
+   "aciklama": "boş string geçerli argümandır",
+   "cagri": {
+    "program": "yazdir",
+    "args": [
+     ""
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": true,
+    "neden": "dogrulandi",
+    "argv": [
+     "yazdir",
+     ""
+    ]
+   }
+  },
+  {
+   "id": "c-05",
+   "aciklama": "$(...) metni veri olarak kalır",
+   "cagri": {
+    "program": "yazdir",
+    "args": [
+     "$(whoami) & PAFTA"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": true,
+    "neden": "dogrulandi",
+    "argv": [
+     "yazdir",
+     "$(whoami) & PAFTA"
+    ]
+   }
+  },
+  {
+   "id": "c-06",
+   "aciklama": "izin listesinde olmayan sh",
+   "cagri": {
+    "program": "sh",
+    "args": [
+     "-c",
+     "echo x"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": false,
+    "neden": "program-izinsiz",
+    "argv": []
+   }
+  },
+  {
+   "id": "c-07",
+   "aciklama": "program adına eklenmiş komut",
+   "cagri": {
+    "program": "git; echo x",
+    "args": []
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": false,
+    "neden": "program-izinsiz",
+    "argv": []
+   }
+  },
+  {
+   "id": "c-08",
+   "aciklama": "tam yol izinli ad sayılmaz",
+   "cagri": {
+    "program": "/usr/bin/git",
+    "args": [
+     "status"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": false,
+    "neden": "program-izinsiz",
+    "argv": []
+   }
+  },
+  {
+   "id": "c-09",
+   "aciklama": "büyük harfli program adı",
+   "cagri": {
+    "program": "GIT",
+    "args": [
+     "status"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": false,
+    "neden": "program-izinsiz",
+    "argv": []
+   }
+  },
+  {
+   "id": "c-10",
+   "aciklama": "başında boşluk olan program adı",
+   "cagri": {
+    "program": " git",
+    "args": [
+     "status"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": {
+    "izinli": false,
+    "neden": "program-izinsiz",
+    "argv": []
+   }
+  },
+  {
+   "id": "c-11",
+   "aciklama": "args tek metin olarak gelmiş",
+   "cagri": {
+    "program": "git",
+    "args": "status --short"
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "c-12",
+   "aciklama": "argümanda NUL",
+   "cagri": {
+    "program": "yazdir",
+    "args": [
+     "a\u0000b"
+    ]
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "c-13",
+   "aciklama": "çağrıda ek shell alanı",
+   "cagri": {
+    "program": "git",
+    "args": [
+     "status"
+    ],
+    "shell": true
+   },
+   "izinli_programlar": [
+    "yazdir",
+    "kopyala",
+    "git"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "c-14",
+   "aciklama": "izin listesinde yol içeren ad",
+   "cagri": {
+    "program": "git",
+    "args": [
+     "status"
+    ]
+   },
+   "izinli_programlar": [
+    "bin/git"
+   ],
+   "beklenen": null
+  }
+ ]
+}

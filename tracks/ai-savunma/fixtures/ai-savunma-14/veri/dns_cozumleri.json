@@ -1,0 +1,261 @@
+{
+ "aciklama": "Sentetik DNS çözümleme sonuçları. Hiçbir DNS sorgusu yapılmaz; adresler örnektir.",
+ "politika": {
+  "varsayilan": "reddet",
+  "alan_adlari": [
+   "api.ornek.com",
+   "cdn.ornek.com"
+  ],
+  "portlar": [
+   443
+  ],
+  "max_yonlendirme": 1
+ },
+ "cozumler": [
+  {
+   "id": "genel",
+   "alan": "api.ornek.com",
+   "adresler": [
+    "93.184.216.34",
+    "2606:2800:220:1:248:1893:25c8:1946"
+   ]
+  },
+  {
+   "id": "rebinding",
+   "alan": "api.ornek.com",
+   "adresler": [
+    "93.184.216.34",
+    "127.0.0.1"
+   ]
+  },
+  {
+   "id": "link-local",
+   "alan": "api.ornek.com",
+   "adresler": [
+    "169.254.169.254"
+   ]
+  },
+  {
+   "id": "cgnat",
+   "alan": "cdn.ornek.com",
+   "adresler": [
+    "100.64.0.10"
+   ]
+  },
+  {
+   "id": "ipv4-mapped",
+   "alan": "cdn.ornek.com",
+   "adresler": [
+    "::ffff:10.0.0.5"
+   ]
+  },
+  {
+   "id": "multicast",
+   "alan": "cdn.ornek.com",
+   "adresler": [
+    "224.0.0.251"
+   ]
+  },
+  {
+   "id": "bos-yanit",
+   "alan": "api.ornek.com",
+   "adresler": []
+  },
+  {
+   "id": "baska-alan",
+   "alan": "evil.test",
+   "adresler": [
+    "93.184.216.34"
+   ]
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "baska-alan",
+   "karar": "reddet",
+   "nedenler": [
+    "alan"
+   ],
+   "adresler": [
+    "93.184.216.34"
+   ]
+  },
+  {
+   "id": "bos-yanit",
+   "karar": "reddet",
+   "nedenler": [
+    "dns"
+   ],
+   "adresler": []
+  },
+  {
+   "id": "cgnat",
+   "karar": "reddet",
+   "nedenler": [
+    "ip"
+   ],
+   "adresler": [
+    "100.64.0.10"
+   ]
+  },
+  {
+   "id": "genel",
+   "karar": "hazir",
+   "nedenler": [],
+   "adresler": [
+    "93.184.216.34",
+    "2606:2800:220:1:248:1893:25c8:1946"
+   ]
+  },
+  {
+   "id": "ipv4-mapped",
+   "karar": "reddet",
+   "nedenler": [
+    "ip"
+   ],
+   "adresler": [
+    "::ffff:10.0.0.5"
+   ]
+  },
+  {
+   "id": "link-local",
+   "karar": "reddet",
+   "nedenler": [
+    "ip"
+   ],
+   "adresler": [
+    "169.254.169.254"
+   ]
+  },
+  {
+   "id": "multicast",
+   "karar": "reddet",
+   "nedenler": [
+    "ip"
+   ],
+   "adresler": [
+    "224.0.0.251"
+   ]
+  },
+  {
+   "id": "rebinding",
+   "karar": "reddet",
+   "nedenler": [
+    "ip"
+   ],
+   "adresler": [
+    "93.184.216.34",
+    "127.0.0.1"
+   ]
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "genel",
+     "alan": "api.ornek.com",
+     "adresler": [
+      "93.184.216.34",
+      "2606:2800:220:1:248:1893:25c8:1946"
+     ]
+    },
+    {
+     "id": "rebinding",
+     "alan": "api.ornek.com",
+     "adresler": [
+      "93.184.216.34",
+      "127.0.0.1"
+     ]
+    },
+    {
+     "id": "link-local",
+     "alan": "api.ornek.com",
+     "adresler": [
+      "169.254.169.254"
+     ]
+    },
+    {
+     "id": "cgnat",
+     "alan": "cdn.ornek.com",
+     "adresler": [
+      "100.64.0.10"
+     ]
+    },
+    {
+     "id": "ipv4-mapped",
+     "alan": "cdn.ornek.com",
+     "adresler": [
+      "::ffff:10.0.0.5"
+     ]
+    },
+    {
+     "id": "multicast",
+     "alan": "cdn.ornek.com",
+     "adresler": [
+      "224.0.0.251"
+     ]
+    },
+    {
+     "id": "bos-yanit",
+     "alan": "api.ornek.com",
+     "adresler": []
+    },
+    {
+     "id": "baska-alan",
+     "alan": "evil.test",
+     "adresler": [
+      "93.184.216.34"
+     ]
+    },
+    {
+     "id": "genel",
+     "alan": "api.ornek.com",
+     "adresler": [
+      "93.184.216.34",
+      "2606:2800:220:1:248:1893:25c8:1946"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "geçersiz IP 999.1.1.1",
+   "girdi": [
+    {
+     "id": "a",
+     "alan": "api.ornek.com",
+     "adresler": [
+      "999.1.1.1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "IP literal alan",
+   "girdi": [
+    {
+     "id": "a",
+     "alan": "127.0.0.1",
+     "adresler": [
+      "127.0.0.1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "adresler tek metin",
+   "girdi": [
+    {
+     "id": "a",
+     "alan": "api.ornek.com",
+     "adresler": "93.184.216.34"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "k1",
+    "model": "kucuk-sentetik",
+    "tur": "kucuk",
+    "kaynak": "yerel",
+    "acik_onay": false,
+    "gorev": "g1",
+    "dogru": true,
+    "guvenli": true,
+    "token": 100,
+    "maliyet": 0.0,
+    "gecikme_ms": 80
+  },
+  {
+    "id": "k2",
+    "model": "kucuk-sentetik",
+    "tur": "kucuk",
+    "kaynak": "yerel",
+    "acik_onay": false,
+    "gorev": "g2",
+    "dogru": false,
+    "guvenli": true,
+    "token": 120,
+    "maliyet": 0.0,
+    "gecikme_ms": 100
+  },
+  {
+    "id": "g1",
+    "model": "guclu-sentetik",
+    "tur": "guclu",
+    "kaynak": "uzak",
+    "acik_onay": true,
+    "gorev": "g1",
+    "dogru": true,
+    "guvenli": true,
+    "token": 180,
+    "maliyet": 0.04,
+    "gecikme_ms": 240
+  },
+  {
+    "id": "g2",
+    "model": "guclu-sentetik",
+    "tur": "guclu",
+    "kaynak": "uzak",
+    "acik_onay": true,
+    "gorev": "g2",
+    "dogru": true,
+    "guvenli": false,
+    "token": 220,
+    "maliyet": 0.06,
+    "gecikme_ms": 260
+  }
+]

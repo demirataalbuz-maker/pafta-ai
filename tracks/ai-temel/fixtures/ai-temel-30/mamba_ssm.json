@@ -1,0 +1,18 @@
+{
+  "a_diag": [-1.0, -2.0, -4.0],
+  "b_vektor": [0.5, -0.5, 1.0],
+  "min_norm": 0.15,
+  "max_oran": 0.20,
+  "sekanslar": [
+    {
+      "ad": "normal_bellek_koruma",
+      "deltalar": [0.10, 0.15, 0.12, 0.10],
+      "x_adimlar": [1.5, 0.8, -0.5, 1.0]
+    },
+    {
+      "ad": "saldirgan_delta_patlamasi",
+      "deltalar": [0.10, 0.12, 3.50, 0.10],
+      "x_adimlar": [1.5, 1.2, 0.0, 0.4]
+    }
+  ]
+}

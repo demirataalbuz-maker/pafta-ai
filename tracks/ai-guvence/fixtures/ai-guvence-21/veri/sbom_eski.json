@@ -1,0 +1,35 @@
+[
+  {
+    "id": "m",
+    "tur": "model",
+    "surum": "1.0",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "bagimliliklar": [
+      "d",
+      "l"
+    ]
+  },
+  {
+    "id": "d",
+    "tur": "veri",
+    "surum": "2.0",
+    "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "bagimliliklar": []
+  },
+  {
+    "id": "l",
+    "tur": "bagimlilik",
+    "surum": "3.0",
+    "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "bagimliliklar": [
+      "b"
+    ]
+  },
+  {
+    "id": "b",
+    "tur": "temel_imaj",
+    "surum": "4.0",
+    "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "bagimliliklar": []
+  }
+]

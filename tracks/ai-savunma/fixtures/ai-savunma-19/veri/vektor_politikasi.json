@@ -1,0 +1,76 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Çok kiracılı bir destek asistanının vektör deposu erişim politikası. Gerçek Qdrant yapılandırması değildir.",
+  "politika": {
+    "izinli_kiracilar": [
+      "acme",
+      "globex"
+    ],
+    "min_skor": 0.5,
+    "max_top_k": 3,
+    "filtre_zorunlu": true,
+    "capraz_kiraci": false
+  },
+  "bozuk_politikalar": [
+    {
+      "ad": "capraz-acik",
+      "politika": {
+        "izinli_kiracilar": [
+          "acme"
+        ],
+        "min_skor": 0.5,
+        "max_top_k": 3,
+        "filtre_zorunlu": true,
+        "capraz_kiraci": true
+      }
+    },
+    {
+      "ad": "filtre-istege-bagli",
+      "politika": {
+        "izinli_kiracilar": [
+          "acme"
+        ],
+        "min_skor": 0.5,
+        "max_top_k": 3,
+        "filtre_zorunlu": false,
+        "capraz_kiraci": false
+      }
+    },
+    {
+      "ad": "joker-kiraci",
+      "politika": {
+        "izinli_kiracilar": [
+          "*"
+        ],
+        "min_skor": 0.5,
+        "max_top_k": 3,
+        "filtre_zorunlu": true,
+        "capraz_kiraci": false
+      }
+    },
+    {
+      "ad": "dev-top-k",
+      "politika": {
+        "izinli_kiracilar": [
+          "acme"
+        ],
+        "min_skor": 0.5,
+        "max_top_k": 500,
+        "filtre_zorunlu": true,
+        "capraz_kiraci": false
+      }
+    },
+    {
+      "ad": "bool-skor",
+      "politika": {
+        "izinli_kiracilar": [
+          "acme"
+        ],
+        "min_skor": true,
+        "max_top_k": 3,
+        "filtre_zorunlu": true,
+        "capraz_kiraci": false
+      }
+    }
+  ]
+}

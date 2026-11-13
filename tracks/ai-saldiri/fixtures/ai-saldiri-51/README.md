@@ -1,0 +1,3 @@
+Sentetik JSON ve HTTP örneğidir; canlı yanıt değildir. İlk Run veri/create-version.http dosyasını gösterir. Setup her çalıştırma için yeni geçici kopya kurar, değişiklikler sonraki çalıştırmaya taşınmaz. Gizli testler ayrıdır. Final yalnız özel lab imajları zaten kuruluysa gerçek MLflow HTTP çağırır; model/paket indirmez. Kurulum onayı bekleniyor. Gerçek eski/yama sonuçları henüz alınmadı.
+
+Gövdeye extra eklenmiştir; ikinci doğru bulgu uyusmazlik olmalı. Örnekte2.2.1normal kayıt reddedildi: meşru kontrol bilerek bozuk, doğru rapor normal_akis/deney_tamam/yama_gozlendiFalse olmalı. Bu fixture hata vitrini içindir, gerçek yama davranışı diye sunulmaz.

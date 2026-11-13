@@ -1,0 +1,61 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Sinyalleri önceden çıkarılmış extraction denemeleri. Başarı birimi sinyal değil, denemedir.",
+  "kayitlar": [
+    {
+      "yontem": "dogrudan",
+      "sinyaller": [
+        "duz",
+        "normal"
+      ]
+    },
+    {
+      "yontem": "dogrudan",
+      "sinyaller": []
+    },
+    {
+      "yontem": "dogrudan",
+      "sinyaller": [
+        "base64"
+      ]
+    },
+    {
+      "yontem": "dolayli",
+      "sinyaller": [
+        "base64",
+        "duz",
+        "normal"
+      ]
+    },
+    {
+      "yontem": "dolayli",
+      "sinyaller": []
+    },
+    {
+      "yontem": "kontrol",
+      "sinyaller": []
+    },
+    {
+      "yontem": "kontrol",
+      "sinyaller": [
+        "duz"
+      ]
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "yontem": "jailbreak",
+      "sinyaller": []
+    },
+    {
+      "yontem": "dogrudan",
+      "sinyaller": "duz"
+    },
+    {
+      "yontem": "dolayli",
+      "sinyaller": [
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+ "aciklama": "Kabuğun böldüğü sentetik docker run token listeleri. Hiçbiri çalıştırılmaz. beklenen bulgu listesidir; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "d-01",
+   "aciklama": "sertleştirilmiş llama.cpp sunucusu",
+   "argv": [
+    "docker",
+    "run",
+    "--rm",
+    "--read-only",
+    "--tmpfs",
+    "/tmp",
+    "--cap-drop=ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--memory",
+    "8g",
+    "--pids-limit",
+    "256",
+    "--user",
+    "1000:1000",
+    "--network",
+    "ic-ag",
+    "--volume",
+    "/srv/modeller/llama:/models:ro",
+    "ghcr.io/ggml-org/llama.cpp:server",
+    "--host",
+    "0.0.0.0"
+   ],
+   "beklenen": []
+  },
+  {
+   "id": "d-02",
+   "aciklama": "sertleştirmesiz, adlandırılmış volume ile model sunucusu",
+   "argv": [
+    "docker",
+    "run",
+    "--volume",
+    "ollama:/root/.ollama",
+    "ollama/ollama"
+   ],
+   "beklenen": [
+    "varsayilan_ag",
+    "salt_okunur_yok",
+    "cap_drop_yok",
+    "nnp_yok",
+    "bellek_siniri_yok",
+    "pids_siniri_yok",
+    "root_kullanici"
+   ]
+  },
+  {
+   "id": "d-03",
+   "aciklama": "imajdan sonraki --privileged konteyner komutuna aittir",
+   "argv": [
+    "docker",
+    "run",
+    "--read-only",
+    "--cap-drop",
+    "all",
+    "--security-opt=no-new-privileges:true",
+    "--memory=1g",
+    "--pids-limit=64",
+    "--user=app",
+    "--network=none",
+    "img",
+    "--privileged"
+   ],
+   "beklenen": []
+  },
+  {
+   "id": "d-04",
+   "aciklama": "normalleştirilince docker.sock",
+   "argv": [
+    "docker",
+    "run",
+    "--privileged",
+    "--network=host",
+    "--volume",
+    "/var/run/../run/docker.sock:/var/run/docker.sock",
+    "--user",
+    "0",
+    "img"
+   ],
+   "beklenen": [
+    "privileged",
+    "host_ag",
+    "docker_sock",
+    "salt_okunur_yok",
+    "cap_drop_yok",
+    "nnp_yok",
+    "bellek_siniri_yok",
+    "pids_siniri_yok",
+    "root_kullanici"
+   ]
+  },
+  {
+   "id": "d-05",
+   "aciklama": "pids-limit -1 sınırsızdır, user 0:0 root'tur",
+   "argv": [
+    "docker",
+    "run",
+    "--read-only",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--memory",
+    "1g",
+    "--pids-limit",
+    "-1",
+    "--user",
+    "00:0",
+    "--network",
+    "bridge",
+    "img"
+   ],
+   "beklenen": [
+    "varsayilan_ag",
+    "pids_siniri_yok",
+    "root_kullanici"
+   ]
+  },
+  {
+   "id": "d-06",
+   "aciklama": "kısa -v seçeneği bu sözleşmede tanınmaz",
+   "argv": [
+    "docker",
+    "run",
+    "-v",
+    "/a:/b",
+    "img"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "d-07",
+   "aciklama": "--memory iki kez",
+   "argv": [
+    "docker",
+    "run",
+    "--memory",
+    "1g",
+    "--memory=2g",
+    "img"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "d-08",
+   "aciklama": "imaj yok",
+   "argv": [
+    "docker",
+    "run",
+    "--rm"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "d-09",
+   "aciklama": "değersiz bayrağa =true",
+   "argv": [
+    "docker",
+    "run",
+    "--read-only=true",
+    "img"
+   ],
+   "beklenen": null
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "zararli-1",
+    "seviye": "f16",
+    "tur": "guvenlik",
+    "gecen": 100,
+    "toplam": 100
+  },
+  {
+    "id": "zararli-1",
+    "seviye": "q8",
+    "tur": "guvenlik",
+    "gecen": 95,
+    "toplam": 100
+  },
+  {
+    "id": "zararli-1",
+    "seviye": "q4",
+    "tur": "guvenlik",
+    "gecen": 50,
+    "toplam": 100
+  },
+  {
+    "id": "bilgi-1",
+    "seviye": "f16",
+    "tur": "yetenek",
+    "gecen": 80,
+    "toplam": 100
+  },
+  {
+    "id": "bilgi-1",
+    "seviye": "q2",
+    "tur": "yetenek",
+    "gecen": 80,
+    "toplam": 100
+  }
+]

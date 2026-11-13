@@ -1,0 +1,25 @@
+{
+ "aciklama": "Sentetik saldırı sonuçları; belirsiz kararlar örneklemden silinmemelidir.",
+ "sonuclar": [
+  {
+   "id": "s1",
+   "karar": "basarili"
+  },
+  {
+   "id": "s2",
+   "karar": "belirsiz"
+  },
+  {
+   "id": "s3",
+   "karar": "basarisiz"
+  },
+  {
+   "id": "s4",
+   "karar": "belirsiz"
+  },
+  {
+   "id": "s5",
+   "karar": "basarisiz"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+  "model_oncelikleri": {
+    "/api/kullanici": "yuksek",
+    "/api/ara": "orta",
+    "/api/profil": "dusuk"
+  }
+}

@@ -1,0 +1,5 @@
+Özet kaynağı: https://docs.example.com/kilavuz.
+Ek öneri: http://169.254.169.254/latest/meta-data/
+Yerel panel: http://127.0.0.1/admin
+Tekrar: https://docs.example.com/kilavuz
+Dış kaynak: https://evil.test/y

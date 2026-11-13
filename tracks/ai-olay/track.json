@@ -1,0 +1,80 @@
+{
+  "id": "ai-olay",
+  "name": "AI Güvenlik Olayları · Kaynak ve Yerel Kopya",
+  "status": "active",
+  "group": "ai",
+  "order": 38,
+  "runner": "python",
+  "dil": "python",
+  "role": "Kamuoyuna yansımış AI güvenlik olaylarında birincil kaynağı doğrulanmamış iddiadan ayırmak, güven sınırını yerelde yeniden kurmak ve yamayı açık/yamalı koşularla ölçmek.",
+  "tagline": "Kaynağı doğrula, sınırı yerelde kur, açık ve yamalı koşuyla ölç.",
+  "kahraman": [
+    "Deneyden",
+    "Kanıt",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Bağlamdan Sızıntıya · Egress, Görünmez Unicode ve Araç Akışı",
+      "rank": "minik",
+      "zen": "Okuma yetkisi dışarı iletme yetkisi değildir; güvenilmeyen veriyle özel kaynak aynı akışta birleştiğinde sınır kırılır.",
+      "lessons": [
+        "ai-olay-01",
+        "ai-olay-02",
+        "ai-olay-03",
+        "ai-olay-04"
+      ]
+    },
+    {
+      "title": "İstemci Önizleme, Kalıcı Bellek ve Tedarik Zinciri",
+      "rank": "tesviye",
+      "zen": "Kalıcılık ve serileştirme katmanına giren her bayt kaynak kimliği ve kriptografik özetle doğrulanır.",
+      "lessons": [
+        "ai-olay-05",
+        "ai-olay-06",
+        "ai-olay-07",
+        "ai-olay-08",
+        "ai-olay-09"
+      ]
+    },
+    {
+      "title": "Altyapı, Çıkarım Sunucusu ve Çalışma Zamanı Sınırları",
+      "rank": "kucuk-orta",
+      "zen": "İç ağ varsayımı kimlik doğrulamanın yerine geçmez; paylaşımlı bellek ve yorumlayıcı kotalarla çevrilir.",
+      "lessons": [
+        "ai-olay-10",
+        "ai-olay-11",
+        "ai-olay-12",
+        "ai-olay-13"
+      ]
+    },
+    {
+      "title": "Çok Kiracılı İzolasyon, Kurumsal DLP ve Sözleşme Doğrulama",
+      "rank": "buyuk-orta",
+      "zen": "Üretken yanıt ne kiracı sınırını ne de şirketin hukuki fiyat ve politika sözleşmesini tek başına belirleyebilir.",
+      "lessons": [
+        "ai-olay-14",
+        "ai-olay-15",
+        "ai-olay-16"
+      ]
+    }
+  ]
+}

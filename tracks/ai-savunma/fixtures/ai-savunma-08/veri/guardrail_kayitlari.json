@@ -1,0 +1,207 @@
+{
+ "aciklama": "Şema geçerliliği, risk sinyalleri ve güveni hesaplanmış sentetik çıktı kayıtları; ham çıktı yoktur.",
+ "kayitlar": [
+  {
+   "id": "yanit-gecir",
+   "sema_gecerli": true,
+   "sinyaller": [],
+   "guven": 0.9
+  },
+  {
+   "id": "yanit-sinir",
+   "sema_gecerli": true,
+   "sinyaller": [],
+   "guven": 0.5
+  },
+  {
+   "id": "yanit-dusuk",
+   "sema_gecerli": true,
+   "sinyaller": [],
+   "guven": 0.49
+  },
+  {
+   "id": "yanit-sema",
+   "sema_gecerli": false,
+   "sinyaller": [],
+   "guven": 0.95
+  },
+  {
+   "id": "yanit-token",
+   "sema_gecerli": true,
+   "sinyaller": [
+    "bearer_token"
+   ],
+   "guven": 0.99
+  },
+  {
+   "id": "yanit-coklu",
+   "sema_gecerli": false,
+   "sinyaller": [
+    "ozel_anahtar",
+    "api_anahtari",
+    "gizli_isaret"
+   ],
+   "guven": 0.2
+  },
+  {
+   "id": "yanit-canary",
+   "sema_gecerli": true,
+   "sinyaller": [
+    "gizli_isaret"
+   ],
+   "guven": 0.3
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "yanit-canary",
+   "karar": "durdur",
+   "nedenler": [
+    "gizli_isaret"
+   ]
+  },
+  {
+   "id": "yanit-coklu",
+   "karar": "durdur",
+   "nedenler": [
+    "sema",
+    "gizli_veri",
+    "gizli_isaret"
+   ]
+  },
+  {
+   "id": "yanit-dusuk",
+   "karar": "insan_incelemesi",
+   "nedenler": [
+    "dusuk_guven"
+   ]
+  },
+  {
+   "id": "yanit-gecir",
+   "karar": "gecir",
+   "nedenler": []
+  },
+  {
+   "id": "yanit-sema",
+   "karar": "durdur",
+   "nedenler": [
+    "sema"
+   ]
+  },
+  {
+   "id": "yanit-sinir",
+   "karar": "gecir",
+   "nedenler": []
+  },
+  {
+   "id": "yanit-token",
+   "karar": "durdur",
+   "nedenler": [
+    "gizli_veri"
+   ]
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "yanit-gecir",
+     "sema_gecerli": true,
+     "sinyaller": [],
+     "guven": 0.9
+    },
+    {
+     "id": "yanit-sinir",
+     "sema_gecerli": true,
+     "sinyaller": [],
+     "guven": 0.5
+    },
+    {
+     "id": "yanit-dusuk",
+     "sema_gecerli": true,
+     "sinyaller": [],
+     "guven": 0.49
+    },
+    {
+     "id": "yanit-sema",
+     "sema_gecerli": false,
+     "sinyaller": [],
+     "guven": 0.95
+    },
+    {
+     "id": "yanit-token",
+     "sema_gecerli": true,
+     "sinyaller": [
+      "bearer_token"
+     ],
+     "guven": 0.99
+    },
+    {
+     "id": "yanit-coklu",
+     "sema_gecerli": false,
+     "sinyaller": [
+      "ozel_anahtar",
+      "api_anahtari",
+      "gizli_isaret"
+     ],
+     "guven": 0.2
+    },
+    {
+     "id": "yanit-canary",
+     "sema_gecerli": true,
+     "sinyaller": [
+      "gizli_isaret"
+     ],
+     "guven": 0.3
+    },
+    {
+     "id": "yanit-gecir",
+     "sema_gecerli": true,
+     "sinyaller": [],
+     "guven": 0.9
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "sinyaller sabit sırada değil",
+   "girdi": [
+    {
+     "id": "a",
+     "sema_gecerli": true,
+     "sinyaller": [
+      "gizli_isaret",
+      "bearer_token"
+     ],
+     "guven": 0.9
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "sema_gecerli 1",
+   "girdi": [
+    {
+     "id": "a",
+     "sema_gecerli": 1,
+     "sinyaller": [],
+     "guven": 0.9
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "güven 1.2",
+   "girdi": [
+    {
+     "id": "a",
+     "sema_gecerli": true,
+     "sinyaller": [],
+     "guven": 1.2
+    }
+   ]
+  }
+ ]
+}

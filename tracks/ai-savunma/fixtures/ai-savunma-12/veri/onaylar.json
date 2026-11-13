@@ -1,0 +1,275 @@
+{
+ "aciklama": "Tek bir rapor_yaz çağrısı için sentetik insan onayı kayıtları ve 'şimdi' zamanları (ms). beklenen=null, ValueError demektir.",
+ "cagri": {
+  "id": "cagri-7",
+  "arac": "rapor_yaz",
+  "eylem": "raporu_kaydet"
+ },
+ "ornekler": [
+  {
+   "id": "o-01",
+   "aciklama": "geçerli insan onayı",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 30000,
+   "beklenen": {
+    "gecerli": true,
+    "nedenler": []
+   }
+  },
+  {
+   "id": "o-02",
+   "aciklama": "son geçerlilik anının kendisi",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 61000,
+   "beklenen": {
+    "gecerli": true,
+    "nedenler": []
+   }
+  },
+  {
+   "id": "o-03",
+   "aciklama": "1 ms geç",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 61001,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "zaman"
+    ]
+   }
+  },
+  {
+   "id": "o-04",
+   "aciklama": "verilmeden önce kullanım",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 999,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "zaman"
+    ]
+   }
+  },
+  {
+   "id": "o-05",
+   "aciklama": "başka çağrının onayı (yeniden oynatma)",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-8",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 30000,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "baglanti"
+    ]
+   }
+  },
+  {
+   "id": "o-06",
+   "aciklama": "aynı çağrı, farklı eylem",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_paylas",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 30000,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "baglanti"
+    ]
+   }
+  },
+  {
+   "id": "o-07",
+   "aciklama": "model kendine onay üretmiş",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "ajan",
+    "onayci_rolu": "model",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 30000,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "onayci"
+    ]
+   }
+  },
+  {
+   "id": "o-08",
+   "aciklama": "insan reddetmiş",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "reddedildi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": false
+   },
+   "simdi_ms": 30000,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "karar"
+    ]
+   }
+  },
+  {
+   "id": "o-09",
+   "aciklama": "daha önce kullanılmış",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": true
+   },
+   "simdi_ms": 30000,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "tekrar"
+    ]
+   }
+  },
+  {
+   "id": "o-10",
+   "aciklama": "dört sorun birden",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "arac",
+    "karar": "reddedildi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": true
+   },
+   "simdi_ms": 70000,
+   "beklenen": {
+    "gecerli": false,
+    "nedenler": [
+     "onayci",
+     "karar",
+     "zaman",
+     "tekrar"
+    ]
+   }
+  },
+  {
+   "id": "o-11",
+   "aciklama": "süre sıfır (son = veriliş)",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 1000,
+    "kullanildi": false
+   },
+   "simdi_ms": 1000,
+   "beklenen": null
+  },
+  {
+   "id": "o-12",
+   "aciklama": "kullanildi 0 (bool değil)",
+   "onay": {
+    "onay_id": "onay-7",
+    "cagri_id": "cagri-7",
+    "arac": "rapor_yaz",
+    "eylem": "raporu_kaydet",
+    "onayci": "denetci-ayse",
+    "onayci_rolu": "insan",
+    "karar": "onaylandi",
+    "verilis_ms": 1000,
+    "son_gecerlilik_ms": 61000,
+    "kullanildi": 0
+   },
+   "simdi_ms": 30000,
+   "beklenen": null
+  }
+ ]
+}

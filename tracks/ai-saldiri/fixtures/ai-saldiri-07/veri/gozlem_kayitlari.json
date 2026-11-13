@@ -1,0 +1,69 @@
+{
+ "aciklama": "Karışık sırada kaydedilmiş sentetik gözlemler. q-renk tekrar 3 yanıtı sonda satır sonu taşır.",
+ "kayitlar": [
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 2,
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 1,
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-dil",
+   "tekrar": 1,
+   "yanit": "Türkçe"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 3,
+   "yanit": "HAYIR\n"
+  },
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 1,
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 2,
+   "yanit": "HAYIR"
+  }
+ ],
+ "beklenen": {
+  "imza": "0f7108a858bf2d7a342b16c5e41f5f77d9f93d9d09f722557873e60f3a1394f9",
+  "gozlem": 6,
+  "kararli_vaka": 2,
+  "kararlilik": 0.6666666666666666
+ },
+ "bozuk_kumeler": [
+  [
+   {
+    "vaka_id": "q",
+    "tekrar": 1,
+    "yanit": "x"
+   },
+   {
+    "vaka_id": "q",
+    "tekrar": 1,
+    "yanit": "y"
+   }
+  ],
+  [
+   {
+    "vaka_id": "q",
+    "tekrar": true,
+    "yanit": "x"
+   }
+  ],
+  [
+   {
+    "vaka_id": "q",
+    "tekrar": 1,
+    "yanit": null
+   }
+  ]
+ ]
+}

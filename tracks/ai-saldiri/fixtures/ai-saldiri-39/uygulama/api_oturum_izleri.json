@@ -1,0 +1,34 @@
+[
+  {
+    "istek_id": "REQ-101",
+    "oturum_kullanici": "kiraci-a",
+    "hedef_sahip": "kiraci-a",
+    "nesne_turu": "konusma-gecmisi",
+    "islem": "baglam-oku",
+    "http_durum": 200
+  },
+  {
+    "istek_id": "REQ-102",
+    "oturum_kullanici": "kiraci-a",
+    "hedef_sahip": "kiraci-b",
+    "nesne_turu": "konusma-gecmisi",
+    "islem": "baglam-oku",
+    "http_durum": 200
+  },
+  {
+    "istek_id": "REQ-103",
+    "oturum_kullanici": "kiraci-a",
+    "hedef_sahip": "kiraci-b",
+    "nesne_turu": "vektor-namespace",
+    "islem": "belge-yaz",
+    "http_durum": 200
+  },
+  {
+    "istek_id": "REQ-104",
+    "oturum_kullanici": "kiraci-a",
+    "hedef_sahip": "kiraci-b",
+    "nesne_turu": "dosya-eki",
+    "islem": "baglam-oku",
+    "http_durum": 403
+  }
+]

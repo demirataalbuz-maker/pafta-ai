@@ -1,0 +1,3 @@
+# ai-guvence-29 görünür sentetik veri
+
+Elle hazırlanmış yerel öğretim taslağıdır; gerçek ürün bulgusu, CVE, CVSS vektör hesabı veya gönderilmiş bildirim değildir. İlk üç görev aynı bildirim.json dosyasını doğrular, Markdown'a çevirir ve onay.json ile gönderime hazırlık durumunu hesaplar. Varsayılan onay kapalıdır; işlevler ağ gönderimi yapmaz. hazirla/setup her çalıştırmada geçici kopya oluşturur; kalıcılık yoktur. Kodlar dosyayı okur/yazdırır, aynı çalıştırmada bellekte kopyayla deneme yapılabilir. Gizli testler ayrıdır. Son gerçek CPU deneyi maskeli yerel ZIP üretir; hash bütünlüğü iddianın doğruluğu veya gönderen kimliğinin kanıtı değildir.

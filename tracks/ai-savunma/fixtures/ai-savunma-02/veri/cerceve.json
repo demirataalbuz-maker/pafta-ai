@@ -1,0 +1,15 @@
+{
+  "kaynak": "sentetik",
+  "eslemeler": [
+    {"owasp": "LLM06", "atlas": ["AML.T0051", "AML.T0024"], "nist": ["MANAGE", "GOVERN"]},
+    {"owasp": "LLM01", "atlas": ["AML.T0054", "AML.T0051"], "nist": ["MEASURE", "MANAGE", "MAP"]}
+  ],
+  "kontroller": [
+    {"id": "K-GIRD-2", "owasp": "LLM01", "ad": "Boyut sınırı", "sahip": "Platform", "nist": "MAP"},
+    {"id": "K-GIRD-1", "owasp": "LLM01", "ad": "Şema kontrolü", "sahip": "Uygulama", "nist": "MANAGE"}
+  ],
+  "testler": [
+    {"kontrol": "K-GIRD-1", "durum": "gecti", "kanit": "test-01-sema-gecerli"},
+    {"kontrol": "K-GIRD-2", "durum": "gecti", "kanit": "test-02-boyut-sinir-ici"}
+  ]
+}

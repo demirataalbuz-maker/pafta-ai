@@ -1,0 +1,86 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Araç başına istenen yetki ile kullanıcının oturum yetkileri.",
+  "istekler": [
+    {
+      "id": "i-oku",
+      "arac": "dosya_oku",
+      "istenen_yetkiler": [
+        "dosya:oku"
+      ],
+      "oturum_yetkileri": [
+        "dosya:oku",
+        "dosya:yaz",
+        "ag:get"
+      ]
+    },
+    {
+      "id": "i-genis",
+      "arac": "dosya_oku",
+      "istenen_yetkiler": [
+        "dosya:oku",
+        "dosya:yaz"
+      ],
+      "oturum_yetkileri": [
+        "dosya:oku",
+        "dosya:yaz"
+      ]
+    },
+    {
+      "id": "i-yanlis",
+      "arac": "web_getir",
+      "istenen_yetkiler": [
+        "dosya:oku"
+      ],
+      "oturum_yetkileri": [
+        "dosya:oku",
+        "ag:get"
+      ]
+    },
+    {
+      "id": "i-oturumsuz",
+      "arac": "rapor_yaz",
+      "istenen_yetkiler": [
+        "dosya:yaz"
+      ],
+      "oturum_yetkileri": [
+        "dosya:oku"
+      ]
+    },
+    {
+      "id": "i-hepsi",
+      "arac": "rapor_yaz",
+      "istenen_yetkiler": [
+        "ag:get"
+      ],
+      "oturum_yetkileri": []
+    }
+  ],
+  "bozuk_istekler": [
+    {
+      "id": "b-1",
+      "arac": "kabuk_calistir",
+      "istenen_yetkiler": [
+        "dosya:oku"
+      ],
+      "oturum_yetkileri": []
+    },
+    {
+      "id": "b-2",
+      "arac": "dosya_oku",
+      "istenen_yetkiler": [
+        "dosya:oku",
+        "dosya:oku"
+      ],
+      "oturum_yetkileri": []
+    },
+    {
+      "id": "b-3",
+      "arac": "dosya_oku",
+      "istenen_yetkiler": [
+        "admin"
+      ],
+      "oturum_yetkileri": []
+    }
+  ]
+}

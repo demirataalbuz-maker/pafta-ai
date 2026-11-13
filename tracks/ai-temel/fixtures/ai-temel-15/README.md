@@ -1,0 +1,5 @@
+# Aktivasyon çalışma verisi
+
+aktivasyon.json elle hazırlanmış sentetik örnektir; gerçek model kaydı değildir. İlk görev pozitif/negatif, ikinci aktivasyon/yon/katsayi, üçüncü aynı alanlar+esik ve buyuk_baslangic kullanır. Doğru birim yön [1.0,0.0,0.0], negatif katsayılı çıktı [-1.0,2.0,5.0], büyük başlangıç sonucu [10.5,0.0,0.0] ve kırpıldıFalse olmalıdır. İlk küçük örnekte müdahale normu1e kırpılır; sonuç [0.292893,2.0,3.707107],kırpıldıTrue olur. Sınırlandırılan başlangıç aktivasyonu değil müdahaledir.
+
+Setup ai_temel_veri.hazirla her Run/Check için yeni geçici veri/aktivasyon.json kopyası oluşturur. İlk Çalıştır ham metni gösterir. Kaynak dosyayı haricî editörde aç veya yüklenen sözlüğü ders kodunda değiştirip Çalıştır. Değişiklikler sonraki çalıştırmada korunmaz; uygulamada dosya editörü bulunduğu vaat edilmez. Gizli testler ayrıdır. Final gerçek LM aktivasyonlarını yakalar; bu sentetik dosya gerçek deneyin yerine kullanılmaz. Yönün güvenlik garantisi veya evrensel anlam yönü olduğu iddia edilmez.

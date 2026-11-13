@@ -1,0 +1,24 @@
+{
+  "kaynak": "sentetik",
+  "adaylar": [
+    {"token": 41, "skor": 0.4},
+    {"token": 7, "skor": 0.2},
+    {"token": 19, "skor": 0.2},
+    {"token": 3, "skor": 0.9}
+  ],
+  "butce": 2,
+  "arama_izi": [
+    {"yontem": "GCG", "adim": 0, "sorgu": 4, "kayip": 0.8},
+    {"yontem": "GCG", "adim": 1, "sorgu": 8, "kayip": 0.4},
+    {"yontem": "GCG", "adim": 2, "sorgu": 12, "kayip": 0.3},
+    {"yontem": "AutoDAN", "adim": 0, "sorgu": 3, "kayip": 0.7},
+    {"yontem": "AutoDAN", "adim": 1, "sorgu": 6, "kayip": 0.5}
+  ],
+  "transfer_kayitlari": [
+    {"yontem": "GCG", "hedef": "model-a", "sorgu": 4, "basari": true, "yetenek": 0.8},
+    {"yontem": "AutoDAN", "hedef": "model-a", "sorgu": 3, "basari": false, "yetenek": 0.9},
+    {"yontem": "GCG", "hedef": "model-b", "sorgu": 5, "basari": false, "yetenek": 0.6},
+    {"yontem": "GCG", "hedef": "model-c", "sorgu": 6, "basari": true, "yetenek": 0.7},
+    {"yontem": "AutoDAN", "hedef": "model-b", "sorgu": 2, "basari": true, "yetenek": 0.6}
+  ]
+}

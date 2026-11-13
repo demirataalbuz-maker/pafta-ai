@@ -1,0 +1,8 @@
+# Only wheel data files are used; no Npcap/WinPcap driver or compiler is needed.
+# Install into the repository: python -m pip install --target .deps --no-deps -r requirements-packets.txt
+# Source: https://pypi.org/project/libpcap/1.11.0b29/
+# This wheel bundles native C libpcap 1.10.6, not C libpcap 1.11.0.
+# Windows x64 source folder: libpcap/_platform/windows/x86_64/tcpdump/
+# Keep pcap.dll, libssl-3-x64.dll and libcrypto-3-x64.dll together.
+# Wheel SHA256: 3be5f1d38df73ea585432c5b3f38141f8b2cccf85199b42bcbf62019b79f2b74
+libpcap==1.11.0b29

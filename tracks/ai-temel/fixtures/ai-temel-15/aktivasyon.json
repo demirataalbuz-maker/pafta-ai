@@ -1,0 +1,63 @@
+{
+  "koken": "elle hazırlanmış sentetik aktivasyonlar; gerçek model çıktısı değil",
+  "pozitif": [
+    [
+      3,
+      1,
+      0
+    ],
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      4,
+      0,
+      0
+    ]
+  ],
+  "negatif": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "aktivasyon": [
+    1,
+    2,
+    3
+  ],
+  "yon": [
+    1,
+    0,
+    -1
+  ],
+  "katsayi": -2,
+  "esik": 1,
+  "buyuk_baslangic": {
+    "aktivasyon": [
+      10,
+      0,
+      0
+    ],
+    "yon": [
+      1,
+      0,
+      0
+    ],
+    "katsayi": 0.5,
+    "esik": 1
+  }
+}

@@ -1,0 +1,111 @@
+{
+ "aciklama": "Sentetik kararlar ve beklenen iç komutlar. beklenen=null, ValueError demektir. Komutlar yalnız veri etiketidir.",
+ "ornekler": [
+  {
+   "id": "c-01",
+   "aciklama": "eşik tam sınırda",
+   "karar": {
+    "eylem": "ozetle",
+    "metin": "Rapor",
+    "guvence": 0.75
+   },
+   "beklenen": {
+    "komut": "OZET",
+    "icerik": "Rapor"
+   }
+  },
+  {
+   "id": "c-02",
+   "aciklama": "eşiğin hemen altı",
+   "karar": {
+    "eylem": "ozetle",
+    "metin": "Rapor",
+    "guvence": 0.7499
+   },
+   "beklenen": {
+    "komut": "INCELE",
+    "icerik": ""
+   }
+  },
+  {
+   "id": "c-03",
+   "aciklama": "çeviri",
+   "karar": {
+    "eylem": "cevir",
+    "metin": "Hello",
+    "guvence": 0.95
+   },
+   "beklenen": {
+    "komut": "CEVIR",
+    "icerik": "Hello"
+   }
+  },
+  {
+   "id": "c-04",
+   "aciklama": "yoksay",
+   "karar": {
+    "eylem": "yoksay",
+    "metin": "Rapor",
+    "guvence": 1
+   },
+   "beklenen": {
+    "komut": "YOKSAY",
+    "icerik": "Rapor"
+   }
+  },
+  {
+   "id": "c-05",
+   "aciklama": "düşük güvence metni incelemeye taşınmaz",
+   "karar": {
+    "eylem": "ozetle",
+    "metin": "GİZLİ NOT",
+    "guvence": 0.2
+   },
+   "beklenen": {
+    "komut": "INCELE",
+    "icerik": ""
+   }
+  },
+  {
+   "id": "c-06",
+   "aciklama": "modelin uydurduğu eylem",
+   "karar": {
+    "eylem": "dosya_sil",
+    "metin": "Rapor",
+    "guvence": 0.9
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-07",
+   "aciklama": "Python iç adı",
+   "karar": {
+    "eylem": "__import__",
+    "metin": "Rapor",
+    "guvence": 0.9
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-08",
+   "aciklama": "bool güvence",
+   "karar": {
+    "eylem": "ozetle",
+    "metin": "Rapor",
+    "guvence": true
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-09",
+   "aciklama": "ek alan",
+   "karar": {
+    "eylem": "ozetle",
+    "metin": "Rapor",
+    "guvence": 0.9,
+    "komut": "SHELL"
+   },
+   "beklenen": null
+  }
+ ]
+}

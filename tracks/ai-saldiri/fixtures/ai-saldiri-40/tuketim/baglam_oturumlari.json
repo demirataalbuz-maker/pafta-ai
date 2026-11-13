@@ -1,0 +1,23 @@
+[
+  {
+    "oturum_id": "oturum-temiz",
+    "sistem_token": 150,
+    "rag_parcalari": [200, 180],
+    "tur_sayisi": 3,
+    "tur_basi_cikis": 60
+  },
+  {
+    "oturum_id": "oturum-rag-sisirme",
+    "sistem_token": 200,
+    "rag_parcalari": [800, 750, 900],
+    "tur_sayisi": 4,
+    "tur_basi_cikis": 120
+  },
+  {
+    "oturum_id": "oturum-uzun-gecmis",
+    "sistem_token": 180,
+    "rag_parcalari": [300],
+    "tur_sayisi": 7,
+    "tur_basi_cikis": 150
+  }
+]

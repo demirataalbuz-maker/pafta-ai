@@ -1,0 +1,9 @@
+{
+ "aciklama": "Sentetik yöntem sonuçları (aynı 100 kayıtlık küme). Her şeyi ayıklayan yöntem tespiti yükseltir ama veri kaybı sınırını aşar.",
+ "kayip_ust_sinir": 0.15,
+ "yontemler": [
+  {"yontem": "hepsini_at", "tp": 10, "fp": 40, "tn": 50, "fn": 0},
+  {"yontem": "komsu_uyumu", "tp": 8, "fp": 3, "tn": 87, "fn": 2},
+  {"yontem": "ozellik_anomalisi", "tp": 2, "fp": 8, "tn": 82, "fn": 8}
+ ]
+}

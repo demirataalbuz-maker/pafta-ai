@@ -1,0 +1,16 @@
+{
+  "__metadata__": {
+    "format": "pt",
+    "kaynak": "sentetik-pafta"
+  },
+  "w": {
+    "dtype": "F32",
+    "shape": [
+      2
+    ],
+    "data_offsets": [
+      0,
+      8
+    ]
+  }
+}

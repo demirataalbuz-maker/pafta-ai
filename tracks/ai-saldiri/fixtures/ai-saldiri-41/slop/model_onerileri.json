@@ -1,0 +1,25 @@
+{
+  "kayitli_dizin": ["requests", "fastapi", "pydantic", "numpy", "pytest", "SQLAlchemy"],
+  "denemeler": [
+    {
+      "istem_id": "istem-graphql-auth",
+      "seed": 1,
+      "onerilen_paketler": ["fastapi", "fastapi-jwt-guard", "pydantic"]
+    },
+    {
+      "istem_id": "istem-graphql-auth",
+      "seed": 2,
+      "onerilen_paketler": ["fastapi", "fastapi-jwt-guard", "py-graphql-shield"]
+    },
+    {
+      "istem_id": "istem-microservice-jwt",
+      "seed": 1,
+      "onerilen_paketler": ["requests", "fastapi-jwt-guard", "py-graphql-shield"]
+    },
+    {
+      "istem_id": "istem-microservice-jwt",
+      "seed": 2,
+      "onerilen_paketler": ["requests", "tek-seferlik-uydurma"]
+    }
+  ]
+}

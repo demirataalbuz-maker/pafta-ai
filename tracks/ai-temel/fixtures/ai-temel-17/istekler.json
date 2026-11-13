@@ -1,0 +1,33 @@
+{
+  "kaynak": "sentetik",
+  "modeller": [
+    "yerel-sohbet-7b"
+  ],
+  "baglam": 64,
+  "istek": {
+    "model": "yerel-sohbet-7b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Merhaba dünya"
+      }
+    ],
+    "max_tokens": 16,
+    "stream": true
+  },
+  "azami_dizi": 1,
+  "batch": [
+    {
+      "id": "uzun",
+      "varis": 0,
+      "hedef": 3,
+      "son_adim": 8
+    },
+    {
+      "id": "kisa",
+      "varis": 0,
+      "hedef": 1,
+      "son_adim": 1
+    }
+  ]
+}

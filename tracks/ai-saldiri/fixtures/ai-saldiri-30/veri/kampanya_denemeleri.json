@@ -1,0 +1,186 @@
+{
+ "aciklama": "Üç sentetik kampanyanın karışık sıradaki denemeleri. Aynı kampanya-tur-aday üçlüsü tekrar edemez; aynı aday farklı turda ayrı ölçümdür.",
+ "esik": 0.8,
+ "denemeler": [
+  {
+   "kampanya": "tap-otel",
+   "tur": 3,
+   "aday": "tap/1/2",
+   "skor": 0.85
+  },
+  {
+   "kampanya": "pair-banka",
+   "tur": 2,
+   "aday": "pair/2",
+   "skor": 0.6
+  },
+  {
+   "kampanya": "tap-otel",
+   "tur": 1,
+   "aday": "tap/1",
+   "skor": 0.2
+  },
+  {
+   "kampanya": "pair-banka",
+   "tur": 1,
+   "aday": "pair/1",
+   "skor": 0.3
+  },
+  {
+   "kampanya": "tap-otel",
+   "tur": 2,
+   "aday": "tap/1/1",
+   "skor": 0.8
+  },
+  {
+   "kampanya": "pair-banka",
+   "tur": 3,
+   "aday": "pair/2",
+   "skor": 0.55
+  },
+  {
+   "kampanya": "pair-kargo",
+   "tur": 1,
+   "aday": "pair/1",
+   "skor": 0.9
+  },
+  {
+   "kampanya": "pair-kargo",
+   "tur": 1,
+   "aday": "pair/2",
+   "skor": 0.95
+  },
+  {
+   "kampanya": "tap-otel",
+   "tur": 4,
+   "aday": "tap/2/1",
+   "skor": 0.4
+  }
+ ],
+ "beklenen": [
+  {
+   "kampanya": "pair-banka",
+   "deneme": 3,
+   "en_iyi": 0.6,
+   "basarili": false,
+   "ilk_basari_turu": null
+  },
+  {
+   "kampanya": "pair-kargo",
+   "deneme": 2,
+   "en_iyi": 0.95,
+   "basarili": true,
+   "ilk_basari_turu": 1
+  },
+  {
+   "kampanya": "tap-otel",
+   "deneme": 4,
+   "en_iyi": 0.85,
+   "basarili": true,
+   "ilk_basari_turu": 2
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kampanya-tur-aday",
+   "girdi": [
+    {
+     "kampanya": "tap-otel",
+     "tur": 3,
+     "aday": "tap/1/2",
+     "skor": 0.85
+    },
+    {
+     "kampanya": "pair-banka",
+     "tur": 2,
+     "aday": "pair/2",
+     "skor": 0.6
+    },
+    {
+     "kampanya": "tap-otel",
+     "tur": 1,
+     "aday": "tap/1",
+     "skor": 0.2
+    },
+    {
+     "kampanya": "pair-banka",
+     "tur": 1,
+     "aday": "pair/1",
+     "skor": 0.3
+    },
+    {
+     "kampanya": "tap-otel",
+     "tur": 2,
+     "aday": "tap/1/1",
+     "skor": 0.8
+    },
+    {
+     "kampanya": "pair-banka",
+     "tur": 3,
+     "aday": "pair/2",
+     "skor": 0.55
+    },
+    {
+     "kampanya": "pair-kargo",
+     "tur": 1,
+     "aday": "pair/1",
+     "skor": 0.9
+    },
+    {
+     "kampanya": "pair-kargo",
+     "tur": 1,
+     "aday": "pair/2",
+     "skor": 0.95
+    },
+    {
+     "kampanya": "tap-otel",
+     "tur": 4,
+     "aday": "tap/2/1",
+     "skor": 0.4
+    },
+    {
+     "kampanya": "tap-otel",
+     "tur": 3,
+     "aday": "tap/1/2",
+     "skor": 0.85
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "tur 0",
+   "girdi": [
+    {
+     "kampanya": "tap-otel",
+     "tur": 0,
+     "aday": "tap/1/2",
+     "skor": 0.85
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "skor True",
+   "girdi": [
+    {
+     "kampanya": "tap-otel",
+     "tur": 3,
+     "aday": "tap/1/2",
+     "skor": true
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "eksik aday alanı",
+   "girdi": [
+    {
+     "kampanya": "a",
+     "tur": 1,
+     "skor": 0.5
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "koken": "elle hazırlanmış sentetik ayar ve koşular; gerçek sunucu kaydı değil",
+  "ayar": {
+    "ag": "kapali",
+    "model": "fixture",
+    "veri": "sentetik",
+    "yetki": "salt_okunur",
+    "tohum": 42,
+    "gecici_dizin": "lab_tmp-1"
+  },
+  "dosya_adlari": [
+    "metin.txt",
+    "senaryolar/demo.json"
+  ],
+  "kosular": [
+    {
+      "test": "sabit",
+      "kosum": 1,
+      "tohum": 42,
+      "girdi_sha256": "c96c6d5be8d08a12e7b5cdc1b207fa6b2430974c86803d8891675e76fd992c20",
+      "cikti_sha256": "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443",
+      "durum": "gecti"
+    },
+    {
+      "test": "sabit",
+      "kosum": 2,
+      "tohum": 42,
+      "girdi_sha256": "c96c6d5be8d08a12e7b5cdc1b207fa6b2430974c86803d8891675e76fd992c20",
+      "cikti_sha256": "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443",
+      "durum": "gecti"
+    },
+    {
+      "test": "degisen",
+      "kosum": 1,
+      "tohum": 42,
+      "girdi_sha256": "c96c6d5be8d08a12e7b5cdc1b207fa6b2430974c86803d8891675e76fd992c20",
+      "cikti_sha256": "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443",
+      "durum": "gecti"
+    },
+    {
+      "test": "degisen",
+      "kosum": 2,
+      "tohum": 42,
+      "girdi_sha256": "c96c6d5be8d08a12e7b5cdc1b207fa6b2430974c86803d8891675e76fd992c20",
+      "cikti_sha256": "6e2ae11dad0616f66bbb2b6e6556f580bb987fd911d7132aa6bee2bfc7cc7b52",
+      "durum": "hata"
+    }
+  ]
+}

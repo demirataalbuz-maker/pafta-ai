@@ -1,0 +1,12 @@
+{
+ "aciklama": "Sentetik örnek: özellik vektörleri, kavram yönü ve stil yönü elle yazılmıştır; gerçek görüntü modeli çıktısı değildir.",
+ "kavram_yonu": [0.6, 0.8, 0.0, 0.0],
+ "hedef_stil_yonu": [0.0, 0.0, 0.8, 0.6],
+ "onceki_vektorler": [
+  [1.2, 1.6, 0.5, 0.2],
+  [0.9, 1.2, -0.3, 0.4],
+  [-0.6, -0.8, 0.7, 0.1]
+ ],
+ "gizlenmis_ornek": [0.2, 0.1, 1.5, 1.1],
+ "artik_esik": 1e-6
+}

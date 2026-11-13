@@ -1,0 +1,66 @@
+{
+ "aciklama": "Uygulamanın araç/URL politikası ve modelden gelmiş gibi düşünülen araç adayları. Hiçbir istek gönderilmez.",
+ "politika": {
+  "araclar": [
+   "ozetle",
+   "http_get"
+  ],
+  "url_listesi": [
+   "https://docs.sirket.test/kargo"
+  ]
+ },
+ "cagrilar": [
+  {
+   "id": "c-01",
+   "arac": "ozetle",
+   "girdi": "Kargo teslim edildi."
+  },
+  {
+   "id": "c-02",
+   "arac": "http_get",
+   "girdi": "https://docs.sirket.test/kargo"
+  },
+  {
+   "id": "c-03",
+   "arac": "http_get",
+   "girdi": "https://docs.sirket.test/kargo/../../admin"
+  },
+  {
+   "id": "c-04",
+   "arac": "http_get",
+   "girdi": "https://docs.sirket.test/kargo@internal.test/canary"
+  },
+  {
+   "id": "c-05",
+   "arac": "http_get_ic",
+   "girdi": "http://internal.test/canary"
+  },
+  {
+   "id": "c-06",
+   "arac": "http_get",
+   "girdi": "http://docs.sirket.test/kargo"
+  },
+  {
+   "id": "c-07",
+   "arac": "dosya_sil",
+   "girdi": "rapor.txt"
+  }
+ ],
+ "bozuk_cagrilar": [
+  {
+   "id": "b-bos-girdi",
+   "arac": "http_get",
+   "girdi": ""
+  },
+  {
+   "id": "b-nul",
+   "arac": "ozetle",
+   "girdi": "a\u0000b"
+  },
+  {
+   "id": "b-bos-arac",
+   "arac": "",
+   "girdi": "x"
+  }
+ ]
+}

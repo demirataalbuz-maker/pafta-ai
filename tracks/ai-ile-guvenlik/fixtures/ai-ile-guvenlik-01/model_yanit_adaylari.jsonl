@@ -1,0 +1,4 @@
+{"aday_id": "aday-01", "ham_yanit": "Analiz tamamlandı:\n```json\n{\"bulgu_id\": \"BLG-101\", \"kategori\": \"enjeksiyon\", \"ciddiyet\": \"yuksek\", \"satir_no\": 42, \"kanit_var\": true}\n```"}
+{"aday_id": "aday-02", "ham_yanit": "{\"bulgu_id\": \"BLG-102\", \"kategori\": \"yetki_atlama\", \"ciddiyet\": \"kritik\", \"satir_no\": \"18\", \"kanit_var\": true}"}
+{"aday_id": "aday-03", "ham_yanit": "{\"bulgu_id\": \"BLG-103\", \"kategori\": \"sir_sizintisi\", \"ciddiyet\": \"orta\", \"satir_no\": 15, \"kanit_var\": false, \"ek_alan\": \"fazla\"}"}
+{"aday_id": "aday-04", "ham_yanit": "Bu metinde hiçbir JSON nesnesi bulunmuyor."}

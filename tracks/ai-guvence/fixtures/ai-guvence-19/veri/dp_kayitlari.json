@@ -1,0 +1,47 @@
+[
+  {
+    "id": "a",
+    "adim_epsilon": 0.2,
+    "adim_delta": 1e-05,
+    "adim": 10,
+    "gurultu_carpani": 1.1,
+    "kirpma_esigi": 1,
+    "test_dogrulugu": 0.75
+  },
+  {
+    "id": "b",
+    "adim_epsilon": 0.1,
+    "adim_delta": 1e-05,
+    "adim": 10,
+    "gurultu_carpani": 1.5,
+    "kirpma_esigi": 1,
+    "test_dogrulugu": 0.72
+  },
+  {
+    "id": "c",
+    "adim_epsilon": 0.3,
+    "adim_delta": 1e-05,
+    "adim": 10,
+    "gurultu_carpani": 0.8,
+    "kirpma_esigi": 1,
+    "test_dogrulugu": 0.8
+  },
+  {
+    "id": "d",
+    "adim_epsilon": 0.2,
+    "adim_delta": 2e-05,
+    "adim": 10,
+    "gurultu_carpani": 1.1,
+    "kirpma_esigi": 1,
+    "test_dogrulugu": 0.75
+  },
+  {
+    "id": "e",
+    "adim_epsilon": 0.2,
+    "adim_delta": 1e-05,
+    "adim": 10,
+    "gurultu_carpani": 1.1,
+    "kirpma_esigi": 1,
+    "test_dogrulugu": 0.6
+  }
+]

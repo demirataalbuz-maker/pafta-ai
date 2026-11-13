@@ -1,0 +1,18 @@
+[
+  {
+    "yama_id": "yama-1-bozuk-sozdizimi",
+    "kod": "def kullanici_getir(veritabani, kullanici_adi):\n    return veritabani.sorgula('SELECT * WHERE ad = ?', (kullanici_adi,)\n"
+  },
+  {
+    "yama_id": "yama-2-regresyon-hatasi",
+    "kod": "def kullanici_getir(veritabani, kullanici_adi):\n    return None\n"
+  },
+  {
+    "yama_id": "yama-3-hala-zafiyetli",
+    "kod": "def kullanici_getir(veritabani, kullanici_adi):\n    if not kullanici_adi:\n        return None\n    sorgu = f\"SELECT id, rol FROM kullanicilar WHERE ad = '{kullanici_adi}'\"\n    return veritabani.sorgula(sorgu)\n"
+  },
+  {
+    "yama_id": "yama-4-parametrik-ve-gecerli",
+    "kod": "def kullanici_getir(veritabani, kullanici_adi):\n    if not kullanici_adi:\n        return None\n    return veritabani.sorgula(\"SELECT id, rol FROM kullanicilar WHERE ad = ?\", (kullanici_adi,))\n"
+  }
+]

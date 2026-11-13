@@ -1,0 +1,28 @@
+{
+  "hipotezler": [
+    {
+      "hipotez_id": "hip-1",
+      "hedef_ip": "10.30.2.14",
+      "iddia_edilen_teknik": "T1069 Yetki Grubu Keşfi",
+      "dayanak_kanit_idleri": ["ev-101", "ev-102"]
+    },
+    {
+      "hipotez_id": "hip-2",
+      "hedef_ip": "10.30.2.14",
+      "iddia_edilen_teknik": "T1003 Kimlik Bilgisi Dökümü",
+      "dayanak_kanit_idleri": ["ev-999"]
+    },
+    {
+      "hipotez_id": "hip-3",
+      "hedef_ip": "10.30.8.90",
+      "iddia_edilen_teknik": "T1003 SAM Kayıt Defteri Dökümü",
+      "dayanak_kanit_idleri": ["ev-103"]
+    },
+    {
+      "hipotez_id": "hip-4",
+      "hedef_ip": "10.30.8.90",
+      "iddia_edilen_teknik": "Yanlış IP Eşleşmesi",
+      "dayanak_kanit_idleri": ["ev-101"]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{"olay_id": "PROC-301", "Image": "C:\\Windows\\System32\\rundll32.exe", "CommandLine": "rundll32.exe C:\\Windows\\System32\\comsvcs.dll, MiniDump 644 C:\\Temp\\lsass.dmp full", "User": "CORP\\ws_admin", "etiket": "saldiri"}
+{"olay_id": "PROC-302", "Image": "C:\\Windows\\System32\\rundll32.exe", "CommandLine": "rundll32.exe comsvcs.dll,MiniDump 712 C:\\Users\\Public\\dump.bin full", "User": "CORP\\svc_web", "etiket": "saldiri"}
+{"olay_id": "PROC-303", "Image": "C:\\Windows\\System32\\rundll32.exe", "CommandLine": "rundll32.exe shell32.dll,Control_RunDLL desk.cpl", "User": "CORP\\ayse", "etiket": "temiz"}
+{"olay_id": "PROC-304", "Image": "C:\\Windows\\System32\\rundll32.exe", "CommandLine": "rundll32.exe printui.dll,PrintUIEntry /in /n \\\\print01\\ofis", "User": "CORP\\mehmet", "etiket": "temiz"}
+{"olay_id": "PROC-305", "Image": "C:\\Tools\\Diag\\rundll32_diag.exe", "CommandLine": "rundll32_diag.exe comsvcs.dll MiniDump --dry-run --safe-audit", "User": "CORP\\sec_audit", "etiket": "temiz"}
+{"olay_id": "PROC-306", "Image": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "cmd.exe /c whoami /all", "User": "CORP\\ali", "etiket": "temiz"}

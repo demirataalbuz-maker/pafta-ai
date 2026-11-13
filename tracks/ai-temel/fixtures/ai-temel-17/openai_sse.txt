@@ -1,0 +1,8 @@
+: canlı tutma
+
+data: {"choices": [{"delta": {"content": "Merhaba "}, "finish_reason": null}]}
+
+data: {"choices": [{"delta": {"content": "dünya"}, "finish_reason": "stop"}]}
+
+data: [DONE]
+

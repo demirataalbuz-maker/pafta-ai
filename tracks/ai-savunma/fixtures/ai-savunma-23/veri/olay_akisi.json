@@ -1,0 +1,146 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Elastic benzeri bir olay deposundan kullanıcı bazında dışa aktarılmış gibi yazılmış abuse sinyalleri. Kullanıcılar ve olaylar uydurmadır; zaman, kullanıcının ilk isteğinden itibaren ms.",
+  "olaylar": [
+    {
+      "id": "ali-1",
+      "kullanici": "u-ali",
+      "zaman_ms": 0,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "ali-2",
+      "kullanici": "u-ali",
+      "zaman_ms": 70000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "ali-3",
+      "kullanici": "u-ali",
+      "zaman_ms": 140000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "bot-1",
+      "kullanici": "u-bot",
+      "zaman_ms": 1000,
+      "tur": "arac"
+    },
+    {
+      "id": "bot-2",
+      "kullanici": "u-bot",
+      "zaman_ms": 1800,
+      "tur": "arac"
+    },
+    {
+      "id": "bot-3",
+      "kullanici": "u-bot",
+      "zaman_ms": 2600,
+      "tur": "arac"
+    },
+    {
+      "id": "bot-4",
+      "kullanici": "u-bot",
+      "zaman_ms": 3400,
+      "tur": "arac"
+    },
+    {
+      "id": "bot-5",
+      "kullanici": "u-bot",
+      "zaman_ms": 4200,
+      "tur": "arac"
+    },
+    {
+      "id": "mert-1",
+      "kullanici": "u-mert",
+      "zaman_ms": 1000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "mert-2",
+      "kullanici": "u-mert",
+      "zaman_ms": 30000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "mert-3",
+      "kullanici": "u-mert",
+      "zaman_ms": 61000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "mert-4",
+      "kullanici": "u-mert",
+      "zaman_ms": 61000,
+      "tur": "normal"
+    },
+    {
+      "id": "selin-1",
+      "kullanici": "u-selin",
+      "zaman_ms": 5000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "selin-2",
+      "kullanici": "u-selin",
+      "zaman_ms": 6000,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "selin-3",
+      "kullanici": "u-selin",
+      "zaman_ms": 6500,
+      "tur": "sizinti"
+    },
+    {
+      "id": "ece-1",
+      "kullanici": "u-ece",
+      "zaman_ms": 2000,
+      "tur": "normal"
+    },
+    {
+      "id": "ece-2",
+      "kullanici": "u-ece",
+      "zaman_ms": 9000,
+      "tur": "normal"
+    },
+    {
+      "id": "can-1",
+      "kullanici": "u-can",
+      "zaman_ms": 0,
+      "tur": "jailbreak"
+    },
+    {
+      "id": "can-2",
+      "kullanici": "u-can",
+      "zaman_ms": 200000,
+      "tur": "normal"
+    }
+  ],
+  "bozuk_olaylar": [
+    {
+      "id": "bozuk-tur",
+      "kullanici": "u-x",
+      "zaman_ms": 10,
+      "tur": "spam"
+    },
+    {
+      "id": "bozuk-zaman",
+      "kullanici": "u-x",
+      "zaman_ms": -1,
+      "tur": "normal"
+    },
+    {
+      "id": "bozuk-kullanici",
+      "kullanici": "u x",
+      "zaman_ms": 10,
+      "tur": "normal"
+    },
+    {
+      "id": "bozuk-bool",
+      "kullanici": "u-x",
+      "zaman_ms": true,
+      "tur": "jailbreak"
+    }
+  ]
+}

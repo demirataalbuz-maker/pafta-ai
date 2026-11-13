@@ -1,0 +1,5 @@
+# Refusal aktivasyon çalışma verisi
+
+veri/aktivasyon.json elle hazırlanmış sentetik vektör ve oranlar içerir; gerçek model cache'i veya davranış kaydı değildir. İlk görev kayitlar alanını doğrular; ikinci refusal/normal gruplarından ortalama farkı alır ([1,3],norm3.162278); üçüncü katman_bulgulari verisini kullanır. En güçlü katman mutlak skorla2olmalıdır; ham pozitif skora bakmak yanlıştır. İlk Çalıştır ham JSON'u gösterir.
+
+Mevcut ai_guvence_veri.hazirla her Run/Check için yeni geçici veri/ kopyası kurar. Kaynak dosyayı haricî editörde aç veya yüklenen sözlüğü kodda değiştirip Çalıştır; değişiklikler sonraki çalıştırmada kalmaz. Gizli testler ayrıdır. Final kurulu Qwen2.5instruct ve TransformerBridge ile gerçek cache/yanıt kaydeder. Katmana müdahale yapılmadığından ret oranı üç katmanda aynı gözlemdir ve korelasyonNone; formülle farklı oranlar üretilmez. İşlevler ilk8bileşenle çalışır, tam yakalanmış vektörler ayrıca kanıtta bulunur. Modelin reddetmesi geçme şartı değildir; ret sezgiseli tam davranış etiketleyicisi sayılmaz. Yeni indirme yoktur.

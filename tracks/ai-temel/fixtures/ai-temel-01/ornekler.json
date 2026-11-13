@@ -1,0 +1,4 @@
+[
+ {"metin": "parola sifre", "yasaklar": ["sifre", "sifre</w>", "parola</w>", "rola"]},
+ {"metin": "sifreli parolalar", "yasaklar": ["sifre", "sifre</w>", "parola</w>", "paro"]}
+]

@@ -1,0 +1,136 @@
+{
+ "aciklama": "Sentetik, elle yazılmış örnekler. Ses dosyası ya da model skoru değildir.",
+ "kayitlar": [
+  {
+   "id": "g-00",
+   "metin": "The ship sailed at dawn.",
+   "kaynak": "gercek"
+  },
+  {
+   "id": "s-00",
+   "metin": "The ship sailed at dawn.",
+   "kaynak": "sentetik"
+  },
+  {
+   "id": "g-01",
+   "metin": "He opened the old door.",
+   "kaynak": "gercek"
+  },
+  {
+   "id": "s-01",
+   "metin": "He opened the old door.",
+   "kaynak": "sentetik"
+  },
+  {
+   "id": "g-02",
+   "metin": "Rain fell on the quiet town.",
+   "kaynak": "gercek"
+  },
+  {
+   "id": "s-02",
+   "metin": "Rain fell on the quiet town.",
+   "kaynak": "sentetik"
+  },
+  {
+   "id": "g-03",
+   "metin": "She wrote a short letter.",
+   "kaynak": "gercek"
+  },
+  {
+   "id": "s-03",
+   "metin": "She wrote a short letter.",
+   "kaynak": "sentetik"
+  },
+  {
+   "id": "g-04",
+   "metin": "The clock struck nine.",
+   "kaynak": "gercek"
+  },
+  {
+   "id": "s-04",
+   "metin": "The clock struck nine.",
+   "kaynak": "sentetik"
+  },
+  {
+   "id": "g-05",
+   "metin": "They walked along the river.",
+   "kaynak": "gercek"
+  },
+  {
+   "id": "s-05",
+   "metin": "They walked along the river.",
+   "kaynak": "sentetik"
+  }
+ ],
+ "test_orani": 0.34,
+ "skor_ornek": {
+  "skorlar": [
+   0.91,
+   0.12,
+   0.67,
+   0.48,
+   0.55,
+   0.08,
+   0.73,
+   0.31
+  ],
+  "etiketler": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ]
+ },
+ "esikler": [
+  0.5,
+  0.7
+ ],
+ "satirlar": [
+  {
+   "model": "A",
+   "kosul": "temiz",
+   "tpr": 1.0,
+   "fpr": 0.0,
+   "eer": 0.0
+  },
+  {
+   "model": "A",
+   "kosul": "ornekleme_16k",
+   "tpr": 0.0,
+   "fpr": 0.0,
+   "eer": 0.0
+  },
+  {
+   "model": "A",
+   "kosul": "sapi",
+   "tpr": 0.0,
+   "fpr": 0.0,
+   "eer": 0.25
+  },
+  {
+   "model": "B",
+   "kosul": "temiz",
+   "tpr": 1.0,
+   "fpr": 0.0,
+   "eer": 0.0
+  },
+  {
+   "model": "B",
+   "kosul": "ornekleme_16k",
+   "tpr": 1.0,
+   "fpr": 0.0,
+   "eer": 0.0
+  },
+  {
+   "model": "B",
+   "kosul": "telefon",
+   "tpr": 0.75,
+   "fpr": 0.25,
+   "eer": 0.125
+  }
+ ]
+}

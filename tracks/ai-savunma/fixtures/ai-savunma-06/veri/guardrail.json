@@ -1,0 +1,52 @@
+{
+  "koken": "elle hazırlanmış sentetik veri; canlı sunucu kaydı değil",
+  "zarflar": [
+    {
+      "istem_id": "utf8-1",
+      "kaynak": "belge",
+      "icerik_turu": "metin",
+      "metin": "ş",
+      "maks_bayt": 2
+    }
+  ],
+  "metin_dosyalari": [
+    "utf8.txt",
+    "normalizasyon.txt",
+    "bidi.txt",
+    "zararsiz.txt"
+  ],
+  "kayitlar": [
+    {
+      "istem_id": "incele-1",
+      "kaynak": "belge",
+      "icerik_turu": "metin",
+      "bayt": 20,
+      "maks_bayt": 20,
+      "baglam_uyumlu": true,
+      "sinyaller": [
+        "yonerge_tepesine_cikma"
+      ]
+    },
+    {
+      "istem_id": "izin-1",
+      "kaynak": "kullanici",
+      "icerik_turu": "metin",
+      "bayt": 2,
+      "maks_bayt": 2,
+      "baglam_uyumlu": true,
+      "sinyaller": []
+    },
+    {
+      "istem_id": "ret-1",
+      "kaynak": "arac",
+      "icerik_turu": "kod",
+      "bayt": 21,
+      "maks_bayt": 20,
+      "baglam_uyumlu": false,
+      "sinyaller": [
+        "gizli_veri_istegi",
+        "bidi_kontrol"
+      ]
+    }
+  ]
+}

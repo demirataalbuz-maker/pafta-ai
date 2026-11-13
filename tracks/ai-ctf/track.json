@@ -1,0 +1,74 @@
+{
+  "id": "ai-ctf",
+  "name": "AI CTF · Yerel Hedefler",
+  "status": "active",
+  "group": "ai",
+  "order": 37,
+  "runner": "python",
+  "dil": "python",
+  "role": "Yerel sentetik hedeflerde sorgu bütçesiyle güven sınırlarını sınamak, zafiyeti kanıtlamak ve meşru işlevi koruyan yamalar kurmak.",
+  "tagline": "Bayrağı bul, sınırı yamala, meşru işi koru.",
+  "kahraman": [
+    "Hedeften",
+    "Kanıt",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    }
+  ],
+  "modules": [
+    {
+      "title": "İstem Sınırı ve Çıktı Temsilleri",
+      "rank": "minik",
+      "zen": "Kullanıcı dizgesi yetki taşımaz; ham dize maskesi temsil değişince kırılır.",
+      "lessons": [
+        "ai-ctf-01",
+        "ai-ctf-02",
+        "ai-ctf-03"
+      ]
+    },
+    {
+      "title": "Veri Hattı · Belgeden Injection ve RAG Sıralaması",
+      "rank": "tesviye",
+      "zen": "Okunan belge bağlamdır, komut kanalı değil; yüksek benzerlik skoru güven kanıtı değildir.",
+      "lessons": [
+        "ai-ctf-04",
+        "ai-ctf-05"
+      ]
+    },
+    {
+      "title": "Araçlar, Egress ve Kodlama Sırası",
+      "rank": "kucuk-orta",
+      "zen": "Politika kanonik temsilde ve araç çağrılmadan önce uygulanır.",
+      "lessons": [
+        "ai-ctf-06",
+        "ai-ctf-07",
+        "ai-ctf-08"
+      ]
+    },
+    {
+      "title": "Çok Adımlı Zincir ve Bitirme Hedefi",
+      "rank": "buyuk-orta",
+      "zen": "Retrieval çıktısı yetki bileti olamaz; keşiften yamaya bütün zincir kanıtla kapanır.",
+      "lessons": [
+        "ai-ctf-09",
+        "ai-ctf-10"
+      ]
+    }
+  ]
+}

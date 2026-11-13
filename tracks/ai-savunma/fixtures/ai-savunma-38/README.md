@@ -1,0 +1,1 @@
+Öğrenci JSON fixture sentetiktir; OCR/ASR yanıtı değildir. Setup multimodal/ornek.json çalışma kopyası oluşturur,aynı çağrıda değiştirilebilir;sonraki çalıştırmaya kalmaz. Gerçek son görev TesseractOCR/WhisperASR çağırır;replay deterministik ve etiketlidir. Kanıt klasöründe gerçek PNG,WAV,algılama çıktısı ve sekiz akışın dosyaları korunur.

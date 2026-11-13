@@ -1,0 +1,23 @@
+{
+ "aciklama": "Sentetik örnek: dal kısıtları ve fuzzer adayları elle yazılmıştır; gerçek ikili dosya izi değildir.",
+ "alt_sinir": 0,
+ "ust_sinir": 65535,
+ "hedef_dal": "kritik_bellek_tasmasi",
+ "kisit_listesi": {
+  "kritik_bellek_tasmasi": [
+   {"degisken": "sihirli_baslik", "op": "==", "deger": 48879},
+   {"degisken": "paket_boyutu", "op": ">", "deger": 1024},
+   {"degisken": "paket_boyutu", "op": "<=", "deger": 1040},
+   {"degisken": "bayrak", "op": "==", "deger": 7}
+  ],
+  "celiskili_olu_dal": [
+   {"degisken": "paket_boyutu", "op": ">", "deger": 500},
+   {"degisken": "paket_boyutu", "op": "<", "deger": 200}
+  ]
+ },
+ "rastgele_adaylar": [
+  {"sihirli_baslik": 1204, "paket_boyutu": 512, "bayrak": 1},
+  {"sihirli_baslik": 48879, "paket_boyutu": 200, "bayrak": 0},
+  {"sihirli_baslik": 48879, "paket_boyutu": 1030, "bayrak": 3}
+ ]
+}

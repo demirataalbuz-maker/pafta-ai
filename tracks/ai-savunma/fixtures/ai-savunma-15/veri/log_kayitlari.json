@@ -1,0 +1,180 @@
+{
+ "aciklama": "Sentetik log ve araç çıktısı satırları. Sırlar yapaydır; gerçek anahtar değildir.",
+ "kayitlar": [
+  {
+   "id": "http-log",
+   "metin": "GET /v1 Authorization: Bearer sk-test-AB12CD34 -> 200\nretry Authorization: Bearer sk-test-AB12CD34 -> 200",
+   "gizliler": [
+    "sk-test-AB12CD34"
+   ]
+  },
+  {
+   "id": "onek-cakisma",
+   "metin": "kisa=sk-test-AB12 uzun=sk-test-AB12CD34",
+   "gizliler": [
+    "sk-test-AB12",
+    "sk-test-AB12CD34"
+   ]
+  },
+  {
+   "id": "iki-sir",
+   "metin": "db=pg-pass-9F3K api=sk-test-AB12CD34",
+   "gizliler": [
+    "sk-test-AB12CD34",
+    "pg-pass-9F3K"
+   ]
+  },
+  {
+   "id": "bolunmus",
+   "metin": "Anahtar: sk-test-AB12\nCD34 (satır kırıldı)",
+   "gizliler": [
+    "sk-test-AB12CD34"
+   ]
+  },
+  {
+   "id": "buyuk-harf",
+   "metin": "token SK-TEST-AB12CD34",
+   "gizliler": [
+    "sk-test-AB12CD34"
+   ]
+  },
+  {
+   "id": "temiz",
+   "metin": "Rapor hazırlandı.",
+   "gizliler": [
+    "sk-test-AB12CD34"
+   ]
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "bolunmus",
+   "maskeli_metin": "Anahtar: sk-test-AB12\nCD34 (satır kırıldı)",
+   "bulgu": 0
+  },
+  {
+   "id": "buyuk-harf",
+   "maskeli_metin": "token SK-TEST-AB12CD34",
+   "bulgu": 0
+  },
+  {
+   "id": "http-log",
+   "maskeli_metin": "GET /v1 Authorization: Bearer [GIZLI] -> 200\nretry Authorization: Bearer [GIZLI] -> 200",
+   "bulgu": 2
+  },
+  {
+   "id": "iki-sir",
+   "maskeli_metin": "db=[GIZLI] api=[GIZLI]",
+   "bulgu": 2
+  },
+  {
+   "id": "onek-cakisma",
+   "maskeli_metin": "kisa=[GIZLI] uzun=[GIZLI]",
+   "bulgu": 2
+  },
+  {
+   "id": "temiz",
+   "maskeli_metin": "Rapor hazırlandı.",
+   "bulgu": 0
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "http-log",
+     "metin": "GET /v1 Authorization: Bearer sk-test-AB12CD34 -> 200\nretry Authorization: Bearer sk-test-AB12CD34 -> 200",
+     "gizliler": [
+      "sk-test-AB12CD34"
+     ]
+    },
+    {
+     "id": "onek-cakisma",
+     "metin": "kisa=sk-test-AB12 uzun=sk-test-AB12CD34",
+     "gizliler": [
+      "sk-test-AB12",
+      "sk-test-AB12CD34"
+     ]
+    },
+    {
+     "id": "iki-sir",
+     "metin": "db=pg-pass-9F3K api=sk-test-AB12CD34",
+     "gizliler": [
+      "sk-test-AB12CD34",
+      "pg-pass-9F3K"
+     ]
+    },
+    {
+     "id": "bolunmus",
+     "metin": "Anahtar: sk-test-AB12\nCD34 (satır kırıldı)",
+     "gizliler": [
+      "sk-test-AB12CD34"
+     ]
+    },
+    {
+     "id": "buyuk-harf",
+     "metin": "token SK-TEST-AB12CD34",
+     "gizliler": [
+      "sk-test-AB12CD34"
+     ]
+    },
+    {
+     "id": "temiz",
+     "metin": "Rapor hazırlandı.",
+     "gizliler": [
+      "sk-test-AB12CD34"
+     ]
+    },
+    {
+     "id": "http-log",
+     "metin": "GET /v1 Authorization: Bearer sk-test-AB12CD34 -> 200\nretry Authorization: Bearer sk-test-AB12CD34 -> 200",
+     "gizliler": [
+      "sk-test-AB12CD34"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "3 karakterlik sır",
+   "girdi": [
+    {
+     "id": "a",
+     "metin": "abc",
+     "gizliler": [
+      "abc"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "satır sonu içeren sır",
+   "girdi": [
+    {
+     "id": "a",
+     "metin": "x",
+     "gizliler": [
+      "abcd\nef"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "yinelenen sır",
+   "girdi": [
+    {
+     "id": "a",
+     "metin": "x",
+     "gizliler": [
+      "abcd",
+      "abcd"
+     ]
+    }
+   ]
+  }
+ ]
+}

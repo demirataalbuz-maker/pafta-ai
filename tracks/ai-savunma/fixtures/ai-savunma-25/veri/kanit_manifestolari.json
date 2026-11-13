@@ -1,0 +1,64 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir AI olayında toplanan kanıtların manifestosu. Özetler örnek dosya adlarının SHA-256 değeridir; gerçek dosya değildir. zaman: olay başlangıcından itibaren saniye.",
+  "manifestolar": [
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "gateway-log",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e",
+      "bayt": 482113,
+      "zaman": 120
+    },
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "model-agirlik",
+      "sha256": "49b51461b3d64aa9abaf25a246f24231dd97973adeac752043a7e879712ac580",
+      "bayt": 2497280480,
+      "zaman": 300
+    },
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "bos-yedek",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bayt": 0,
+      "zaman": 0
+    }
+  ],
+  "bozuk_manifestolar": [
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "buyuk-harf",
+      "sha256": "142FD184709EDA883C0AAC34EA6C882180C65153345CFA83EA3692FEFE4F4C8E",
+      "bayt": 1,
+      "zaman": 1
+    },
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "kisa-ozet",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153",
+      "bayt": 1,
+      "zaman": 1
+    },
+    {
+      "olay_id": "INC 2026 041",
+      "kanit_id": "bosluklu-olay",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e",
+      "bayt": 1,
+      "zaman": 1
+    },
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "negatif-bayt",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e",
+      "bayt": -5,
+      "zaman": 1
+    },
+    {
+      "olay_id": "INC-2026-041",
+      "kanit_id": "bool-zaman",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e",
+      "bayt": 1,
+      "zaman": true
+    }
+  ]
+}

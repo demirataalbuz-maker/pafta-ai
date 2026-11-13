@@ -1,0 +1,20 @@
+[
+  {
+    "kaynak_id": "bundle-chat-v2.js",
+    "veri_kokeni": "sentetik_fikstur",
+    "alanlar": {
+      "PUBLIC_APP_NAME": "Pafta Kurumsal Sohbet",
+      "FALLBACK_LLM_KEY": "sk-pafta-test-998877665544",
+      "INTERNAL_RAG_URL": "http://10.20.0.15:9000/vector-admin"
+    }
+  },
+  {
+    "kaynak_id": "sse-debug-frame-04",
+    "veri_kokeni": "sentetik_fikstur",
+    "alanlar": {
+      "MODEL_NAME": "qwen3:4b-instruct",
+      "EXPORT_SERVICE": "http://127.0.0.1:8081/internal/export",
+      "PUBLIC_DOCS": "https://dokuman.pafta.test/kilavuz"
+    }
+  }
+]

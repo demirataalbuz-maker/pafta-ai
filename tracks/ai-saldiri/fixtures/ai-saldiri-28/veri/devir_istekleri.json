@@ -1,0 +1,77 @@
+{
+ "aciklama": "Uygulamanın devir politikası ve ajanlardan gelen devir istekleri. '*' joker değildir, sıradan bir kimlik dizgisidir.",
+ "politika": [
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "okuma"
+  },
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "yazma"
+  },
+  {
+   "veren": "analyst",
+   "alan": "worker",
+   "yetki": "okuma"
+  },
+  {
+   "veren": "orchestrator",
+   "alan": "*",
+   "yetki": "model"
+  }
+ ],
+ "istekler": [
+  {
+   "veren": "analyst",
+   "alan": "worker",
+   "yetki": "okuma",
+   "id": "i-01"
+  },
+  {
+   "veren": "saldirgan",
+   "alan": "analyst",
+   "yetki": "yazma",
+   "id": "i-02"
+  },
+  {
+   "veren": "orchestrator",
+   "alan": "worker",
+   "yetki": "model",
+   "id": "i-03"
+  },
+  {
+   "veren": "worker",
+   "alan": "analyst",
+   "yetki": "okuma",
+   "id": "i-04"
+  },
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "okuma",
+   "id": "i-05"
+  }
+ ],
+ "bozuk_istekler": [
+  {
+   "veren": "analyst",
+   "alan": "worker",
+   "yetki": "admin",
+   "id": "b-yetki"
+  },
+  {
+   "veren": "worker",
+   "alan": "worker",
+   "yetki": "okuma",
+   "id": "b-ayni"
+  },
+  {
+   "veren": "",
+   "alan": "worker",
+   "yetki": "okuma",
+   "id": "b-bos"
+  }
+ ]
+}

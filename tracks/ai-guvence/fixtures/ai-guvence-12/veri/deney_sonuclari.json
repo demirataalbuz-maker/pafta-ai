@@ -1,0 +1,11 @@
+{
+  "kosul_kayitlari": [
+    {"kosul": "taban", "temiz": 0.9, "hedef": 0.85},
+    {"kosul": "rastgele", "temiz": 0.75, "hedef": 0.8},
+    {"kosul": "hedefli", "temiz": 0.85, "hedef": 0.4}
+  ],
+  "kayip_kayitlari": [
+    {"tur": "rastgele", "temiz_kayip": 0.15, "hedef_kayip": 0.05},
+    {"tur": "hedefli", "temiz_kayip": 0.05, "hedef_kayip": 0.45}
+  ]
+}

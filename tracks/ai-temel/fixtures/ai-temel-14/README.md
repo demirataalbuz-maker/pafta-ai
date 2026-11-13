@@ -1,0 +1,3 @@
+# Görünür şema örnekleri
+
+ornekler.json elle hazırlanmış sentetik veridir, model çıktısı değildir. Helper veri/ornekler.json yoluna kopyalar. İlk görev kayit, ikinci cagrilar, üçüncü adaylar alanını okur. Doğru ilk geçerli aday indeksi2; C sürücü yolu ve sil aracı reddedilir. Şemalar aşamalara göre farklıdır, final ayrıca onay bool alanı ister. Kaynak dosyayı editörle aç; ders kodunda yüklenen kopyayı değiştirip Run yap. Her çalıştırma yeni geçici kopyadır, kalıcılık yok; gizli testler ayrı. Hiçbir oku/topla çağrısı yürütülmez. Gerçek final kurulu Ollama JSON Schema üretimi yapar, indirme yok.

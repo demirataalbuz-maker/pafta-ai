@@ -1,0 +1,26 @@
+[
+  {
+    "id": "duz",
+    "metin": "Pafta & eğitim \"notu\""
+  },
+  {
+    "id": "etiket",
+    "metin": "<b>MERHABA</b> & \"örnek\""
+  },
+  {
+    "id": "link",
+    "metin": "[yerel ders](https://ornek.test/a?x=1&y=2)"
+  },
+  {
+    "id": "tehlikeli",
+    "metin": "[işaret](javascript:alert) <img src=x onerror=\"alert(1)\">"
+  },
+  {
+    "id": "bilgi",
+    "metin": "[örnek](https://user@ornek.test/a)"
+  },
+  {
+    "id": "icice",
+    "metin": "[<b>etiket</b>](https://ornek.test/)"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Temsilî bir kurumsal yapay zekâ hattı için elle yazılmış tedarik politikası. Gerçek bir Trivy/Cosign yapılandırması değildir.",
+  "politika": {
+    "izinli_kaynaklar": [
+      "resmi",
+      "kurumsal"
+    ],
+    "izinli_turler": [
+      "model",
+      "paket"
+    ],
+    "izinli_riskler": [
+      "dusuk"
+    ],
+    "max_boyut_mb": 1000,
+    "imza_zorunlu": true
+  },
+  "bozuk_politikalar": [
+    {
+      "ad": "imza-istege-bagli",
+      "politika": {
+        "izinli_kaynaklar": [
+          "resmi"
+        ],
+        "izinli_turler": [
+          "model"
+        ],
+        "izinli_riskler": [],
+        "max_boyut_mb": 1000,
+        "imza_zorunlu": false
+      }
+    },
+    {
+      "ad": "bos-tur",
+      "politika": {
+        "izinli_kaynaklar": [
+          "resmi"
+        ],
+        "izinli_turler": [],
+        "izinli_riskler": [],
+        "max_boyut_mb": 1000,
+        "imza_zorunlu": true
+      }
+    },
+    {
+      "ad": "yinelenen-risk",
+      "politika": {
+        "izinli_kaynaklar": [
+          "resmi"
+        ],
+        "izinli_turler": [
+          "model"
+        ],
+        "izinli_riskler": [
+          "dusuk",
+          "dusuk"
+        ],
+        "max_boyut_mb": 1000,
+        "imza_zorunlu": true
+      }
+    },
+    {
+      "ad": "dev-sinir",
+      "politika": {
+        "izinli_kaynaklar": [
+          "resmi"
+        ],
+        "izinli_turler": [
+          "model"
+        ],
+        "izinli_riskler": [],
+        "max_boyut_mb": 50000,
+        "imza_zorunlu": true
+      }
+    }
+  ]
+}

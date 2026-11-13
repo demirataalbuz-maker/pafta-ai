@@ -1,0 +1,240 @@
+{
+ "aciklama": "Kanal ve varlık türü taşıyan sentetik DLP olayları; kişisel değer içermez.",
+ "olaylar": [
+  {
+   "id": "log-eposta",
+   "kanal": "log",
+   "varlik_turleri": [
+    "eposta"
+   ]
+  },
+  {
+   "id": "log-ip",
+   "kanal": "log",
+   "varlik_turleri": [
+    "ipv4"
+   ]
+  },
+  {
+   "id": "api-kart",
+   "kanal": "dis_api",
+   "varlik_turleri": [
+    "telefon",
+    "kart"
+   ]
+  },
+  {
+   "id": "api-tel",
+   "kanal": "dis_api",
+   "varlik_turleri": [
+    "telefon"
+   ]
+  },
+  {
+   "id": "api-ip",
+   "kanal": "dis_api",
+   "varlik_turleri": [
+    "ipv4"
+   ]
+  },
+  {
+   "id": "yanit-kart",
+   "kanal": "yanit",
+   "varlik_turleri": [
+    "kart"
+   ]
+  },
+  {
+   "id": "yanit-ip",
+   "kanal": "yanit",
+   "varlik_turleri": [
+    "ipv4"
+   ]
+  },
+  {
+   "id": "yanit-bos",
+   "kanal": "yanit",
+   "varlik_turleri": []
+  },
+  {
+   "id": "log-bos",
+   "kanal": "log",
+   "varlik_turleri": []
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "api-ip",
+   "karar": "incele",
+   "varliklar": [
+    "ipv4"
+   ]
+  },
+  {
+   "id": "api-kart",
+   "karar": "durdur",
+   "varliklar": [
+    "kart",
+    "telefon"
+   ]
+  },
+  {
+   "id": "api-tel",
+   "karar": "redakte",
+   "varliklar": [
+    "telefon"
+   ]
+  },
+  {
+   "id": "log-bos",
+   "karar": "gecir",
+   "varliklar": []
+  },
+  {
+   "id": "log-eposta",
+   "karar": "durdur",
+   "varliklar": [
+    "eposta"
+   ]
+  },
+  {
+   "id": "log-ip",
+   "karar": "durdur",
+   "varliklar": [
+    "ipv4"
+   ]
+  },
+  {
+   "id": "yanit-bos",
+   "karar": "gecir",
+   "varliklar": []
+  },
+  {
+   "id": "yanit-ip",
+   "karar": "gecir",
+   "varliklar": [
+    "ipv4"
+   ]
+  },
+  {
+   "id": "yanit-kart",
+   "karar": "redakte",
+   "varliklar": [
+    "kart"
+   ]
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "log-eposta",
+     "kanal": "log",
+     "varlik_turleri": [
+      "eposta"
+     ]
+    },
+    {
+     "id": "log-ip",
+     "kanal": "log",
+     "varlik_turleri": [
+      "ipv4"
+     ]
+    },
+    {
+     "id": "api-kart",
+     "kanal": "dis_api",
+     "varlik_turleri": [
+      "telefon",
+      "kart"
+     ]
+    },
+    {
+     "id": "api-tel",
+     "kanal": "dis_api",
+     "varlik_turleri": [
+      "telefon"
+     ]
+    },
+    {
+     "id": "api-ip",
+     "kanal": "dis_api",
+     "varlik_turleri": [
+      "ipv4"
+     ]
+    },
+    {
+     "id": "yanit-kart",
+     "kanal": "yanit",
+     "varlik_turleri": [
+      "kart"
+     ]
+    },
+    {
+     "id": "yanit-ip",
+     "kanal": "yanit",
+     "varlik_turleri": [
+      "ipv4"
+     ]
+    },
+    {
+     "id": "yanit-bos",
+     "kanal": "yanit",
+     "varlik_turleri": []
+    },
+    {
+     "id": "log-bos",
+     "kanal": "log",
+     "varlik_turleri": []
+    },
+    {
+     "id": "log-eposta",
+     "kanal": "log",
+     "varlik_turleri": [
+      "eposta"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "bilinmeyen kanal e-posta",
+   "girdi": [
+    {
+     "id": "a",
+     "kanal": "e-posta",
+     "varlik_turleri": []
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "yinelenen tür",
+   "girdi": [
+    {
+     "id": "a",
+     "kanal": "log",
+     "varlik_turleri": [
+      "kart",
+      "kart"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "bilinmeyen tür tc_kimlik",
+   "girdi": [
+    {
+     "id": "a",
+     "kanal": "log",
+     "varlik_turleri": [
+      "tc_kimlik"
+     ]
+    }
+   ]
+  }
+ ]
+}

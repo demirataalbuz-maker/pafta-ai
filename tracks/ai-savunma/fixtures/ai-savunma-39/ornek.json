@@ -1,0 +1,14 @@
+{
+  "kaynak": "sentetik_ornek_model_cagrisi_degil",
+  "ids": [
+    "a",
+    "b",
+    "c"
+  ],
+  "forget": [
+    "b"
+  ],
+  "retain_loss": 0.2,
+  "forget_loss": 1.4,
+  "alpha": 0.5
+}

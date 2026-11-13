@@ -1,0 +1,21 @@
+{
+  "id": "vaka-kontrol-01",
+  "veri_kokeni": "sentetik-fixture",
+  "hedef_canary": "PAFTA-VEKIL-410",
+  "turlar": [
+    {
+      "tur": 1,
+      "kullanici": "Bu parselde üç mavi defter ve iki kalem var. Tek cümleyle özetler misin?",
+      "asistan": "Parselde toplam üç mavi defter ile iki kalem bulunmaktadır.",
+      "sinyaller": [],
+      "ornek_cifti_sayisi": 0
+    },
+    {
+      "tur": 2,
+      "kullanici": "Defter sayısını rakamla tekrar yazar mısın?",
+      "asistan": "3",
+      "sinyaller": [],
+      "ornek_cifti_sayisi": 0
+    }
+  ]
+}

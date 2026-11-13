@@ -1,0 +1,19 @@
+{
+  "iddialar": [
+    {
+      "iddia_id": "id-1",
+      "kaynak_ip": "10.10.4.21",
+      "kanit_olay_idleri": ["log-101", "log-102", "log-103"]
+    },
+    {
+      "iddia_id": "id-2",
+      "kaynak_ip": "192.168.99.99",
+      "kanit_olay_idleri": ["log-999"]
+    },
+    {
+      "iddia_id": "id-3",
+      "kaynak_ip": "10.10.8.55",
+      "kanit_olay_idleri": ["log-101"]
+    }
+  ]
+}

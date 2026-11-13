@@ -1,0 +1,8 @@
+{
+  "kayitlar": [
+    {"kayit_id": "ZAF-01", "kategori": "sql_enjeksiyonu", "vektor": [0.9, 0.1, 0.0, 0.0], "yama_ozeti": "Parametreli sorgu kullan."},
+    {"kayit_id": "ZAF-02", "kategori": "sql_enjeksiyonu", "vektor": [0.8, 0.2, 0.0, 0.0], "yama_ozeti": "ORM veya prepared statement zorla."},
+    {"kayit_id": "ZAF-03", "kategori": "yol_gecisi", "vektor": [0.0, 0.1, 0.9, 0.0], "yama_ozeti": "realpath ve kök dizin kilidi uygula."},
+    {"kayit_id": "ZAF-04", "kategori": "ssrf", "vektor": [0.0, 0.0, 0.1, 0.9], "yama_ozeti": "Özel IP aralıklarını ve metaveri adresini engelle."}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "model": {
+    "revizyon": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "license": "apache-2.0",
+    "datasets": [
+      "pafta/sentetik"
+    ],
+    "kapsam_disi": [
+      "tibbi-tani"
+    ]
+  },
+  "veri": {
+    "id": "pafta/sentetik",
+    "license": "cc-by-4.0"
+  },
+  "kanit": {
+    "revizyon": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "manifest": {
+      "ornek.safetensors": "sha256:6cb73f07fa0a4bc6d9920bb8ae32b62a48cbfcf44515a3563dacf1bbdcde0a4e"
+    },
+    "hesaplanan": {
+      "ornek.safetensors": "6cb73f07fa0a4bc6d9920bb8ae32b62a48cbfcf44515a3563dacf1bbdcde0a4e"
+    }
+  },
+  "politika": {
+    "lisanslar": [
+      "apache-2.0",
+      "cc-by-4.0"
+    ],
+    "kullanim": "ozetleme"
+  }
+}

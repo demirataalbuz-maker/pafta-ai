@@ -1,0 +1,179 @@
+{
+ "aciklama": "Vault/broker benzeri kısa ömürlü kimlik bilgisi kapsamları. Zamanlar ms'dir. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "k-01",
+   "aciklama": "dar ve 300 ms ömürlü",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": false
+   },
+   "beklenen": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": false
+   }
+  },
+  {
+   "id": "k-02",
+   "aciklama": "1 ms ömür, veriliş 0",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 0,
+    "son_gecerlilik_ms": 1,
+    "model_gorebilir": false
+   },
+   "beklenen": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 0,
+    "son_gecerlilik_ms": 1,
+    "model_gorebilir": false
+   }
+  },
+  {
+   "id": "k-03",
+   "aciklama": "ömür 300 saniye (300000 ms)",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 310000,
+    "model_gorebilir": false
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-04",
+   "aciklama": "model gerçek değeri görebilir",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": true
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-05",
+   "aciklama": "model_gorebilir 0",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": 0
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-06",
+   "aciklama": "kaynak joker *",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "*"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": false
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-07",
+   "aciklama": "eylem sil",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir",
+     "sil"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": false
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-08",
+   "aciklama": "boş kaynak listesi",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 10300,
+    "model_gorebilir": false
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-09",
+   "aciklama": "son geçerlilik verilişten önce",
+   "kapsam": {
+    "arac": "web_getir",
+    "eylemler": [
+     "getir"
+    ],
+    "kaynaklar": [
+     "api.ornek.com"
+    ],
+    "verilis_ms": 10000,
+    "son_gecerlilik_ms": 9999,
+    "model_gorebilir": false
+   },
+   "beklenen": null
+  }
+ ]
+}

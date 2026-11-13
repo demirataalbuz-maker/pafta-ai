@@ -1,0 +1,39 @@
+{
+ "aciklama": "Sentetik faz kayıtları; zaman tatbikat başından itibaren saniyedir.",
+ "kayitlar": [
+  {
+   "id": "k-s1",
+   "faz": "saldir",
+   "basarili": true,
+   "kanit_ids": [],
+   "zaman": 0
+  },
+  {
+   "id": "k-t1",
+   "faz": "telemetri",
+   "basarili": true,
+   "kanit_ids": [],
+   "zaman": 4
+  },
+  {
+   "id": "k-m1",
+   "faz": "mudahale",
+   "basarili": true,
+   "kanit_ids": [
+    "olay-7",
+    "manifest-7"
+   ],
+   "zaman": true
+  },
+  {
+   "id": "k-r1",
+   "faz": "regresyon",
+   "basarili": true,
+   "kanit_ids": [
+    "eval-1",
+    "eval-2"
+   ],
+   "zaman": 12
+  }
+ ]
+}

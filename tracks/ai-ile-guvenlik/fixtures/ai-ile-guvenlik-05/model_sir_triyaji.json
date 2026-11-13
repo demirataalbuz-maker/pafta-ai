@@ -1,0 +1,7 @@
+{
+  "model_kararlari": {
+    "config/prod.env:12": "gercek_sir",
+    "tests/test_auth.py:44": "test_verisi",
+    "deploy/secrets.yaml:19": "gercek_sir"
+  }
+}

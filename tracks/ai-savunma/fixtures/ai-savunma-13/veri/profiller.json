@@ -1,0 +1,169 @@
+{
+ "aciklama": "Docker/gVisor benzeri kapalı sandbox profillerinin sentetik JSON karşılığı. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "f-01",
+   "aciklama": "kapalı ağ, iki program",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   }
+  },
+  {
+   "id": "f-02",
+   "aciklama": "uç sınırlar 5000 ms ve 65536 bayt",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 5000,
+    "max_cikti_bayt": 65536
+   },
+   "beklenen": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 5000,
+    "max_cikti_bayt": 65536
+   }
+  },
+  {
+   "id": "f-03",
+   "aciklama": "ağ 0 (bool değil)",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": 0,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  },
+  {
+   "id": "f-04",
+   "aciklama": "sistem kökü /",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  },
+  {
+   "id": "f-05",
+   "aciklama": "kökten kaçan /sandbox/../etc",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox/../etc",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  },
+  {
+   "id": "f-06",
+   "aciklama": "root kullanıcısı",
+   "profil": {
+    "kullanici": "root",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  },
+  {
+   "id": "f-07",
+   "aciklama": "izin listesinde bash",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "bash"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  },
+  {
+   "id": "f-08",
+   "aciklama": "süre 10 saniye",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 10000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  },
+  {
+   "id": "f-09",
+   "aciklama": "sonda eğik çizgi",
+   "profil": {
+    "kullanici": "sandbox",
+    "ag": false,
+    "kok": "/sandbox/",
+    "izinli_programlar": [
+     "python",
+     "hesap"
+    ],
+    "max_sure_ms": 2000,
+    "max_cikti_bayt": 8192
+   },
+   "beklenen": null
+  }
+ ]
+}

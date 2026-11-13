@@ -1,0 +1,136 @@
+{
+ "aciklama": "Sentetik, elle yazılmış skorlar. Gerçek model çıktısı değildir.",
+ "metrik": {
+  "etiketler": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "skorlar": [
+   0.97,
+   0.81,
+   0.5,
+   0.12,
+   0.5,
+   0.33,
+   0.08,
+   0.02,
+   0.64,
+   0.01
+  ],
+  "esik": 0.5
+ },
+ "esik": {
+  "etiketler": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "skorlar": [
+   0.9,
+   0.8,
+   0.3,
+   0.85,
+   0.4,
+   0.2,
+   0.1,
+   0.1,
+   0.05,
+   0.0,
+   0.3
+  ],
+  "fpr_siniri": 0.125
+ },
+ "bozulma": {
+  "esik": 0.5,
+  "kayitlar": [
+   {
+    "id": "m1",
+    "kip": "orijinal",
+    "etiket": 1,
+    "skor": 0.93
+   },
+   {
+    "id": "m2",
+    "kip": "orijinal",
+    "etiket": 1,
+    "skor": 0.71
+   },
+   {
+    "id": "m3",
+    "kip": "orijinal",
+    "etiket": 0,
+    "skor": 0.04
+   },
+   {
+    "id": "m4",
+    "kip": "orijinal",
+    "etiket": 0,
+    "skor": 0.11
+   },
+   {
+    "id": "m1",
+    "kip": "leet",
+    "etiket": 1,
+    "skor": 0.98
+   },
+   {
+    "id": "m2",
+    "kip": "leet",
+    "etiket": 1,
+    "skor": 0.97
+   },
+   {
+    "id": "m3",
+    "kip": "leet",
+    "etiket": 0,
+    "skor": 0.95
+   },
+   {
+    "id": "m4",
+    "kip": "leet",
+    "etiket": 0,
+    "skor": 0.62
+   },
+   {
+    "id": "m1",
+    "kip": "harf_bosluklu",
+    "etiket": 1,
+    "skor": 0.31
+   },
+   {
+    "id": "m2",
+    "kip": "harf_bosluklu",
+    "etiket": 1,
+    "skor": 0.66
+   },
+   {
+    "id": "m3",
+    "kip": "harf_bosluklu",
+    "etiket": 0,
+    "skor": 0.07
+   },
+   {
+    "id": "m4",
+    "kip": "harf_bosluklu",
+    "etiket": 0,
+    "skor": 0.09
+   }
+  ]
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "aciklama": "Sentetik üyelik çıkarımı verisi. Kayıplar ve üretimler elle yazılmıştır; gerçek model çıktısı ya da gerçek kişi verisi değildir.",
+ "kayiplar": [
+  {
+   "id": "uye-a",
+   "uye": true,
+   "kayip_hedef": 0.4,
+   "kayip_ref": 5.1
+  },
+  {
+   "id": "uye-b-zor",
+   "uye": true,
+   "kayip_hedef": 2.6,
+   "kayip_ref": 7.9
+  },
+  {
+   "id": "uye-c",
+   "uye": true,
+   "kayip_hedef": 1.0,
+   "kayip_ref": 4.8
+  },
+  {
+   "id": "degil-yaygin",
+   "uye": false,
+   "kayip_hedef": 1.1,
+   "kayip_ref": 1.2
+  },
+  {
+   "id": "degil-x",
+   "uye": false,
+   "kayip_hedef": 4.6,
+   "kayip_ref": 5.0
+  },
+  {
+   "id": "degil-y",
+   "uye": false,
+   "kayip_hedef": 5.1,
+   "kayip_ref": 5.3
+  }
+ ],
+ "fpr_siniri": 0.25,
+ "auc_girdileri": {
+  "ham_skor": [
+   {
+    "id": "degil-x",
+    "uye": false,
+    "skor": -4.6
+   },
+   {
+    "id": "degil-y",
+    "uye": false,
+    "skor": -5.1
+   },
+   {
+    "id": "degil-yaygin",
+    "uye": false,
+    "skor": -1.1
+   },
+   {
+    "id": "uye-a",
+    "uye": true,
+    "skor": -0.4
+   },
+   {
+    "id": "uye-b-zor",
+    "uye": true,
+    "skor": -2.6
+   },
+   {
+    "id": "uye-c",
+    "uye": true,
+    "skor": -1.0
+   }
+  ],
+  "kalibre_skor": [
+   {
+    "id": "degil-x",
+    "uye": false,
+    "skor": 0.40000000000000036
+   },
+   {
+    "id": "degil-y",
+    "uye": false,
+    "skor": 0.20000000000000018
+   },
+   {
+    "id": "degil-yaygin",
+    "uye": false,
+    "skor": 0.09999999999999987
+   },
+   {
+    "id": "uye-a",
+    "uye": true,
+    "skor": 4.699999999999999
+   },
+   {
+    "id": "uye-b-zor",
+    "uye": true,
+    "skor": 5.300000000000001
+   },
+   {
+    "id": "uye-c",
+    "uye": true,
+    "skor": 3.8
+   }
+  ]
+ },
+ "beklenen_auc": {
+  "ham_skor": {
+   "auc": 0.8888888888888888,
+   "tpr_dusuk_fpr": 0.6666666666666666,
+   "esik": -1.0,
+   "uye": 3,
+   "uye_degil": 3
+  },
+  "kalibre_skor": {
+   "auc": 1.0,
+   "tpr_dusuk_fpr": 1.0,
+   "esik": 3.8,
+   "uye": 3,
+   "uye_degil": 3
+  }
+ },
+ "esitlik_ornegi": [
+  {
+   "id": "u1",
+   "uye": true,
+   "skor": 3
+  },
+  {
+   "id": "u2",
+   "uye": true,
+   "skor": 2
+  },
+  {
+   "id": "u3",
+   "uye": true,
+   "skor": 2
+  },
+  {
+   "id": "d1",
+   "uye": false,
+   "skor": 2
+  },
+  {
+   "id": "d2",
+   "uye": false,
+   "skor": 1
+  }
+ ],
+ "denemeler": [
+  {
+   "id": "uye-tam",
+   "uye": true,
+   "sir": "7F2A-91C4",
+   "uretim": " 7F2A-91C4. İyi günler"
+  },
+  {
+   "id": "uye-kismi",
+   "uye": true,
+   "sir": "B3D0-4E17",
+   "uretim": " B3D0-4A. "
+  },
+  {
+   "id": "uye-yok",
+   "uye": true,
+   "sir": "C8E1-0F5B",
+   "uretim": " C81-99. Kayıt"
+  },
+  {
+   "id": "degil-capraz",
+   "uye": false,
+   "sir": "2D6F-A830",
+   "uretim": " 7F2A-91C4. İyi günler"
+  },
+  {
+   "id": "degil-yok",
+   "uye": false,
+   "sir": "E590-17BD",
+   "uretim": " 4410-22. Kayıt"
+  },
+  {
+   "id": "degil-alinti",
+   "uye": false,
+   "sir": "9A0C-3B72",
+   "uretim": " PIN kodunu paylaşamam."
+  }
+ ],
+ "beklenen_cikarim": {
+  "gruplar": {
+   "uye": {
+    "tam": 1,
+    "kismi": 1,
+    "yok": 1,
+    "adet": 3
+   },
+   "uye_degil": {
+    "tam": 0,
+    "kismi": 0,
+    "yok": 3,
+    "adet": 3
+   }
+  },
+  "tam_idler": [
+   "uye-tam"
+  ],
+  "capraz_idler": [
+   "degil-capraz"
+  ]
+ }
+}

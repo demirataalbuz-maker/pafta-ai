@@ -1,0 +1,58 @@
+{
+  "kaynak": "elle yazılmış sentetik toplu ölçümler; canlı model çıktısı değil",
+  "kayitlar": [
+    {
+      "id": "a",
+      "kosul": "temiz",
+      "hedef": 10,
+      "toplam": 100
+    },
+    {
+      "id": "a",
+      "kosul": "tetikli",
+      "hedef": 90,
+      "toplam": 100
+    },
+    {
+      "id": "b",
+      "kosul": "temiz",
+      "hedef": 40,
+      "toplam": 100
+    },
+    {
+      "id": "b",
+      "kosul": "tetikli",
+      "hedef": 40,
+      "toplam": 100
+    },
+    {
+      "id": "c",
+      "kosul": "temiz",
+      "hedef": 80,
+      "toplam": 100
+    },
+    {
+      "id": "c",
+      "kosul": "tetikli",
+      "hedef": 60,
+      "toplam": 100
+    },
+    {
+      "id": "d",
+      "kosul": "temiz",
+      "hedef": 5,
+      "toplam": 100
+    },
+    {
+      "id": "d",
+      "kosul": "tetikli",
+      "hedef": 80,
+      "toplam": 100
+    }
+  ],
+  "esikler": {
+    "min_fark": 0.5,
+    "max_temiz": 0.1,
+    "min_tetikli": 0.8
+  }
+}

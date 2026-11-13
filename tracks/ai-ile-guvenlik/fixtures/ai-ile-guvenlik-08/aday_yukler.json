@@ -1,0 +1,22 @@
+[
+  {
+    "yuk_id": "f1",
+    "json_metni": "{\"komut\": \"listele\", \"limit\": 10}"
+  },
+  {
+    "yuk_id": "f2",
+    "json_metni": "{\"komut\": \"listele\", \"limit\": -1}"
+  },
+  {
+    "yuk_id": "f3",
+    "json_metni": "{\"komut\": \"listele\", \"limit\": 50000}"
+  },
+  {
+    "yuk_id": "f4",
+    "json_metni": "{bozuk json"
+  },
+  {
+    "yuk_id": "f5",
+    "json_metni": "{\"komut\": \"sil\", \"limit\": 10}"
+  }
+]

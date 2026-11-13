@@ -1,0 +1,11 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Temsilî bir destek botu için elle yazılmış detector politikası. garak'taki substring (StringDetector) mantığının sadeleştirilmiş JSON karşılığıdır; gerçek bir garak yapılandırma dosyası değildir.",
+  "politika": {"id": "destek-botu", "yasakli": ["gizli anahtar", "parola", "bearer"], "zorunlu": ["kaynak"], "hata_esigi": 0.25},
+  "bozuk_politikalar": [
+    {"id": "buyuk-harf", "yasakli": ["PAROLA"], "zorunlu": [], "hata_esigi": 0.25},
+    {"id": "kesisim", "yasakli": ["parola"], "zorunlu": ["parola"], "hata_esigi": 0.25},
+    {"id": "esik-disi", "yasakli": ["parola"], "zorunlu": [], "hata_esigi": 1.5},
+    {"id": "bos-yasakli", "yasakli": [], "zorunlu": ["kaynak"], "hata_esigi": 0.25}
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "ai-ile-guvenlik",
+  "name": "AI ile Güvenlik: Zafiyet Avı, Triyaj ve Otonom Savunma",
+  "status": "active",
+  "group": "ai",
+  "order": 34,
+  "runner": "python",
+  "dil": "python",
+  "role": "Yerel dil modellerini, gömme (embedding) modellerini ve kural motorlarını siber güvenlik iş akışlarında (statik kod denetimi, keşif/fuzzing otomasyonu, log/alarm triyajı ve kapsam kilitli güvenlik ajanı geliştirme) doğrulanabilir birer mühendislik aracı olarak kullanmak.",
+  "tagline": "Halüsinasyonu ölçülen LLM'den kapsam kilitli güvenlik ajanına; Purple ve Web laboratuvarlarıyla konuşan yerel AI güvenlik mühendisliği.",
+  "kahraman": [
+    "Alarmdan",
+    "Kanıt",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Yerel LLM'i Güvenlik Aracı Olarak Kullanmak",
+      "rank": "minik",
+      "zen": "Doğrulanmamış model çıktısı bulgu değil, yalnız sınanacak bir hipotezdir.",
+      "lessons": [
+        "ai-ile-guvenlik-01",
+        "ai-ile-guvenlik-02",
+        "ai-ile-guvenlik-03"
+      ]
+    },
+    {
+      "title": "Kod Okuma ve Zafiyet Avında LLM",
+      "rank": "tesviye",
+      "zen": "Statik analiz aday üretir, model bağlamı okur, yürütücü kanıtlar.",
+      "lessons": [
+        "ai-ile-guvenlik-04",
+        "ai-ile-guvenlik-05",
+        "ai-ile-guvenlik-06"
+      ]
+    },
+    {
+      "title": "Keşif ve Fuzzing Otomasyonu",
+      "rank": "kucuk-orta",
+      "zen": "Akıllı yük üretimi kapsam kilidi olmadan çalıştırılmaz.",
+      "lessons": [
+        "ai-ile-guvenlik-07",
+        "ai-ile-guvenlik-08",
+        "ai-ile-guvenlik-09"
+      ]
+    },
+    {
+      "title": "Log, Telemetri ve Alarm Triyajı",
+      "rank": "buyuk-orta",
+      "zen": "Özet hız kazandırır; ham log satırı ise tek gerçektir.",
+      "lessons": [
+        "ai-ile-guvenlik-10",
+        "ai-ile-guvenlik-11",
+        "ai-ile-guvenlik-12",
+        "ai-ile-guvenlik-19"
+      ]
+    },
+    {
+      "title": "Kendi Güvenlik Ajanını Yazmak",
+      "rank": "basalti",
+      "zen": "En güçlü ajan, yetkisinin nerede bittiğini kod düzeyinde bilen ajandır.",
+      "lessons": [
+        "ai-ile-guvenlik-13",
+        "ai-ile-guvenlik-14",
+        "ai-ile-guvenlik-15"
+      ]
+    },
+    {
+      "title": "Güvenlik Ajanını Değerlendirmek ve Güvence",
+      "rank": "baspehlivan",
+      "zen": "Ölçülmeyen otomasyon, hataları insan hızından makine hızına çıkarır.",
+      "lessons": [
+        "ai-ile-guvenlik-16",
+        "ai-ile-guvenlik-17",
+        "ai-ile-guvenlik-18",
+        "ai-ile-guvenlik-20"
+      ]
+    },
+    {
+      "title": "Kanıta Dayalı Analiz ve Araştırma İş Akışları",
+      "rank": "baspehlivan",
+      "lessons": [
+        "ai-ile-guvenlik-21",
+        "ai-ile-guvenlik-22",
+        "ai-ile-guvenlik-23",
+        "ai-ile-guvenlik-24",
+        "ai-ile-guvenlik-25"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "dom_raporu": {
+    "form_sayisi": 2,
+    "dis_form_idleri": ["sizinti-formu"],
+    "tehlikeli_baglanti_idleri": ["js-tuzak"],
+    "gizli_girdi_adlari": ["oturum_anahtari"]
+  }
+}

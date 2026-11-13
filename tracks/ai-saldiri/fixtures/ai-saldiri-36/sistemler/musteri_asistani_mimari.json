@@ -1,0 +1,36 @@
+{
+  "sistem_id": "SIS-MUSTERI-01",
+  "veri_kokeni": "sentetik_fikstur",
+  "model": {
+    "ad": "qwen3:4b-instruct",
+    "erisim": "yerel"
+  },
+  "sistem_istemi": {
+    "gizli_talimat_var": true,
+    "rol_siniri": "yalnız sipariş ve iade politikası"
+  },
+  "rag": {
+    "aktif": true,
+    "dis_kaynak_acik": true
+  },
+  "araclar": [
+    {
+      "ad": "siparis_sorgula",
+      "yetki": "okuma",
+      "onay_gerekli": false
+    },
+    {
+      "ad": "iade_olustur",
+      "yetki": "yazma",
+      "onay_gerekli": false
+    }
+  ],
+  "bellek": {
+    "kalici": true,
+    "oturumlar_arasi_paylasim": true
+  },
+  "cikti_tuketici": {
+    "tur": "html-render",
+    "dogrudan_calistirma": true
+  }
+}

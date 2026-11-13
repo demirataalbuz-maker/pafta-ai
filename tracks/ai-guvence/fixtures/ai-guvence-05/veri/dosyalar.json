@@ -1,0 +1,4 @@
+[
+  {"yol": "model_agirlik.json", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "boyut": 128},
+  {"yol": "cikti/metrik.json", "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "boyut": 64}
+]

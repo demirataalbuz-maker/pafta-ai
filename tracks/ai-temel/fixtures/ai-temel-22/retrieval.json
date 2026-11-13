@@ -1,0 +1,67 @@
+{
+  "kaynak": "sentetik",
+  "olcutler": {
+    "siralamalar": {
+      "q1": [
+        "rehber#0",
+        "rehber#1",
+        "politika#0",
+        "sss#0"
+      ]
+    },
+    "ilgililer": {
+      "q1": {
+        "rehber": 3,
+        "sss": 1
+      }
+    },
+    "k": 2
+  },
+  "rrf": {
+    "siralamalar": [
+      [
+        "kopya",
+        "rehber",
+        "sss"
+      ],
+      [
+        "rehber",
+        "politika",
+        "sss"
+      ]
+    ],
+    "n": 3
+  },
+  "mmr": {
+    "adaylar": {
+      "rehber": 95,
+      "kopya": 94,
+      "politika": 80,
+      "sss": 70
+    },
+    "benzerlik": {
+      "rehber": {
+        "kopya": 98,
+        "politika": 30,
+        "sss": 20
+      },
+      "kopya": {
+        "rehber": 98,
+        "politika": 30,
+        "sss": 25
+      },
+      "politika": {
+        "rehber": 30,
+        "kopya": 30,
+        "sss": 40
+      },
+      "sss": {
+        "rehber": 20,
+        "kopya": 25,
+        "politika": 40
+      }
+    },
+    "adet": 4,
+    "lam": 70
+  }
+}

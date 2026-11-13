@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a",
+    "kaynak": "resmi",
+    "indirme": "https",
+    "bagimlilik": "sabit",
+    "bicim": "safetensors",
+    "yalitim": true
+  },
+  {
+    "id": "b",
+    "kaynak": "bilinmeyen",
+    "indirme": "yerel",
+    "bagimlilik": "degisken",
+    "bicim": "gguf",
+    "yalitim": false
+  },
+  {
+    "id": "c",
+    "kaynak": "topluluk",
+    "indirme": "http",
+    "bagimlilik": "degisken",
+    "bicim": "pickle",
+    "yalitim": false
+  }
+]

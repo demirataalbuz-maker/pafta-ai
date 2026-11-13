@@ -1,0 +1,11 @@
+{
+ "aciklama": "Sentetik kayıtlar. gercek_zehirli: deney kurulurken etiketi bilerek çevrilen kayıt; ayiklandi: yöntemin bu kaydı veri kümesinden çıkarma kararı.",
+ "kayitlar": [
+  {"id": "r-07", "gercek_zehirli": true, "ayiklandi": true},
+  {"id": "r-02", "gercek_zehirli": false, "ayiklandi": true},
+  {"id": "r-05", "gercek_zehirli": false, "ayiklandi": false},
+  {"id": "r-01", "gercek_zehirli": true, "ayiklandi": false},
+  {"id": "r-04", "gercek_zehirli": false, "ayiklandi": false},
+  {"id": "r-03", "gercek_zehirli": true, "ayiklandi": true}
+ ]
+}

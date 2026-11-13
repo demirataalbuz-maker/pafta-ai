@@ -1,0 +1,155 @@
+{
+ "aciklama": "Politika kararı ile dispatcher'ın gerçekten çalıştırdığı eylemi ayrı tutan sentetik regresyon kayıtları.",
+ "kayitlar": [
+  {
+   "vaka_id": "r-admin-adi",
+   "beklenen": "reddet",
+   "karar": "izinli",
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-idor-oku",
+   "beklenen": "reddet",
+   "karar": "reddet",
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-sahip-yaz",
+   "beklenen": "izinli",
+   "karar": "izinli",
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-onayli-sil",
+   "beklenen": "izinli",
+   "karar": "reddet",
+   "calistirildi": false
+  },
+  {
+   "vaka_id": "r-yabanci-sil",
+   "beklenen": "reddet",
+   "karar": "reddet",
+   "calistirildi": false
+  },
+  {
+   "vaka_id": "r-paylasim-oku",
+   "beklenen": "izinli",
+   "karar": "izinli",
+   "calistirildi": false
+  },
+  {
+   "vaka_id": "r-baska-onay",
+   "beklenen": "reddet",
+   "karar": "izinli",
+   "calistirildi": false
+  },
+  {
+   "vaka_id": "r-hepsini-reddet",
+   "beklenen": "izinli",
+   "karar": "reddet",
+   "calistirildi": true
+  }
+ ],
+ "beklenen": {
+  "vaka": 8,
+  "karar_bypassi": [
+   "r-admin-adi",
+   "r-baska-onay"
+  ],
+  "calisma_bypassi": [
+   "r-admin-adi",
+   "r-idor-oku"
+  ],
+  "yanlis_ret": [
+   "r-hepsini-reddet",
+   "r-onayli-sil"
+  ],
+  "tutarli": [
+   "r-sahip-yaz",
+   "r-yabanci-sil"
+  ]
+ },
+ "bozuk_girdiler": [
+  [
+   {
+    "vaka_id": "r-admin-adi",
+    "beklenen": "reddet",
+    "karar": "izinli",
+    "calistirildi": true
+   },
+   {
+    "vaka_id": "r-idor-oku",
+    "beklenen": "reddet",
+    "karar": "reddet",
+    "calistirildi": true
+   },
+   {
+    "vaka_id": "r-sahip-yaz",
+    "beklenen": "izinli",
+    "karar": "izinli",
+    "calistirildi": true
+   },
+   {
+    "vaka_id": "r-onayli-sil",
+    "beklenen": "izinli",
+    "karar": "reddet",
+    "calistirildi": false
+   },
+   {
+    "vaka_id": "r-yabanci-sil",
+    "beklenen": "reddet",
+    "karar": "reddet",
+    "calistirildi": false
+   },
+   {
+    "vaka_id": "r-paylasim-oku",
+    "beklenen": "izinli",
+    "karar": "izinli",
+    "calistirildi": false
+   },
+   {
+    "vaka_id": "r-baska-onay",
+    "beklenen": "reddet",
+    "karar": "izinli",
+    "calistirildi": false
+   },
+   {
+    "vaka_id": "r-hepsini-reddet",
+    "beklenen": "izinli",
+    "karar": "reddet",
+    "calistirildi": true
+   },
+   {
+    "vaka_id": "r-admin-adi",
+    "beklenen": "reddet",
+    "karar": "izinli",
+    "calistirildi": true
+   }
+  ],
+  [
+   {
+    "vaka_id": "r-admin-adi",
+    "beklenen": "reddet",
+    "karar": "belki",
+    "calistirildi": true
+   }
+  ],
+  [
+   {
+    "vaka_id": "r-admin-adi",
+    "beklenen": "reddet",
+    "karar": "izinli",
+    "calistirildi": "evet"
+   }
+  ],
+  [
+   {
+    "vaka_id": "r-admin-adi",
+    "beklenen": "reddet",
+    "karar": "izinli",
+    "calistirildi": true,
+    "kullanici": "admin"
+   }
+  ]
+ ]
+}

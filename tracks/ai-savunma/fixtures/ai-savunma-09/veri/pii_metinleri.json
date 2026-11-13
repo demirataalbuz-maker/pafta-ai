@@ -1,0 +1,115 @@
+{
+ "aciklama": "Model yanıtına benzeyen sentetik metinler. E-postalar .test/örnek alanlarda, IP'ler dokümantasyon aralığında, kartlar bilinen test numaralarıdır. beklenen varlık listesidir; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "p-01",
+   "aciklama": "destek kaydı: dört tür birden",
+   "metin": "Müşteri ornek@example.test, IP 192.0.2.10, kart 4111 1111 1111 1111, tel +90 555 123 45 67",
+   "beklenen": [
+    {
+     "tur": "eposta",
+     "baslangic": 8,
+     "bitis": 26
+    },
+    {
+     "tur": "ipv4",
+     "baslangic": 31,
+     "bitis": 41
+    },
+    {
+     "tur": "kart",
+     "baslangic": 48,
+     "bitis": 67
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 73,
+     "bitis": 90
+    }
+   ]
+  },
+  {
+   "id": "p-02",
+   "aciklama": "PII yok",
+   "metin": "Sipariş 42 yarın teslim edilecek.",
+   "beklenen": []
+  },
+  {
+   "id": "p-03",
+   "aciklama": "aralık dışı IP parçası",
+   "metin": "Sunucu 256.10.0.1 yanıt vermedi.",
+   "beklenen": []
+  },
+  {
+   "id": "p-04",
+   "aciklama": "beş parçalı sürüm numarası IP değildir",
+   "metin": "Sürüm 1.2.3.4.5 yüklendi.",
+   "beklenen": []
+  },
+  {
+   "id": "p-05",
+   "aciklama": "Luhn'u geçmeyen 16 hane kart değildir",
+   "metin": "Sipariş no 4111 1111 1111 1112",
+   "beklenen": []
+  },
+  {
+   "id": "p-06",
+   "aciklama": "tireli test kartı",
+   "metin": "Kart: 5555-5555-5555-4444",
+   "beklenen": [
+    {
+     "tur": "kart",
+     "baslangic": 6,
+     "bitis": 25
+    }
+   ]
+  },
+  {
+   "id": "p-07",
+   "aciklama": "13 haneli test kartı",
+   "metin": "Eski kart 4222222222222 iptal.",
+   "beklenen": [
+    {
+     "tur": "kart",
+     "baslangic": 10,
+     "bitis": 23
+    }
+   ]
+  },
+  {
+   "id": "p-08",
+   "aciklama": "biçimi farklı telefon tanınmaz",
+   "metin": "Ara: +90 5551234567",
+   "beklenen": []
+  },
+  {
+   "id": "p-09",
+   "aciklama": "alan adı uzantısız e-posta tanınmaz",
+   "metin": "Yaz: admin@localhost",
+   "beklenen": []
+  },
+  {
+   "id": "p-10",
+   "aciklama": "iki e-posta yan yana",
+   "metin": "a@b.co,c@d.io",
+   "beklenen": [
+    {
+     "tur": "eposta",
+     "baslangic": 0,
+     "bitis": 6
+    },
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 13
+    }
+   ]
+  },
+  {
+   "id": "p-11",
+   "aciklama": "NUL karakteri",
+   "metin": "ornek\u0000@example.test",
+   "beklenen": null
+  }
+ ]
+}

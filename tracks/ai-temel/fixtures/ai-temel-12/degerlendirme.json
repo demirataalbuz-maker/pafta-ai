@@ -1,0 +1,42 @@
+{
+  "kaynak": "sentetik",
+  "kayitlar": [
+    {
+      "id": "kritik-belge",
+      "temel": true,
+      "yeni": false
+    },
+    {
+      "id": "normal-not",
+      "temel": false,
+      "yeni": true
+    },
+    {
+      "id": "sabit-guvenli",
+      "temel": true,
+      "yeni": true
+    },
+    {
+      "id": "sabit-guvensiz",
+      "temel": false,
+      "yeni": false
+    }
+  ],
+  "metrikler": [
+    {
+      "dogruluk": 0.8,
+      "guvenlik": 0.95,
+      "regresyon": 0
+    },
+    {
+      "dogruluk": 0.9,
+      "guvenlik": 1.0,
+      "regresyon": 1
+    },
+    {
+      "dogruluk": 0.9,
+      "guvenlik": 0.94,
+      "regresyon": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Savunma01 görünür güven sınırları verisi
+
+veri/mimari.json elle hazırlanmış sentetik bileşen, bağlantı ve kontrol kayıtlarıdır; canlı servis kaydı veya gerçek ağ trafiği değildir. İlk 3 görev bu dosyayı okur: Görev 1 bilesenler listesini güven bölgelerine eşler. Görev 2 baglantilar listesindeki sınır geçişlerini çıkarır. Görev 3 kontroller listesiyle sınır geçişlerinin kontrol kapsamını hesaplar. Setup veri/mimari.json geçici kopyasını hazırlar; kalıcılık yoktur. Kaynağı harici editörde aç veya kodda yüklenen kopyayı değiştirip Run dene. Gizli testler ayrıdır. Gerçek deney adımı Ollama yerel modelini çağırarak canlı ajan etkileşiminden akışları çıkarır; yeni model indirilmez.

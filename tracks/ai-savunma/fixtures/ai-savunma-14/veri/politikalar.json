@@ -1,0 +1,168 @@
+{
+ "aciklama": "Squid/egress proxy izin listelerinin sentetik JSON karşılığı. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "e-01",
+   "aciklama": "iki alan, yalnız 443, bir yönlendirme",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   }
+  },
+  {
+   "id": "e-02",
+   "aciklama": "8443 ve yönlendirme 0",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443,
+     8443
+    ],
+    "max_yonlendirme": 0
+   },
+   "beklenen": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443,
+     8443
+    ],
+    "max_yonlendirme": 0
+   }
+  },
+  {
+   "id": "e-03",
+   "aciklama": "varsayılan izin",
+   "politika": {
+    "varsayilan": "izin",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": null
+  },
+  {
+   "id": "e-04",
+   "aciklama": "IP literal alan",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "169.254.169.254"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": null
+  },
+  {
+   "id": "e-05",
+   "aciklama": "büyük harfli alan",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "Api.Ornek.Com"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": null
+  },
+  {
+   "id": "e-06",
+   "aciklama": "joker *.ornek.com",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "*.ornek.com"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": null
+  },
+  {
+   "id": "e-07",
+   "aciklama": "port 80",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443,
+     80
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": null
+  },
+  {
+   "id": "e-08",
+   "aciklama": "yönlendirme 10",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com",
+     "cdn.ornek.com"
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 10
+   },
+   "beklenen": null
+  },
+  {
+   "id": "e-09",
+   "aciklama": "sondaki nokta",
+   "politika": {
+    "varsayilan": "reddet",
+    "alan_adlari": [
+     "api.ornek.com."
+    ],
+    "portlar": [
+     443
+    ],
+    "max_yonlendirme": 1
+   },
+   "beklenen": null
+  }
+ ]
+}

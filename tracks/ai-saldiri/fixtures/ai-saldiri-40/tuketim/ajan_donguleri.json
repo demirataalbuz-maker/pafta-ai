@@ -1,0 +1,26 @@
+[
+  {
+    "iz_id": "ajan-01",
+    "adimlar": [
+      {"arac": "belge_ara", "arg_ozeti": "q=fatura", "giris_token": 300, "cikis_token": 50},
+      {"arac": "belge_oku", "arg_ozeti": "id=10", "giris_token": 450, "cikis_token": 80}
+    ]
+  },
+  {
+    "iz_id": "ajan-02",
+    "adimlar": [
+      {"arac": "belge_ara", "arg_ozeti": "q=ozet", "giris_token": 300, "cikis_token": 60},
+      {"arac": "belge_oku", "arg_ozeti": "id=sonsuz-ref", "giris_token": 500, "cikis_token": 90},
+      {"arac": "belge_oku", "arg_ozeti": "id=sonsuz-ref", "giris_token": 750, "cikis_token": 90},
+      {"arac": "belge_oku", "arg_ozeti": "id=sonsuz-ref", "giris_token": 1000, "cikis_token": 90}
+    ]
+  },
+  {
+    "iz_id": "ajan-03",
+    "adimlar": [
+      {"arac": "api_sorgu", "arg_ozeti": "sayfa=1", "giris_token": 250, "cikis_token": 40},
+      {"arac": "api_sorgu", "arg_ozeti": "sayfa=1", "giris_token": 350, "cikis_token": 40},
+      {"arac": "not_kaydet", "arg_ozeti": "ad=sonuc", "giris_token": 420, "cikis_token": 50}
+    ]
+  }
+]

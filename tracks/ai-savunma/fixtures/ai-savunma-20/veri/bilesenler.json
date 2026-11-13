@@ -1,0 +1,129 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Elle yazılmış SBOM/tarama özeti. Özetler örnek dosya adlarının SHA-256 değeridir; gerçek dosya, gerçek imza veya gerçek CVE taraması değildir.",
+  "kabul_kayitlari": [
+    {
+      "id": "ozet-modeli",
+      "tur": "model",
+      "kaynak": "resmi",
+      "boyut_mb": 1000,
+      "imzali": true,
+      "sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd7"
+    },
+    {
+      "id": "yardimci-paket",
+      "tur": "paket",
+      "kaynak": "kurumsal",
+      "boyut_mb": 2,
+      "imzali": true,
+      "sha256": "3f0cd76dd270d9c7af534f024eca4f03085bf804cc0412aa23abeaf4a3bc55ba"
+    },
+    {
+      "id": "api-imaji",
+      "tur": "imaj",
+      "kaynak": "kurumsal",
+      "boyut_mb": 180,
+      "imzali": true,
+      "sha256": "dcddebfdf8fa9eb69e76047c04f2cadba50b151d7c7747caff5df5e7a090d85c"
+    },
+    {
+      "id": "topluluk-ince-ayar",
+      "tur": "model",
+      "kaynak": "yerel",
+      "boyut_mb": 4200,
+      "imzali": false,
+      "sha256": "e05c3f448d980ec384186e907e9da3d995dfb811193dba32872cc3ba767d3cc9"
+    },
+    {
+      "id": "tokenizer",
+      "tur": "paket",
+      "kaynak": "resmi",
+      "boyut_mb": 1,
+      "imzali": false,
+      "sha256": "3a9ceee3b905f38c61339cf301bc253c79fbf95db0d2918169ece7542134efda"
+    }
+  ],
+  "surum_kayitlari": [
+    {
+      "id": "ozet-modeli",
+      "tur": "model",
+      "kaynak": "resmi",
+      "boyut_mb": 1000,
+      "imzali": true,
+      "beklenen_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd7",
+      "gercek_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd7",
+      "riskler": [
+        "dusuk"
+      ]
+    },
+    {
+      "id": "ozet-modeli-ayna",
+      "tur": "model",
+      "kaynak": "resmi",
+      "boyut_mb": 1000,
+      "imzali": true,
+      "beklenen_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd7",
+      "gercek_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd0",
+      "riskler": []
+    },
+    {
+      "id": "yardimci-paket",
+      "tur": "paket",
+      "kaynak": "kurumsal",
+      "boyut_mb": 2,
+      "imzali": true,
+      "beklenen_sha256": "3f0cd76dd270d9c7af534f024eca4f03085bf804cc0412aa23abeaf4a3bc55ba",
+      "gercek_sha256": "3f0cd76dd270d9c7af534f024eca4f03085bf804cc0412aa23abeaf4a3bc55ba",
+      "riskler": [
+        "kritik",
+        "dusuk",
+        "orta"
+      ]
+    },
+    {
+      "id": "tokenizer",
+      "tur": "paket",
+      "kaynak": "resmi",
+      "boyut_mb": 1,
+      "imzali": false,
+      "beklenen_sha256": "3a9ceee3b905f38c61339cf301bc253c79fbf95db0d2918169ece7542134efda",
+      "gercek_sha256": "3a9ceee3b905f38c61339cf301bc253c79fbf95db0d2918169ece7542134efda",
+      "riskler": []
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "id": "buyuk-harf-ozet",
+      "tur": "model",
+      "kaynak": "resmi",
+      "boyut_mb": 10,
+      "imzali": true,
+      "beklenen_sha256": "1E621D441238E85F53016433677F2CE7C60F9CD92506F50B9DDF570EDB9B8FD7",
+      "gercek_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd7",
+      "riskler": []
+    },
+    {
+      "id": "kisa-ozet",
+      "tur": "model",
+      "kaynak": "resmi",
+      "boyut_mb": 10,
+      "imzali": true,
+      "beklenen_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd",
+      "gercek_sha256": "1e621d441238e85f53016433677f2ce7c60f9cd92506f50b9ddf570edb9b8fd7",
+      "riskler": []
+    },
+    {
+      "id": "yinelenen-risk",
+      "tur": "paket",
+      "kaynak": "resmi",
+      "boyut_mb": 1,
+      "imzali": true,
+      "beklenen_sha256": "3f0cd76dd270d9c7af534f024eca4f03085bf804cc0412aa23abeaf4a3bc55ba",
+      "gercek_sha256": "3f0cd76dd270d9c7af534f024eca4f03085bf804cc0412aa23abeaf4a3bc55ba",
+      "riskler": [
+        "orta",
+        "orta"
+      ]
+    }
+  ]
+}

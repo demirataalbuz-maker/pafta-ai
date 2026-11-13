@@ -1,0 +1,136 @@
+{
+ "aciklama": "Sentetik eylem/değer çiftleri. yazdir 1, kopyala 2 değer alır; -- sonrası yalnız veridir. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "p-01",
+   "aciklama": "--help veri olarak kalır",
+   "eylem": "yazdir",
+   "degerler": [
+    "--help"
+   ],
+   "beklenen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "--help"
+    ],
+    "ayristirici": "argv",
+    "shell": false
+   }
+  },
+  {
+   "id": "p-02",
+   "aciklama": "-v veri olarak kalır",
+   "eylem": "yazdir",
+   "degerler": [
+    "-v"
+   ],
+   "beklenen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "-v"
+    ],
+    "ayristirici": "argv",
+    "shell": false
+   }
+  },
+  {
+   "id": "p-03",
+   "aciklama": "tire ile başlayan dosya adları",
+   "eylem": "kopyala",
+   "degerler": [
+    "-kaynak rapor.txt",
+    "-kopya rapor.txt"
+   ],
+   "beklenen": {
+    "argv": [
+     "kopyala",
+     "--",
+     "-kaynak rapor.txt",
+     "-kopya rapor.txt"
+    ],
+    "ayristirici": "argv",
+    "shell": false
+   }
+  },
+  {
+   "id": "p-04",
+   "aciklama": "metakarakterli metin tek argüman",
+   "eylem": "yazdir",
+   "degerler": [
+    "Merhaba & PAFTA; iki kelime"
+   ],
+   "beklenen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "Merhaba & PAFTA; iki kelime"
+    ],
+    "ayristirici": "argv",
+    "shell": false
+   }
+  },
+  {
+   "id": "p-05",
+   "aciklama": "boş string geçerli değer",
+   "eylem": "yazdir",
+   "degerler": [
+    ""
+   ],
+   "beklenen": {
+    "argv": [
+     "yazdir",
+     "--",
+     ""
+    ],
+    "ayristirici": "argv",
+    "shell": false
+   }
+  },
+  {
+   "id": "p-06",
+   "aciklama": "yazdir için iki değer",
+   "eylem": "yazdir",
+   "degerler": [
+    "a",
+    "b"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "p-07",
+   "aciklama": "kopyala için tek değer",
+   "eylem": "kopyala",
+   "degerler": [
+    "a"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "p-08",
+   "aciklama": "desteklenmeyen sil eylemi",
+   "eylem": "sil",
+   "degerler": [
+    "x"
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "p-09",
+   "aciklama": "değerler liste değil",
+   "eylem": "yazdir",
+   "degerler": "metin",
+   "beklenen": null
+  },
+  {
+   "id": "p-10",
+   "aciklama": "değerde NUL",
+   "eylem": "yazdir",
+   "degerler": [
+    "a\u0000b"
+   ],
+   "beklenen": null
+  }
+ ]
+}

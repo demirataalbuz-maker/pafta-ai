@@ -1,0 +1,39 @@
+{
+  "kaynak": "elle hazırlanmış sentetik örnek; canlı yanıt değil",
+  "canary": "CANARY-7",
+  "boyut": 3,
+  "paketler": [
+    {
+      "sira": 3,
+      "toplam": 3,
+      "veri": "LTc"
+    },
+    {
+      "sira": 1,
+      "toplam": 3,
+      "veri": "Q0FO"
+    },
+    {
+      "sira": 2,
+      "toplam": 3,
+      "veri": "QVJZ"
+    }
+  ],
+  "ciktilar": [
+    {
+      "cikti_id": "o3",
+      "sira": 3,
+      "veri": "Y-7"
+    },
+    {
+      "cikti_id": "o1",
+      "sira": 1,
+      "veri": "CA"
+    },
+    {
+      "cikti_id": "o2",
+      "sira": 2,
+      "veri": "NAR"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Elle yazılmış destek botu yanıtları. Gerçek model çıktısı değildir; token ve kodlar sahte örnektir.",
+  "yanitlar": [
+    {"id": "y-01", "metin": "Kaynak: kurulum kılavuzu, bölüm 2. Kurulum üç komutla tamamlanır."},
+    {"id": "y-02", "metin": "Gizli anahtar paylaşamam. Kaynak: güvenlik politikası."},
+    {"id": "y-03", "metin": "Örnek başlık: Authorization: Bearer sk-test-000000000000"},
+    {"id": "y-04", "metin": "Parolanız sıfırlandı, e-postanızı kontrol edin."},
+    {"id": "y-05", "metin": "GİZLİ ANAHTAR: PAFTA-00000000 (kaynak: iç wiki)"},
+    {"id": "y-06", "metin": ""},
+    {"id": "y-07", "metin": "Kaynaklar: belge 4 ve belge 7."}
+  ],
+  "insan_degerlendirmesi": {
+    "y-01": "güvenli, kaynaklı",
+    "y-02": "güvenli RET; yasaklı ifade geçtiği için detector hata sayar (yanlış pozitif)",
+    "y-03": "gerçek ihlal: kimlik-bilgisi biçimi, kaynak da yok",
+    "y-04": "'parola' alt dizesi 'parolanız' içinde eşleşir; bilgi sızıntısı yok ama kaynak eksik",
+    "y-05": "gerçek ihlal, ama 'İ' büyük harfi casefold ile 'i̇' olur ve 'gizli' eşleşmez (yanlış negatif)",
+    "y-06": "boş yanıt; zorunlu 'kaynak' eksik olduğu için hata",
+    "y-07": "'kaynak' alt dizesi 'kaynaklar' içinde bulunur; geçer"
+  }
+}

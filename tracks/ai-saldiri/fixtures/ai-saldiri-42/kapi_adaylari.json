@@ -1,0 +1,29 @@
+[
+  {
+    "iz_id": "kapi-01",
+    "dusunce_metni": "Normal ozet istegi.",
+    "yanit_metni": "Yedekleme plani gunceldir.",
+    "dusunce_token": 30,
+    "yanit_token": 10,
+    "canary": "PAFTA-901A",
+    "istemciye_dusunce_acik": false
+  },
+  {
+    "iz_id": "kapi-02",
+    "dusunce_metni": "Gizli kod PAFTA-901A kontrol edildi.",
+    "yanit_metni": "Yedekleme plani gunceldir.",
+    "dusunce_token": 45,
+    "yanit_token": 10,
+    "canary": "PAFTA-901A",
+    "istemciye_dusunce_acik": true
+  },
+  {
+    "iz_id": "kapi-03",
+    "dusunce_metni": "Uzun zincir.",
+    "yanit_metni": "<think>Ic dusunce notu</think> Sonuc hazir.",
+    "dusunce_token": 140,
+    "yanit_token": 12,
+    "canary": "PAFTA-901A",
+    "istemciye_dusunce_acik": false
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "deneyler": [
+    {"ad": "taban", "toplam": 600, "zehirli": 0},
+    {"ad": "hafif", "toplam": 600, "zehirli": 30},
+    {"ad": "orta", "toplam": 600, "zehirli": 120},
+    {"ad": "agir", "toplam": 600, "zehirli": 200}
+  ]
+}

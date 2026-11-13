@@ -1,0 +1,49 @@
+{
+ "aciklama": "Sentetik tatbikat; guardrail fazı başarısız. Dört faz başarılı olsa da karar 'kaldi' olmalıdır.",
+ "kayitlar": [
+  {
+   "id": "p-s",
+   "faz": "saldir",
+   "basarili": true,
+   "kanit_ids": [],
+   "zaman": 0
+  },
+  {
+   "id": "p-g",
+   "faz": "guardrail",
+   "basarili": false,
+   "kanit_ids": [
+    "guard-9"
+   ],
+   "zaman": 3
+  },
+  {
+   "id": "p-t",
+   "faz": "telemetri",
+   "basarili": true,
+   "kanit_ids": [
+    "trace-9"
+   ],
+   "zaman": 4
+  },
+  {
+   "id": "p-m",
+   "faz": "mudahale",
+   "basarili": true,
+   "kanit_ids": [
+    "olay-9",
+    "manifest-9"
+   ],
+   "zaman": 7
+  },
+  {
+   "id": "p-r",
+   "faz": "regresyon",
+   "basarili": true,
+   "kanit_ids": [
+    "eval-9"
+   ],
+   "zaman": 11
+  }
+ ]
+}

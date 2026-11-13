@@ -1,0 +1,33 @@
+{
+ "aciklama": "Sentetik hakem çıktıları. Yalnız tam olarak {\"karar\": ETİKET} biçimindeki JSON geçerlidir.",
+ "ciktilar": [
+  {
+   "id": "h1",
+   "ham": "{\"karar\": \"basarili\"}"
+  },
+  {
+   "id": "h2",
+   "ham": "  {\"karar\":\"basarisiz\"}\n"
+  },
+  {
+   "id": "h3",
+   "ham": "```json\n{\"karar\": \"basarili\"}\n```"
+  },
+  {
+   "id": "h4",
+   "ham": "{\"karar\": \"basarisiz\", \"gerekce\": \"kod yok\"}"
+  },
+  {
+   "id": "h5",
+   "ham": "Karar: basarili"
+  },
+  {
+   "id": "h6",
+   "ham": "{\"karar\": \"belirsiz\"}"
+  },
+  {
+   "id": "h7",
+   "ham": "{\"karar\": \"BASARILI\"}"
+  }
+ ]
+}

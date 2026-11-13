@@ -1,0 +1,56 @@
+{
+ "aciklama": "Sentetik örnek: kayıp fonksiyonu x0^3+2*x0*x1, gradyan ve Taylor satırları elle yazılmıştır; gerçek model çıktısı değildir.",
+ "katsayilar": [
+  3,
+  2
+ ],
+ "nokta": [
+  2.0,
+  -1.0
+ ],
+ "dogru_gradyan": [
+  10.0,
+  4.0
+ ],
+ "yanlis_gradyan": [
+  10.5,
+  4.0
+ ],
+ "h": 0.001,
+ "tol": 0.0001,
+ "gradyan": [
+  3.0,
+  -4.0,
+  0.0,
+  1.0
+ ],
+ "eps": 0.1,
+ "taylor_satirlari": [
+  {
+   "eps": 0.05,
+   "tahmin": 0.25,
+   "gercek": 0.31
+  },
+  {
+   "eps": 0.1,
+   "tahmin": 0.5,
+   "gercek": 0.95
+  },
+  {
+   "eps": 0.02,
+   "tahmin": 0.1,
+   "gercek": 0.104
+  },
+  {
+   "eps": 0.01,
+   "tahmin": 0.05,
+   "gercek": 0.0502
+  },
+  {
+   "eps": 0.2,
+   "tahmin": 1.0,
+   "gercek": 1.02
+  }
+ ],
+ "tol_taylor": 0.1
+}

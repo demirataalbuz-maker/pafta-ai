@@ -1,0 +1,45 @@
+{
+  "kisitlar": {
+    "asgari_recall": 0.8,
+    "azami_token": 600,
+    "azami_ms": 1500
+  },
+  "kosular": [
+    {
+      "ayar_id": "ayar-hizli-kaba",
+      "tp": 6,
+      "fp": 1,
+      "tn": 9,
+      "fn": 4,
+      "ortalama_token": 220,
+      "ortalama_ms": 450
+    },
+    {
+      "ayar_id": "ayar-dengeli-v1",
+      "tp": 9,
+      "fp": 1,
+      "tn": 9,
+      "fn": 1,
+      "ortalama_token": 410,
+      "ortalama_ms": 820
+    },
+    {
+      "ayar_id": "ayar-dengeli-hantal",
+      "tp": 9,
+      "fp": 1,
+      "tn": 9,
+      "fn": 1,
+      "ortalama_token": 540,
+      "ortalama_ms": 1100
+    },
+    {
+      "ayar_id": "ayar-asiri-dusunen",
+      "tp": 10,
+      "fp": 0,
+      "tn": 10,
+      "fn": 0,
+      "ortalama_token": 950,
+      "ortalama_ms": 2400
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "aciklama": "Sentetik örnek: istemci gradyanları ve sahte gradyan vektörleri elle yazılmıştır; gerçek federe ağ çıktısı değildir.",
+ "dlg": {
+  "gercek_grad": [0.6, -0.8, 0.4, 0.2],
+  "sahte_grad_baslangic": [-0.3, 0.5, -0.1, 0.4],
+  "sahte_grad_kurtarilmis": [0.59, -0.79, 0.41, 0.19]
+ },
+ "federe": {
+  "istemci_gradyanlari": [
+   [0.10, -0.20, 0.30],
+   [0.12, -0.18, 0.28],
+   [0.09, -0.22, 0.31],
+   [0.11, -0.19, 0.29],
+   [-15.0, 20.0, -12.0]
+  ],
+  "bizans_sayisi": 1,
+  "kirpma_k": 1
+ }
+}

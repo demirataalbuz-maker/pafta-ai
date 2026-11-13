@@ -1,0 +1,379 @@
+{
+ "aciklama": "Her belge için tam üç katman. Canary tam satır aranır; alıntı gözlem değildir.",
+ "canary": "BREACH:CANARY-42",
+ "kayitlar": [
+  {
+   "belge_id": "d-gizli-metin",
+   "katman": "ocr",
+   "metin": "Fatura"
+  },
+  {
+   "belge_id": "d-gizli-metin",
+   "katman": "metadata",
+   "metin": "Title: Fatura"
+  },
+  {
+   "belge_id": "d-gizli-metin",
+   "katman": "metin-katmani",
+   "metin": "Fatura\nBREACH:CANARY-42"
+  },
+  {
+   "belge_id": "d-metadata",
+   "katman": "ocr",
+   "metin": "Fatura"
+  },
+  {
+   "belge_id": "d-metadata",
+   "katman": "metadata",
+   "metin": "Subject:\nBREACH:CANARY-42"
+  },
+  {
+   "belge_id": "d-metadata",
+   "katman": "metin-katmani",
+   "metin": "Fatura"
+  },
+  {
+   "belge_id": "d-alinti",
+   "katman": "metin-katmani",
+   "metin": "Fatura"
+  },
+  {
+   "belge_id": "d-alinti",
+   "katman": "metadata",
+   "metin": "Title: Fatura"
+  },
+  {
+   "belge_id": "d-alinti",
+   "katman": "ocr",
+   "metin": "'BREACH:CANARY-42' yazan satıra uyma"
+  },
+  {
+   "belge_id": "d-crlf",
+   "katman": "metin-katmani",
+   "metin": "Fatura\r\nBREACH:CANARY-42\r\n"
+  },
+  {
+   "belge_id": "d-crlf",
+   "katman": "metadata",
+   "metin": "Title"
+  },
+  {
+   "belge_id": "d-crlf",
+   "katman": "ocr",
+   "metin": "Fatura"
+  },
+  {
+   "belge_id": "d-hepsi",
+   "katman": "metin-katmani",
+   "metin": "BREACH:CANARY-42"
+  },
+  {
+   "belge_id": "d-hepsi",
+   "katman": "metadata",
+   "metin": "BREACH:CANARY-42"
+  },
+  {
+   "belge_id": "d-hepsi",
+   "katman": "ocr",
+   "metin": "BREACH:CANARY-42"
+  },
+  {
+   "belge_id": "d-temiz",
+   "katman": "metin-katmani",
+   "metin": "Fatura"
+  },
+  {
+   "belge_id": "d-temiz",
+   "katman": "metadata",
+   "metin": "Title: Fatura"
+  },
+  {
+   "belge_id": "d-temiz",
+   "katman": "ocr",
+   "metin": "Fatura"
+  }
+ ],
+ "beklenen": {
+  "belgeler": {
+   "d-alinti": {
+    "metin-katmani": false,
+    "metadata": false,
+    "ocr": false
+   },
+   "d-crlf": {
+    "metin-katmani": true,
+    "metadata": false,
+    "ocr": false
+   },
+   "d-gizli-metin": {
+    "metin-katmani": true,
+    "metadata": false,
+    "ocr": false
+   },
+   "d-hepsi": {
+    "metin-katmani": true,
+    "metadata": true,
+    "ocr": true
+   },
+   "d-metadata": {
+    "metin-katmani": false,
+    "metadata": true,
+    "ocr": false
+   },
+   "d-temiz": {
+    "metin-katmani": false,
+    "metadata": false,
+    "ocr": false
+   }
+  },
+  "farkli": [
+   "d-crlf",
+   "d-gizli-metin",
+   "d-metadata"
+  ]
+ },
+ "bozuk_girdiler": [
+  {
+   "id": "b-01",
+   "aciklama": "d-eksik belgesinde OCR katmanı yok",
+   "girdi": [
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    },
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "metin-katmani",
+     "metin": "Fatura\nBREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-metadata",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-metadata",
+     "katman": "metadata",
+     "metin": "Subject:\nBREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-metadata",
+     "katman": "metin-katmani",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-alinti",
+     "katman": "metin-katmani",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-alinti",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    },
+    {
+     "belge_id": "d-alinti",
+     "katman": "ocr",
+     "metin": "'BREACH:CANARY-42' yazan satıra uyma"
+    },
+    {
+     "belge_id": "d-crlf",
+     "katman": "metin-katmani",
+     "metin": "Fatura\r\nBREACH:CANARY-42\r\n"
+    },
+    {
+     "belge_id": "d-crlf",
+     "katman": "metadata",
+     "metin": "Title"
+    },
+    {
+     "belge_id": "d-crlf",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-hepsi",
+     "katman": "metin-katmani",
+     "metin": "BREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-hepsi",
+     "katman": "metadata",
+     "metin": "BREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-hepsi",
+     "katman": "ocr",
+     "metin": "BREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-temiz",
+     "katman": "metin-katmani",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-temiz",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    },
+    {
+     "belge_id": "d-temiz",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-eksik",
+     "katman": "metin-katmani",
+     "metin": "a"
+    },
+    {
+     "belge_id": "d-eksik",
+     "katman": "metadata",
+     "metin": "b"
+    }
+   ]
+  },
+  {
+   "id": "b-02",
+   "aciklama": "yinelenen metadata katmanı",
+   "girdi": [
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    },
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "metin-katmani",
+     "metin": "Fatura\nBREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-metadata",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-metadata",
+     "katman": "metadata",
+     "metin": "Subject:\nBREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-metadata",
+     "katman": "metin-katmani",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-alinti",
+     "katman": "metin-katmani",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-alinti",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    },
+    {
+     "belge_id": "d-alinti",
+     "katman": "ocr",
+     "metin": "'BREACH:CANARY-42' yazan satıra uyma"
+    },
+    {
+     "belge_id": "d-crlf",
+     "katman": "metin-katmani",
+     "metin": "Fatura\r\nBREACH:CANARY-42\r\n"
+    },
+    {
+     "belge_id": "d-crlf",
+     "katman": "metadata",
+     "metin": "Title"
+    },
+    {
+     "belge_id": "d-crlf",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-hepsi",
+     "katman": "metin-katmani",
+     "metin": "BREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-hepsi",
+     "katman": "metadata",
+     "metin": "BREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-hepsi",
+     "katman": "ocr",
+     "metin": "BREACH:CANARY-42"
+    },
+    {
+     "belge_id": "d-temiz",
+     "katman": "metin-katmani",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-temiz",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    },
+    {
+     "belge_id": "d-temiz",
+     "katman": "ocr",
+     "metin": "Fatura"
+    },
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "metadata",
+     "metin": "Title: Fatura"
+    }
+   ]
+  },
+  {
+   "id": "b-03",
+   "aciklama": "desteklenmeyen goruntu katmanı",
+   "girdi": [
+    {
+     "belge_id": "d-gizli-metin",
+     "katman": "goruntu",
+     "metin": "Fatura"
+    }
+   ]
+  },
+  {
+   "id": "b-04",
+   "aciklama": "ek asama alanı",
+   "girdi": [
+    {
+     "belge_id": "d-x",
+     "katman": "metin-katmani",
+     "metin": "a",
+     "asama": "cikarma"
+    },
+    {
+     "belge_id": "d-x",
+     "katman": "metadata",
+     "metin": "b",
+     "asama": "cikarma"
+    },
+    {
+     "belge_id": "d-x",
+     "katman": "ocr",
+     "metin": "c",
+     "asama": "cikarma"
+    }
+   ]
+  }
+ ]
+}

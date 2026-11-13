@@ -1,0 +1,55 @@
+{
+  "koken": "elle yazılmış sentetik tehdit/üyelik/ölçüm verisi; canlı model kaydı değil",
+  "tehdit_modeli": {
+    "id": "gizlilik-demo",
+    "varliklar": [
+      "kullanici_girdisi",
+      "egitim_verisi"
+    ],
+    "cikti_kanallari": [
+      "olasilik",
+      "metin"
+    ],
+    "saldirgan_bilgisi": [
+      "sorgu_erisimi",
+      "mimari"
+    ]
+  },
+  "uyelik_kayitlari": [
+    {
+      "id": "a",
+      "uye": true,
+      "tahmin_uye": true
+    },
+    {
+      "id": "b",
+      "uye": true,
+      "tahmin_uye": false
+    },
+    {
+      "id": "c",
+      "uye": false,
+      "tahmin_uye": true
+    },
+    {
+      "id": "d",
+      "uye": false,
+      "tahmin_uye": false
+    }
+  ],
+  "deney_sonuclari": [
+    {
+      "deney": "tabana-esit",
+      "dogruluk": 0.6,
+      "taban_dogrulugu": 0.6,
+      "avantaj": 0.9
+    },
+    {
+      "deney": "olasilik",
+      "dogruluk": 0.8,
+      "taban_dogrulugu": 0.5,
+      "avantaj": 0.4
+    }
+  ],
+  "avantaj_esik": 0.3
+}

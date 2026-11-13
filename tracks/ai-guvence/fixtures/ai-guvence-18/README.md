@@ -1,0 +1,3 @@
+# ai-guvence-18 görünür sentetik veriler
+
+Bu kayıtlar elle hazırlanmış öğretim fixture'larıdır; model veya sunucu çıktısı değildir. Üç görev aynı deney_kayitlari.json dosyasını doğrular, sıralar ve esikler.json ile risk önceliği hesaplar. Verilen eşiklerde b ve c riskli, seçilen c olur. Her çalıştırmada ai_guvence_veri.hazirla dosyaları geçici dizine yeniden kopyalar; kalıcılık yoktur. Başlangıç kodundaki okuma/yazdırma satırları ham veriyi görmeyi sağlar. Aynı çalıştırmada bellekte bir kayıt kopyasını değiştirerek dene. Kontrol farklı girdiler kullanır; öğrenci dosyasını değiştirmek beklenen cevabı değiştirmez. Son gerçek CPU deneyi bu örneklerden bağımsızdır; onun kalıcı ayar kopyası ders anlatımında açıklanır.

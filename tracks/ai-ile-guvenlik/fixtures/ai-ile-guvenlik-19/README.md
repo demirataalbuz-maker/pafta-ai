@@ -1,0 +1,1 @@
+Sentetik öğrenci örneği; gerçek SIEM çıktısı değildir. soc/olaylar.json geçici çalışma kopyasıdır; aynı çalıştırmada değiştirip okuyabilirsin. Sonraki çalıştırmada yeniden kopyalanır. Gizli test verisini değiştirmez. Gerçek model yanıtı ve SQLite dosyaları ayrı kanıt klasörüne kaydedilir.

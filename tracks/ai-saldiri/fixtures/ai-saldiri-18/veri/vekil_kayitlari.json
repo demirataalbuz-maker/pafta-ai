@@ -1,0 +1,107 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Ajan eylem günlüğünden elle yazılmış vaka kayıtları. 'calistirildi' eylemin gerçekten yürütülüp yürütülmediğini gösterir.",
+  "kayitlar": [
+    {
+      "vaka_id": "v-tedarikci",
+      "kaynak": "belge",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor",
+        "paylas:dis"
+      ],
+      "eylem": "paylas:dis",
+      "calistirildi": true
+    },
+    {
+      "vaka_id": "v-normal-okuma",
+      "kaynak": "kullanici",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor"
+      ],
+      "eylem": "oku:rapor",
+      "calistirildi": true
+    },
+    {
+      "vaka_id": "v-web-yazma",
+      "kaynak": "web",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor",
+        "yaz:rapor"
+      ],
+      "eylem": "yaz:rapor",
+      "calistirildi": false
+    },
+    {
+      "vaka_id": "v-yanlis-tikla",
+      "kaynak": "kullanici",
+      "kullanici": [],
+      "ajan": [
+        "paylas:dis"
+      ],
+      "eylem": "paylas:dis",
+      "calistirildi": true
+    },
+    {
+      "vaka_id": "v-tool-zinciri",
+      "kaynak": "tool",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor",
+        "yaz:rapor"
+      ],
+      "eylem": "yaz:rapor",
+      "calistirildi": true
+    },
+    {
+      "vaka_id": "v-bekleyen",
+      "kaynak": "kullanici",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor"
+      ],
+      "eylem": "oku:rapor",
+      "calistirildi": false
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "vaka_id": "b-sistem",
+      "kaynak": "system",
+      "kullanici": [],
+      "ajan": [],
+      "eylem": "oku:rapor",
+      "calistirildi": true
+    },
+    {
+      "vaka_id": "b-joker",
+      "kaynak": "belge",
+      "kullanici": [],
+      "ajan": [
+        "*"
+      ],
+      "eylem": "oku:rapor",
+      "calistirildi": true
+    },
+    {
+      "vaka_id": "b-int",
+      "kaynak": "belge",
+      "kullanici": [],
+      "ajan": [],
+      "eylem": "oku:rapor",
+      "calistirildi": 1
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir modelin ürettiği gibi yazılmış araç çağrıları. Hiçbiri gerçekten çalıştırılmaz.",
+  "cagrilar": [
+    {
+      "id": "c-01",
+      "arac": "dosya_oku",
+      "argumanlar": {
+        "yol": "belgeler/2026/ozet.txt"
+      }
+    },
+    {
+      "id": "c-02",
+      "arac": "dosya_oku",
+      "argumanlar": {
+        "yol": "../../gizli/anahtar.txt"
+      }
+    },
+    {
+      "id": "c-03",
+      "arac": "dosya_oku",
+      "argumanlar": {
+        "yol": "/etc/passwd"
+      }
+    },
+    {
+      "id": "c-04",
+      "arac": "dosya_oku",
+      "argumanlar": {
+        "yol": "belgeler\\..\\gizli.txt"
+      }
+    },
+    {
+      "id": "c-05",
+      "arac": "dosya_oku",
+      "argumanlar": {
+        "yol": "C:/Users/x/anahtar.txt"
+      }
+    },
+    {
+      "id": "c-06",
+      "arac": "web_getir",
+      "argumanlar": {
+        "url": "https://docs.example.test/api/kilavuz"
+      }
+    },
+    {
+      "id": "c-07",
+      "arac": "web_getir",
+      "argumanlar": {
+        "url": "http://docs.example.test/api"
+      }
+    },
+    {
+      "id": "c-08",
+      "arac": "web_getir",
+      "argumanlar": {
+        "url": "https://example.test@169.254.169.254/latest/meta-data"
+      }
+    },
+    {
+      "id": "c-09",
+      "arac": "web_getir",
+      "argumanlar": {
+        "url": "https://example.test:8443/yonetim"
+      }
+    },
+    {
+      "id": "c-10",
+      "arac": "web_getir",
+      "argumanlar": {
+        "url": "https://example.test.saldirgan.test/"
+      }
+    },
+    {
+      "id": "c-11",
+      "arac": "rapor_yaz",
+      "argumanlar": {
+        "baslik": "Haftalık özet",
+        "icerik": "Bu hafta 3 olay kapandı."
+      }
+    },
+    {
+      "id": "c-12",
+      "arac": "rapor_yaz",
+      "argumanlar": {
+        "baslik": " Haftalık özet",
+        "icerik": "x"
+      }
+    }
+  ]
+}

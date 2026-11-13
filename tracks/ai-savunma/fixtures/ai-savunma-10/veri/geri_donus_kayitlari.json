@@ -1,0 +1,165 @@
+{
+ "aciklama": "Kanal kararı verilmiş sentetik yanıt adayları. Yedek kanalındaki aday teknik hata metni taşır ve kullanıcıya kopyalanmamalıdır.",
+ "kayitlar": [
+  {
+   "id": "temiz",
+   "kanal": "model_yaniti",
+   "yanit_adayi": "Siparişiniz yarın teslim edilecek."
+  },
+  {
+   "id": "bearer",
+   "kanal": "model_yaniti",
+   "yanit_adayi": "Örnek başlık: Authorization: Bearer eyJhbGciOi"
+  },
+  {
+   "id": "pem",
+   "kanal": "model_yaniti",
+   "yanit_adayi": "-----BEGIN PRIVATE KEY-----\nMIIE..."
+  },
+  {
+   "id": "bosluk",
+   "kanal": "model_yaniti",
+   "yanit_adayi": "Teslim yarın. "
+  },
+  {
+   "id": "bos",
+   "kanal": "model_yaniti",
+   "yanit_adayi": ""
+  },
+  {
+   "id": "yedek-hata",
+   "kanal": "guvenli_yedek",
+   "yanit_adayi": "Traceback: GuardrailError api_key=abcd1234 at /srv/app/guard.py"
+  },
+  {
+   "id": "tekrar",
+   "kanal": "yeniden_dene_degerlendir",
+   "yanit_adayi": "TimeoutError: guardrail 5000 ms"
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "bearer",
+   "karar": "guvenli_yedek",
+   "yanit": "Güvenli yanıt üretilemedi; istek tamamlanamadı.",
+   "ham_icerik_tasindi": false
+  },
+  {
+   "id": "bos",
+   "karar": "guvenli_yedek",
+   "yanit": "Güvenli yanıt üretilemedi; istek tamamlanamadı.",
+   "ham_icerik_tasindi": false
+  },
+  {
+   "id": "bosluk",
+   "karar": "guvenli_yedek",
+   "yanit": "Güvenli yanıt üretilemedi; istek tamamlanamadı.",
+   "ham_icerik_tasindi": false
+  },
+  {
+   "id": "pem",
+   "karar": "guvenli_yedek",
+   "yanit": "Güvenli yanıt üretilemedi; istek tamamlanamadı.",
+   "ham_icerik_tasindi": false
+  },
+  {
+   "id": "tekrar",
+   "karar": "yeniden_dene",
+   "yanit": null,
+   "ham_icerik_tasindi": false
+  },
+  {
+   "id": "temiz",
+   "karar": "model_yaniti",
+   "yanit": "Siparişiniz yarın teslim edilecek.",
+   "ham_icerik_tasindi": true
+  },
+  {
+   "id": "yedek-hata",
+   "karar": "guvenli_yedek",
+   "yanit": "Güvenli yanıt üretilemedi; istek tamamlanamadı.",
+   "ham_icerik_tasindi": false
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "temiz",
+     "kanal": "model_yaniti",
+     "yanit_adayi": "Siparişiniz yarın teslim edilecek."
+    },
+    {
+     "id": "bearer",
+     "kanal": "model_yaniti",
+     "yanit_adayi": "Örnek başlık: Authorization: Bearer eyJhbGciOi"
+    },
+    {
+     "id": "pem",
+     "kanal": "model_yaniti",
+     "yanit_adayi": "-----BEGIN PRIVATE KEY-----\nMIIE..."
+    },
+    {
+     "id": "bosluk",
+     "kanal": "model_yaniti",
+     "yanit_adayi": "Teslim yarın. "
+    },
+    {
+     "id": "bos",
+     "kanal": "model_yaniti",
+     "yanit_adayi": ""
+    },
+    {
+     "id": "yedek-hata",
+     "kanal": "guvenli_yedek",
+     "yanit_adayi": "Traceback: GuardrailError api_key=abcd1234 at /srv/app/guard.py"
+    },
+    {
+     "id": "tekrar",
+     "kanal": "yeniden_dene_degerlendir",
+     "yanit_adayi": "TimeoutError: guardrail 5000 ms"
+    },
+    {
+     "id": "temiz",
+     "kanal": "model_yaniti",
+     "yanit_adayi": "Siparişiniz yarın teslim edilecek."
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "bilinmeyen kanal ham_gecir",
+   "girdi": [
+    {
+     "id": "a",
+     "kanal": "ham_gecir",
+     "yanit_adayi": "x"
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "2001 karakterlik aday",
+   "girdi": [
+    {
+     "id": "a",
+     "kanal": "model_yaniti",
+     "yanit_adayi": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "aday None",
+   "girdi": [
+    {
+     "id": "a",
+     "kanal": "model_yaniti",
+     "yanit_adayi": null
+    }
+   ]
+  }
+ ]
+}

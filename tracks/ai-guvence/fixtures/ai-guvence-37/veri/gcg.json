@@ -1,0 +1,77 @@
+{
+ "aciklama": "Sentetik örnek: gradient satırı ve token kayıtları elle yazılmıştır; gerçek model çıktısı değildir.",
+ "aday": {
+  "g": [
+   0.8,
+   -0.3,
+   0.1,
+   -0.9,
+   0.4,
+   -0.3,
+   2.0,
+   -1.2
+  ],
+  "mevcut": 2,
+  "k": 3,
+  "yasak": [
+   7
+  ]
+ },
+ "kayitlar": [
+  {
+   "token": 11,
+   "tahmin": -0.9,
+   "gercek": 0.05
+  },
+  {
+   "token": 12,
+   "tahmin": -0.7,
+   "gercek": -0.3
+  },
+  {
+   "token": 13,
+   "tahmin": -0.4,
+   "gercek": 0.2
+  },
+  {
+   "token": 14,
+   "tahmin": -0.2,
+   "gercek": -0.5
+  },
+  {
+   "token": 15,
+   "tahmin": 0.1,
+   "gercek": 0.1
+  },
+  {
+   "token": 16,
+   "tahmin": 0.3,
+   "gercek": -0.1
+  },
+  {
+   "token": 17,
+   "tahmin": 0.8,
+   "gercek": 0.4
+  },
+  {
+   "token": 18,
+   "tahmin": 1.1,
+   "gercek": 0.3
+  }
+ ],
+ "k": 3,
+ "esitlik": {
+  "a": [
+   1,
+   1,
+   2,
+   3
+  ],
+  "b": [
+   1,
+   2,
+   3,
+   4
+  ]
+ }
+}

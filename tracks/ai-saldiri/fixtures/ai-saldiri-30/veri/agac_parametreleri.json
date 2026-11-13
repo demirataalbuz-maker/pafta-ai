@@ -1,0 +1,230 @@
+{
+ "aciklama": "TAP ağaç parametreleri. beklenen düğüm listesidir; null, ValueError demektir. Düğüm sayısı Σ genislik^d.",
+ "ornekler": [
+  {
+   "id": "t-01",
+   "aciklama": "yalnız kök (derinlik 0)",
+   "kok": "kok",
+   "derinlik": 0,
+   "genislik": 2,
+   "beklenen": [
+    {
+     "id": "kok",
+     "ebeveyn": null,
+     "derinlik": 0
+    }
+   ]
+  },
+  {
+   "id": "t-02",
+   "aciklama": "PAIR deneyindeki iki dal",
+   "kok": "pair",
+   "derinlik": 1,
+   "genislik": 2,
+   "beklenen": [
+    {
+     "id": "pair",
+     "ebeveyn": null,
+     "derinlik": 0
+    },
+    {
+     "id": "pair/1",
+     "ebeveyn": "pair",
+     "derinlik": 1
+    },
+    {
+     "id": "pair/2",
+     "ebeveyn": "pair",
+     "derinlik": 1
+    }
+   ]
+  },
+  {
+   "id": "t-03",
+   "aciklama": "iki seviye, iki genişlik: BFS sırası",
+   "kok": "tap",
+   "derinlik": 2,
+   "genislik": 2,
+   "beklenen": [
+    {
+     "id": "tap",
+     "ebeveyn": null,
+     "derinlik": 0
+    },
+    {
+     "id": "tap/1",
+     "ebeveyn": "tap",
+     "derinlik": 1
+    },
+    {
+     "id": "tap/2",
+     "ebeveyn": "tap",
+     "derinlik": 1
+    },
+    {
+     "id": "tap/1/1",
+     "ebeveyn": "tap/1",
+     "derinlik": 2
+    },
+    {
+     "id": "tap/1/2",
+     "ebeveyn": "tap/1",
+     "derinlik": 2
+    },
+    {
+     "id": "tap/2/1",
+     "ebeveyn": "tap/2",
+     "derinlik": 2
+    },
+    {
+     "id": "tap/2/2",
+     "ebeveyn": "tap/2",
+     "derinlik": 2
+    }
+   ]
+  },
+  {
+   "id": "t-04",
+   "aciklama": "bir seviye, üç genişlik",
+   "kok": "k",
+   "derinlik": 1,
+   "genislik": 3,
+   "beklenen": [
+    {
+     "id": "k",
+     "ebeveyn": null,
+     "derinlik": 0
+    },
+    {
+     "id": "k/1",
+     "ebeveyn": "k",
+     "derinlik": 1
+    },
+    {
+     "id": "k/2",
+     "ebeveyn": "k",
+     "derinlik": 1
+    },
+    {
+     "id": "k/3",
+     "ebeveyn": "k",
+     "derinlik": 1
+    }
+   ]
+  },
+  {
+   "id": "t-05",
+   "aciklama": "iki seviye, üç genişlik (13 düğüm)",
+   "kok": "k",
+   "derinlik": 2,
+   "genislik": 3,
+   "beklenen": [
+    {
+     "id": "k",
+     "ebeveyn": null,
+     "derinlik": 0
+    },
+    {
+     "id": "k/1",
+     "ebeveyn": "k",
+     "derinlik": 1
+    },
+    {
+     "id": "k/2",
+     "ebeveyn": "k",
+     "derinlik": 1
+    },
+    {
+     "id": "k/3",
+     "ebeveyn": "k",
+     "derinlik": 1
+    },
+    {
+     "id": "k/1/1",
+     "ebeveyn": "k/1",
+     "derinlik": 2
+    },
+    {
+     "id": "k/1/2",
+     "ebeveyn": "k/1",
+     "derinlik": 2
+    },
+    {
+     "id": "k/1/3",
+     "ebeveyn": "k/1",
+     "derinlik": 2
+    },
+    {
+     "id": "k/2/1",
+     "ebeveyn": "k/2",
+     "derinlik": 2
+    },
+    {
+     "id": "k/2/2",
+     "ebeveyn": "k/2",
+     "derinlik": 2
+    },
+    {
+     "id": "k/2/3",
+     "ebeveyn": "k/2",
+     "derinlik": 2
+    },
+    {
+     "id": "k/3/1",
+     "ebeveyn": "k/3",
+     "derinlik": 2
+    },
+    {
+     "id": "k/3/2",
+     "ebeveyn": "k/3",
+     "derinlik": 2
+    },
+    {
+     "id": "k/3/3",
+     "ebeveyn": "k/3",
+     "derinlik": 2
+    }
+   ]
+  },
+  {
+   "id": "t-06",
+   "aciklama": "kökte '/' kimlik çakışması yaratır",
+   "kok": "a/b",
+   "derinlik": 1,
+   "genislik": 2,
+   "beklenen": null
+  },
+  {
+   "id": "t-07",
+   "aciklama": "derinlik True (bool)",
+   "kok": "k",
+   "derinlik": true,
+   "genislik": 2,
+   "beklenen": null
+  },
+  {
+   "id": "t-08",
+   "aciklama": "derinlik 5: bütçe sınırı aşıldı",
+   "kok": "k",
+   "derinlik": 5,
+   "genislik": 2,
+   "beklenen": null
+  },
+  {
+   "id": "t-09",
+   "aciklama": "baştaki boşluk",
+   "kok": " k",
+   "derinlik": 1,
+   "genislik": 2,
+   "beklenen": null
+  },
+  {
+   "id": "t-10",
+   "aciklama": "genişlik 0",
+   "kok": "k",
+   "derinlik": 1,
+   "genislik": 0,
+   "beklenen": null
+  }
+ ]
+}

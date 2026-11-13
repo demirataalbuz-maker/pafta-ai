@@ -1,0 +1,3 @@
+# ai-guvence-17 görünür veri
+
+Elle hazırlanmış SENTETİK üyelik skorlarıdır, kaydedilmiş model çıktısı değildir. uyelik_kayitlari.json içinde iki üye ve iki üye olmayan örnek, 0.7 skorunda eşitlik vardır. esikler.json görev 2 çalışma eşiği ve görev 3 FPR üst sınırını taşır. Görevler aynı veriyi doğrular, ölçer ve eşik tarar. ai_guvence_veri.hazirla her çalıştırmada dosyaları geçici dizine yeniden kopyalar; kalıcılık yoktur. Başlangıç kodu dosyaları okur ve sonucu yazdırır. Aynı çalıştırmada bellekte bir kopyayı değiştirerek deneme yapabilirsin. Gizli testler ayrı girdiler kullanır. Son gerçek CPU deneyi kendi kalıcı ayarını ve canlı model skorlarını kullanır.

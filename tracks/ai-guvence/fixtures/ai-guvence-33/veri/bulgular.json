@@ -1,0 +1,26 @@
+[
+  {
+    "kategori": "injection",
+    "siddet": "kritik",
+    "etki": "yuksek",
+    "erisim": "kolay"
+  },
+  {
+    "kategori": "log",
+    "siddet": "dusuk",
+    "etki": "dusuk",
+    "erisim": "zor"
+  },
+  {
+    "kategori": "injection",
+    "siddet": "orta",
+    "etki": "dusuk",
+    "erisim": "orta"
+  },
+  {
+    "kategori": "ssrf",
+    "siddet": "yuksek",
+    "etki": "orta",
+    "erisim": "orta"
+  }
+]

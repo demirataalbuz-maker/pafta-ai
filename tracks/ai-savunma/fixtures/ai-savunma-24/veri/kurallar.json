@@ -1,0 +1,115 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "veri/sigma/*.yml dosyalarındaki Sigma kurallarının ders şemasına çevrilmiş hâli (pySigma 2.0.1 ile ayrıştırılıp çevrildi). Kimlikler Sigma'nın istediği UUID'lerdir. Gerçek bir SOC kural seti değildir.",
+  "kurallar": [
+    {
+      "id": "3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e01",
+      "baslik": "LLM girdisinde talimat ezme",
+      "seviye": "yuksek",
+      "alan": "injection",
+      "eslesmeler": [
+        "ignore previous",
+        "system message"
+      ],
+      "kosul": "herhangi",
+      "aktif": true
+    },
+    {
+      "id": "3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e02",
+      "baslik": "Sistem mesajı taklidiyle yetki ezme",
+      "seviye": "orta",
+      "alan": "injection",
+      "eslesmeler": [
+        "system message",
+        "override"
+      ],
+      "kosul": "tumu",
+      "aktif": true
+    },
+    {
+      "id": "3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e03",
+      "baslik": "Bulut metadata servisine düz HTTP egress",
+      "seviye": "kritik",
+      "alan": "egress",
+      "eslesmeler": [
+        "http://",
+        "metadata"
+      ],
+      "kosul": "tumu",
+      "aktif": true
+    },
+    {
+      "id": "3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e04",
+      "baslik": "Araç çağrısında yönetici rolü talebi",
+      "seviye": "yuksek",
+      "alan": "yetki",
+      "eslesmeler": [
+        "role=admin",
+        "sudo"
+      ],
+      "kosul": "herhangi",
+      "aktif": true
+    },
+    {
+      "id": "3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e05",
+      "baslik": "URL kısaltıcıya egress",
+      "seviye": "orta",
+      "alan": "egress",
+      "eslesmeler": [
+        "bit.ly",
+        "tinyurl"
+      ],
+      "kosul": "herhangi",
+      "aktif": true
+    }
+  ],
+  "bozuk_kurallar": [
+    {
+      "id": "pasif-kural",
+      "baslik": "LLM girdisinde talimat ezme",
+      "seviye": "yuksek",
+      "alan": "injection",
+      "eslesmeler": [
+        "ignore previous",
+        "system message"
+      ],
+      "kosul": "herhangi",
+      "aktif": false
+    },
+    {
+      "id": "buyuk-harf",
+      "baslik": "LLM girdisinde talimat ezme",
+      "seviye": "yuksek",
+      "alan": "injection",
+      "eslesmeler": [
+        "IGNORE PREVIOUS"
+      ],
+      "kosul": "herhangi",
+      "aktif": true
+    },
+    {
+      "id": "yinelenen",
+      "baslik": "LLM girdisinde talimat ezme",
+      "seviye": "yuksek",
+      "alan": "injection",
+      "eslesmeler": [
+        "sudo",
+        "sudo"
+      ],
+      "kosul": "herhangi",
+      "aktif": true
+    },
+    {
+      "id": "bilinmeyen-alan",
+      "baslik": "LLM girdisinde talimat ezme",
+      "seviye": "yuksek",
+      "alan": "network",
+      "eslesmeler": [
+        "ignore previous",
+        "system message"
+      ],
+      "kosul": "herhangi",
+      "aktif": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "koken": "sentetik HTTP biçimi ve karşılaştırma örneği; gerçek MLflow yanıtı değil",
+  "uri": "file:///tmp/pafta/private",
+  "http": {
+    "status": 200,
+    "govde": "CANARY-EXAMPLE extra",
+    "canary": "CANARY-EXAMPLE"
+  },
+  "kayitlar": [
+    {
+      "surum": "2.1.1",
+      "tur": "normal",
+      "bulgu": "okundu"
+    },
+    {
+      "surum": "2.1.1",
+      "tur": "yerel-kaynak",
+      "bulgu": "okundu"
+    },
+    {
+      "surum": "2.2.1",
+      "tur": "normal",
+      "bulgu": "reddedildi"
+    },
+    {
+      "surum": "2.2.1",
+      "tur": "yerel-kaynak",
+      "bulgu": "reddedildi"
+    }
+  ]
+}

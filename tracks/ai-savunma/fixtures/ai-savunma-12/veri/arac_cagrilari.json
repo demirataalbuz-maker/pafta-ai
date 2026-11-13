@@ -1,0 +1,278 @@
+{
+ "aciklama": "Ajanın önerdiği sentetik araç çağrıları ve doğrulanmış politika. Kimlik ve bağlam ayrı kanıtlardır.",
+ "politika": {
+  "varsayilan": "reddet",
+  "izinli_kaynaklar": [
+   "kullanici",
+   "arac"
+  ],
+  "kurallar": [
+   {
+    "arac": "dosya_oku",
+    "kaynak": "kullanici",
+    "risk": "dusuk",
+    "karar": "izin"
+   },
+   {
+    "arac": "web_getir",
+    "kaynak": "arac",
+    "risk": "orta",
+    "karar": "insan_onayi"
+   },
+   {
+    "arac": "rapor_yaz",
+    "kaynak": "kullanici",
+    "risk": "yuksek",
+    "karar": "insan_onayi"
+   }
+  ]
+ },
+ "cagrilar": [
+  {
+   "id": "oku-izin",
+   "arac": "dosya_oku",
+   "kaynak": "kullanici",
+   "risk": "dusuk",
+   "kimlik_dogrulandi": true,
+   "baglam_uyumlu": true
+  },
+  {
+   "id": "oku-belgeden",
+   "arac": "dosya_oku",
+   "kaynak": "belge",
+   "risk": "dusuk",
+   "kimlik_dogrulandi": true,
+   "baglam_uyumlu": true
+  },
+  {
+   "id": "oku-yuksek",
+   "arac": "dosya_oku",
+   "kaynak": "kullanici",
+   "risk": "yuksek",
+   "kimlik_dogrulandi": true,
+   "baglam_uyumlu": true
+  },
+  {
+   "id": "web-onay",
+   "arac": "web_getir",
+   "kaynak": "arac",
+   "risk": "orta",
+   "kimlik_dogrulandi": true,
+   "baglam_uyumlu": true
+  },
+  {
+   "id": "rapor-onay",
+   "arac": "rapor_yaz",
+   "kaynak": "kullanici",
+   "risk": "yuksek",
+   "kimlik_dogrulandi": true,
+   "baglam_uyumlu": true
+  },
+  {
+   "id": "kimliksiz-web",
+   "arac": "web_getir",
+   "kaynak": "arac",
+   "risk": "orta",
+   "kimlik_dogrulandi": false,
+   "baglam_uyumlu": true
+  },
+  {
+   "id": "baglamsiz-oku",
+   "arac": "dosya_oku",
+   "kaynak": "kullanici",
+   "risk": "dusuk",
+   "kimlik_dogrulandi": true,
+   "baglam_uyumlu": false
+  },
+  {
+   "id": "model-rapor",
+   "arac": "rapor_yaz",
+   "kaynak": "model",
+   "risk": "dusuk",
+   "kimlik_dogrulandi": false,
+   "baglam_uyumlu": false
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "baglamsiz-oku",
+   "karar": "reddet",
+   "nedenler": [
+    "baglam"
+   ]
+  },
+  {
+   "id": "kimliksiz-web",
+   "karar": "reddet",
+   "nedenler": [
+    "kimlik",
+    "onay"
+   ]
+  },
+  {
+   "id": "model-rapor",
+   "karar": "reddet",
+   "nedenler": [
+    "kimlik",
+    "baglam",
+    "politika"
+   ]
+  },
+  {
+   "id": "oku-belgeden",
+   "karar": "reddet",
+   "nedenler": [
+    "politika"
+   ]
+  },
+  {
+   "id": "oku-izin",
+   "karar": "calistir",
+   "nedenler": []
+  },
+  {
+   "id": "oku-yuksek",
+   "karar": "reddet",
+   "nedenler": [
+    "politika"
+   ]
+  },
+  {
+   "id": "rapor-onay",
+   "karar": "insan_onayi",
+   "nedenler": [
+    "onay"
+   ]
+  },
+  {
+   "id": "web-onay",
+   "karar": "insan_onayi",
+   "nedenler": [
+    "onay"
+   ]
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen çağrı kimliği",
+   "girdi": [
+    {
+     "id": "oku-izin",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    },
+    {
+     "id": "oku-belgeden",
+     "arac": "dosya_oku",
+     "kaynak": "belge",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    },
+    {
+     "id": "oku-yuksek",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "yuksek",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    },
+    {
+     "id": "web-onay",
+     "arac": "web_getir",
+     "kaynak": "arac",
+     "risk": "orta",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    },
+    {
+     "id": "rapor-onay",
+     "arac": "rapor_yaz",
+     "kaynak": "kullanici",
+     "risk": "yuksek",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    },
+    {
+     "id": "kimliksiz-web",
+     "arac": "web_getir",
+     "kaynak": "arac",
+     "risk": "orta",
+     "kimlik_dogrulandi": false,
+     "baglam_uyumlu": true
+    },
+    {
+     "id": "baglamsiz-oku",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": false
+    },
+    {
+     "id": "model-rapor",
+     "arac": "rapor_yaz",
+     "kaynak": "model",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": false,
+     "baglam_uyumlu": false
+    },
+    {
+     "id": "oku-izin",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "kimlik_dogrulandi 'evet'",
+   "girdi": [
+    {
+     "id": "oku-izin",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": "evet",
+     "baglam_uyumlu": true
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "bilinmeyen risk kritik",
+   "girdi": [
+    {
+     "id": "oku-izin",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "kritik",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "ek onay alanı",
+   "girdi": [
+    {
+     "id": "oku-izin",
+     "arac": "dosya_oku",
+     "kaynak": "kullanici",
+     "risk": "dusuk",
+     "kimlik_dogrulandi": true,
+     "baglam_uyumlu": true,
+     "onay": true
+    }
+   ]
+  }
+ ]
+}

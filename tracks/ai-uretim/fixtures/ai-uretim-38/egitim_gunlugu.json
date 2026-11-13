@@ -1,0 +1,18 @@
+[
+ {"kayip": 2.40, "lr": 0.0001, "grad_norm": 1.00, "batch": "b00"},
+ {"kayip": 2.31, "lr": 0.0002, "grad_norm": 1.05, "batch": "b01"},
+ {"kayip": 2.25, "lr": 0.0004, "grad_norm": 0.98, "batch": "b02"},
+ {"kayip": 2.18, "lr": 0.0006, "grad_norm": 1.10, "batch": "b03"},
+ {"kayip": 7.90, "lr": 0.0006, "grad_norm": 1.02, "batch": "b17"},
+ {"kayip": 2.20, "lr": 0.0008, "grad_norm": 1.08, "batch": "b04"},
+ {"kayip": 2.12, "lr": 0.0010, "grad_norm": 1.30, "batch": "b05"},
+ {"kayip": 6.80, "lr": 0.0010, "grad_norm": 5.20, "batch": "b06"},
+ {"kayip": 2.60, "lr": 0.0008, "grad_norm": 1.40, "batch": "b07"},
+ {"kayip": 2.15, "lr": 0.0006, "grad_norm": 1.05, "batch": "b08"},
+ {"kayip": 8.30, "lr": 0.0006, "grad_norm": 0.99, "batch": "b17"},
+ {"kayip": 2.10, "lr": 0.0004, "grad_norm": 1.01, "batch": "b09"},
+ {"kayip": 2.05, "lr": 0.0004, "grad_norm": 0.97, "batch": "b10"},
+ {"kayip": NaN, "lr": 0.0003, "grad_norm": Infinity, "batch": "b11"},
+ {"kayip": 2.08, "lr": 0.0002, "grad_norm": 1.00, "batch": "b12"},
+ {"kayip": 2.02, "lr": 0.0002, "grad_norm": 0.96, "batch": "b13"}
+]

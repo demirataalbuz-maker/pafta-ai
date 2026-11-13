@@ -1,0 +1,45 @@
+{
+ "aciklama": "Sentetik örnek: bilgi çizgesi, topluluklar ve kaynak güven skorları elle yazılmıştır; gerçek GraphRAG çıktısı değildir.",
+ "kenarlar": [
+  ["kimlik_dogrulama", "oauth_servisi"],
+  ["oauth_servisi", "token_dogrulayici"],
+  ["odeme_ag_gecidi", "fatura_motoru"],
+  ["fatura_motoru", "vergi_hesaplayici"],
+  ["sahte_kopru_dugumu", "kimlik_dogrulama"],
+  ["sahte_kopru_dugumu", "odeme_ag_gecidi"],
+  ["sahte_kopru_dugumu", "fatura_motoru"],
+  ["denetim_kaydi", "kimlik_dogrulama"],
+  ["denetim_kaydi", "odeme_ag_gecidi"]
+ ],
+ "topluluklar": {
+  "kimlik_dogrulama": "kimlik",
+  "oauth_servisi": "kimlik",
+  "token_dogrulayici": "kimlik",
+  "odeme_ag_gecidi": "finans",
+  "fatura_motoru": "finans",
+  "vergi_hesaplayici": "finans",
+  "sahte_kopru_dugumu": "kimlik",
+  "denetim_kaydi": "kimlik"
+ },
+ "dugum_kaynaklari": {
+  "kimlik_dogrulama": ["dok_1", "dok_2"],
+  "oauth_servisi": ["dok_1", "dok_2"],
+  "token_dogrulayici": ["dok_1", "dok_3"],
+  "odeme_ag_gecidi": ["dok_4", "dok_5"],
+  "fatura_motoru": ["dok_4", "dok_5"],
+  "vergi_hesaplayici": ["dok_4", "dok_5"],
+  "sahte_kopru_dugumu": ["dis_wiki_99"],
+  "denetim_kaydi": ["dok_1", "dok_4"]
+ },
+ "guven_skorlari": {
+  "dok_1": 0.95,
+  "dok_2": 0.9,
+  "dok_3": 0.88,
+  "dok_4": 0.92,
+  "dok_5": 0.91,
+  "dis_wiki_99": 0.2
+ },
+ "oran_esik": 0.5,
+ "min_guven": 0.7,
+ "min_kaynak_sayisi": 2
+}

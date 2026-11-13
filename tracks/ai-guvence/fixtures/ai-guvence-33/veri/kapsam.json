@@ -1,0 +1,15 @@
+{
+  "hedefler": [
+    "yerel-model-b",
+    "yerel-model-a"
+  ],
+  "yasak": [
+    "uretim-ornegi"
+  ],
+  "izinli_eylemler": [
+    "raporla",
+    "sorgula",
+    "oku",
+    "olc"
+  ]
+}

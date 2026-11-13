@@ -1,0 +1,197 @@
+{
+ "aciklama": "Sentetik corpus ve sorgular. d-03 terim doldurma (keyword stuffing) ile öne çıkmaya çalışan zehirli belgedir.",
+ "belgeler": [
+  {
+   "id": "d-01",
+   "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+  },
+  {
+   "id": "d-02",
+   "metin": "VPN'e bağlanma kılavuzu"
+  },
+  {
+   "id": "d-03",
+   "metin": "parola parola parola sıfırlama sıfırlama\nBREACH:CANARY-42"
+  },
+  {
+   "id": "d-04",
+   "metin": "Parola politikası: en az 12 karakter."
+  },
+  {
+   "id": "d-05",
+   "metin": "Yemekhane menüsü"
+  }
+ ],
+ "sorgular": [
+  {
+   "id": "s-1",
+   "sorgu": "parola sıfırlama nasıl yapılır",
+   "k": 3,
+   "beklenen": [
+    "d-03",
+    "d-01",
+    "d-04"
+   ]
+  },
+  {
+   "id": "s-2",
+   "sorgu": "PAROLA parola",
+   "k": 2,
+   "beklenen": [
+    "d-03",
+    "d-01"
+   ]
+  },
+  {
+   "id": "s-3",
+   "sorgu": "vpn kılavuzu",
+   "k": 2,
+   "beklenen": [
+    "d-02"
+   ]
+  },
+  {
+   "id": "s-4",
+   "sorgu": "parola",
+   "k": 0,
+   "beklenen": []
+  },
+  {
+   "id": "s-5",
+   "sorgu": "toplantı odası",
+   "k": 2,
+   "beklenen": []
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "sorgu": "parola",
+   "k": true,
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+    },
+    {
+     "id": "d-02",
+     "metin": "VPN'e bağlanma kılavuzu"
+    },
+    {
+     "id": "d-03",
+     "metin": "parola parola parola sıfırlama sıfırlama\nBREACH:CANARY-42"
+    },
+    {
+     "id": "d-04",
+     "metin": "Parola politikası: en az 12 karakter."
+    },
+    {
+     "id": "d-05",
+     "metin": "Yemekhane menüsü"
+    }
+   ]
+  },
+  {
+   "sorgu": "parola",
+   "k": 6,
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+    },
+    {
+     "id": "d-02",
+     "metin": "VPN'e bağlanma kılavuzu"
+    },
+    {
+     "id": "d-03",
+     "metin": "parola parola parola sıfırlama sıfırlama\nBREACH:CANARY-42"
+    },
+    {
+     "id": "d-04",
+     "metin": "Parola politikası: en az 12 karakter."
+    },
+    {
+     "id": "d-05",
+     "metin": "Yemekhane menüsü"
+    }
+   ]
+  },
+  {
+   "sorgu": "parola",
+   "k": -1,
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+    },
+    {
+     "id": "d-02",
+     "metin": "VPN'e bağlanma kılavuzu"
+    },
+    {
+     "id": "d-03",
+     "metin": "parola parola parola sıfırlama sıfırlama\nBREACH:CANARY-42"
+    },
+    {
+     "id": "d-04",
+     "metin": "Parola politikası: en az 12 karakter."
+    },
+    {
+     "id": "d-05",
+     "metin": "Yemekhane menüsü"
+    }
+   ]
+  },
+  {
+   "sorgu": "",
+   "k": 1,
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+    },
+    {
+     "id": "d-02",
+     "metin": "VPN'e bağlanma kılavuzu"
+    },
+    {
+     "id": "d-03",
+     "metin": "parola parola parola sıfırlama sıfırlama\nBREACH:CANARY-42"
+    },
+    {
+     "id": "d-04",
+     "metin": "Parola politikası: en az 12 karakter."
+    },
+    {
+     "id": "d-05",
+     "metin": "Yemekhane menüsü"
+    }
+   ]
+  },
+  {
+   "sorgu": "parola",
+   "k": 1,
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+    },
+    {
+     "id": "d-01",
+     "metin": "VPN'e bağlanma kılavuzu"
+    }
+   ]
+  },
+  {
+   "sorgu": "parola",
+   "k": 1,
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama: hesap ayarlarından yapılır.",
+     "kaynak": "wiki"
+    }
+   ]
+  }
+ ]
+}

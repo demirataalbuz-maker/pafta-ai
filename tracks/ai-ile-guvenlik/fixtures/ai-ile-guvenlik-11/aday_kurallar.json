@@ -1,0 +1,33 @@
+[
+  {
+    "kural_id": "SIG-ADAY-A",
+    "title": "Aşırı Geniş Rundll32 Kuralı",
+    "logsource": {"category": "process_creation", "product": "windows"},
+    "detection": {
+      "selection": {"CommandLine|contains": ["rundll32"]},
+      "condition": "selection"
+    },
+    "level": "high"
+  },
+  {
+    "kural_id": "SIG-ADAY-B",
+    "title": "Comsvcs MiniDump Bellek Dökümü Tespiti",
+    "logsource": {"category": "process_creation", "product": "windows"},
+    "detection": {
+      "selection": {"CommandLine|contains": ["comsvcs", "MiniDump"]},
+      "filter": {"CommandLine|contains": ["--safe-audit"]},
+      "condition": "selection and not filter"
+    },
+    "level": "critical"
+  },
+  {
+    "kural_id": "SIG-ADAY-C",
+    "title": "Eksik Şemalı Joker Kural",
+    "logsource": {"category": "process_creation", "product": "windows"},
+    "detection": {
+      "selection": {"CommandLine|contains": ["*"]},
+      "condition": "selection"
+    },
+    "level": "invalid_level"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Görev 2'nin ürettiği biçimde provenance kayıtları (yukarıdaki parçalardan). Son kayıt bilerek çelişkili yazılmıştır.",
+  "minimum_guven": "orta",
+  "provenance": [
+    {
+      "id": "p-eski",
+      "kaynak_id": "eski-kilavuz",
+      "guven": "yuksek",
+      "dogrulanabilir": false,
+      "skor": 0.79,
+      "nedenler": [
+        "durum"
+      ]
+    },
+    {
+      "id": "p-forum",
+      "kaynak_id": "forum-arsivi",
+      "guven": "dusuk",
+      "dogrulanabilir": true,
+      "skor": 0.66,
+      "nedenler": []
+    },
+    {
+      "id": "p-not",
+      "kaynak_id": "kullanici-notu",
+      "guven": "orta",
+      "dogrulanabilir": false,
+      "skor": 0.72,
+      "nedenler": [
+        "imza"
+      ]
+    },
+    {
+      "id": "p-politika",
+      "kaynak_id": "politika-wiki",
+      "guven": "yuksek",
+      "dogrulanabilir": true,
+      "skor": 0.81,
+      "nedenler": []
+    },
+    {
+      "id": "p-sss",
+      "kaynak_id": "destek-sss",
+      "guven": "orta",
+      "dogrulanabilir": true,
+      "skor": 0.74,
+      "nedenler": []
+    },
+    {
+      "id": "p-tahrif",
+      "kaynak_id": "politika-wiki",
+      "guven": "yuksek",
+      "dogrulanabilir": false,
+      "skor": 0.93,
+      "nedenler": [
+        "surum"
+      ]
+    },
+    {
+      "id": "p-yetim",
+      "kaynak_id": "bilinmeyen-blog",
+      "guven": "bilinmiyor",
+      "dogrulanabilir": false,
+      "skor": 0.88,
+      "nedenler": [
+        "kaynak"
+      ]
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "id": "p-eski",
+      "kaynak_id": "eski-kilavuz",
+      "guven": "yuksek",
+      "dogrulanabilir": true,
+      "skor": 0.79,
+      "nedenler": [
+        "surum"
+      ]
+    },
+    {
+      "id": "p-eski",
+      "kaynak_id": "eski-kilavuz",
+      "guven": "yuksek",
+      "dogrulanabilir": false,
+      "skor": 0.79,
+      "nedenler": [
+        "imza",
+        "imza"
+      ]
+    },
+    {
+      "id": "p-eski",
+      "kaynak_id": "eski-kilavuz",
+      "guven": "kritik",
+      "dogrulanabilir": false,
+      "skor": 0.79,
+      "nedenler": [
+        "durum"
+      ]
+    }
+  ]
+}

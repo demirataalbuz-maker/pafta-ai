@@ -1,0 +1,33 @@
+{
+ "aciklama": "Sınırlı Markdown bağlantıları içeren sentetik model çıktıları.",
+ "ornekler": [
+  {
+   "id": "m-01",
+   "metin": "Kaynak: [belge](https://docs.pafta.test/a?x=1&y=2)"
+  },
+  {
+   "id": "m-02",
+   "metin": "[tıkla](javascript:alert(1))"
+  },
+  {
+   "id": "m-03",
+   "metin": "<img src=x onerror=\"alert(1)\"> ve [site](https://pafta.test)"
+  },
+  {
+   "id": "m-04",
+   "metin": "[gizli](https://kullanici@pafta.test/)"
+  },
+  {
+   "id": "m-05",
+   "metin": "[çok\nsatır](https://pafta.test)"
+  },
+  {
+   "id": "m-06",
+   "metin": "[\"><script>x</script>](https://pafta.test)"
+  }
+ ],
+ "bozuk_girdiler": [
+  null,
+  7
+ ]
+}

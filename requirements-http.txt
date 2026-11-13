@@ -1,0 +1,2 @@
+# Optional advanced HTTP lab; install only with user approval.
+graphql-core==3.3.0

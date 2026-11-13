@@ -1,0 +1,3 @@
+# ai-guvence-26 görünür veri
+
+Dosyalar elle yazılmış SENTETİK öğretim kayıtlarıdır; makaleden veya sunucudan alınmış ölçüm değildir. Görev 1 kayıtları doğrular, görev 2 aynı kimlikteki referans/replikasyon çiftlerini karşılaştırır, görev 3 esikler.json içindeki sapma_esigi ile farkı yorumlar. Dersin setup/hazirla bloğu her çalıştırmada dosyaları geçici dizine yeniden kopyalar; kalıcılık yoktur. Başlangıç kodu dosyayı gerçekten okur ve sonucu yazdırır. Aynı çalıştırmada bellekte kayıt kopyasını değiştirerek deneme yapabilirsin. Kontrol ayrı test girdileri kullanır. Son gerçek deneyin kalıcı ayar kopyası ve canlı eğitim kanıtları bu fixture'lardan ayrıdır.

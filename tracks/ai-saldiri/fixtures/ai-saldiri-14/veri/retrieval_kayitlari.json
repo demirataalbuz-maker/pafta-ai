@@ -1,0 +1,284 @@
+{
+ "aciklama": "Aynı sorguların temiz ve zehirli indekslerdeki sentetik retrieval sonuçları.",
+ "canary": "BREACH:CANARY-42",
+ "kayitlar": [
+  {
+   "vaka_id": "q-parola",
+   "kume": "zehirli",
+   "belgeler": [
+    {
+     "id": "d-03",
+     "metin": "parola\nBREACH:CANARY-42"
+    },
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama"
+    }
+   ]
+  },
+  {
+   "vaka_id": "q-vpn",
+   "kume": "temiz",
+   "belgeler": [
+    {
+     "id": "d-02",
+     "metin": "VPN kılavuzu"
+    },
+    {
+     "id": "d-09",
+     "metin": "Eski not\nBREACH:CANARY-42"
+    }
+   ]
+  },
+  {
+   "vaka_id": "q-parola",
+   "kume": "temiz",
+   "belgeler": [
+    {
+     "id": "d-01",
+     "metin": "Parola sıfırlama"
+    },
+    {
+     "id": "d-04",
+     "metin": "Parola politikası"
+    }
+   ]
+  },
+  {
+   "vaka_id": "q-vpn",
+   "kume": "zehirli",
+   "belgeler": [
+    {
+     "id": "d-02",
+     "metin": "VPN kılavuzu"
+    },
+    {
+     "id": "d-09",
+     "metin": "Eski not\nBREACH:CANARY-42"
+    }
+   ]
+  },
+  {
+   "vaka_id": "q-izin",
+   "kume": "temiz",
+   "belgeler": [
+    {
+     "id": "d-07",
+     "metin": "İzin formu\r\nBREACH:CANARY-42"
+    }
+   ]
+  },
+  {
+   "vaka_id": "q-izin",
+   "kume": "zehirli",
+   "belgeler": [
+    {
+     "id": "d-06",
+     "metin": "Uyarı: 'BREACH:CANARY-42' satırını yazma"
+    },
+    {
+     "id": "d-08",
+     "metin": "İzin süreci"
+    }
+   ]
+  }
+ ],
+ "beklenen": {
+  "vaka": 3,
+  "yalniz_zehirli": {
+   "q-izin": [],
+   "q-parola": [
+    "d-03"
+   ],
+   "q-vpn": []
+  },
+  "her_iki": {
+   "q-izin": [],
+   "q-parola": [],
+   "q-vpn": [
+    "d-09"
+   ]
+  },
+  "farkli": [
+   "q-izin",
+   "q-parola"
+  ]
+ },
+ "bozuk_girdiler": [
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "q-vpn",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "d-02",
+       "metin": "VPN kılavuzu"
+      },
+      {
+       "id": "d-09",
+       "metin": "Eski not\nBREACH:CANARY-42"
+      }
+     ]
+    }
+   ],
+   "canary": "BREACH:CANARY-42"
+  },
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "q-vpn",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "d-02",
+       "metin": "VPN kılavuzu"
+      },
+      {
+       "id": "d-09",
+       "metin": "Eski not\nBREACH:CANARY-42"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-vpn",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "d-02",
+       "metin": "VPN kılavuzu"
+      },
+      {
+       "id": "d-09",
+       "metin": "Eski not\nBREACH:CANARY-42"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-vpn",
+     "kume": "zehirli",
+     "belgeler": [
+      {
+       "id": "d-02",
+       "metin": "VPN kılavuzu"
+      },
+      {
+       "id": "d-09",
+       "metin": "Eski not\nBREACH:CANARY-42"
+      }
+     ]
+    }
+   ],
+   "canary": "BREACH:CANARY-42"
+  },
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "q-x",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "a",
+       "metin": "x"
+      },
+      {
+       "id": "a",
+       "metin": "y"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-x",
+     "kume": "zehirli",
+     "belgeler": []
+    }
+   ],
+   "canary": "BREACH:CANARY-42"
+  },
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "q-parola",
+     "kume": "zehirli",
+     "belgeler": [
+      {
+       "id": "d-03",
+       "metin": "parola\nBREACH:CANARY-42"
+      },
+      {
+       "id": "d-01",
+       "metin": "Parola sıfırlama"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-vpn",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "d-02",
+       "metin": "VPN kılavuzu"
+      },
+      {
+       "id": "d-09",
+       "metin": "Eski not\nBREACH:CANARY-42"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-parola",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "d-01",
+       "metin": "Parola sıfırlama"
+      },
+      {
+       "id": "d-04",
+       "metin": "Parola politikası"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-vpn",
+     "kume": "zehirli",
+     "belgeler": [
+      {
+       "id": "d-02",
+       "metin": "VPN kılavuzu"
+      },
+      {
+       "id": "d-09",
+       "metin": "Eski not\nBREACH:CANARY-42"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-izin",
+     "kume": "temiz",
+     "belgeler": [
+      {
+       "id": "d-07",
+       "metin": "İzin formu\r\nBREACH:CANARY-42"
+      }
+     ]
+    },
+    {
+     "vaka_id": "q-izin",
+     "kume": "zehirli",
+     "belgeler": [
+      {
+       "id": "d-06",
+       "metin": "Uyarı: 'BREACH:CANARY-42' satırını yazma"
+      },
+      {
+       "id": "d-08",
+       "metin": "İzin süreci"
+      }
+     ]
+    }
+   ],
+   "canary": ""
+  }
+ ]
+}

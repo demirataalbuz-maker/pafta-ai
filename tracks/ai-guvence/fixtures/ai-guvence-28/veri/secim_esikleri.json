@@ -1,0 +1,5 @@
+{
+  "min_kalite_farki": 0.2,
+  "max_maliyet": 0.1,
+  "max_gecikme_ms": 300
+}

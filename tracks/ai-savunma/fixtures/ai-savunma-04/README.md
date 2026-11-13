@@ -1,0 +1,5 @@
+# Güvenli telemetri çalışma dosyası
+
+veri/telemetri.json elle hazırlanmış sentetik olaylardır; canlı servis kaydı veya gerçek token ölçümü değildir. Üç görev aynı dosyayı okur: seçili model olayını doğrular, trace grafiği kurar, sayısal metrik üretir. İlk Çalıştır ham JSON'u gösterir. İz a süresi10ms (toplam15değil), iz b3ms; toplam4olay,2iz,2hata,1ret,token_in7/token_out3. Tür ortalamaları guardrail1,http6.5,model4ms. İzinli string alanların içeriği otomatik sır tarayıcısı değildir.
+
+ai_savunma_veri.hazirla her Run/Check için yeni geçici veri/ kopyası kurar. Kaynak dosyayı haricî editörde veya yüklenen sözlüğü kodda değiştirip Çalıştır; değişiklikler sonraki çalıştırmaya taşınmaz. Gizli testler ayrıdır. Gerçek finalde Ollama üç açık zararsız istemi yanıtlar. Olaylar yalnız izinli ölçümleri taşır; ayrı laboratuvar_deney_kaydi sentetik istem/gerçek yanıt kanıtıdır. Bu ayrım üretimde özel içerik kaydetme izni değildir. OpenTelemetry/SigNoz servisi kurulmaz; token_in ölçülmediği için gerçek raporda0olabilir.

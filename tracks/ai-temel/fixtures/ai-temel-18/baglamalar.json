@@ -1,0 +1,59 @@
+{
+ "aciklama": "HostConfig.Binds biçiminde sentetik bağlama istekleri. red demetleri JSON'da [sıra, neden] listesidir.",
+ "izinli_kokler": [
+  "/srv/modeller",
+  "/srv/veri"
+ ],
+ "model_dizini": "/models",
+ "baglamalar": [
+  "/srv/modeller/llama:/models:ro",
+  "/srv/veri/girdi/:/data/",
+  "/srv/modeller-yedek/w:/yedek:ro",
+  "/srv/veri/../../etc:/x:ro",
+  "/run/docker.sock:/d:ro",
+  "/:/host:ro",
+  "/srv/veri/b:/data",
+  "/srv/modeller/llama:/llama-yaz:rw",
+  "/srv/veri/c:/models/ek",
+  "//srv/veri/./d:/tmp/d:ro",
+  "/srv/modeller:/tum:ro"
+ ],
+ "beklenen": {
+  "Binds": [
+   "/srv/modeller/llama:/models:ro",
+   "/srv/veri/girdi:/data:rw",
+   "/srv/veri/d:/tmp/d:ro",
+   "/srv/modeller:/tum:ro"
+  ],
+  "red": [
+   [
+    2,
+    "izinsiz"
+   ],
+   [
+    3,
+    "kacis"
+   ],
+   [
+    4,
+    "sock"
+   ],
+   [
+    5,
+    "kok"
+   ],
+   [
+    6,
+    "yinelenen"
+   ],
+   [
+    7,
+    "yazilabilir_model"
+   ],
+   [
+    8,
+    "yazilabilir_model"
+   ]
+  ]
+ }
+}

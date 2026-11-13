@@ -1,0 +1,16 @@
+{
+ "aciklama": "Sentetik örnek: güvenlik ve görev vektörleri (task vectors) elle yazılmıştır; gerçek LLM ağırlık farkı değildir.",
+ "guvenlik_vektoru": [0.8, -0.6, 0.5, -0.4, 0.7, -0.5],
+ "uyumlu_gorevler": [
+  [0.7, -0.5, 0.4, -0.3, 0.6, -0.4],
+  [0.5, -0.4, 0.6, -0.2, 0.5, -0.6]
+ ],
+ "saldirgan_gorevler": [
+  [0.8, -0.6, 0.5, -0.4, 0.7, -0.5],
+  [-1.2, 0.9, -0.8, 0.7, -1.1, 0.8],
+  [-1.0, 0.8, -0.9, 0.6, -0.9, 0.7]
+ ],
+ "yogunluk_orani": 0.67,
+ "min_kosinus": 0.5,
+ "max_catisma": 0.35
+}

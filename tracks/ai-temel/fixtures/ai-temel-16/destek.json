@@ -1,0 +1,23 @@
+{
+  "kaynak": "sentetik",
+  "kayit": {
+    "id": "m1",
+    "soru": "49381 numaralı siparişim gelmedi; eski TOKEN-AA12 kodum çalışmıyor.",
+    "token": "TOKEN-BB34",
+    "not": "İç not NOT-ORNEK: iade onayı bekleniyor."
+  },
+  "alanlar": [
+    "id",
+    "soru"
+  ],
+  "ornek_metin": "TOKEN-AA12 TOKEN-AB123 TOKEN-ab12 TOKEN-AA12x",
+  "istenen": [
+    "yonet",
+    "yaz",
+    "disa_aktar",
+    "oku"
+  ],
+  "gerekli": [
+    "oku"
+  ]
+}

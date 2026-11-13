@@ -1,0 +1,235 @@
+{
+ "aciklama": "Broker'a gelen sentetik kimlik bilgisi kullanım istekleri. 'simdi_ms' son geçerlilik anının kendisidir.",
+ "kapsam": {
+  "arac": "web_getir",
+  "eylemler": [
+   "getir"
+  ],
+  "kaynaklar": [
+   "api.ornek.com"
+  ],
+  "verilis_ms": 10000,
+  "son_gecerlilik_ms": 10300,
+  "model_gorebilir": false
+ },
+ "simdi_ms": 10300,
+ "istekler": [
+  {
+   "id": "mesru",
+   "arac": "web_getir",
+   "eylem": "getir",
+   "kaynak": "api.ornek.com",
+   "kanal": "broker",
+   "kullanildi": false
+  },
+  {
+   "id": "baska-kaynak",
+   "arac": "web_getir",
+   "eylem": "getir",
+   "kaynak": "cdn.ornek.com",
+   "kanal": "broker",
+   "kullanildi": false
+  },
+  {
+   "id": "baska-eylem",
+   "arac": "web_getir",
+   "eylem": "yaz",
+   "kaynak": "api.ornek.com",
+   "kanal": "broker",
+   "kullanildi": false
+  },
+  {
+   "id": "dogrudan",
+   "arac": "web_getir",
+   "eylem": "getir",
+   "kaynak": "api.ornek.com",
+   "kanal": "dogrudan",
+   "kullanildi": false
+  },
+  {
+   "id": "tekrar",
+   "arac": "web_getir",
+   "eylem": "getir",
+   "kaynak": "api.ornek.com",
+   "kanal": "broker",
+   "kullanildi": true
+  },
+  {
+   "id": "hepsi",
+   "arac": "rapor_yaz",
+   "eylem": "yaz",
+   "kaynak": "yerel/rapor",
+   "kanal": "dogrudan",
+   "kullanildi": true
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "baska-eylem",
+   "karar": "reddet",
+   "nedenler": [
+    "kapsam"
+   ],
+   "referans": null
+  },
+  {
+   "id": "baska-kaynak",
+   "karar": "reddet",
+   "nedenler": [
+    "kapsam"
+   ],
+   "referans": null
+  },
+  {
+   "id": "dogrudan",
+   "karar": "reddet",
+   "nedenler": [
+    "kanal"
+   ],
+   "referans": null
+  },
+  {
+   "id": "hepsi",
+   "karar": "reddet",
+   "nedenler": [
+    "kapsam",
+    "kanal",
+    "tekrar"
+   ],
+   "referans": null
+  },
+  {
+   "id": "mesru",
+   "karar": "izin",
+   "nedenler": [],
+   "referans": "kisa-omurlu-belirtec"
+  },
+  {
+   "id": "tekrar",
+   "karar": "reddet",
+   "nedenler": [
+    "tekrar"
+   ],
+   "referans": null
+  }
+ ],
+ "gec_kalan": {
+  "simdi_ms": 10301,
+  "beklenen": [
+   {
+    "id": "mesru",
+    "karar": "reddet",
+    "nedenler": [
+     "zaman"
+    ],
+    "referans": null
+   }
+  ]
+ },
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "mesru",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "api.ornek.com",
+     "kanal": "broker",
+     "kullanildi": false
+    },
+    {
+     "id": "baska-kaynak",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "cdn.ornek.com",
+     "kanal": "broker",
+     "kullanildi": false
+    },
+    {
+     "id": "baska-eylem",
+     "arac": "web_getir",
+     "eylem": "yaz",
+     "kaynak": "api.ornek.com",
+     "kanal": "broker",
+     "kullanildi": false
+    },
+    {
+     "id": "dogrudan",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "api.ornek.com",
+     "kanal": "dogrudan",
+     "kullanildi": false
+    },
+    {
+     "id": "tekrar",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "api.ornek.com",
+     "kanal": "broker",
+     "kullanildi": true
+    },
+    {
+     "id": "hepsi",
+     "arac": "rapor_yaz",
+     "eylem": "yaz",
+     "kaynak": "yerel/rapor",
+     "kanal": "dogrudan",
+     "kullanildi": true
+    },
+    {
+     "id": "mesru",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "api.ornek.com",
+     "kanal": "broker",
+     "kullanildi": false
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "bilinmeyen kanal model",
+   "girdi": [
+    {
+     "id": "a",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "api.ornek.com",
+     "kanal": "model",
+     "kullanildi": false
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "kullanildi 0",
+   "girdi": [
+    {
+     "id": "a",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": "api.ornek.com",
+     "kanal": "broker",
+     "kullanildi": 0
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "kaynak None",
+   "girdi": [
+    {
+     "id": "a",
+     "arac": "web_getir",
+     "eylem": "getir",
+     "kaynak": null,
+     "kanal": "broker",
+     "kullanildi": false
+    }
+   ]
+  }
+ ]
+}

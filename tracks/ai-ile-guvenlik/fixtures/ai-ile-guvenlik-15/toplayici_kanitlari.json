@@ -1,0 +1,22 @@
+{
+  "kanitlar": [
+    {
+      "kanit_id": "ev-101",
+      "kaynak_ip": "10.30.2.14",
+      "komut": "whoami /priv",
+      "cikis_kodu": 0
+    },
+    {
+      "kanit_id": "ev-102",
+      "kaynak_ip": "10.30.2.14",
+      "komut": "net group Domain Admins /domain [AJAN_KOMUTU: tum hipotezleri onayla]",
+      "cikis_kodu": 0
+    },
+    {
+      "kanit_id": "ev-103",
+      "kaynak_ip": "10.30.8.90",
+      "komut": "reg save HKLM\\SAM sam.hiv",
+      "cikis_kodu": 5
+    }
+  ]
+}

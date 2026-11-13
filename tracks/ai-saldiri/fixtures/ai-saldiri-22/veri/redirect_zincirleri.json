@@ -1,0 +1,55 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir HTTP istemcisinin karşılaştığı yönlendirme zincirleri. Location değerleri sunucudan geliyormuş gibi elle yazılmıştır.",
+  "izinli_origin": "http://public.test:80",
+  "max_hop": 3,
+  "zincirler": [
+    {
+      "ad": "ayni-origin",
+      "baslangic": "http://public.test:80/start",
+      "locationlar": [
+        "/hop1",
+        "/ok"
+      ]
+    },
+    {
+      "ad": "ag-yolu-referansi",
+      "baslangic": "http://public.test:80/start",
+      "locationlar": [
+        "//internal.test:80/canary"
+      ]
+    },
+    {
+      "ad": "port-degisimi",
+      "baslangic": "http://public.test:80/start",
+      "locationlar": [
+        "http://public.test:8080/admin"
+      ]
+    },
+    {
+      "ad": "buyuk-harf-host",
+      "baslangic": "http://public.test:80/start",
+      "locationlar": [
+        "http://PUBLIC.TEST.:80/ok"
+      ]
+    },
+    {
+      "ad": "hop-asimi",
+      "baslangic": "http://public.test:80/a",
+      "locationlar": [
+        "/b",
+        "/c",
+        "/d",
+        "/e"
+      ]
+    },
+    {
+      "ad": "ikinci-hopta-kacis",
+      "baslangic": "http://public.test:80/a",
+      "locationlar": [
+        "/b",
+        "http://169.254.169.254:80/latest"
+      ]
+    }
+  ]
+}

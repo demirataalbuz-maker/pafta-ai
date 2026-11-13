@@ -1,0 +1,31 @@
+{
+  "kaynak": "sentetik",
+  "tahmin": [
+    2,
+    0,
+    -2
+  ],
+  "hedef": [
+    0,
+    2,
+    0
+  ],
+  "agirliklar": [
+    1,
+    2,
+    3
+  ],
+  "gradyan": [
+    0.5,
+    -0.5,
+    1
+  ],
+  "oran": 0.1,
+  "tek_agirlik": {
+    "x": 1,
+    "y": 1,
+    "baslangic": 0,
+    "oran": 0.1,
+    "adim": 3
+  }
+}

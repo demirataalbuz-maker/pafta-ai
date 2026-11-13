@@ -1,0 +1,12 @@
+{
+ "aciklama": "Sentetik tohum başına ölçümler. Alt sınırın altında kalan temiz doğruluk, yüksek hedef başarıya rağmen seçilemez.",
+ "temiz_alt_sinir": 0.9,
+ "olcumler": [
+  {"yerlesim": "kose", "temiz": 0.95, "hedef_basarisi": 0.70},
+  {"yerlesim": "kose", "temiz": 0.93, "hedef_basarisi": 0.62},
+  {"yerlesim": "merkez", "temiz": 0.97, "hedef_basarisi": 0.81},
+  {"yerlesim": "merkez", "temiz": 0.96, "hedef_basarisi": 0.85},
+  {"yerlesim": "genis_yama", "temiz": 0.84, "hedef_basarisi": 0.99},
+  {"yerlesim": "genis_yama", "temiz": 0.86, "hedef_basarisi": 0.98}
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Temsilî bir müşteri destek RAG hattı için elle yazılmış savunma politikası. Gerçek bir Qdrant/Promptfoo yapılandırması değildir.",
+  "politika": {"izinli_kaynaklar": ["kurumsal", "imzali"], "min_guven": 0.8, "tekrar_esigi": 0.7, "max_belge": 3, "kaynak_karari": "karantina", "talimat_karari": "karantina"},
+  "bozuk_politikalar": [
+    {"ad": "bos-kaynak", "politika": {"izinli_kaynaklar": [], "min_guven": 0.8, "tekrar_esigi": 0.7, "max_belge": 3, "kaynak_karari": "karantina", "talimat_karari": "karantina"}},
+    {"ad": "bool-sinir", "politika": {"izinli_kaynaklar": ["kurumsal"], "min_guven": 0.8, "tekrar_esigi": 0.7, "max_belge": true, "kaynak_karari": "karantina", "talimat_karari": "karantina"}},
+    {"ad": "gevsek-karar", "politika": {"izinli_kaynaklar": ["kurumsal"], "min_guven": 0.8, "tekrar_esigi": 0.7, "max_belge": 3, "kaynak_karari": "uyar", "talimat_karari": "karantina"}},
+    {"ad": "esik-disi", "politika": {"izinli_kaynaklar": ["kurumsal"], "min_guven": 1.2, "tekrar_esigi": 0.7, "max_belge": 3, "kaynak_karari": "karantina", "talimat_karari": "karantina"}}
+  ]
+}

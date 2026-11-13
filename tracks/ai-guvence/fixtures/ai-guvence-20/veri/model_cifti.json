@@ -1,0 +1,18 @@
+[
+  {
+    "id": "s-1",
+    "grup": "g-1",
+    "model_turu": "standart",
+    "dogruluk": 0.8,
+    "uyelik_auc": 0.8,
+    "avantaj": 0.4
+  },
+  {
+    "id": "d-1",
+    "grup": "g-1",
+    "model_turu": "dp",
+    "dogruluk": 0.75,
+    "uyelik_auc": 0.6,
+    "avantaj": 0.2
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "kaynak": "sentetik",
+  "katmanlar": [
+    {"id": "veri", "kontroller": ["provenance", "kiraci"]},
+    {"id": "girdi", "kontroller": ["boyut", "sema"]},
+    {"id": "arac", "kontroller": ["onay", "yetki"]},
+    {"id": "model", "kontroller": ["model_sabitleme", "sistem_promptu"]},
+    {"id": "cikti", "kontroller": ["dlp", "cikti_semasi"]}
+  ],
+  "olaylar": [
+    {"katman": "girdi", "kontrol": "boyut", "sonuc": "gecti"},
+    {"katman": "girdi", "kontrol": "sema", "sonuc": "gecti"},
+    {"katman": "model", "kontrol": "model_sabitleme", "sonuc": "gecti"},
+    {"katman": "cikti", "kontrol": "cikti_semasi", "sonuc": "gecti"},
+    {"katman": "arac", "kontrol": "onay", "sonuc": "gecti"},
+    {"katman": "arac", "kontrol": "yetki", "sonuc": "gecti"},
+    {"katman": "veri", "kontrol": "kiraci", "sonuc": "gecti"}
+  ],
+  "senaryolar": [
+    {"id": "iki-katman", "bozulan": ["sema", "boyut", "yetki", "onay"]},
+    {"id": "yedekli-girdi", "bozulan": ["sema"]},
+    {"id": "bos", "bozulan": []}
+  ]
+}

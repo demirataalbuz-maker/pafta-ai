@@ -1,0 +1,56 @@
+{
+ "aciklama": "Sırayla işlenecek sentetik devir olayları. Başlangıçta yalnız orchestrator kök yetkileri taşır.",
+ "kok_yetkiler": [
+  "okuma",
+  "yazma"
+ ],
+ "devirler": [
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "okuma"
+  },
+  {
+   "veren": "analyst",
+   "alan": "worker",
+   "yetki": "yazma"
+  },
+  {
+   "veren": "worker",
+   "alan": "yazici",
+   "yetki": "okuma"
+  },
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "yazma"
+  },
+  {
+   "veren": "analyst",
+   "alan": "worker",
+   "yetki": "yazma"
+  },
+  {
+   "veren": "analyst",
+   "alan": "worker",
+   "yetki": "arac"
+  },
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "model"
+  }
+ ],
+ "bozuk_devirler": [
+  {
+   "veren": "orchestrator",
+   "alan": "analyst",
+   "yetki": "root"
+  },
+  {
+   "veren": "analyst",
+   "alan": "analyst",
+   "yetki": "okuma"
+  }
+ ]
+}

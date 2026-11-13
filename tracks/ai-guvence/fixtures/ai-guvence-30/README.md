@@ -1,0 +1,3 @@
+# ai-guvence-30 görünür sentetik veri
+
+Elle yazılmış öğretim kayıtlarıdır; gerçek deney/araç çıktısı değildir. Hash alanları yalnız 64 karakterlik sentetik yer tutuculardır; dosya varlığı veya gerçek hash hesabı iddia edilmez. İki görev, iki tekrar ve iki kol vardır. Aynı purple_kayitlari.json ilk görevde doğrulanır, ikinci görevde karşılaştırılır, üçüncü görevde yayin_esikleri.json ile paket durumu hesaplanır. hazirla/setup her çalıştırmada geçici kopya oluşturur; kalıcılık yoktur. Başlangıç kodları dosyayı okur/yazdırır; aynı çalıştırmada bellekte kopyayı değiştirerek dene. Kontrol bağımsızdır. Son gerçek deneyde ayrı model eğitimi, gerçek dosya etkileri ve ZIP hash kontrolü vardır; ağda yayın yapılmaz.

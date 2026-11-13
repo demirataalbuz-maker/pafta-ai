@@ -1,0 +1,91 @@
+{
+ "aciklama": "Sentetik kullanıcı/oturum kimlikleri. beklenen [kullanici, oturum] çiftidir (JSON'da demet liste olur); null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "k-01",
+   "aciklama": "geçerli kullanıcı ve oturum",
+   "kullanici": "uya-1",
+   "oturum": "oturum-1",
+   "beklenen": [
+    "uya-1",
+    "oturum-1"
+   ]
+  },
+  {
+   "id": "k-02",
+   "aciklama": "tek karakterli kimlikler",
+   "kullanici": "a",
+   "oturum": "b",
+   "beklenen": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "k-03",
+   "aciklama": "32 karakter sınırı",
+   "kullanici": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "oturum": "oturum-1",
+   "beklenen": [
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "oturum-1"
+   ]
+  },
+  {
+   "id": "k-04",
+   "aciklama": "33 karakter: kesilmez, reddedilir",
+   "kullanici": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "oturum": "oturum-1",
+   "beklenen": null
+  },
+  {
+   "id": "k-05",
+   "aciklama": "büyük harf normalize edilmez",
+   "kullanici": "Uya-1",
+   "oturum": "oturum-1",
+   "beklenen": null
+  },
+  {
+   "id": "k-06",
+   "aciklama": "baştaki boşluk kırpılmaz",
+   "kullanici": " uya-1",
+   "oturum": "oturum-1",
+   "beklenen": null
+  },
+  {
+   "id": "k-07",
+   "aciklama": "iki nokta ayraç taşıyan kimlik",
+   "kullanici": "uya:1",
+   "oturum": "x",
+   "beklenen": null
+  },
+  {
+   "id": "k-08",
+   "aciklama": "aynı metni farklı bölen kimlik",
+   "kullanici": "uya",
+   "oturum": "1:x",
+   "beklenen": null
+  },
+  {
+   "id": "k-09",
+   "aciklama": "sonda tire",
+   "kullanici": "uya-",
+   "oturum": "oturum-1",
+   "beklenen": null
+  },
+  {
+   "id": "k-10",
+   "aciklama": "Türkçe karakter",
+   "kullanici": "üye-1",
+   "oturum": "oturum-1",
+   "beklenen": null
+  },
+  {
+   "id": "k-11",
+   "aciklama": "oturum None",
+   "kullanici": "uya-1",
+   "oturum": null,
+   "beklenen": null
+  }
+ ]
+}

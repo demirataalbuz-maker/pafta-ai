@@ -1,0 +1,14 @@
+[
+ {"ad": "train_step", "bas": 0, "bit": 120},
+ {"ad": "data_load", "bas": 0, "bit": 30},
+ {"ad": "forward", "bas": 30, "bit": 70},
+ {"ad": "conv", "bas": 32, "bit": 50},
+ {"ad": "linear", "bas": 50, "bit": 68},
+ {"ad": "backward", "bas": 70, "bit": 115},
+ {"ad": "train_step", "bas": 120, "bit": 250},
+ {"ad": "data_load", "bas": 120, "bit": 165},
+ {"ad": "forward", "bas": 165, "bit": 205},
+ {"ad": "conv", "bas": 167, "bit": 185},
+ {"ad": "linear", "bas": 185, "bit": 203},
+ {"ad": "backward", "bas": 205, "bit": 246}
+]

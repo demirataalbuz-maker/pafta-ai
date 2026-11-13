@@ -1,0 +1,128 @@
+{
+ "aciklama": "Sentetik guardrail sonuçları. beklenen {kanal, neden} sözlüğüdür; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "g-01",
+   "aciklama": "tamamlandı, izin, risk yok",
+   "sonuc": {
+    "durum": "tamam",
+    "karar": "izin",
+    "riskler": []
+   },
+   "beklenen": {
+    "kanal": "model_yaniti",
+    "neden": "guardrail_izin"
+   }
+  },
+  {
+   "id": "g-02",
+   "aciklama": "izin ama Bearer riski var",
+   "sonuc": {
+    "durum": "tamam",
+    "karar": "izin",
+    "riskler": [
+     "bearer_token"
+    ]
+   },
+   "beklenen": {
+    "kanal": "guvenli_yedek",
+    "neden": "politika"
+   }
+  },
+  {
+   "id": "g-03",
+   "aciklama": "açık ret",
+   "sonuc": {
+    "durum": "tamam",
+    "karar": "reddet",
+    "riskler": []
+   },
+   "beklenen": {
+    "kanal": "guvenli_yedek",
+    "neden": "politika"
+   }
+  },
+  {
+   "id": "g-04",
+   "aciklama": "guardrail servisi 500 döndü",
+   "sonuc": {
+    "durum": "hata",
+    "karar": null,
+    "riskler": []
+   },
+   "beklenen": {
+    "kanal": "yeniden_dene_degerlendir",
+    "neden": "guardrail_hatasi"
+   }
+  },
+  {
+   "id": "g-05",
+   "aciklama": "guardrail zaman aşımı",
+   "sonuc": {
+    "durum": "zaman_asimi",
+    "karar": null,
+    "riskler": []
+   },
+   "beklenen": {
+    "kanal": "yeniden_dene_degerlendir",
+    "neden": "guardrail_hatasi"
+   }
+  },
+  {
+   "id": "g-06",
+   "aciklama": "akıştan atlandı (yapılandırma hatası)",
+   "sonuc": {
+    "durum": "atlandi",
+    "karar": null,
+    "riskler": []
+   },
+   "beklenen": {
+    "kanal": "guvenli_yedek",
+    "neden": "guardrail_atladi"
+   }
+  },
+  {
+   "id": "g-07",
+   "aciklama": "hata ama karar izin yazılmış",
+   "sonuc": {
+    "durum": "hata",
+    "karar": "izin",
+    "riskler": []
+   },
+   "beklenen": null
+  },
+  {
+   "id": "g-08",
+   "aciklama": "tamam ama karar yok",
+   "sonuc": {
+    "durum": "tamam",
+    "karar": null,
+    "riskler": []
+   },
+   "beklenen": null
+  },
+  {
+   "id": "g-09",
+   "aciklama": "riskler ters sırada",
+   "sonuc": {
+    "durum": "tamam",
+    "karar": "izin",
+    "riskler": [
+     "gizli_isaret",
+     "ozel_anahtar"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "g-10",
+   "aciklama": "bilinmeyen durum devre_disi",
+   "sonuc": {
+    "durum": "devre_disi",
+    "karar": null,
+    "riskler": []
+   },
+   "beklenen": null
+  }
+ ]
+}

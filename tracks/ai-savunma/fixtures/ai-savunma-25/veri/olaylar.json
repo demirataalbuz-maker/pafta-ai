@@ -1,0 +1,67 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Aynı gün açılmış dört AI olayı. Sistem adları ve kanıt kimlikleri uydurmadır.",
+  "olaylar": [
+    {
+      "id": "INC-043",
+      "seviye": "orta",
+      "kategori": "model_sapmasi",
+      "sistem": "oneri-servisi",
+      "kanit_ids": [
+        "eval-raporu"
+      ]
+    },
+    {
+      "id": "INC-041",
+      "seviye": "kritik",
+      "kategori": "sizinti",
+      "sistem": "destek-botu",
+      "kanit_ids": [
+        "gateway-log",
+        "sohbet-kaydi"
+      ]
+    },
+    {
+      "id": "INC-044",
+      "seviye": "dusuk",
+      "kategori": "prompt_injection",
+      "sistem": "dokuman-asistani",
+      "kanit_ids": []
+    },
+    {
+      "id": "INC-042",
+      "seviye": "yuksek",
+      "kategori": "yetkisiz_erisim",
+      "sistem": "ajan-araclari",
+      "kanit_ids": [
+        "oturum-log"
+      ]
+    }
+  ],
+  "bozuk_olaylar": [
+    {
+      "id": "INC-045",
+      "seviye": "acil",
+      "kategori": "sizinti",
+      "sistem": "x",
+      "kanit_ids": []
+    },
+    {
+      "id": "INC-046",
+      "seviye": "orta",
+      "kategori": "sizinti",
+      "sistem": " destek-botu",
+      "kanit_ids": []
+    },
+    {
+      "id": "INC-047",
+      "seviye": "orta",
+      "kategori": "sizinti",
+      "sistem": "x",
+      "kanit_ids": [
+        "a",
+        "a"
+      ]
+    }
+  ]
+}

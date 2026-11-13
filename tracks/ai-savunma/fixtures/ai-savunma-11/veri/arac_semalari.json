@@ -1,0 +1,115 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir ajan uygulamasının araç kayıt defterinden alınmış gibi yazılmış şemalar. Gerçek araç kodu yoktur.",
+  "semalar": [
+    {
+      "ad": "dosya_oku",
+      "parametreler": {
+        "yol": "string"
+      },
+      "yetkiler": [
+        "dosya:oku"
+      ],
+      "yan_etkili": false,
+      "zaman_asimi_ms": 1000
+    },
+    {
+      "ad": "web_getir",
+      "parametreler": {
+        "url": "string"
+      },
+      "yetkiler": [
+        "ag:get"
+      ],
+      "yan_etkili": false,
+      "zaman_asimi_ms": 5000
+    },
+    {
+      "ad": "rapor_yaz",
+      "parametreler": {
+        "baslik": "string",
+        "icerik": "string"
+      },
+      "yetkiler": [
+        "dosya:yaz"
+      ],
+      "yan_etkili": true,
+      "zaman_asimi_ms": 10000
+    }
+  ],
+  "bozuk_semalar": [
+    {
+      "ad": "genis-dosya-yetkisi",
+      "sema": {
+        "ad": "dosya_oku",
+        "parametreler": {
+          "yol": "string"
+        },
+        "yetkiler": [
+          "dosya:oku",
+          "dosya:yaz"
+        ],
+        "yan_etkili": false,
+        "zaman_asimi_ms": 1000
+      }
+    },
+    {
+      "ad": "yan-etki-gizli",
+      "sema": {
+        "ad": "rapor_yaz",
+        "parametreler": {
+          "baslik": "string",
+          "icerik": "string"
+        },
+        "yetkiler": [
+          "dosya:yaz"
+        ],
+        "yan_etkili": false,
+        "zaman_asimi_ms": 1000
+      }
+    },
+    {
+      "ad": "fazla-parametre",
+      "sema": {
+        "ad": "web_getir",
+        "parametreler": {
+          "url": "string",
+          "yontem": "string"
+        },
+        "yetkiler": [
+          "ag:get"
+        ],
+        "yan_etkili": false,
+        "zaman_asimi_ms": 1000
+      }
+    },
+    {
+      "ad": "genel-arac",
+      "sema": {
+        "ad": "dosya_yonet",
+        "parametreler": {
+          "yol": "string"
+        },
+        "yetkiler": [
+          "dosya:yaz"
+        ],
+        "yan_etkili": true,
+        "zaman_asimi_ms": 1000
+      }
+    },
+    {
+      "ad": "sinirsiz-zaman",
+      "sema": {
+        "ad": "dosya_oku",
+        "parametreler": {
+          "yol": "string"
+        },
+        "yetkiler": [
+          "dosya:oku"
+        ],
+        "yan_etkili": false,
+        "zaman_asimi_ms": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+ "aciklama": "Sentetik oturumlar ve modelin ürettiği çağrı adayları. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "k-01",
+   "aciklama": "doğrulanmış oturum, aynı kullanıcı",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "oku"
+   },
+   "beklenen": {
+    "izinli": true,
+    "neden": "bagli"
+   }
+  },
+  {
+   "id": "k-02",
+   "aciklama": "model çağrıya admin yazmış",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "admin",
+    "eylem": "oku"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "kimlik-uyusmazligi"
+   }
+  },
+  {
+   "id": "k-03",
+   "aciklama": "doğrulanmamış oturum, ad eşleşiyor",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": false
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "oku"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "oturum-dogrulanmamis"
+   }
+  },
+  {
+   "id": "k-04",
+   "aciklama": "doğrulanmamış oturum ve farklı ad",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": false
+   },
+   "cagri": {
+    "kullanici": "admin",
+    "eylem": "oku"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "oturum-dogrulanmamis"
+   }
+  },
+  {
+   "id": "k-05",
+   "aciklama": "dogrulanmis 1 (bool değil)",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": 1
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "oku"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-06",
+   "aciklama": "dogrulanmis 'true' metni",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": "true"
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "oku"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-07",
+   "aciklama": "çağrıda ek rol alanı",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "oku",
+    "rol": "admin"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-08",
+   "aciklama": "çağrıda desteklenmeyen sil eylemi",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "sil"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-09",
+   "aciklama": "büyük harfli kullanıcı adı eşleşmez",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "Ayse",
+    "eylem": "yaz"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "kimlik-uyusmazligi"
+   }
+  },
+  {
+   "id": "k-10",
+   "aciklama": "oturumda boş kullanıcı",
+   "oturum": {
+    "kullanici": "",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "oku"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "k-11",
+   "aciklama": "geçerli paylas eylemi",
+   "oturum": {
+    "kullanici": "ayse",
+    "dogrulanmis": true
+   },
+   "cagri": {
+    "kullanici": "ayse",
+    "eylem": "paylas"
+   },
+   "beklenen": {
+    "izinli": true,
+    "neden": "bagli"
+   }
+  }
+ ]
+}

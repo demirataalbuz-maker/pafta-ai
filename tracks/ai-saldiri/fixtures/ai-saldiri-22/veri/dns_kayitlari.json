@@ -1,0 +1,73 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir istemcinin DNS çözüm günlüğü ve gerçekte bağlandığı IP. Gerçek bir DNS sunucusu veya saldırısı değildir.",
+  "kayitlar": [
+    {
+      "vaka_id": "v-temiz",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [
+        "93.184.216.34"
+      ],
+      "baglanti_ip": "93.184.216.34"
+    },
+    {
+      "vaka_id": "v-rebinding",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [
+        "93.184.216.34",
+        "127.0.0.1"
+      ],
+      "baglanti_ip": "127.0.0.1"
+    },
+    {
+      "vaka_id": "v-ara-cevap",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [
+        "93.184.216.34",
+        "10.0.0.5",
+        "93.184.216.34"
+      ],
+      "baglanti_ip": "93.184.216.34"
+    },
+    {
+      "vaka_id": "v-socket-sapma",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [
+        "93.184.216.34"
+      ],
+      "baglanti_ip": "169.254.169.254"
+    },
+    {
+      "vaka_id": "v-hep-ic",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [
+        "10.0.0.5"
+      ],
+      "baglanti_ip": "10.0.0.5"
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "vaka_id": "b-ipv6",
+      "izinli_ip": "::1",
+      "cozumler": [
+        "::1"
+      ],
+      "baglanti_ip": "::1"
+    },
+    {
+      "vaka_id": "b-bos",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [],
+      "baglanti_ip": "93.184.216.34"
+    },
+    {
+      "vaka_id": "b-ad",
+      "izinli_ip": "93.184.216.34",
+      "cozumler": [
+        "public.test"
+      ],
+      "baglanti_ip": "93.184.216.34"
+    }
+  ]
+}

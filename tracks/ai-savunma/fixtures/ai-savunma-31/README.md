@@ -1,0 +1,3 @@
+# ai-savunma-31 görünür sentetik veri
+
+Elle yazılmış öğretim verileri, canlı sunucu kullanım kaydı değildir. istekler.json jeton kovasının milisaniye/maliyet çiftlerini; kullanim.json sentetik token sayıları ve örnek fiyatları; butce.json çıkış üretim planını taşır. Bunlar ayrı ama ilişkili kontrol katmanlarıdır. Kova jetonu LLM tokenı değildir. hazirla/setup her çalıştırmada geçici kopya oluşturur; kalıcılık yoktur. Başlangıçlar dosyaları okur/yazdırır; aynı çalıştırmada bellekte kopyayla deneyebilirsin. Gizli testler ayrıdır. Son görev gerçek yerel modelden 512/32 çıkış tavanıyla ölçüm alır; üst sınırları olmayan bir yük başlatmaz. Gerçek ücretli API veya fatura yoktur.

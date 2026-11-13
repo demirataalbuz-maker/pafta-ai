@@ -1,0 +1,16 @@
+{
+  "kapsam_id": "ROE-2026-PAFTA-01",
+  "veri_kokeni": "sentetik_fikstur",
+  "izinli_hedefler": [
+    "lab://yerel-musteri-asistani",
+    "lab://yerel-rag-servisi"
+  ],
+  "ucuncu_taraf_api_izni": false,
+  "maks_istek_dakika": 30,
+  "kanit_saklama_gun": 14,
+  "yasak_kategoriler": [
+    "gercek-pii",
+    "zararli-yuk",
+    "hizmet-kesintisi"
+  ]
+}

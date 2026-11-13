@@ -1,0 +1,1 @@
+Sentetik küçük dizi fixture; gerçek gradient tablosu veya VLM yanıtı değildir. Setup vlm/ornek.json geçici kopyası; aynı çağrıda değiştirilebilir, sonraki çalıştırmaya kalmaz. Gerçek deney iki sentetik PNG ve gerçek VLM autograd üretir; kabul kanıtından görsel yollarına ulaşılır.

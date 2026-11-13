@@ -1,0 +1,25 @@
+{
+  "kaynak": "sentetik",
+  "bilesenler": [
+    {"id": "api", "tur": "api"},
+    {"id": "kullanici", "tur": "kullanici"},
+    {"id": "llm", "tur": "model"},
+    {"id": "dosya-araci", "tur": "arac"},
+    {"id": "vektor", "tur": "depo"},
+    {"id": "internet", "tur": "ag"},
+    {"id": "tarayici", "tur": "istemci"}
+  ],
+  "baglantilar": [
+    {"kaynak": "kullanici", "hedef": "api", "kanal": "http"},
+    {"kaynak": "api", "hedef": "llm", "kanal": "ipc"},
+    {"kaynak": "llm", "hedef": "dosya-araci", "kanal": "ipc"},
+    {"kaynak": "api", "hedef": "vektor", "kanal": "vektor"},
+    {"kaynak": "tarayici", "hedef": "api", "kanal": "http"}
+  ],
+  "kontroller": [
+    {"kaynak": "kullanici", "hedef": "api", "kanal": "http", "ad": "kimlik"},
+    {"kaynak": "kullanici", "hedef": "api", "kanal": "http", "ad": "boyut"},
+    {"kaynak": "api", "hedef": "llm", "kanal": "ipc", "ad": "sema"},
+    {"kaynak": "llm", "hedef": "dosya-araci", "kanal": "ipc", "ad": "yetki"}
+  ]
+}

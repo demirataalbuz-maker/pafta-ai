@@ -1,0 +1,11 @@
+{
+  "kaynak": "sentetik",
+  "yon": [3.0, 4.0],
+  "aktivasyon": [1.0, 2.0],
+  "kayitlar": [
+    {"kosul": "taban", "guvenlik": 0.8, "yetenek": 0.9},
+    {"kosul": "ablite", "guvenlik": 0.4, "yetenek": 0.6},
+    {"kosul": "taban", "guvenlik": 0.6, "yetenek": 0.7},
+    {"kosul": "ablite", "guvenlik": 0.2, "yetenek": 0.8}
+  ]
+}

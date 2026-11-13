@@ -1,0 +1,21 @@
+{
+ "aciklama": "Model çıktısındaki Markdown bağlantı hedefleri. Hiçbirine istek gönderilmez.",
+ "urller": [
+  "https://docs.pafta.test/ders?id=9#bolum",
+  "HTTPS://Pafta.test/",
+  "javascript:alert(1)",
+  "JaVaScRiPt:alert(1)",
+  "data:text/html;base64,PHNjcmlwdD4=",
+  "https://kullanici:parola@pafta.test/",
+  "https:///yol",
+  "https://pafta.test:99999/",
+  "https://pafta.test/a b",
+  "https:\\\\kotu.test/",
+  "http://pafta.test\t/",
+  "//pafta.test/x"
+ ],
+ "bozuk_girdiler": [
+  null,
+  12
+ ]
+}

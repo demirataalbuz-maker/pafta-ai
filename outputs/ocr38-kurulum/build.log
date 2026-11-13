@@ -1,0 +1,664 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 344B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/pafta-ai-s51:mlflow-2.2.1
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/pafta-ai-s51:mlflow-2.2.1@sha256:977a660407b57f86316f3665306b15ec77267a06fbe48e39271f1be709b15024
+#4 resolve docker.io/library/pafta-ai-s51:mlflow-2.2.1@sha256:977a660407b57f86316f3665306b15ec77267a06fbe48e39271f1be709b15024 0.0s done
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 1.80kB 0.0s done
+#5 DONE 0.1s
+
+#6 [2/3] COPY install_ocr.py /tmp/pafta-install-ocr.py
+#6 DONE 0.1s
+
+#7 [3/3] RUN python /tmp/pafta-install-ocr.py && rm -rf /var/lib/apt/lists/* /tmp/pafta-install-ocr.py
+#7 6.508 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#7 6.508 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#7 6.508 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#7 6.508 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#7 6.508 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#7 6.508 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [360 kB]
+#7 6.508 Fetched 9398 kB in 5s (2000 kB/s)
+#7 6.508 Reading package lists...
+#7 6.508 
+#7 6.508 
+#7 7.741 Reading package lists...
+#7 7.741 Building dependency tree...
+#7 7.741 Reading state information...
+#7 7.741 The following additional packages will be installed:
+#7 7.741   fontconfig fontconfig-config fonts-dejavu-core libarchive13 libbrotli1
+#7 7.741   libbsd0 libcairo2 libcurl4 libdatrie1 libdeflate0 libexpat1 libfontconfig1
+#7 7.741   libfreetype6 libfribidi0 libgif7 libglib2.0-0 libgomp1 libgraphite2-3
+#7 7.741   libharfbuzz0b libicu72 libjbig0 libjpeg62-turbo libldap-2.5-0 liblept5
+#7 7.741   liblerc4 libnghttp2-14 libopenjp2-7 libpango-1.0-0 libpangocairo-1.0-0
+#7 7.741   libpangoft2-1.0-0 libpixman-1-0 libpng16-16 libpsl5 librtmp1 libsasl2-2
+#7 7.741   libsasl2-modules-db libssh2-1 libtesseract5 libthai-data libthai0 libtiff6
+#7 7.741   libwebp7 libwebpmux3 libx11-6 libx11-data libxau6 libxcb-render0 libxcb-shm0
+#7 7.741   libxcb1 libxdmcp6 libxext6 libxml2 libxrender1 tesseract-ocr-osd
+#7 7.741 Suggested packages:
+#7 7.741   lrzip low-memory-monitor
+#7 7.741 Recommended packages:
+#7 7.741   libglib2.0-data shared-mime-info xdg-user-dirs libldap-common publicsuffix
+#7 7.741   libsasl2-modules
+#7 7.741 The following NEW packages will be installed:
+#7 7.741   fontconfig fontconfig-config fonts-dejavu-core libarchive13 libbrotli1
+#7 7.741   libbsd0 libcairo2 libcurl4 libdatrie1 libdeflate0 libexpat1 libfontconfig1
+#7 7.741   libfreetype6 libfribidi0 libgif7 libglib2.0-0 libgomp1 libgraphite2-3
+#7 7.741   libharfbuzz0b libicu72 libjbig0 libjpeg62-turbo libldap-2.5-0 liblept5
+#7 7.741   liblerc4 libnghttp2-14 libopenjp2-7 libpango-1.0-0 libpangocairo-1.0-0
+#7 7.741   libpangoft2-1.0-0 libpixman-1-0 libpng16-16 libpsl5 librtmp1 libsasl2-2
+#7 7.741   libsasl2-modules-db libssh2-1 libtesseract5 libthai-data libthai0 libtiff6
+#7 7.741   libwebp7 libwebpmux3 libx11-6 libx11-data libxau6 libxcb-render0 libxcb-shm0
+#7 7.741   libxcb1 libxdmcp6 libxext6 libxml2 libxrender1 tesseract-ocr
+#7 7.741   tesseract-ocr-eng tesseract-ocr-osd
+#7 7.741 0 upgraded, 56 newly installed, 0 to remove and 4 not upgraded.
+#7 7.741 Need to get 30.4 MB of archives.
+#7 7.741 After this operation, 92.6 MB of additional disk space will be used.
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/e/expat/libexpat1_2.5.0-1%2bdeb12u5_amd64.deb' libexpat1_2.5.0-1+deb12u5_amd64.deb 107940 
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/libbrotli1_1.0.9-2%2bdeb12u1_amd64.deb' libbrotli1_1.0.9-2+deb12u1_amd64.deb 274704 
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng16-16_1.6.39-2%2bdeb12u6_amd64.deb' libpng16-16_1.6.39-2+deb12u6_amd64.deb 277048 
+#7 7.741 'http://deb.debian.org/debian/pool/main/f/freetype/libfreetype6_2.12.1%2bdfsg-5%2bdeb12u4_amd64.deb' libfreetype6_2.12.1+dfsg-5+deb12u4_amd64.deb 397736 MD5Sum:8ee3bd604ace008bee4083b14746dedb
+#7 7.741 'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-6_all.deb' fonts-dejavu-core_2.37-6_all.deb 1067728 MD5Sum:755d6c59d57accb3000de0cdba40918d
+#7 7.741 'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig-config_2.14.1-4_amd64.deb' fontconfig-config_2.14.1-4_amd64.deb 314864 MD5Sum:88cb4a667a75c108ddf316da4683f12e
+#7 7.741 'http://deb.debian.org/debian/pool/main/f/fontconfig/libfontconfig1_2.14.1-4_amd64.deb' libfontconfig1_2.14.1-4_amd64.deb 385664 MD5Sum:522c4fa1fecd36d0f11eb6970fcd1364
+#7 7.741 'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.1-4_amd64.deb' fontconfig_2.14.1-4_amd64.deb 449212 MD5Sum:a88a18a6dc4b8000683132012c9db832
+#7 7.741 'http://deb.debian.org/debian/pool/main/i/icu/libicu72_72.1-3%2bdeb12u1_amd64.deb' libicu72_72.1-3+deb12u1_amd64.deb 9376124 MD5Sum:81a7519057b13803f30783061c4409b5
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u6_amd64.deb' libxml2_2.9.14+dfsg-1.3~deb12u6_amd64.deb 688760 MD5Sum:e0fc4937b830f48f3959d116df942d99
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive13_3.6.2-1%2bdeb12u5_amd64.deb' libarchive13_3.6.2-1+deb12u5_amd64.deb 345488 
+#7 7.741 'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd0_0.11.7-2_amd64.deb' libbsd0_0.11.7-2_amd64.deb 117416 MD5Sum:5d382c22b266715b019f46576a3f3146
+#7 7.741 'http://deb.debian.org/debian/pool/main/p/pixman/libpixman-1-0_0.42.2-1_amd64.deb' libpixman-1-0_0.42.2-1_amd64.deb 545588 MD5Sum:65313d4125a22ed2ca198dee3fdabdd1
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxau/libxau6_1.0.9-1_amd64.deb' libxau6_1%3a1.0.9-1_amd64.deb 19720 MD5Sum:317e939fdeb6d7b0dbd9eecba8e5cd11
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp6_1.1.2-3_amd64.deb' libxdmcp6_1%3a1.1.2-3_amd64.deb 26344 MD5Sum:4a27341c3dfb3067bc473fc241144ca9
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb1_1.15-1_amd64.deb' libxcb1_1.15-1_amd64.deb 144052 MD5Sum:f35728a21c52c5e591aff7baa950d56a
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libx11/libx11-data_1.8.4-2%2bdeb12u2_all.deb' libx11-data_2%3a1.8.4-2+deb12u2_all.deb 291884 MD5Sum:85ab85cc2396aafb5a525bac782d8ec9
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libx11/libx11-6_1.8.4-2%2bdeb12u2_amd64.deb' libx11-6_2%3a1.8.4-2+deb12u2_amd64.deb 759544 MD5Sum:0c6481c14ab6815f2d2983310157421e
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-render0_1.15-1_amd64.deb' libxcb-render0_1.15-1_amd64.deb 115012 MD5Sum:2d439ba4286c2ed03fbb8349084bf2ef
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-shm0_1.15-1_amd64.deb' libxcb-shm0_1.15-1_amd64.deb 105472 MD5Sum:ba6aaee1156c74780ad00539cb23a936
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxext/libxext6_1.3.4-1%2bb1_amd64.deb' libxext6_2%3a1.3.4-1+b1_amd64.deb 52932 MD5Sum:73b96dd0229e3dc10ff7409521fb0761
+#7 7.741 'http://deb.debian.org/debian/pool/main/libx/libxrender/libxrender1_0.9.10-1.1_amd64.deb' libxrender1_1%3a0.9.10-1.1_amd64.deb 33228 MD5Sum:93b87c3eed7cc375e93b1fcb8f7d754b
+#7 7.741 'http://deb.debian.org/debian/pool/main/c/cairo/libcairo2_1.16.0-7_amd64.deb' libcairo2_1.16.0-7_amd64.deb 574676 MD5Sum:bc4ee8d605f36a5dd1cc307bf28a9fa8
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.28%2bdfsg-10%2bdeb12u1_amd64.deb' libsasl2-modules-db_2.1.28+dfsg-10+deb12u1_amd64.deb 20524 
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/libsasl2-2_2.1.28%2bdfsg-10%2bdeb12u1_amd64.deb' libsasl2-2_2.1.28+dfsg-10+deb12u1_amd64.deb 59908 
+#7 7.741 'http://deb.debian.org/debian/pool/main/o/openldap/libldap-2.5-0_2.5.13%2bdfsg-5_amd64.deb' libldap-2.5-0_2.5.13+dfsg-5_amd64.deb 183248 MD5Sum:aa52ea68ca3ad4e9a9acc863fa70343a
+#7 7.741 'http://deb.debian.org/debian/pool/main/n/nghttp2/libnghttp2-14_1.52.0-1%2bdeb12u3_amd64.deb' libnghttp2-14_1.52.0-1+deb12u3_amd64.deb 72404 MD5Sum:d681e56846f2d3d68a237da84943b2d9
+#7 7.741 'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl5_0.21.2-1_amd64.deb' libpsl5_0.21.2-1_amd64.deb 58684 MD5Sum:37ebfb57fdbf01631629ee9f36c8b478
+#7 7.741 'http://deb.debian.org/debian/pool/main/r/rtmpdump/librtmp1_2.4%2b20151223.gitfa8646d.1-2%2bb2_amd64.deb' librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb 60824 MD5Sum:d757abb668fc1ee0d9488805bfb4371e
+#7 7.741 'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2-1_1.10.0-3%2bdeb12u1_amd64.deb' libssh2-1_1.10.0-3+deb12u1_amd64.deb 175976 
+#7 7.741 'http://deb.debian.org/debian/pool/main/c/curl/libcurl4_7.88.1-10%2bdeb12u15_amd64.deb' libcurl4_7.88.1-10+deb12u15_amd64.deb 392184 MD5Sum:31f3ce5464013ac2f6f580533dbeb9fb
+#7 7.741 'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie1_0.2.13-2%2bb1_amd64.deb' libdatrie1_0.2.13-2+b1_amd64.deb 43320 MD5Sum:ad938e26b2280bfe54171f58341d95be
+#7 7.741 'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate0_1.14-1_amd64.deb' libdeflate0_1.14-1_amd64.deb 61416 MD5Sum:e505f1277c856889aa2b539320e3e154
+#7 7.741 'http://deb.debian.org/debian/pool/main/f/fribidi/libfribidi0_1.0.8-2.1_amd64.deb' libfribidi0_1.0.8-2.1_amd64.deb 64952 MD5Sum:4945592ecf009abf51a1ac015b681b86
+#7 7.741 'http://deb.debian.org/debian/pool/main/g/giflib/libgif7_5.2.1-2.5%2bdeb12u1_amd64.deb' libgif7_5.2.1-2.5+deb12u1_amd64.deb 42956 MD5Sum:63cf3dd05c8f28e6ab6559567b2e4ff0
+#7 7.741 'http://deb.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.74.6-2%2bdeb12u9_amd64.deb' libglib2.0-0_2.74.6-2+deb12u9_amd64.deb 1403216 MD5Sum:0285a2e88f28faa17284d92e3ba6f166
+#7 7.741 'http://deb.debian.org/debian/pool/main/g/gcc-12/libgomp1_12.2.0-14%2bdeb12u1_amd64.deb' libgomp1_12.2.0-14+deb12u1_amd64.deb 115772 MD5Sum:898439c6702dbfd9723d747fb99086d4
+#7 7.741 'http://deb.debian.org/debian/pool/main/g/graphite2/libgraphite2-3_1.3.14-1%2bdeb12u1_amd64.deb' libgraphite2-3_1.3.14-1+deb12u1_amd64.deb 74564 MD5Sum:efee3be4ddae8bb456d3f0f6d09acbff
+#7 7.741 'http://deb.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz0b_6.0.0%2bdfsg-3_amd64.deb' libharfbuzz0b_6.0.0+dfsg-3_amd64.deb 1945396 MD5Sum:acc3df6078788d93f55a6aaa59b658dd
+#7 7.741 'http://deb.debian.org/debian/pool/main/j/jbigkit/libjbig0_2.1-6.1_amd64.deb' libjbig0_2.1-6.1_amd64.deb 31704 MD5Sum:5e126e3852ae239341c233a50690e2d6
+#7 7.741 'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_2.1.5-2_amd64.deb' libjpeg62-turbo_1%3a2.1.5-2_amd64.deb 166332 MD5Sum:c43c12e2144cad5b82c10d63dcc57ecd
+#7 7.741 'http://deb.debian.org/debian/pool/main/o/openjpeg2/libopenjp2-7_2.5.0-2%2bdeb12u3_amd64.deb' libopenjp2-7_2.5.0-2+deb12u3_amd64.deb 189312 MD5Sum:bb7b72ae72a38620bed002a063d5dc64
+#7 7.741 'http://deb.debian.org/debian/pool/main/l/lerc/liblerc4_4.0.0%2bds-2_amd64.deb' liblerc4_4.0.0+ds-2_amd64.deb 170368 MD5Sum:100ad75d6812ac853407f24c40076b02
+#7 7.741 'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp7_1.2.4-0.2%2bdeb12u1_amd64.deb' libwebp7_1.2.4-0.2+deb12u1_amd64.deb 285512 MD5Sum:19f6c9801f036b0615b9bf650c3ee1fa
+#7 7.741 'http://deb.debian.org/debian/pool/main/t/tiff/libtiff6_4.5.0-6%2bdeb12u4_amd64.deb' libtiff6_4.5.0-6+deb12u4_amd64.deb 316172 MD5Sum:f283ac0d100dc6a749470b06e3908a8a
+#7 7.741 'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebpmux3_1.2.4-0.2%2bdeb12u1_amd64.deb' libwebpmux3_1.2.4-0.2+deb12u1_amd64.deb 109492 MD5Sum:218141480dac594c22ab26ac9eac70af
+#7 7.741 'http://deb.debian.org/debian/pool/main/l/leptonlib/liblept5_1.82.0-3%2bb3_amd64.deb' liblept5_1.82.0-3+b3_amd64.deb 1049560 MD5Sum:5e30a685bf42efb364e0b8d76fbf0ef8
+#7 7.741 'http://deb.debian.org/debian/pool/main/libt/libthai/libthai-data_0.1.29-1_all.deb' libthai-data_0.1.29-1_all.deb 176200 MD5Sum:2d7fe29106323274a458bc114e3049ea
+#7 7.741 'http://deb.debian.org/debian/pool/main/libt/libthai/libthai0_0.1.29-1_amd64.deb' libthai0_0.1.29-1_amd64.deb 57468 MD5Sum:3d73542cb037cb9cb5015e9ac43aed8d
+#7 7.741 'http://deb.debian.org/debian/pool/main/p/pango1.0/libpango-1.0-0_1.50.12%2bds-1_amd64.deb' libpango-1.0-0_1.50.12+ds-1_amd64.deb 211788 MD5Sum:5c9051d5bf37660b1dac92e5410033da
+#7 7.741 'http://deb.debian.org/debian/pool/main/p/pango1.0/libpangoft2-1.0-0_1.50.12%2bds-1_amd64.deb' libpangoft2-1.0-0_1.50.12+ds-1_amd64.deb 47384 MD5Sum:2e98735072a64d66e8bb663c6a8e9590
+#7 7.741 'http://deb.debian.org/debian/pool/main/p/pango1.0/libpangocairo-1.0-0_1.50.12%2bds-1_amd64.deb' libpangocairo-1.0-0_1.50.12+ds-1_amd64.deb 34184 MD5Sum:75df25dbf6dcadc7612abe6f48eb3da1
+#7 7.741 'http://deb.debian.org/debian/pool/main/t/tesseract/libtesseract5_5.3.0-2_amd64.deb' libtesseract5_5.3.0-2_amd64.deb 1278876 MD5Sum:4cb9b90ecb23ee54d8030b72b4149dbc
+#7 7.741 'http://deb.debian.org/debian/pool/main/t/tesseract-lang/tesseract-ocr-eng_4.1.0-2_all.deb' tesseract-ocr-eng_1%3a4.1.0-2_all.deb 1593640 MD5Sum:496001dc0df6b4ebf7cb5c0560abe921
+#7 7.741 'http://deb.debian.org/debian/pool/main/t/tesseract-lang/tesseract-ocr-osd_4.1.0-2_all.deb' tesseract-ocr-osd_1%3a4.1.0-2_all.deb 2992152 MD5Sum:575467104299f7beb8c1428eaac76d92
+#7 7.741 'http://deb.debian.org/debian/pool/main/t/tesseract/tesseract-ocr_5.3.0-2_amd64.deb' tesseract-ocr_5.3.0-2_amd64.deb 402216 MD5Sum:06ae2165e36e1a2eb7f54529c5a619c3
+#7 7.741 
+#7 7.741 
+#7 7.748 OCR APPROVED NETWORK PLAN 39756840 bytes
+#7 22.91 Reading package lists...
+#7 22.91 Building dependency tree...
+#7 22.91 Reading state information...
+#7 22.91 The following additional packages will be installed:
+#7 22.91   fontconfig fontconfig-config fonts-dejavu-core libarchive13 libbrotli1
+#7 22.91   libbsd0 libcairo2 libcurl4 libdatrie1 libdeflate0 libexpat1 libfontconfig1
+#7 22.91   libfreetype6 libfribidi0 libgif7 libglib2.0-0 libgomp1 libgraphite2-3
+#7 22.91   libharfbuzz0b libicu72 libjbig0 libjpeg62-turbo libldap-2.5-0 liblept5
+#7 22.91   liblerc4 libnghttp2-14 libopenjp2-7 libpango-1.0-0 libpangocairo-1.0-0
+#7 22.91   libpangoft2-1.0-0 libpixman-1-0 libpng16-16 libpsl5 librtmp1 libsasl2-2
+#7 22.91   libsasl2-modules-db libssh2-1 libtesseract5 libthai-data libthai0 libtiff6
+#7 22.91   libwebp7 libwebpmux3 libx11-6 libx11-data libxau6 libxcb-render0 libxcb-shm0
+#7 22.91   libxcb1 libxdmcp6 libxext6 libxml2 libxrender1 tesseract-ocr-osd
+#7 22.91 Suggested packages:
+#7 22.91   lrzip low-memory-monitor
+#7 22.91 Recommended packages:
+#7 22.91   libglib2.0-data shared-mime-info xdg-user-dirs libldap-common publicsuffix
+#7 22.91   libsasl2-modules
+#7 22.91 The following NEW packages will be installed:
+#7 22.91   fontconfig fontconfig-config fonts-dejavu-core libarchive13 libbrotli1
+#7 22.91   libbsd0 libcairo2 libcurl4 libdatrie1 libdeflate0 libexpat1 libfontconfig1
+#7 22.91   libfreetype6 libfribidi0 libgif7 libglib2.0-0 libgomp1 libgraphite2-3
+#7 22.91   libharfbuzz0b libicu72 libjbig0 libjpeg62-turbo libldap-2.5-0 liblept5
+#7 22.91   liblerc4 libnghttp2-14 libopenjp2-7 libpango-1.0-0 libpangocairo-1.0-0
+#7 22.91   libpangoft2-1.0-0 libpixman-1-0 libpng16-16 libpsl5 librtmp1 libsasl2-2
+#7 22.91   libsasl2-modules-db libssh2-1 libtesseract5 libthai-data libthai0 libtiff6
+#7 22.91   libwebp7 libwebpmux3 libx11-6 libx11-data libxau6 libxcb-render0 libxcb-shm0
+#7 22.91   libxcb1 libxdmcp6 libxext6 libxml2 libxrender1 tesseract-ocr
+#7 22.91   tesseract-ocr-eng tesseract-ocr-osd
+#7 22.91 0 upgraded, 56 newly installed, 0 to remove and 4 not upgraded.
+#7 22.91 Need to get 30.4 MB of archives.
+#7 22.91 After this operation, 92.6 MB of additional disk space will be used.
+#7 22.91 Get:1 http://deb.debian.org/debian-security bookworm-security/main amd64 libexpat1 amd64 2.5.0-1+deb12u5 [108 kB]
+#7 22.91 Get:2 http://deb.debian.org/debian-security bookworm-security/main amd64 libbrotli1 amd64 1.0.9-2+deb12u1 [275 kB]
+#7 22.91 Get:3 http://deb.debian.org/debian-security bookworm-security/main amd64 libpng16-16 amd64 1.6.39-2+deb12u6 [277 kB]
+#7 22.91 Get:4 http://deb.debian.org/debian bookworm/main amd64 libfreetype6 amd64 2.12.1+dfsg-5+deb12u4 [398 kB]
+#7 22.91 Get:5 http://deb.debian.org/debian bookworm/main amd64 fonts-dejavu-core all 2.37-6 [1068 kB]
+#7 22.91 Get:6 http://deb.debian.org/debian bookworm/main amd64 fontconfig-config amd64 2.14.1-4 [315 kB]
+#7 22.91 Get:7 http://deb.debian.org/debian bookworm/main amd64 libfontconfig1 amd64 2.14.1-4 [386 kB]
+#7 22.91 Get:8 http://deb.debian.org/debian bookworm/main amd64 fontconfig amd64 2.14.1-4 [449 kB]
+#7 22.91 Get:9 http://deb.debian.org/debian bookworm/main amd64 libicu72 amd64 72.1-3+deb12u1 [9376 kB]
+#7 22.91 Get:10 http://deb.debian.org/debian bookworm/main amd64 libxml2 amd64 2.9.14+dfsg-1.3~deb12u6 [689 kB]
+#7 22.91 Get:11 http://deb.debian.org/debian-security bookworm-security/main amd64 libarchive13 amd64 3.6.2-1+deb12u5 [345 kB]
+#7 22.91 Get:12 http://deb.debian.org/debian bookworm/main amd64 libbsd0 amd64 0.11.7-2 [117 kB]
+#7 22.91 Get:13 http://deb.debian.org/debian bookworm/main amd64 libpixman-1-0 amd64 0.42.2-1 [546 kB]
+#7 22.91 Get:14 http://deb.debian.org/debian bookworm/main amd64 libxau6 amd64 1:1.0.9-1 [19.7 kB]
+#7 22.91 Get:15 http://deb.debian.org/debian bookworm/main amd64 libxdmcp6 amd64 1:1.1.2-3 [26.3 kB]
+#7 22.91 Get:16 http://deb.debian.org/debian bookworm/main amd64 libxcb1 amd64 1.15-1 [144 kB]
+#7 22.91 Get:17 http://deb.debian.org/debian bookworm/main amd64 libx11-data all 2:1.8.4-2+deb12u2 [292 kB]
+#7 22.91 Get:18 http://deb.debian.org/debian bookworm/main amd64 libx11-6 amd64 2:1.8.4-2+deb12u2 [760 kB]
+#7 22.91 Get:19 http://deb.debian.org/debian bookworm/main amd64 libxcb-render0 amd64 1.15-1 [115 kB]
+#7 22.91 Get:20 http://deb.debian.org/debian bookworm/main amd64 libxcb-shm0 amd64 1.15-1 [105 kB]
+#7 22.91 Get:21 http://deb.debian.org/debian bookworm/main amd64 libxext6 amd64 2:1.3.4-1+b1 [52.9 kB]
+#7 22.91 Get:22 http://deb.debian.org/debian bookworm/main amd64 libxrender1 amd64 1:0.9.10-1.1 [33.2 kB]
+#7 22.91 Get:23 http://deb.debian.org/debian bookworm/main amd64 libcairo2 amd64 1.16.0-7 [575 kB]
+#7 22.91 Get:24 http://deb.debian.org/debian-security bookworm-security/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10+deb12u1 [20.5 kB]
+#7 22.91 Get:25 http://deb.debian.org/debian-security bookworm-security/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10+deb12u1 [59.9 kB]
+#7 22.91 Get:26 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+#7 22.91 Get:27 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u3 [72.4 kB]
+#7 22.91 Get:28 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+#7 22.91 Get:29 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+#7 22.91 Get:30 http://deb.debian.org/debian-security bookworm-security/main amd64 libssh2-1 amd64 1.10.0-3+deb12u1 [176 kB]
+#7 22.91 Get:31 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u15 [392 kB]
+#7 22.91 Get:32 http://deb.debian.org/debian bookworm/main amd64 libdatrie1 amd64 0.2.13-2+b1 [43.3 kB]
+#7 22.91 Get:33 http://deb.debian.org/debian bookworm/main amd64 libdeflate0 amd64 1.14-1 [61.4 kB]
+#7 22.91 Get:34 http://deb.debian.org/debian bookworm/main amd64 libfribidi0 amd64 1.0.8-2.1 [65.0 kB]
+#7 22.91 Get:35 http://deb.debian.org/debian bookworm/main amd64 libgif7 amd64 5.2.1-2.5+deb12u1 [43.0 kB]
+#7 22.91 Get:36 http://deb.debian.org/debian bookworm/main amd64 libglib2.0-0 amd64 2.74.6-2+deb12u9 [1403 kB]
+#7 22.91 Get:37 http://deb.debian.org/debian bookworm/main amd64 libgomp1 amd64 12.2.0-14+deb12u1 [116 kB]
+#7 22.91 Get:38 http://deb.debian.org/debian bookworm/main amd64 libgraphite2-3 amd64 1.3.14-1+deb12u1 [74.6 kB]
+#7 22.91 Get:39 http://deb.debian.org/debian bookworm/main amd64 libharfbuzz0b amd64 6.0.0+dfsg-3 [1945 kB]
+#7 22.91 Get:40 http://deb.debian.org/debian bookworm/main amd64 libjbig0 amd64 2.1-6.1 [31.7 kB]
+#7 22.91 Get:41 http://deb.debian.org/debian bookworm/main amd64 libjpeg62-turbo amd64 1:2.1.5-2 [166 kB]
+#7 22.91 Get:42 http://deb.debian.org/debian bookworm/main amd64 libopenjp2-7 amd64 2.5.0-2+deb12u3 [189 kB]
+#7 22.91 Get:43 http://deb.debian.org/debian bookworm/main amd64 liblerc4 amd64 4.0.0+ds-2 [170 kB]
+#7 22.91 Get:44 http://deb.debian.org/debian bookworm/main amd64 libwebp7 amd64 1.2.4-0.2+deb12u1 [286 kB]
+#7 22.91 Get:45 http://deb.debian.org/debian bookworm/main amd64 libtiff6 amd64 4.5.0-6+deb12u4 [316 kB]
+#7 22.91 Get:46 http://deb.debian.org/debian bookworm/main amd64 libwebpmux3 amd64 1.2.4-0.2+deb12u1 [109 kB]
+#7 22.91 Get:47 http://deb.debian.org/debian bookworm/main amd64 liblept5 amd64 1.82.0-3+b3 [1050 kB]
+#7 22.91 Get:48 http://deb.debian.org/debian bookworm/main amd64 libthai-data all 0.1.29-1 [176 kB]
+#7 22.91 Get:49 http://deb.debian.org/debian bookworm/main amd64 libthai0 amd64 0.1.29-1 [57.5 kB]
+#7 22.91 Get:50 http://deb.debian.org/debian bookworm/main amd64 libpango-1.0-0 amd64 1.50.12+ds-1 [212 kB]
+#7 22.91 Get:51 http://deb.debian.org/debian bookworm/main amd64 libpangoft2-1.0-0 amd64 1.50.12+ds-1 [47.4 kB]
+#7 22.91 Get:52 http://deb.debian.org/debian bookworm/main amd64 libpangocairo-1.0-0 amd64 1.50.12+ds-1 [34.2 kB]
+#7 22.91 Get:53 http://deb.debian.org/debian bookworm/main amd64 libtesseract5 amd64 5.3.0-2 [1279 kB]
+#7 22.91 Get:54 http://deb.debian.org/debian bookworm/main amd64 tesseract-ocr-eng all 1:4.1.0-2 [1594 kB]
+#7 22.91 Get:55 http://deb.debian.org/debian bookworm/main amd64 tesseract-ocr-osd all 1:4.1.0-2 [2992 kB]
+#7 22.91 Get:56 http://deb.debian.org/debian bookworm/main amd64 tesseract-ocr amd64 5.3.0-2 [402 kB]
+#7 22.91 Fetched 30.4 MB in 5s (5794 kB/s)
+#7 22.91 Selecting previously unselected package libexpat1:amd64.
+#7 22.91 (Reading database ... 
+#7 22.91 (Reading database ... 5%
+#7 22.91 (Reading database ... 10%
+#7 22.91 (Reading database ... 15%
+#7 22.91 (Reading database ... 20%
+#7 22.91 (Reading database ... 25%
+#7 22.91 (Reading database ... 30%
+#7 22.91 (Reading database ... 35%
+#7 22.91 (Reading database ... 40%
+#7 22.91 (Reading database ... 45%
+#7 22.91 (Reading database ... 50%
+#7 22.91 (Reading database ... 55%
+#7 22.91 (Reading database ... 60%
+#7 22.91 (Reading database ... 65%
+#7 22.91 (Reading database ... 70%
+#7 22.91 (Reading database ... 75%
+#7 22.91 (Reading database ... 80%
+#7 22.91 (Reading database ... 85%
+#7 22.91 (Reading database ... 90%
+#7 22.91 (Reading database ... 95%
+#7 22.91 (Reading database ... 100%
+#7 22.91 (Reading database ... 6704 files and directories currently installed.)
+#7 22.91 Preparing to unpack .../00-libexpat1_2.5.0-1+deb12u5_amd64.deb ...
+#7 22.91 Unpacking libexpat1:amd64 (2.5.0-1+deb12u5) ...
+#7 22.91 Selecting previously unselected package libbrotli1:amd64.
+#7 22.91 Preparing to unpack .../01-libbrotli1_1.0.9-2+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libbrotli1:amd64 (1.0.9-2+deb12u1) ...
+#7 22.91 Selecting previously unselected package libpng16-16:amd64.
+#7 22.91 Preparing to unpack .../02-libpng16-16_1.6.39-2+deb12u6_amd64.deb ...
+#7 22.91 Unpacking libpng16-16:amd64 (1.6.39-2+deb12u6) ...
+#7 22.91 Selecting previously unselected package libfreetype6:amd64.
+#7 22.91 Preparing to unpack .../03-libfreetype6_2.12.1+dfsg-5+deb12u4_amd64.deb ...
+#7 22.91 Unpacking libfreetype6:amd64 (2.12.1+dfsg-5+deb12u4) ...
+#7 22.91 Selecting previously unselected package fonts-dejavu-core.
+#7 22.91 Preparing to unpack .../04-fonts-dejavu-core_2.37-6_all.deb ...
+#7 22.91 Unpacking fonts-dejavu-core (2.37-6) ...
+#7 22.91 Selecting previously unselected package fontconfig-config.
+#7 22.91 Preparing to unpack .../05-fontconfig-config_2.14.1-4_amd64.deb ...
+#7 22.91 Unpacking fontconfig-config (2.14.1-4) ...
+#7 22.91 Selecting previously unselected package libfontconfig1:amd64.
+#7 22.91 Preparing to unpack .../06-libfontconfig1_2.14.1-4_amd64.deb ...
+#7 22.91 Unpacking libfontconfig1:amd64 (2.14.1-4) ...
+#7 22.91 Selecting previously unselected package fontconfig.
+#7 22.91 Preparing to unpack .../07-fontconfig_2.14.1-4_amd64.deb ...
+#7 22.91 Unpacking fontconfig (2.14.1-4) ...
+#7 22.91 Selecting previously unselected package libicu72:amd64.
+#7 22.91 Preparing to unpack .../08-libicu72_72.1-3+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libicu72:amd64 (72.1-3+deb12u1) ...
+#7 22.91 Selecting previously unselected package libxml2:amd64.
+#7 22.91 Preparing to unpack .../09-libxml2_2.9.14+dfsg-1.3~deb12u6_amd64.deb ...
+#7 22.91 Unpacking libxml2:amd64 (2.9.14+dfsg-1.3~deb12u6) ...
+#7 22.91 Selecting previously unselected package libarchive13:amd64.
+#7 22.91 Preparing to unpack .../10-libarchive13_3.6.2-1+deb12u5_amd64.deb ...
+#7 22.91 Unpacking libarchive13:amd64 (3.6.2-1+deb12u5) ...
+#7 22.91 Selecting previously unselected package libbsd0:amd64.
+#7 22.91 Preparing to unpack .../11-libbsd0_0.11.7-2_amd64.deb ...
+#7 22.91 Unpacking libbsd0:amd64 (0.11.7-2) ...
+#7 22.91 Selecting previously unselected package libpixman-1-0:amd64.
+#7 22.91 Preparing to unpack .../12-libpixman-1-0_0.42.2-1_amd64.deb ...
+#7 22.91 Unpacking libpixman-1-0:amd64 (0.42.2-1) ...
+#7 22.91 Selecting previously unselected package libxau6:amd64.
+#7 22.91 Preparing to unpack .../13-libxau6_1%3a1.0.9-1_amd64.deb ...
+#7 22.91 Unpacking libxau6:amd64 (1:1.0.9-1) ...
+#7 22.91 Selecting previously unselected package libxdmcp6:amd64.
+#7 22.91 Preparing to unpack .../14-libxdmcp6_1%3a1.1.2-3_amd64.deb ...
+#7 22.91 Unpacking libxdmcp6:amd64 (1:1.1.2-3) ...
+#7 22.91 Selecting previously unselected package libxcb1:amd64.
+#7 22.91 Preparing to unpack .../15-libxcb1_1.15-1_amd64.deb ...
+#7 22.91 Unpacking libxcb1:amd64 (1.15-1) ...
+#7 22.91 Selecting previously unselected package libx11-data.
+#7 22.91 Preparing to unpack .../16-libx11-data_2%3a1.8.4-2+deb12u2_all.deb ...
+#7 22.91 Unpacking libx11-data (2:1.8.4-2+deb12u2) ...
+#7 22.91 Selecting previously unselected package libx11-6:amd64.
+#7 22.91 Preparing to unpack .../17-libx11-6_2%3a1.8.4-2+deb12u2_amd64.deb ...
+#7 22.91 Unpacking libx11-6:amd64 (2:1.8.4-2+deb12u2) ...
+#7 22.91 Selecting previously unselected package libxcb-render0:amd64.
+#7 22.91 Preparing to unpack .../18-libxcb-render0_1.15-1_amd64.deb ...
+#7 22.91 Unpacking libxcb-render0:amd64 (1.15-1) ...
+#7 22.91 Selecting previously unselected package libxcb-shm0:amd64.
+#7 22.91 Preparing to unpack .../19-libxcb-shm0_1.15-1_amd64.deb ...
+#7 22.91 Unpacking libxcb-shm0:amd64 (1.15-1) ...
+#7 22.91 Selecting previously unselected package libxext6:amd64.
+#7 22.91 Preparing to unpack .../20-libxext6_2%3a1.3.4-1+b1_amd64.deb ...
+#7 22.91 Unpacking libxext6:amd64 (2:1.3.4-1+b1) ...
+#7 22.91 Selecting previously unselected package libxrender1:amd64.
+#7 22.91 Preparing to unpack .../21-libxrender1_1%3a0.9.10-1.1_amd64.deb ...
+#7 22.91 Unpacking libxrender1:amd64 (1:0.9.10-1.1) ...
+#7 22.91 Selecting previously unselected package libcairo2:amd64.
+#7 22.91 Preparing to unpack .../22-libcairo2_1.16.0-7_amd64.deb ...
+#7 22.91 Unpacking libcairo2:amd64 (1.16.0-7) ...
+#7 22.91 Selecting previously unselected package libsasl2-modules-db:amd64.
+#7 22.91 Preparing to unpack .../23-libsasl2-modules-db_2.1.28+dfsg-10+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10+deb12u1) ...
+#7 22.91 Selecting previously unselected package libsasl2-2:amd64.
+#7 22.91 Preparing to unpack .../24-libsasl2-2_2.1.28+dfsg-10+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10+deb12u1) ...
+#7 22.91 Selecting previously unselected package libldap-2.5-0:amd64.
+#7 22.91 Preparing to unpack .../25-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+#7 22.91 Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+#7 22.91 Selecting previously unselected package libnghttp2-14:amd64.
+#7 22.91 Preparing to unpack .../26-libnghttp2-14_1.52.0-1+deb12u3_amd64.deb ...
+#7 22.91 Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u3) ...
+#7 22.91 Selecting previously unselected package libpsl5:amd64.
+#7 22.91 Preparing to unpack .../27-libpsl5_0.21.2-1_amd64.deb ...
+#7 22.91 Unpacking libpsl5:amd64 (0.21.2-1) ...
+#7 22.91 Selecting previously unselected package librtmp1:amd64.
+#7 22.91 Preparing to unpack .../28-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+#7 22.91 Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+#7 22.91 Selecting previously unselected package libssh2-1:amd64.
+#7 22.91 Preparing to unpack .../29-libssh2-1_1.10.0-3+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libssh2-1:amd64 (1.10.0-3+deb12u1) ...
+#7 22.91 Selecting previously unselected package libcurl4:amd64.
+#7 22.91 Preparing to unpack .../30-libcurl4_7.88.1-10+deb12u15_amd64.deb ...
+#7 22.91 Unpacking libcurl4:amd64 (7.88.1-10+deb12u15) ...
+#7 22.91 Selecting previously unselected package libdatrie1:amd64.
+#7 22.91 Preparing to unpack .../31-libdatrie1_0.2.13-2+b1_amd64.deb ...
+#7 22.91 Unpacking libdatrie1:amd64 (0.2.13-2+b1) ...
+#7 22.91 Selecting previously unselected package libdeflate0:amd64.
+#7 22.91 Preparing to unpack .../32-libdeflate0_1.14-1_amd64.deb ...
+#7 22.91 Unpacking libdeflate0:amd64 (1.14-1) ...
+#7 22.91 Selecting previously unselected package libfribidi0:amd64.
+#7 22.91 Preparing to unpack .../33-libfribidi0_1.0.8-2.1_amd64.deb ...
+#7 22.91 Unpacking libfribidi0:amd64 (1.0.8-2.1) ...
+#7 22.91 Selecting previously unselected package libgif7:amd64.
+#7 22.91 Preparing to unpack .../34-libgif7_5.2.1-2.5+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libgif7:amd64 (5.2.1-2.5+deb12u1) ...
+#7 22.91 Selecting previously unselected package libglib2.0-0:amd64.
+#7 22.91 Preparing to unpack .../35-libglib2.0-0_2.74.6-2+deb12u9_amd64.deb ...
+#7 22.91 Unpacking libglib2.0-0:amd64 (2.74.6-2+deb12u9) ...
+#7 22.91 Selecting previously unselected package libgomp1:amd64.
+#7 22.91 Preparing to unpack .../36-libgomp1_12.2.0-14+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libgomp1:amd64 (12.2.0-14+deb12u1) ...
+#7 22.91 Selecting previously unselected package libgraphite2-3:amd64.
+#7 22.91 Preparing to unpack .../37-libgraphite2-3_1.3.14-1+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libgraphite2-3:amd64 (1.3.14-1+deb12u1) ...
+#7 22.91 Selecting previously unselected package libharfbuzz0b:amd64.
+#7 22.91 Preparing to unpack .../38-libharfbuzz0b_6.0.0+dfsg-3_amd64.deb ...
+#7 22.91 Unpacking libharfbuzz0b:amd64 (6.0.0+dfsg-3) ...
+#7 22.91 Selecting previously unselected package libjbig0:amd64.
+#7 22.91 Preparing to unpack .../39-libjbig0_2.1-6.1_amd64.deb ...
+#7 22.91 Unpacking libjbig0:amd64 (2.1-6.1) ...
+#7 22.91 Selecting previously unselected package libjpeg62-turbo:amd64.
+#7 22.91 Preparing to unpack .../40-libjpeg62-turbo_1%3a2.1.5-2_amd64.deb ...
+#7 22.91 Unpacking libjpeg62-turbo:amd64 (1:2.1.5-2) ...
+#7 22.91 Selecting previously unselected package libopenjp2-7:amd64.
+#7 22.91 Preparing to unpack .../41-libopenjp2-7_2.5.0-2+deb12u3_amd64.deb ...
+#7 22.91 Unpacking libopenjp2-7:amd64 (2.5.0-2+deb12u3) ...
+#7 22.91 Selecting previously unselected package liblerc4:amd64.
+#7 22.91 Preparing to unpack .../42-liblerc4_4.0.0+ds-2_amd64.deb ...
+#7 22.91 Unpacking liblerc4:amd64 (4.0.0+ds-2) ...
+#7 22.91 Selecting previously unselected package libwebp7:amd64.
+#7 22.91 Preparing to unpack .../43-libwebp7_1.2.4-0.2+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libwebp7:amd64 (1.2.4-0.2+deb12u1) ...
+#7 22.91 Selecting previously unselected package libtiff6:amd64.
+#7 22.91 Preparing to unpack .../44-libtiff6_4.5.0-6+deb12u4_amd64.deb ...
+#7 22.91 Unpacking libtiff6:amd64 (4.5.0-6+deb12u4) ...
+#7 22.91 Selecting previously unselected package libwebpmux3:amd64.
+#7 22.91 Preparing to unpack .../45-libwebpmux3_1.2.4-0.2+deb12u1_amd64.deb ...
+#7 22.91 Unpacking libwebpmux3:amd64 (1.2.4-0.2+deb12u1) ...
+#7 22.91 Selecting previously unselected package liblept5:amd64.
+#7 22.91 Preparing to unpack .../46-liblept5_1.82.0-3+b3_amd64.deb ...
+#7 22.91 Unpacking liblept5:amd64 (1.82.0-3+b3) ...
+#7 22.91 Selecting previously unselected package libthai-data.
+#7 22.91 Preparing to unpack .../47-libthai-data_0.1.29-1_all.deb ...
+#7 22.91 Unpacking libthai-data (0.1.29-1) ...
+#7 22.91 Selecting previously unselected package libthai0:amd64.
+#7 22.91 Preparing to unpack .../48-libthai0_0.1.29-1_amd64.deb ...
+#7 22.91 Unpacking libthai0:amd64 (0.1.29-1) ...
+#7 22.91 Selecting previously unselected package libpango-1.0-0:amd64.
+#7 22.91 Preparing to unpack .../49-libpango-1.0-0_1.50.12+ds-1_amd64.deb ...
+#7 22.91 Unpacking libpango-1.0-0:amd64 (1.50.12+ds-1) ...
+#7 22.91 Selecting previously unselected package libpangoft2-1.0-0:amd64.
+#7 22.91 Preparing to unpack .../50-libpangoft2-1.0-0_1.50.12+ds-1_amd64.deb ...
+#7 22.91 Unpacking libpangoft2-1.0-0:amd64 (1.50.12+ds-1) ...
+#7 22.91 Selecting previously unselected package libpangocairo-1.0-0:amd64.
+#7 22.91 Preparing to unpack .../51-libpangocairo-1.0-0_1.50.12+ds-1_amd64.deb ...
+#7 22.91 Unpacking libpangocairo-1.0-0:amd64 (1.50.12+ds-1) ...
+#7 22.91 Selecting previously unselected package libtesseract5:amd64.
+#7 22.91 Preparing to unpack .../52-libtesseract5_5.3.0-2_amd64.deb ...
+#7 22.91 Unpacking libtesseract5:amd64 (5.3.0-2) ...
+#7 22.91 Selecting previously unselected package tesseract-ocr-eng.
+#7 22.91 Preparing to unpack .../53-tesseract-ocr-eng_1%3a4.1.0-2_all.deb ...
+#7 22.91 Unpacking tesseract-ocr-eng (1:4.1.0-2) ...
+#7 22.91 Selecting previously unselected package tesseract-ocr-osd.
+#7 22.91 Preparing to unpack .../54-tesseract-ocr-osd_1%3a4.1.0-2_all.deb ...
+#7 22.91 Unpacking tesseract-ocr-osd (1:4.1.0-2) ...
+#7 22.91 Selecting previously unselected package tesseract-ocr.
+#7 22.91 Preparing to unpack .../55-tesseract-ocr_5.3.0-2_amd64.deb ...
+#7 22.91 Unpacking tesseract-ocr (5.3.0-2) ...
+#7 22.91 Setting up libexpat1:amd64 (2.5.0-1+deb12u5) ...
+#7 22.91 Setting up libgraphite2-3:amd64 (1.3.14-1+deb12u1) ...
+#7 22.91 Setting up libpixman-1-0:amd64 (0.42.2-1) ...
+#7 22.91 Setting up libxau6:amd64 (1:1.0.9-1) ...
+#7 22.91 Setting up libpsl5:amd64 (0.21.2-1) ...
+#7 22.91 Setting up libicu72:amd64 (72.1-3+deb12u1) ...
+#7 22.91 Setting up liblerc4:amd64 (4.0.0+ds-2) ...
+#7 22.91 Setting up libdatrie1:amd64 (0.2.13-2+b1) ...
+#7 22.91 Setting up libglib2.0-0:amd64 (2.74.6-2+deb12u9) ...
+#7 22.91 No schema files found: doing nothing.
+#7 22.91 Setting up libbrotli1:amd64 (1.0.9-2+deb12u1) ...
+#7 22.91 Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u3) ...
+#7 22.91 Setting up libdeflate0:amd64 (1.14-1) ...
+#7 22.91 Setting up tesseract-ocr-eng (1:4.1.0-2) ...
+#7 22.91 Setting up libgomp1:amd64 (12.2.0-14+deb12u1) ...
+#7 22.91 Setting up libjbig0:amd64 (2.1-6.1) ...
+#7 22.91 Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10+deb12u1) ...
+#7 22.91 Setting up libjpeg62-turbo:amd64 (1:2.1.5-2) ...
+#7 22.91 Setting up libx11-data (2:1.8.4-2+deb12u2) ...
+#7 22.91 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+#7 22.91 Setting up libfribidi0:amd64 (1.0.8-2.1) ...
+#7 22.91 Setting up libpng16-16:amd64 (1.6.39-2+deb12u6) ...
+#7 22.91 Setting up fonts-dejavu-core (2.37-6) ...
+#7 22.91 Setting up libsasl2-2:amd64 (2.1.28+dfsg-10+deb12u1) ...
+#7 22.91 Setting up libwebp7:amd64 (1.2.4-0.2+deb12u1) ...
+#7 22.91 Setting up libgif7:amd64 (5.2.1-2.5+deb12u1) ...
+#7 22.91 Setting up libtiff6:amd64 (4.5.0-6+deb12u4) ...
+#7 22.91 Setting up libopenjp2-7:amd64 (2.5.0-2+deb12u3) ...
+#7 22.91 Setting up libthai-data (0.1.29-1) ...
+#7 22.91 Setting up libssh2-1:amd64 (1.10.0-3+deb12u1) ...
+#7 22.91 Setting up tesseract-ocr-osd (1:4.1.0-2) ...
+#7 22.91 Setting up libwebpmux3:amd64 (1.2.4-0.2+deb12u1) ...
+#7 22.91 Setting up libbsd0:amd64 (0.11.7-2) ...
+#7 22.91 Setting up libxml2:amd64 (2.9.14+dfsg-1.3~deb12u6) ...
+#7 22.91 Setting up libxdmcp6:amd64 (1:1.1.2-3) ...
+#7 22.91 Setting up libxcb1:amd64 (1.15-1) ...
+#7 22.91 Setting up libarchive13:amd64 (3.6.2-1+deb12u5) ...
+#7 22.91 Setting up libxcb-render0:amd64 (1.15-1) ...
+#7 22.91 Setting up fontconfig-config (2.14.1-4) ...
+#7 22.91 Setting up libxcb-shm0:amd64 (1.15-1) ...
+#7 22.91 Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+#7 22.91 Setting up liblept5:amd64 (1.82.0-3+b3) ...
+#7 22.91 Setting up libthai0:amd64 (0.1.29-1) ...
+#7 22.91 Setting up libfreetype6:amd64 (2.12.1+dfsg-5+deb12u4) ...
+#7 22.91 Setting up libcurl4:amd64 (7.88.1-10+deb12u15) ...
+#7 22.91 Setting up libx11-6:amd64 (2:1.8.4-2+deb12u2) ...
+#7 22.91 Setting up libharfbuzz0b:amd64 (6.0.0+dfsg-3) ...
+#7 22.91 Setting up libfontconfig1:amd64 (2.14.1-4) ...
+#7 22.91 Setting up fontconfig (2.14.1-4) ...
+#7 22.91 Regenerating fonts cache... done.
+#7 22.91 Setting up libxrender1:amd64 (1:0.9.10-1.1) ...
+#7 22.91 Setting up libpango-1.0-0:amd64 (1.50.12+ds-1) ...
+#7 22.91 Setting up libxext6:amd64 (2:1.3.4-1+b1) ...
+#7 22.91 Setting up libcairo2:amd64 (1.16.0-7) ...
+#7 22.91 Setting up libtesseract5:amd64 (5.3.0-2) ...
+#7 22.91 Setting up libpangoft2-1.0-0:amd64 (1.50.12+ds-1) ...
+#7 22.91 Setting up libpangocairo-1.0-0:amd64 (1.50.12+ds-1) ...
+#7 22.91 Setting up tesseract-ocr (5.3.0-2) ...
+#7 22.91 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+#7 22.91 
+#7 22.91 debconf: delaying package configuration, since apt-utils is not installed
+#7 22.91 
+#7 22.94 tesseract 5.3.0
+#7 22.94  leptonica-1.82.0
+#7 22.94   libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.1.2) : libpng 1.6.39 : libtiff 4.5.0 : zlib 1.2.13 : libwebp 1.2.4 : libopenjp2 2.5.0
+#7 22.94  Found AVX512BW
+#7 22.94  Found AVX512F
+#7 22.94  Found AVX512VNNI
+#7 22.94  Found AVX2
+#7 22.94  Found AVX
+#7 22.94  Found FMA
+#7 22.94  Found SSE4.1
+#7 22.94  Found OpenMP 201511
+#7 22.94  Found libarchive 3.6.2 zlib/1.2.13 liblzma/5.4.1 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.4
+#7 22.94  Found libcurl/7.88.1 OpenSSL/3.0.22 zlib/1.2.13 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.3 libpsl/0.21.2 (+libidn2/2.3.3) libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3 OpenLDAP/2.5.13
+#7 22.94 
+#7 22.94 
+#7 22.96 List of available languages in "/usr/share/tesseract-ocr/5/tessdata/" (2):
+#7 22.96 eng
+#7 22.96 osd
+#7 22.96 
+#7 22.96 
+#7 22.97 adduser	3.134
+#7 22.97 apt	2.6.1
+#7 22.97 base-files	12.4+deb12u15
+#7 22.97 base-passwd	3.6.1
+#7 22.97 bash	5.2.15-2+b13
+#7 22.97 bsdutils	1:2.38.1-5+deb12u3
+#7 22.97 ca-certificates	20250419~deb12u1
+#7 22.97 coreutils	9.1-1
+#7 22.97 dash	0.5.12-2
+#7 22.97 debconf	1.5.82
+#7 22.97 debian-archive-keyring	2023.3+deb12u2
+#7 22.97 debianutils	5.7-0.5~deb12u1
+#7 22.97 diffutils	1:3.8-4
+#7 22.97 dpkg	1.21.23
+#7 22.97 e2fsprogs	1.47.0-2+b2
+#7 22.97 findutils	4.9.0-4
+#7 22.97 fontconfig	2.14.1-4
+#7 22.97 fontconfig-config	2.14.1-4
+#7 22.97 fonts-dejavu-core	2.37-6
+#7 22.97 gcc-12-base	12.2.0-14+deb12u1
+#7 22.97 gpgv	2.2.40-1.1+deb12u2
+#7 22.97 grep	3.8-5
+#7 22.97 gzip	1.12-1
+#7 22.97 hostname	3.23+nmu1
+#7 22.97 init-system-helpers	1.65.2+deb12u1
+#7 22.97 libacl1	2.3.1-3
+#7 22.97 libapt-pkg6.0	2.6.1
+#7 22.97 libarchive13	3.6.2-1+deb12u5
+#7 22.97 libattr1	1:2.5.1-4
+#7 22.97 libaudit-common	1:3.0.9-1
+#7 22.97 libaudit1	1:3.0.9-1
+#7 22.97 libblkid1	2.38.1-5+deb12u3
+#7 22.97 libbrotli1	1.0.9-2+deb12u1
+#7 22.97 libbsd0	0.11.7-2
+#7 22.97 libbz2-1.0	1.0.8-5+b1
+#7 22.97 libc-bin	2.36-9+deb12u14
+#7 22.97 libc6	2.36-9+deb12u14
+#7 22.97 libcairo2	1.16.0-7
+#7 22.97 libcap-ng0	0.8.3-1+b3
+#7 22.97 libcap2	1:2.66-4+deb12u3+b1
+#7 22.97 libcom-err2	1.47.0-2+b2
+#7 22.97 libcrypt1	1:4.4.33-2
+#7 22.97 libcurl4	7.88.1-10+deb12u15
+#7 22.97 libdatrie1	0.2.13-2+b1
+#7 22.97 libdb5.3	5.3.28+dfsg2-1
+#7 22.97 libdebconfclient0	0.270
+#7 22.97 libdeflate0	1.14-1
+#7 22.97 libexpat1	2.5.0-1+deb12u5
+#7 22.97 libext2fs2	1.47.0-2+b2
+#7 22.97 libffi8	3.4.4-1
+#7 22.97 libfontconfig1	2.14.1-4
+#7 22.97 libfreetype6	2.12.1+dfsg-5+deb12u4
+#7 22.97 libfribidi0	1.0.8-2.1
+#7 22.97 libgcc-s1	12.2.0-14+deb12u1
+#7 22.97 libgcrypt20	1.10.1-3+deb12u1
+#7 22.97 libgdbm6	1.23-3
+#7 22.97 libgif7	5.2.1-2.5+deb12u1
+#7 22.97 libglib2.0-0	2.74.6-2+deb12u9
+#7 22.97 libgmp10	2:6.2.1+dfsg1-1.1
+#7 22.97 libgnutls30	3.7.9-2+deb12u7
+#7 22.97 libgomp1	12.2.0-14+deb12u1
+#7 22.97 libgpg-error0	1.46-1
+#7 22.97 libgraphite2-3	1.3.14-1+deb12u1
+#7 22.97 libgssapi-krb5-2	1.20.1-2+deb12u5
+#7 22.97 libharfbuzz0b	6.0.0+dfsg-3
+#7 22.97 libhogweed6	3.8.1-2
+#7 22.97 libicu72	72.1-3+deb12u1
+#7 22.97 libidn2-0	2.3.3-1+b1
+#7 22.97 libjbig0	2.1-6.1
+#7 22.97 libjpeg62-turbo	1:2.1.5-2
+#7 22.97 libk5crypto3	1.20.1-2+deb12u5
+#7 22.97 libkeyutils1	1.6.3-2
+#7 22.97 libkrb5-3	1.20.1-2+deb12u5
+#7 22.97 libkrb5support0	1.20.1-2+deb12u5
+#7 22.97 libldap-2.5-0	2.5.13+dfsg-5
+#7 22.97 liblept5	1.82.0-3+b3
+#7 22.97 liblerc4	4.0.0+ds-2
+#7 22.97 liblz4-1	1.9.4-1
+#7 22.97 liblzma5	5.4.1-1+deb12u2
+#7 22.97 libmd0	1.0.4-2
+#7 22.97 libmount1	2.38.1-5+deb12u3
+#7 22.97 libncursesw6	6.4-4
+#7 22.97 libnettle8	3.8.1-2
+#7 22.97 libnghttp2-14	1.52.0-1+deb12u3
+#7 22.97 libnsl2	1.3.0-2
+#7 22.97 libopenjp2-7	2.5.0-2+deb12u3
+#7 22.97 libp11-kit0	0.24.1-2
+#7 22.97 libpam-modules	1.5.2-6+deb12u2
+#7 22.97 libpam-modules-bin	1.5.2-6+deb12u2
+#7 22.97 libpam-runtime	1.5.2-6+deb12u2
+#7 22.97 libpam0g	1.5.2-6+deb12u2
+#7 22.97 libpango-1.0-0	1.50.12+ds-1
+#7 22.97 libpangocairo-1.0-0	1.50.12+ds-1
+#7 22.97 libpangoft2-1.0-0	1.50.12+ds-1
+#7 22.97 libpcre2-8-0	10.42-1+deb12u2
+#7 22.97 libpixman-1-0	0.42.2-1
+#7 22.97 libpng16-16	1.6.39-2+deb12u6
+#7 22.97 libpsl5	0.21.2-1
+#7 22.97 libreadline8	8.2-1.3
+#7 22.97 librtmp1	2.4+20151223.gitfa8646d.1-2+b2
+#7 22.97 libsasl2-2	2.1.28+dfsg-10+deb12u1
+#7 22.97 libsasl2-modules-db	2.1.28+dfsg-10+deb12u1
+#7 22.97 libseccomp2	2.5.4-1+deb12u1
+#7 22.97 libselinux1	3.4-1+b6
+#7 22.97 libsemanage-common	3.4-1
+#7 22.97 libsemanage2	3.4-1+b5
+#7 22.97 libsepol2	3.4-2.1
+#7 22.97 libsmartcols1	2.38.1-5+deb12u3
+#7 22.97 libsqlite3-0	3.40.1-2+deb12u2
+#7 22.97 libss2	1.47.0-2+b2
+#7 22.97 libssh2-1	1.10.0-3+deb12u1
+#7 22.97 libssl3	3.0.22-1~deb12u1
+#7 22.97 libstdc++6	12.2.0-14+deb12u1
+#7 22.97 libsystemd0	252.39-1~deb12u2
+#7 22.97 libtasn1-6	4.19.0-2+deb12u1
+#7 22.97 libtesseract5	5.3.0-2
+#7 22.97 libthai-data	0.1.29-1
+#7 22.97 libthai0	0.1.29-1
+#7 22.97 libtiff6	4.5.0-6+deb12u4
+#7 22.97 libtinfo6	6.4-4
+#7 22.97 libtirpc-common	1.3.3+ds-1
+#7 22.97 libtirpc3	1.3.3+ds-1
+#7 22.97 libudev1	252.39-1~deb12u2
+#7 22.97 libunistring2	1.0-2
+#7 22.97 libuuid1	2.38.1-5+deb12u3
+#7 22.97 libwebp7	1.2.4-0.2+deb12u1
+#7 22.97 libwebpmux3	1.2.4-0.2+deb12u1
+#7 22.97 libx11-6	2:1.8.4-2+deb12u2
+#7 22.97 libx11-data	2:1.8.4-2+deb12u2
+#7 22.97 libxau6	1:1.0.9-1
+#7 22.97 libxcb-render0	1.15-1
+#7 22.97 libxcb-shm0	1.15-1
+#7 22.97 libxcb1	1.15-1
+#7 22.97 libxdmcp6	1:1.1.2-3
+#7 22.97 libxext6	2:1.3.4-1+b1
+#7 22.97 libxml2	2.9.14+dfsg-1.3~deb12u6
+#7 22.97 libxrender1	1:0.9.10-1.1
+#7 22.97 libxxhash0	0.8.1-1
+#7 22.97 libzstd1	1.5.4+dfsg2-5
+#7 22.97 login	1:4.13+dfsg1-1+deb12u2
+#7 22.97 logsave	1.47.0-2+b2
+#7 22.97 mawk	1.3.4.20200120-3.1
+#7 22.97 mount	2.38.1-5+deb12u3
+#7 22.97 ncurses-base	6.4-4
+#7 22.97 ncurses-bin	6.4-4
+#7 22.97 netbase	6.4
+#7 22.97 openssl	3.0.22-1~deb12u1
+#7 22.97 passwd	1:4.13+dfsg1-1+deb12u2
+#7 22.97 perl-base	5.36.0-7+deb12u4
+#7 22.97 readline-common	8.2-1.3
+#7 22.97 sed	4.9-1+deb12u1
+#7 22.97 sysvinit-utils	3.06-4
+#7 22.97 tar	1.34+dfsg-1.2+deb12u1
+#7 22.97 tesseract-ocr	5.3.0-2
+#7 22.97 tesseract-ocr-eng	1:4.1.0-2
+#7 22.97 tesseract-ocr-osd	1:4.1.0-2
+#7 22.97 tzdata	2026c-0+deb12u1
+#7 22.97 usr-is-merged	37~deb12u1
+#7 22.97 util-linux	2.38.1-5+deb12u3
+#7 22.97 util-linux-extra	2.38.1-5+deb12u3
+#7 22.97 zlib1g	1:1.2.13.dfsg-1
+#7 22.97 
+#7 22.97 
+#7 DONE 23.1s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 3.6s done
+#8 exporting manifest sha256:1b7330df366121ba1257307c1af2813c64cea5ae777f86fd709fb9a4adbc6dea 0.0s done
+#8 exporting config sha256:922c81aeb553d80bffca89784162ea3896e117b8623bc19b4c308422daf89bda 0.0s done
+#8 exporting attestation manifest sha256:0941fe495e553e43c1b560ea312f63ae57c405932f1b453d7d8b56fe8f545ea2
+#8 exporting attestation manifest sha256:0941fe495e553e43c1b560ea312f63ae57c405932f1b453d7d8b56fe8f545ea2 0.0s done
+#8 exporting manifest list sha256:d54c568dc43a4add16eb38cd9e6c1187a1904192bd14170ae9f5bb3790e45ed9 0.0s done
+#8 naming to docker.io/library/pafta-ocr38:tesseract-5.3.0-2 done
+#8 unpacking to docker.io/library/pafta-ocr38:tesseract-5.3.0-2
+#8 unpacking to docker.io/library/pafta-ocr38:tesseract-5.3.0-2 1.0s done
+#8 DONE 4.9s

@@ -1,0 +1,142 @@
+{
+  "hostlar": [
+    "docs.example",
+    "api.example"
+  ],
+  "arguman_vakalari": [
+    {
+      "arac": "read_file",
+      "deger": "raporlar/./q3.txt"
+    },
+    {
+      "arac": "read_file",
+      "deger": "../ozel.txt"
+    },
+    {
+      "arac": "http_get",
+      "deger": "https://docs.example/a"
+    },
+    {
+      "arac": "http_get",
+      "deger": "https://docs.example@kotu.example/"
+    }
+  ],
+  "politika_vakalari": [
+    {
+      "sinif": "okuma",
+      "kapsam": "dosya_oku",
+      "verilen": [
+        "dosya_oku"
+      ],
+      "kirli": false,
+      "ozel": false,
+      "onay": null
+    },
+    {
+      "sinif": "dis",
+      "kapsam": "ag_cik",
+      "verilen": [
+        "ag_cik"
+      ],
+      "kirli": true,
+      "ozel": true,
+      "onay": "evet"
+    },
+    {
+      "sinif": "yazma",
+      "kapsam": "dosya_yaz",
+      "verilen": [],
+      "kirli": false,
+      "ozel": false,
+      "onay": "evet"
+    }
+  ],
+  "verilen": [
+    "belge_ara",
+    "dosya_oku",
+    "ag_cik"
+  ],
+  "onaylar": {
+    "c3": "evet"
+  },
+  "cagrilar": [
+    {
+      "id": "c1",
+      "arac": "search_docs",
+      "arg": "iade"
+    },
+    {
+      "id": "c2",
+      "arac": "read_file",
+      "arg": "rapor.txt"
+    },
+    {
+      "id": "c3",
+      "arac": "http_get",
+      "arg": "https://docs.example/x"
+    }
+  ],
+  "araclar": {
+    "search_docs": {
+      "sinif": "okuma",
+      "kapsam": "belge_ara",
+      "cikti": "guvenilmeyen",
+      "izolasyon": {
+        "ag": "yok",
+        "salt_okunur": true
+      }
+    },
+    "read_file": {
+      "sinif": "okuma",
+      "kapsam": "dosya_oku",
+      "cikti": "ozel",
+      "izolasyon": {
+        "ag": "yok",
+        "salt_okunur": true
+      }
+    },
+    "http_get": {
+      "sinif": "dis",
+      "kapsam": "ag_cik",
+      "cikti": "guvenilmeyen",
+      "izolasyon": {
+        "ag": "proxy",
+        "salt_okunur": true
+      }
+    }
+  },
+  "dogrulama": {
+    "search_docs": {
+      "iade": {
+        "gecerli": true,
+        "deger": "iade"
+      }
+    },
+    "read_file": {
+      "rapor.txt": {
+        "gecerli": true,
+        "deger": "/srv/veri/rapor.txt"
+      }
+    },
+    "http_get": {
+      "https://docs.example/x": {
+        "gecerli": true,
+        "deger": "https://docs.example/x"
+      }
+    }
+  },
+  "politika_tablosu": {
+    "[\"okuma\", \"belge_ara\", [\"belge_ara\", \"dosya_oku\", \"ag_cik\"], false, false, null]": {
+      "karar": "izin",
+      "neden": "okuma"
+    },
+    "[\"okuma\", \"dosya_oku\", [\"belge_ara\", \"dosya_oku\", \"ag_cik\"], true, false, null]": {
+      "karar": "izin",
+      "neden": "okuma"
+    },
+    "[\"dis\", \"ag_cik\", [\"belge_ara\", \"dosya_oku\", \"ag_cik\"], true, true, \"evet\"]": {
+      "karar": "red",
+      "neden": "uclu"
+    }
+  }
+}

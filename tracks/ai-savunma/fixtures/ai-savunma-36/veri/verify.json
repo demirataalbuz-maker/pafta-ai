@@ -1,0 +1,42 @@
+[
+  {
+    "vaka": "keypair-normal",
+    "calisti": true,
+    "dogrulandi": true
+  },
+  {
+    "vaka": "keypair-tahrifat",
+    "calisti": true,
+    "dogrulandi": false
+  },
+  {
+    "vaka": "keypair-baska-anahtar",
+    "calisti": true,
+    "dogrulandi": false
+  },
+  {
+    "vaka": "keyless-normal",
+    "calisti": true,
+    "dogrulandi": true
+  },
+  {
+    "vaka": "keyless-tahrifat",
+    "calisti": false,
+    "dogrulandi": false
+  },
+  {
+    "vaka": "keyless-baska-kimlik",
+    "calisti": true,
+    "dogrulandi": false
+  },
+  {
+    "vaka": "keyless-baska-issuer",
+    "calisti": true,
+    "dogrulandi": false
+  },
+  {
+    "vaka": "keyless-baska-root",
+    "calisti": true,
+    "dogrulandi": false
+  }
+]

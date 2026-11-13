@@ -1,0 +1,60 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Temsilî bir AI uygulaması için elle yazılmış registry değişiklik politikası. Gerçek MLflow/Git yapılandırması değildir.",
+  "politika": {
+    "izinli_turler": [
+      "model",
+      "prompt"
+    ],
+    "min_onay": 2,
+    "geri_alma_zorunlu": true,
+    "ozet_degismeli": true
+  },
+  "bozuk_politikalar": [
+    {
+      "ad": "sifir-onay",
+      "politika": {
+        "izinli_turler": [
+          "prompt"
+        ],
+        "min_onay": 0,
+        "geri_alma_zorunlu": true,
+        "ozet_degismeli": true
+      }
+    },
+    {
+      "ad": "geri-alma-istege-bagli",
+      "politika": {
+        "izinli_turler": [
+          "prompt"
+        ],
+        "min_onay": 2,
+        "geri_alma_zorunlu": false,
+        "ozet_degismeli": true
+      }
+    },
+    {
+      "ad": "bilinmeyen-tur",
+      "politika": {
+        "izinli_turler": [
+          "prompt",
+          "agent"
+        ],
+        "min_onay": 2,
+        "geri_alma_zorunlu": true,
+        "ozet_degismeli": true
+      }
+    },
+    {
+      "ad": "bool-onay",
+      "politika": {
+        "izinli_turler": [
+          "prompt"
+        ],
+        "min_onay": true,
+        "geri_alma_zorunlu": true,
+        "ozet_degismeli": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dosyalar": {
+    "auth_servisi.py": [
+      "import hashlib",
+      "import sqlite3",
+      "def giris_kontrol(kullanici, parola):",
+      "    sorgu = 'SELECT id FROM users WHERE u = ' + kullanici",
+      "    return sorgu"
+    ],
+    "ayarlar.py": [
+      "DEBUG_MODU = True",
+      "OTURUM_SURESI = 3600",
+      "IZINLI_HOSTLAR = ['127.0.0.1']"
+    ]
+  },
+  "bilinen_paketler": ["hashlib", "sqlite3", "json", "fastapi"]
+}

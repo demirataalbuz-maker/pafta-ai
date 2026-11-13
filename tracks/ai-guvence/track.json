@@ -1,0 +1,104 @@
+{
+  "id": "ai-guvence",
+  "name": "AI Güvence, Araştırma ve Kanıt",
+  "status": "active",
+  "group": "ai",
+  "order": 33,
+  "runner": "python",
+  "dil": "python",
+  "role": "ML ve LLM güvenliği iddialarını kontrollü deneyler, gizlilik ve tedarik zinciri kanıtları ve yeniden üretilebilir araştırma paketleriyle sınamak.",
+  "tagline": "Deney defterinden sağlamlık eğrilerine, gizlilik ölçümünden yayınlanabilir purple çalışmaya; gerçek model gerektirmeyen deterministik güvence laboratuvarları.",
+  "kahraman": [
+    "Varsayımdan",
+    "Kanıt",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "ML Güvenliğine Giriş",
+      "rank": "minik",
+      "zen": "Bir güvenlik iddiası ancak açık varsayım ve tekrarlanabilir ölçümle sınanabilir.",
+      "lessons": [
+        "ai-guvence-01",
+        "ai-guvence-02",
+        "ai-guvence-03",
+        "ai-guvence-04",
+        "ai-guvence-05"
+      ]
+    },
+    {
+      "title": "Sağlamlık ve Evasion",
+      "rank": "tesviye",
+      "lessons": [
+        "ai-guvence-06",
+        "ai-guvence-07",
+        "ai-guvence-08",
+        "ai-guvence-09",
+        "ai-guvence-10"
+      ]
+    },
+    {
+      "title": "Veri Bütünlüğü ve Poisoning",
+      "rank": "kucuk-orta",
+      "zen": "Veri değişikliğinin etkisi ancak kontrollü karşılaştırmayla kanıtlanır.",
+      "lessons": [
+        "ai-guvence-11"
+      ]
+    },
+    {
+      "title": "Mekanistik Yorumlanabilirlik, Federe ve Doğrulanabilir Güvence",
+      "rank": "baspehlivan",
+      "zen": "İç aktivasyonlardan ağırlık birleştirmeye, gradyan sızıntısından kriptografik çıkarım kanıtına kadar her güvence iddiası sayısal kanıt üretir.",
+      "lessons": [
+        "ai-guvence-41",
+        "ai-guvence-43",
+        "ai-guvence-44",
+        "ai-guvence-45",
+        "ai-guvence-46"
+      ]
+    },
+    {
+      "title": "Araştırma Yöntemi: Ablation, Eval İstatistiği ve Olumsuz Sonuç",
+      "rank": "baspehlivan",
+      "zen": "Bir sonuç, neyin onu ürettiğini ve ne kadar oynadığını söyleyebildiğin kadar sağlamdır.",
+      "lessons": [
+        "ai-guvence-48",
+        "ai-guvence-49",
+        "ai-guvence-50"
+      ]
+    },
+    {
+      "title": "Bitirme · Varyant, Ölçüm ve Makale",
+      "rank": "baspehlivan",
+      "lessons": [
+        "ai-guvence-51"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+ "aciklama": "Elle etiketlenmiş beklenen etiketler ile bir sınıflandırıcının sentetik tahminleri.",
+ "etiketler": [
+  "baglam-manipulasyonu",
+  "dogrudan-istek",
+  "donusturme",
+  "politika-catistirma"
+ ],
+ "vakalar": [
+  {
+   "id": "o-01",
+   "beklenen": [
+    "donusturme"
+   ],
+   "tahmin": [
+    "donusturme"
+   ]
+  },
+  {
+   "id": "o-02",
+   "beklenen": [
+    "baglam-manipulasyonu",
+    "donusturme"
+   ],
+   "tahmin": [
+    "donusturme"
+   ]
+  },
+  {
+   "id": "o-03",
+   "beklenen": [
+    "dogrudan-istek"
+   ],
+   "tahmin": [
+    "dogrudan-istek",
+    "donusturme"
+   ]
+  },
+  {
+   "id": "o-04",
+   "beklenen": [
+    "baglam-manipulasyonu"
+   ],
+   "tahmin": [
+    "baglam-manipulasyonu"
+   ]
+  },
+  {
+   "id": "o-05",
+   "beklenen": [
+    "politika-catistirma"
+   ],
+   "tahmin": [
+    "baglam-manipulasyonu"
+   ]
+  },
+  {
+   "id": "o-06",
+   "beklenen": [
+    "dogrudan-istek"
+   ],
+   "tahmin": [
+    "dogrudan-istek"
+   ]
+  },
+  {
+   "id": "o-07",
+   "beklenen": [
+    "baglam-manipulasyonu",
+    "politika-catistirma"
+   ],
+   "tahmin": [
+    "baglam-manipulasyonu"
+   ]
+  }
+ ],
+ "beklenen": {
+  "baglam-manipulasyonu": {
+   "tp": 2,
+   "fp": 1,
+   "fn": 1,
+   "precision": 0.6666666666666666,
+   "recall": 0.6666666666666666,
+   "f1": 0.6666666666666666
+  },
+  "dogrudan-istek": {
+   "tp": 2,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "donusturme": {
+   "tp": 2,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.6666666666666666,
+   "recall": 1.0,
+   "f1": 0.8
+  },
+  "politika-catistirma": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 2,
+   "precision": null,
+   "recall": 0.0,
+   "f1": null
+  }
+ },
+ "bozuk_kumeler": [
+  [
+   {
+    "id": "x",
+    "beklenen": [
+     "donusturme"
+    ],
+    "tahmin": [
+     "unicode-homoglyph"
+    ]
+   }
+  ],
+  [
+   {
+    "id": "y",
+    "beklenen": [
+     "kodlama"
+    ],
+    "tahmin": [
+     "donusturme"
+    ]
+   }
+  ]
+ ]
+}

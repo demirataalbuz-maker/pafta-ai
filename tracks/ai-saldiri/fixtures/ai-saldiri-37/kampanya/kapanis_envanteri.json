@@ -1,0 +1,20 @@
+[
+  {
+    "iz_id": "IZ-RAG-01",
+    "tur": "rag-zehir-belgesi",
+    "durum": "silindi",
+    "dogrulama_sorgusu_temiz": true
+  },
+  {
+    "iz_id": "IZ-BELLEK-01",
+    "tur": "kalici-bellek-kaydi",
+    "durum": "silindi",
+    "dogrulama_sorgusu_temiz": false
+  },
+  {
+    "iz_id": "IZ-CANARY-01",
+    "tur": "gecici-vekil-canary",
+    "durum": "aktif",
+    "dogrulama_sorgusu_temiz": false
+  }
+]

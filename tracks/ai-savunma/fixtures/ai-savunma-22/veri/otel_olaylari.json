@@ -1,0 +1,136 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "OpenTelemetry span'lerinin ders şemasına indirgenmiş hâlini taklit eden elle yazılmış olaylar. 'detay' yapay bir etikettir; gerçek prompt, kullanıcı verisi veya sır içermez. Olaylar dışa aktarımdan geldiği gibi karışık sıradadır.",
+  "olaylar": [
+    {
+      "id": "t1-model",
+      "iz_id": "iz-7f3a",
+      "tur": "model",
+      "zaman_ms": 840,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "model yaniti tokens=212"
+    },
+    {
+      "id": "t1-iste",
+      "iz_id": "iz-7f3a",
+      "tur": "iste",
+      "zaman_ms": 0,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "istek alindi"
+    },
+    {
+      "id": "t1-arac",
+      "iz_id": "iz-7f3a",
+      "tur": "arac",
+      "zaman_ms": 910,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "arac takvim_oku sonuc=ok"
+    },
+    {
+      "id": "t1-guard",
+      "iz_id": "iz-7f3a",
+      "tur": "guardrail",
+      "zaman_ms": 35,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "girdi guardrail gecti"
+    },
+    {
+      "id": "t2-iste",
+      "iz_id": "iz-91bc",
+      "tur": "iste",
+      "zaman_ms": 0,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "istek alindi"
+    },
+    {
+      "id": "t2-guard-b",
+      "iz_id": "iz-91bc",
+      "tur": "guardrail",
+      "zaman_ms": 40,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "girdi guardrail yeniden denendi"
+    },
+    {
+      "id": "t2-guard-a",
+      "iz_id": "iz-91bc",
+      "tur": "guardrail",
+      "zaman_ms": 40,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "girdi guardrail zaman asimi"
+    },
+    {
+      "id": "t2-model",
+      "iz_id": "iz-91bc",
+      "tur": "model",
+      "zaman_ms": 6200,
+      "model_surumu": "qwen3-4b.q8",
+      "detay": "model yaniti tokens=980"
+    },
+    {
+      "id": "t2-arac",
+      "iz_id": "iz-91bc",
+      "tur": "arac",
+      "zaman_ms": 6300,
+      "model_surumu": "qwen3-4b.q8",
+      "detay": "arac dosya_yaz sonuc=ok"
+    },
+    {
+      "id": "t3-iste",
+      "iz_id": "iz-c044",
+      "tur": "iste",
+      "zaman_ms": 0,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "istek alindi"
+    },
+    {
+      "id": "t3-model",
+      "iz_id": "iz-c044",
+      "tur": "model",
+      "zaman_ms": 700,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "model yaniti arac_cagrisi=1"
+    },
+    {
+      "id": "t3-guard",
+      "iz_id": "iz-c044",
+      "tur": "guardrail",
+      "zaman_ms": 20,
+      "model_surumu": "qwen3-4b.q4",
+      "detay": "girdi guardrail gecti"
+    }
+  ],
+  "bozuk_olaylar": [
+    {
+      "id": "bozuk-zaman",
+      "iz_id": "iz-x",
+      "tur": "iste",
+      "zaman_ms": true,
+      "model_surumu": "v1",
+      "detay": "istek"
+    },
+    {
+      "id": "bozuk-surum",
+      "iz_id": "iz-x",
+      "tur": "model",
+      "zaman_ms": 10,
+      "model_surumu": "qwen3 4b",
+      "detay": "model"
+    },
+    {
+      "id": "bozuk-detay",
+      "iz_id": "iz-x",
+      "tur": "arac",
+      "zaman_ms": 20,
+      "model_surumu": "v1",
+      "detay": " arac\tcagrisi"
+    },
+    {
+      "id": "bozuk-tur",
+      "iz_id": "iz-x",
+      "tur": "log",
+      "zaman_ms": 30,
+      "model_surumu": "v1",
+      "detay": "serbest log"
+    }
+  ]
+}

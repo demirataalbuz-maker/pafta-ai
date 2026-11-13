@@ -1,0 +1,3 @@
+# ai-temel-04 görünür örnek
+
+logitler.json elle hazırlanmış sentetik üç-token dağılımıdır; gerçek model/tokenizer kaydı değildir. token_etiketleri yalnız görselleştirme içindir. Aynı logitler görev1 sıcaklık, görev2 top-k, görev3 top-p girdisidir. Koddan json_yukle("veri/logitler.json") ile okunur. Kaynağı editörle aç veya kodda yüklenen sözlüğü değiştirip Run dene; örneğin eşit logitlerle kimlik sırasını incele. Setup ai_temel_veri.hazirla ile her çalıştırmada geçici veri/ kopyası kurar; kalıcılık yoktur. Gizli testler ayrı veridedir. Final gerçek yerel SmolLM2 ağırlıklarını kullanır ve bu dosyayı canlı model diye sunmaz. Metin kalitesi veya saldırı başarısı ölçülmez.

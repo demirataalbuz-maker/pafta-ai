@@ -1,0 +1,12 @@
+{
+  "izinli_araclar": [
+    "http_baslik_oku",
+    "dns_kayit_sorgula",
+    "sertifika_ozeti"
+  ],
+  "izinli_hedefler": [
+    "127.0.0.1:8080",
+    "lab.local"
+  ],
+  "azami_adim": 3
+}

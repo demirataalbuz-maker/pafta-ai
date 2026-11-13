@@ -1,0 +1,82 @@
+{
+  "kaynak": "sentetik",
+  "semalar": {
+    "hava": {
+      "required": [
+        "sehir"
+      ],
+      "properties": {
+        "sehir": "string"
+      }
+    },
+    "saat": {
+      "required": [],
+      "properties": {}
+    }
+  },
+  "openai": {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_hava",
+        "type": "function",
+        "function": {
+          "name": "hava",
+          "arguments": "{\"sehir\": \"Ankara\"}"
+        }
+      },
+      {
+        "id": "call_saat",
+        "type": "function",
+        "function": {
+          "name": "saat",
+          "arguments": "{}"
+        }
+      }
+    ]
+  },
+  "ollama": {
+    "role": "assistant",
+    "content": "",
+    "tool_calls": [
+      {
+        "function": {
+          "index": 0,
+          "name": "hava",
+          "arguments": {
+            "sehir": "Ankara"
+          }
+        }
+      },
+      {
+        "function": {
+          "index": 1,
+          "name": "saat",
+          "arguments": {}
+        }
+      }
+    ]
+  },
+  "normalize": [
+    {
+      "id": "call_hava",
+      "ad": "hava",
+      "argumanlar": {
+        "sehir": "Ankara"
+      }
+    },
+    {
+      "id": "call_saat",
+      "ad": "saat",
+      "argumanlar": {}
+    }
+  ],
+  "arac_sonuclari": {
+    "hava": {
+      "derece": 21,
+      "durum": "güneşli"
+    },
+    "saat": "12:00"
+  }
+}

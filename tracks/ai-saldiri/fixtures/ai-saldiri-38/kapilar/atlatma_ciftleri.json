@@ -1,0 +1,26 @@
+[
+  {
+    "vaka_id": "V-MOD-01",
+    "kapi_turu": "moderasyon",
+    "teknik": "karakter-parcalama",
+    "orijinal_skor": 35,
+    "varyant_skor": 10,
+    "niyet_korundu": true
+  },
+  {
+    "vaka_id": "V-SPAM-01",
+    "kapi_turu": "spam-filtresi",
+    "teknik": "iyi-huylu-dolgu",
+    "orijinal_skor": 30,
+    "varyant_skor": 18,
+    "niyet_korundu": true
+  },
+  {
+    "vaka_id": "V-CV-01",
+    "kapi_turu": "ozgecmis-eleme",
+    "teknik": "etiket-sarmalama",
+    "orijinal_skor": 28,
+    "varyant_skor": 12,
+    "niyet_korundu": false
+  }
+]

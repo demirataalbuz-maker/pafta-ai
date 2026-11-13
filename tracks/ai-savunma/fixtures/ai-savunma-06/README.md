@@ -1,0 +1,5 @@
+# Girdi guardrail çalışma verisi
+
+Elle hazırlanmış sentetik veri; kaydedilmiş gerçek model çıktısı değildir. veri/guardrail.json ilk görevde zarflar, ikinci görevde metin_dosyalari, üçüncü görevde kayitlar alanıyla kullanılır. veri/ham/ dosyaları aynı kümenin açılabilir UTF-8 girdileridir. İlk Run ham JSON ve UTF-8ş gösterir; diğer Run'lar ham metin ve raporu gösterir. Doğru zarf bayt2; tam genişlikli SYSTEM yönerge sinyali; bidi.txt U+2066 kontrolü içerir. Doğru üçüncü rapor sırasıyla incele/risk_sinyali,izin/boş neden,reddet/boyut+baglam+gizli_veri+risk_sinyali üretir.
+
+ai_savunma_veri.hazirla her Run/Check için yeni geçici kopya kurar; değişiklikler sonraki çalıştırmaya taşınmaz. Haricî editörle kaynak dosyayı veya kodda yüklenen veriyi değiştirip Run deneyebilirsin. Gizli testler ayrıdır. Bu dosyalar testteki doğru cevabı belirlemez. Arayüzde dosya editörü bulunduğu iddia edilmez. Final farklı laboratuvar adaylarıyla gerçek Ollama çağırır; yalnız üçüncü öğrenci işlevi model kapısıdır. Ret/incele korumalı yoldan geçmez; aynı enjeksiyon ayrıca guardrailsiz kontrol amacıyla bir kez gönderilir. Bu ayrım tam çağrı kaydında görünür. Yeni indirme/kurulum yok.

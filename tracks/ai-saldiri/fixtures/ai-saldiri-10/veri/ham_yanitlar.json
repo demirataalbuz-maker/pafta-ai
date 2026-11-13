@@ -1,0 +1,111 @@
+{
+ "aciklama": "Model yanıtı biçiminde sentetik ham metinler. Canlı model çıktısı değildir.",
+ "ornekler": [
+  {
+   "id": "h-01",
+   "aciklama": "boşluk ve satır sonuyla çevrili tek belge",
+   "ham": "\n  {\"eylem\":\"ozetle\",\"metin\":\"Rapor\",\"guvence\":0.9}\n",
+   "beklenen": {
+    "kabul": true,
+    "deger_repr": "{'eylem': 'ozetle', 'metin': 'Rapor', 'guvence': 0.9}"
+   }
+  },
+  {
+   "id": "h-02",
+   "aciklama": "kod çiti içinde JSON (modellerin sık yaptığı)",
+   "ham": "```json\n{\"eylem\":\"ozetle\",\"metin\":\"Rapor\",\"guvence\":0.9}\n```",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-03",
+   "aciklama": "başta açıklama cümlesi",
+   "ham": "İşte JSON: {\"eylem\":\"ozetle\",\"metin\":\"Rapor\",\"guvence\":0.9}",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-04",
+   "aciklama": "belgeden sonra açıklama",
+   "ham": "{\"eylem\":\"ozetle\",\"metin\":\"Rapor\",\"guvence\":0.9} Umarım yardımcı olur.",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-05",
+   "aciklama": "üst düzeyde yinelenen eylem anahtarı",
+   "ham": "{\"eylem\":\"ozetle\",\"eylem\":\"dosya_sil\",\"metin\":\"Rapor\",\"guvence\":0.9}",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-06",
+   "aciklama": "iç nesnede yinelenen anahtar",
+   "ham": "{\"ust\":{\"rol\":\"user\",\"rol\":\"system\"}}",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-07",
+   "aciklama": "NaN güvence",
+   "ham": "{\"eylem\":\"ozetle\",\"metin\":\"Rapor\",\"guvence\":NaN}",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-08",
+   "aciklama": "-Infinity güvence",
+   "ham": "{\"eylem\":\"ozetle\",\"metin\":\"Rapor\",\"guvence\":-Infinity}",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-09",
+   "aciklama": "art arda iki belge",
+   "ham": "{\"eylem\":\"ozetle\",\"metin\":\"A\",\"guvence\":0.9}{\"eylem\":\"cevir\",\"metin\":\"B\",\"guvence\":0.9}",
+   "beklenen": {
+    "kabul": false
+   }
+  },
+  {
+   "id": "h-10",
+   "aciklama": "nesne olmayan kök: string",
+   "ham": "\"Pafta\"",
+   "beklenen": {
+    "kabul": true,
+    "deger_repr": "'Pafta'"
+   }
+  },
+  {
+   "id": "h-11",
+   "aciklama": "\\u kaçışlı Türkçe karakter",
+   "ham": "{\"metin\":\"\\u0130stanbul\"}",
+   "beklenen": {
+    "kabul": true,
+    "deger_repr": "{'metin': 'İstanbul'}"
+   }
+  },
+  {
+   "id": "h-12",
+   "aciklama": "SINIR: 1e400 sabit değil, sayı belirtecidir; float('inf') olur",
+   "ham": "{\"guvence\":1e400}",
+   "beklenen": {
+    "kabul": true,
+    "deger_repr": "{'guvence': inf}"
+   }
+  }
+ ],
+ "bozuk_girdiler": [
+  null,
+  42,
+  "",
+  "   "
+ ]
+}

@@ -1,0 +1,3 @@
+# ai-temel-02 görünür veri
+
+embedding.json elle hazırlanmış sentetik token etiketleri ve üç satırlı vektör tablosudur; gerçek tokenizer/model çıktısı değildir. Görev1 satır seçimi, görev2 aynı sorgunun kosinüsü, görev3 aynı sorgunun en yakın satırını işler. İlk görev ham dosyayı metin_yukle ile ekrana da basar. Kaynağı editörde aç veya kodda yüklenen sözlüğü değiştirip Run dene. Setup ai_temel_veri.hazirla ile her çalıştırmada geçici veri/ kopyası kurar; kalıcılık yoktur. Gizli testler ayrıdır. Final kurulu SmolLM2 giriş embedding tablosunu CPU'da gerçekten okur; sohbet/eğitim/transformer forward yapmaz. Yakınlık güvenlik veya anlam doğruluğu kanıtı değildir.

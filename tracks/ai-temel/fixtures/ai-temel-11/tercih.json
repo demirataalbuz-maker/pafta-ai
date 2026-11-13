@@ -1,0 +1,64 @@
+{
+  "koken": "elle yazılmış sentetik tercih verisi; gerçek insan etiketi veya model kaydı değil",
+  "tercih_ciftleri": [
+    {
+      "prompt": "  Renk etiketi seç  ",
+      "chosen": " mavi ",
+      "rejected": " kırmızı "
+    },
+    {
+      "prompt": "  Yön etiketi seç  ",
+      "chosen": " sol ",
+      "rejected": " sağ "
+    }
+  ],
+  "logp_deneyi": [
+    {
+      "secilen": [
+        -1,
+        -2
+      ],
+      "reddedilen": [
+        -3,
+        -2
+      ],
+      "beta": 1
+    },
+    {
+      "secilen": [
+        -1,
+        -3
+      ],
+      "reddedilen": [
+        -3,
+        -1
+      ],
+      "beta": 0.5
+    },
+    {
+      "secilen": [
+        -1000,
+        0
+      ],
+      "reddedilen": [
+        0,
+        0
+      ],
+      "beta": 1
+    }
+  ],
+  "degerlendirme": [
+    {
+      "dogru": true,
+      "guvenli": false
+    },
+    {
+      "dogru": true,
+      "guvenli": true
+    },
+    {
+      "dogru": false,
+      "guvenli": false
+    }
+  ]
+}

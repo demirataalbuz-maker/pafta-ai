@@ -1,0 +1,6 @@
+{
+  "id": "kayit-101",
+  "kaynak": "yerel-sensor-depo",
+  "surum": 2,
+  "donusumler": ["temizle", "min-max-normalize"]
+}

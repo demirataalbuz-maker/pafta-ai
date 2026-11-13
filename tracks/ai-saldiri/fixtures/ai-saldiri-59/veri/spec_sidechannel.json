@@ -1,0 +1,21 @@
+{
+  "gozlemler": [
+    {
+      "ad": "eslesen_gizli_onek",
+      "paket_token_sayilari": [5, 4, 5, 3, 5, 4],
+      "sure_ms_listesi": [25.0, 24.0, 26.0, 25.0, 25.0, 25.0]
+    },
+    {
+      "ad": "eslesmeyen_onek",
+      "paket_token_sayilari": [1, 1, 2, 1, 1, 1],
+      "sure_ms_listesi": [25.0, 25.0, 26.0, 24.0, 25.0, 25.0]
+    }
+  ],
+  "aday_kabul_oranlari": {
+    "hasta_tani: diyabet": 0.82,
+    "hasta_tani: hipertansiyon": 0.31,
+    "hasta_tani: astim": 0.28
+  },
+  "taban_oran": 0.25,
+  "hedef_sabit_boyut": 5
+}

@@ -1,0 +1,7 @@
+{
+  "opt_in": false,
+  "kucuk": "qwen3:4b-instruct-2507-q4_K_M",
+  "guclu": "qwen3:8b",
+  "max_calls": 8,
+  "max_model_bytes": 5500000000
+}

@@ -1,0 +1,68 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Vektör aramasından (filtresiz) dönen ham sonuçlar. Skorlar elle yazılmıştır; metinler uydurmadır.",
+  "kayitlar": [
+    {
+      "id": "g-sozlesme",
+      "kiraci": "globex",
+      "skor": 0.97,
+      "metin": "Globex özel indirim sözleşmesi: %40."
+    },
+    {
+      "id": "a-iade",
+      "kiraci": "acme",
+      "skor": 0.88,
+      "metin": "Acme iade süresi 14 gündür."
+    },
+    {
+      "id": "a-sss",
+      "kiraci": "acme",
+      "skor": 0.88,
+      "metin": "Acme: iade için fatura gerekir."
+    },
+    {
+      "id": "a-kargo",
+      "kiraci": "acme",
+      "skor": 0.61,
+      "metin": "Acme kargo ücretsizdir."
+    },
+    {
+      "id": "a-sinir",
+      "kiraci": "acme",
+      "skor": 0.5,
+      "metin": "Acme çalışma saatleri 9-18."
+    },
+    {
+      "id": "a-alakasiz",
+      "kiraci": "acme",
+      "skor": 0.32,
+      "metin": "Acme ofis adresi."
+    },
+    {
+      "id": "g-iade",
+      "kiraci": "globex",
+      "skor": 0.9,
+      "metin": "Globex iade süresi 30 gündür."
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "id": "bozuk-skor",
+      "kiraci": "acme",
+      "skor": 1.2,
+      "metin": "x"
+    },
+    {
+      "id": "bozuk kimlik",
+      "kiraci": "acme",
+      "skor": 0.6,
+      "metin": "x"
+    },
+    {
+      "id": "bozuk-metin",
+      "kiraci": "acme",
+      "skor": 0.6,
+      "metin": "a\u0000b"
+    }
+  ]
+}

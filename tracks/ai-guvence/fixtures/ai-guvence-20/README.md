@@ -1,0 +1,3 @@
+# ai-guvence-20 görünür veri
+
+Elle yazılmış SENTETİK model ölçümleridir; model/Opacus çıktısı veya DP kanıtı değildir. Aynı model_cifti.json ilk görevde doğrulanır, ikinci görevde eşleştirilir, üçüncü görevde iddia_esikleri.json sınırlarıyla raporlanır. Bu örnekte doğruluk kaybı 0.05, AUC ve avantaj azalışları 0.2 olur. hazirla/setup her çalıştırmada dosyaları geçici dizine yeniden kopyalar; kalıcılık yoktur. Kod örnekleri dosyaları okur/yazdırır, aynı çalıştırmada bellekte kopya ile deneme yapılabilir. Kontrol ayrı girdiler kullanır. Son gerçek CPU deneyinde standart 35, gürültülü 8 epoch olduğundan gözlenen fark yalnız gürültüye bağlanamaz. Gerçek öğrenci ayarının kalıcılığı derste ayrıca açıklanır.

@@ -1,0 +1,30 @@
+[
+  {
+    "dosya": "config/prod.env",
+    "satir_no": 12,
+    "anahtar_adi": "API_TOKEN",
+    "deger": "sk-8f92xK7mQ3pL9vR4wZ1nB6tY5cJ2hD0s",
+    "baglam_satiri": "API_TOKEN=sk-8f92xK7mQ3pL9vR4wZ1nB6tY5cJ2hD0s"
+  },
+  {
+    "dosya": "tests/test_auth.py",
+    "satir_no": 44,
+    "anahtar_adi": "DUMMY_SECRET",
+    "deger": "EXAMPLE_ONLY_DO_NOT_USE_1234567890",
+    "baglam_satiri": "# test fixture: DUMMY_SECRET = 'EXAMPLE_ONLY_DO_NOT_USE_1234567890'"
+  },
+  {
+    "dosya": "app/settings.py",
+    "satir_no": 8,
+    "anahtar_adi": "DEFAULT_USER",
+    "deger": "aaaaaaaaaaaa",
+    "baglam_satiri": "DEFAULT_USER = 'aaaaaaaaaaaa'"
+  },
+  {
+    "dosya": "deploy/secrets.yaml",
+    "satir_no": 19,
+    "anahtar_adi": "DB_PASSWORD",
+    "deger": "Pr0d!Db#9821$XyZ_kL9mQ4wR7pT2vN",
+    "baglam_satiri": "db_password: Pr0d!Db#9821$XyZ_kL9mQ4wR7pT2vN"
+  }
+]

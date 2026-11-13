@@ -1,0 +1,17 @@
+{
+  "veri_kokeni": "sentetik_fikstur",
+  "esik": 25,
+  "kural_sozlugu": {
+    "riskli_terimler": {
+      "kuponistisna": 30,
+      "yetkiatla": 25,
+      "bedavaodul": 20
+    },
+    "iyi_huylu_terimler": {
+      "tesekkur": 8,
+      "memnuniyet": 8,
+      "standart": 6,
+      "destek": 6
+    }
+  }
+}

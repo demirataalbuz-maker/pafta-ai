@@ -1,0 +1,37 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Elle yazılmış 8 pikselli girdi satırları ve gradyanlar. Gerçek bir modelden alınmamıştır; biçim torch autograd çıktısının listeye çevrilmiş hâlini taklit eder.",
+  "epsilonlar": [0, 0.05, 0.1, 0.2],
+  "ornekler": [
+    {
+      "id": "satir-01",
+      "etiket": "yelkovan",
+      "x": [0.12, 0.88, 0.91, 0.87, 0.9, 0.15, 0.08, 0.1],
+      "gradyan": [0.0031, -0.0127, -0.0094, 0.0, -0.0113, 0.0042, 0.0018, -0.0007]
+    },
+    {
+      "id": "satir-02-kirpma",
+      "etiket": "yelkovan",
+      "x": [0.97, 1.0, 0.96, 0.03, 0.0, 0.02, 0.5, 0.5],
+      "gradyan": [0.021, 0.004, 0.017, -0.019, -0.002, 0.008, 0.0, -0.011]
+    },
+    {
+      "id": "satir-03-sifir-gradyan",
+      "etiket": "diger",
+      "x": [0.4, 0.41, 0.39, 0.4, 0.42, 0.38, 0.4, 0.41],
+      "gradyan": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    {
+      "id": "bozuk-aralik",
+      "etiket": "diger",
+      "x": [0.2, 1.2, 0.3, 0.1, 0.0, 0.4, 0.6, 0.2],
+      "gradyan": [0.01, -0.01, 0.0, 0.02, -0.03, 0.0, 0.01, 0.005]
+    },
+    {
+      "id": "bozuk-boyut",
+      "etiket": "yelkovan",
+      "x": [0.5, 0.5, 0.5],
+      "gradyan": [0.1, -0.1]
+    }
+  ]
+}

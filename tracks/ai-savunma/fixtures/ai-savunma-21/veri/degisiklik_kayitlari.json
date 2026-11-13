@@ -1,0 +1,171 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "MLflow model registry / Git etiketlerinden dışa aktarılmış gibi yazılmış değişiklik kayıtları. Özetler örnek metinlerin gerçek SHA-256 değeridir; kişiler ve kayıtlar uydurmadır.",
+  "denetim_kayitlari": [
+    {
+      "id": "prompt-v3",
+      "tur": "prompt",
+      "surum": 3,
+      "sahip": "ayse",
+      "onaycilar": [
+        "ayse",
+        "mehmet",
+        "deniz"
+      ],
+      "onceki_ozet": "80e594cf284cdf53f67e62976555349b220d713fc49b2cb42039dd46acecd4b9",
+      "yeni_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "geri_alma_surumu": 2
+    },
+    {
+      "id": "prompt-v4-sahip",
+      "tur": "prompt",
+      "surum": 4,
+      "sahip": "ayse",
+      "onaycilar": [
+        "ayse",
+        "mehmet"
+      ],
+      "onceki_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "yeni_ozet": "f985cc1af3eebe93a891ad930eda678190cf45b99b70e40d1c6186bda79b740b",
+      "geri_alma_surumu": 3
+    },
+    {
+      "id": "guardrail-v4",
+      "tur": "guardrail",
+      "surum": 4,
+      "sahip": "deniz",
+      "onaycilar": [
+        "mehmet",
+        "zeynep"
+      ],
+      "onceki_ozet": "32980dc949d149a55c199cc8bc13a5a4bcbe3c5c171169901ec790fb06e1414a",
+      "yeni_ozet": "c566e803aadd11c372131a074483042fcc56f0fa1045ddc012b6196631da2474",
+      "geri_alma_surumu": 3
+    },
+    {
+      "id": "model-v7",
+      "tur": "model",
+      "surum": 7,
+      "sahip": "mehmet",
+      "onaycilar": [
+        "ayse",
+        "zeynep"
+      ],
+      "onceki_ozet": "bdff4b9e17f50edad28554f8d93bbb089915fbc2016833c02389e21af540d1e4",
+      "yeni_ozet": "f43176a2877da8b408e117caced0be05c96e907851f413a8e739546e39689ef0",
+      "geri_alma_surumu": 7
+    },
+    {
+      "id": "prompt-v5-noop",
+      "tur": "prompt",
+      "surum": 5,
+      "sahip": "zeynep",
+      "onaycilar": [
+        "ayse",
+        "mehmet"
+      ],
+      "onceki_ozet": "f985cc1af3eebe93a891ad930eda678190cf45b99b70e40d1c6186bda79b740b",
+      "yeni_ozet": "f985cc1af3eebe93a891ad930eda678190cf45b99b70e40d1c6186bda79b740b",
+      "geri_alma_surumu": 4
+    }
+  ],
+  "yayin_kayitlari": [
+    {
+      "id": "prompt-v3",
+      "tur": "prompt",
+      "surum": 3,
+      "aktif_surum": 2,
+      "sahip": "ayse",
+      "onaycilar": [
+        "ayse",
+        "mehmet",
+        "deniz"
+      ],
+      "onceki_ozet": "80e594cf284cdf53f67e62976555349b220d713fc49b2cb42039dd46acecd4b9",
+      "yeni_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "geri_alma_surumu": 2
+    },
+    {
+      "id": "model-v6-tekrar",
+      "tur": "model",
+      "surum": 6,
+      "aktif_surum": 6,
+      "sahip": "mehmet",
+      "onaycilar": [
+        "ayse",
+        "zeynep"
+      ],
+      "onceki_ozet": "0fe2316d39f3f9c4840fa207cfc41d0d36c698a3945db7e3ece6858e2783eebf",
+      "yeni_ozet": "bdff4b9e17f50edad28554f8d93bbb089915fbc2016833c02389e21af540d1e4",
+      "geri_alma_surumu": 5
+    },
+    {
+      "id": "prompt-ilk",
+      "tur": "prompt",
+      "surum": 1,
+      "aktif_surum": 0,
+      "sahip": "zeynep",
+      "onaycilar": [
+        "ayse",
+        "mehmet"
+      ],
+      "onceki_ozet": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "yeni_ozet": "be9cc02fe2a41a28c51050870e4182c1c706e8039f10f2e581f0b752170d06cb",
+      "geri_alma_surumu": 1
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "id": "yinelenen-onay",
+      "tur": "prompt",
+      "surum": 3,
+      "sahip": "ayse",
+      "onaycilar": [
+        "mehmet",
+        "mehmet"
+      ],
+      "onceki_ozet": "80e594cf284cdf53f67e62976555349b220d713fc49b2cb42039dd46acecd4b9",
+      "yeni_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "geri_alma_surumu": 2
+    },
+    {
+      "id": "buyuk-harf-ozet",
+      "tur": "prompt",
+      "surum": 3,
+      "sahip": "ayse",
+      "onaycilar": [
+        "mehmet",
+        "deniz"
+      ],
+      "onceki_ozet": "80E594CF284CDF53F67E62976555349B220D713FC49B2CB42039DD46ACECD4B9",
+      "yeni_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "geri_alma_surumu": 2
+    },
+    {
+      "id": "bool-surum",
+      "tur": "prompt",
+      "surum": true,
+      "sahip": "ayse",
+      "onaycilar": [
+        "mehmet",
+        "deniz"
+      ],
+      "onceki_ozet": "80e594cf284cdf53f67e62976555349b220d713fc49b2cb42039dd46acecd4b9",
+      "yeni_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "geri_alma_surumu": 1
+    },
+    {
+      "id": "ascii-disi-sahip",
+      "tur": "prompt",
+      "surum": 3,
+      "sahip": "ayşe",
+      "onaycilar": [
+        "mehmet",
+        "deniz"
+      ],
+      "onceki_ozet": "80e594cf284cdf53f67e62976555349b220d713fc49b2cb42039dd46acecd4b9",
+      "yeni_ozet": "7d23c6e6d243a6f88100d6e04352708a89377b5623d2f0d77927421b546970ab",
+      "geri_alma_surumu": 2
+    }
+  ]
+}

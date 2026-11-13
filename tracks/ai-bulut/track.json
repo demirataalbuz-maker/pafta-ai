@@ -1,0 +1,38 @@
+{
+  "id": "ai-bulut",
+  "name": "Bulut AI ve ML Altyapısı",
+  "status": "active",
+  "group": "ai",
+  "order": 39,
+  "runner": "python",
+  "dil": "python",
+  "role": "Bulut AI ve ML Altyapısı için yerel, sentetik ve ölçülebilir alıştırmalar.",
+  "tagline": "Sınırı tanımla, yerelde ölç, kanıtla anlat.",
+  "kahraman": [
+    "Deneyden",
+    "Kanıt",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Bulut AI ve ML Altyapısı",
+      "rank": "minik",
+      "lessons": [
+        "ai-bulut-01",
+        "ai-bulut-02",
+        "ai-bulut-03",
+        "ai-bulut-04",
+        "ai-bulut-05",
+        "ai-bulut-06",
+        "ai-bulut-07",
+        "ai-bulut-08"
+      ]
+    }
+  ]
+}

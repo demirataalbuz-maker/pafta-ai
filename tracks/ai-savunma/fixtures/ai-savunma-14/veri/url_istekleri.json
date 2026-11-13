@@ -1,0 +1,259 @@
+{
+ "aciklama": "Modelin istek_at aracına verdiği sentetik URL'ler. Hiçbir istek atılmaz.",
+ "politika": {
+  "varsayilan": "reddet",
+  "alan_adlari": [
+   "api.ornek.com",
+   "cdn.ornek.com"
+  ],
+  "portlar": [
+   443
+  ],
+  "max_yonlendirme": 1
+ },
+ "istekler": [
+  {
+   "id": "api",
+   "url": "https://api.ornek.com/v1/siparis",
+   "yonlendirme": 0
+  },
+  {
+   "id": "buyuk-harf",
+   "url": "https://API.ORNEK.COM/v1",
+   "yonlendirme": 0
+  },
+  {
+   "id": "acik-443",
+   "url": "https://cdn.ornek.com:443/logo.png",
+   "yonlendirme": 0
+  },
+  {
+   "id": "metadata",
+   "url": "http://169.254.169.254/latest/meta-data/",
+   "yonlendirme": 0
+  },
+  {
+   "id": "gcp-metadata",
+   "url": "http://metadata.google.internal/computeMetadata/v1/",
+   "yonlendirme": 0
+  },
+  {
+   "id": "kullanici-hilesi",
+   "url": "https://api.ornek.com@evil.test/",
+   "yonlendirme": 0
+  },
+  {
+   "id": "sonek-hilesi",
+   "url": "https://api.ornek.com.evil.test/v1",
+   "yonlendirme": 0
+  },
+  {
+   "id": "loopback-ipv6",
+   "url": "https://[::1]/admin",
+   "yonlendirme": 0
+  },
+  {
+   "id": "port-8080",
+   "url": "https://api.ornek.com:8080/",
+   "yonlendirme": 0
+  },
+  {
+   "id": "ftp",
+   "url": "ftp://api.ornek.com/dosya",
+   "yonlendirme": 0
+  },
+  {
+   "id": "cok-yonlendirme",
+   "url": "https://api.ornek.com/r",
+   "yonlendirme": 2
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "acik-443",
+   "karar": "hazir",
+   "nedenler": [],
+   "hedef": "cdn.ornek.com"
+  },
+  {
+   "id": "api",
+   "karar": "hazir",
+   "nedenler": [],
+   "hedef": "api.ornek.com"
+  },
+  {
+   "id": "buyuk-harf",
+   "karar": "hazir",
+   "nedenler": [],
+   "hedef": "api.ornek.com"
+  },
+  {
+   "id": "cok-yonlendirme",
+   "karar": "reddet",
+   "nedenler": [
+    "yonlendirme"
+   ],
+   "hedef": "api.ornek.com"
+  },
+  {
+   "id": "ftp",
+   "karar": "reddet",
+   "nedenler": [
+    "sema"
+   ],
+   "hedef": "api.ornek.com"
+  },
+  {
+   "id": "gcp-metadata",
+   "karar": "reddet",
+   "nedenler": [
+    "sema",
+    "alan"
+   ],
+   "hedef": "metadata.google.internal"
+  },
+  {
+   "id": "kullanici-hilesi",
+   "karar": "reddet",
+   "nedenler": [
+    "kimlik",
+    "alan"
+   ],
+   "hedef": "evil.test"
+  },
+  {
+   "id": "loopback-ipv6",
+   "karar": "reddet",
+   "nedenler": [
+    "alan"
+   ],
+   "hedef": "::1"
+  },
+  {
+   "id": "metadata",
+   "karar": "reddet",
+   "nedenler": [
+    "sema",
+    "alan"
+   ],
+   "hedef": "169.254.169.254"
+  },
+  {
+   "id": "port-8080",
+   "karar": "reddet",
+   "nedenler": [
+    "port"
+   ],
+   "hedef": "api.ornek.com"
+  },
+  {
+   "id": "sonek-hilesi",
+   "karar": "reddet",
+   "nedenler": [
+    "alan"
+   ],
+   "hedef": "api.ornek.com.evil.test"
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "api",
+     "url": "https://api.ornek.com/v1/siparis",
+     "yonlendirme": 0
+    },
+    {
+     "id": "buyuk-harf",
+     "url": "https://API.ORNEK.COM/v1",
+     "yonlendirme": 0
+    },
+    {
+     "id": "acik-443",
+     "url": "https://cdn.ornek.com:443/logo.png",
+     "yonlendirme": 0
+    },
+    {
+     "id": "metadata",
+     "url": "http://169.254.169.254/latest/meta-data/",
+     "yonlendirme": 0
+    },
+    {
+     "id": "gcp-metadata",
+     "url": "http://metadata.google.internal/computeMetadata/v1/",
+     "yonlendirme": 0
+    },
+    {
+     "id": "kullanici-hilesi",
+     "url": "https://api.ornek.com@evil.test/",
+     "yonlendirme": 0
+    },
+    {
+     "id": "sonek-hilesi",
+     "url": "https://api.ornek.com.evil.test/v1",
+     "yonlendirme": 0
+    },
+    {
+     "id": "loopback-ipv6",
+     "url": "https://[::1]/admin",
+     "yonlendirme": 0
+    },
+    {
+     "id": "port-8080",
+     "url": "https://api.ornek.com:8080/",
+     "yonlendirme": 0
+    },
+    {
+     "id": "ftp",
+     "url": "ftp://api.ornek.com/dosya",
+     "yonlendirme": 0
+    },
+    {
+     "id": "cok-yonlendirme",
+     "url": "https://api.ornek.com/r",
+     "yonlendirme": 2
+    },
+    {
+     "id": "api",
+     "url": "https://api.ornek.com/v1/siparis",
+     "yonlendirme": 0
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "URL içinde boşluk",
+   "girdi": [
+    {
+     "id": "a",
+     "url": "https://api.ornek.com/a b",
+     "yonlendirme": 0
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "ayrıştırılamayan port",
+   "girdi": [
+    {
+     "id": "a",
+     "url": "https://api.ornek.com:yuz/",
+     "yonlendirme": 0
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "yönlendirme -1",
+   "girdi": [
+    {
+     "id": "a",
+     "url": "https://api.ornek.com/",
+     "yonlendirme": -1
+    }
+   ]
+  }
+ ]
+}

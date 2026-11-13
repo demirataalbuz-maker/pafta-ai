@@ -1,0 +1,5 @@
+{
+  "zorunlu_alanlar": ["bulgu_id", "kategori", "ciddiyet", "satir_no", "kanit_var"],
+  "gecerli_kategoriler": ["enjeksiyon", "yetki_atlama", "sir_sizintisi", "yapilandirma"],
+  "gecerli_ciddiyetler": ["dusuk", "orta", "yuksek", "kritik"]
+}

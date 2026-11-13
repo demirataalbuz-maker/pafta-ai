@@ -1,0 +1,48 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Temsilî bir AI asistanının telemetri politikası. Gerçek OpenTelemetry/SigNoz yapılandırması değildir.",
+  "politika": {
+    "max_olay": 20,
+    "max_sure_ms": 5000,
+    "iz_zorunlu": true,
+    "surum_zorunlu": true
+  },
+  "bozuk_politikalar": [
+    {
+      "ad": "iz-istege-bagli",
+      "politika": {
+        "max_olay": 20,
+        "max_sure_ms": 5000,
+        "iz_zorunlu": false,
+        "surum_zorunlu": true
+      }
+    },
+    {
+      "ad": "sifir-olay",
+      "politika": {
+        "max_olay": 0,
+        "max_sure_ms": 5000,
+        "iz_zorunlu": true,
+        "surum_zorunlu": true
+      }
+    },
+    {
+      "ad": "dev-sure",
+      "politika": {
+        "max_olay": 20,
+        "max_sure_ms": 600000,
+        "iz_zorunlu": true,
+        "surum_zorunlu": true
+      }
+    },
+    {
+      "ad": "bool-olay",
+      "politika": {
+        "max_olay": true,
+        "max_sure_ms": 5000,
+        "iz_zorunlu": true,
+        "surum_zorunlu": true
+      }
+    }
+  ]
+}

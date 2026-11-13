@@ -1,0 +1,55 @@
+{
+  "koken": "elle hazırlanmış sentetik olaylar; canlı kayıt değil",
+  "model_indeksi": 1,
+  "olaylar": [
+    {
+      "iz_id": "a",
+      "olay_id": "http",
+      "parent_id": null,
+      "tur": "http",
+      "zaman_ms": 0,
+      "sure_ms": 10,
+      "alanlar": {
+        "http_kod": 200,
+        "yontem": "POST"
+      }
+    },
+    {
+      "iz_id": "a",
+      "olay_id": "model",
+      "parent_id": "http",
+      "tur": "model",
+      "zaman_ms": 2,
+      "sure_ms": 4,
+      "alanlar": {
+        "model": "sentetik-yerel",
+        "token_in": 7,
+        "token_out": 3,
+        "hata_kodu": "E_DEMO"
+      }
+    },
+    {
+      "iz_id": "a",
+      "olay_id": "guard",
+      "parent_id": "http",
+      "tur": "guardrail",
+      "zaman_ms": 2,
+      "sure_ms": 1,
+      "alanlar": {
+        "karar": "reddet"
+      }
+    },
+    {
+      "iz_id": "b",
+      "olay_id": "http",
+      "parent_id": null,
+      "tur": "http",
+      "zaman_ms": 20,
+      "sure_ms": 3,
+      "alanlar": {
+        "durum": "hata",
+        "hata_kodu": "E_DEMO"
+      }
+    }
+  ]
+}

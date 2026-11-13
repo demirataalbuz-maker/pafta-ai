@@ -1,0 +1,3 @@
+# ai-guvence-21 görünür sentetik SBOM
+
+Özel öğretim şemasındaki elle yazılmış bileşenlerdir; Syft/CycloneDX/SPDX çıktısı değildir. Hash alanları gerçek dosyadan hesaplanmadı. İlk iki görev sbom_eski.json dosyasını doğrular ve grafiği kurar; üçüncü görev sbom_yeni.json farkını çıkarır. hazirla/setup her çalıştırmada geçici kopya oluşturur; kalıcılık yoktur. Kodlar dosyaları okur/yazdırır; aynı çalıştırmada bellekte kopyayı değiştirerek dene. Kontrol bağımsızdır. Son gerçek deneyde model ağırlığı ve yerel veri tarifi/sürüm dosyalarının hash'i gerçekten hesaplanır. Veri tarifi tam ham eğitim kümesi arşivi diye sunulmaz.

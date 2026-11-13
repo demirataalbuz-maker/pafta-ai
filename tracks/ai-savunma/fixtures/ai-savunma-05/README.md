@@ -1,0 +1,5 @@
+# Yerel laboratuvar çalışma verisi
+
+veri/laboratuvar.json elle hazırlanmış sentetik ayar/koşulardır; gerçek servis kaydı değildir. İlk görev ayar, ikinci dosya_adlari ve veri/ham dosyaları, üçüncü kosular alanıyla ilerler. İlk Çalıştır ham JSON'u gösterir. metin.txt UTF-8ş+CRLF içerir:3karakter,4bayt. Ham dosyaları newline='' ile metin_yukle okur; satır sonu korunur. Doğru üçüncü raporda degisen için cikti,durum nedenleri ve False;sabit için True vardır. Tohumun aynı olması tek başına yeterli değildir.
+
+Mevcut ai_savunma_veri.hazirla her Run/Check için yeni geçici veri/ kopyası kurar; değişiklikler sonraki çalıştırmada kalmaz. Kaynağı haricî editörde aç veya yüklenen sözlüğü kodda değiştirip Çalıştır. Gizli testler ayrıdır. Demo dosya okuyucu resolve/relative_to ile veri/ham dışını reddeder;bu işletim sistemi sandbox'ı değildir. Final kurulu Ollama'ya üç gerçek istek yapar;eşit veya farklı çıktı doğru raporlanır,belirli yanıt veya aynı çıktı kabul şartı değildir. Gerçek çağrı hatası kabulü engeller. Yeni kurulum/indirme yoktur.

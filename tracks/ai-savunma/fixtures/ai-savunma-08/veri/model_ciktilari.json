@@ -1,0 +1,195 @@
+{
+ "aciklama": "Modelden JSON modunda dönmüş gibi sentetik çıktılar. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "m-01",
+   "aciklama": "geçerli yapısal yanıt",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   }
+  },
+  {
+   "id": "m-02",
+   "aciklama": "güven tam 0 ve kaynak yok",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0,
+    "kaynaklar": []
+   },
+   "beklenen": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0,
+    "kaynaklar": []
+   }
+  },
+  {
+   "id": "m-03",
+   "aciklama": "tamsayı güven 1",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 1,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 1,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   }
+  },
+  {
+   "id": "m-04",
+   "aciklama": "model şemaya sistem_notu alanı eklemiş",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ],
+    "sistem_notu": "api_key=abcd1234"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-05",
+   "aciklama": "özette sondaki boşluk (kırpılmaz, reddedilir)",
+   "cikti": {
+    "ozet": "Teslim yarın. ",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-06",
+   "aciklama": "güven True",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": true,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-07",
+   "aciklama": "güven 1.5",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 1.5,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-08",
+   "aciklama": "güven metin olarak gelmiş",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": "0.9",
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-09",
+   "aciklama": "kaynak kimliğine gömülmüş komut",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "siparis-42; rm -rf"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-10",
+   "aciklama": "yinelenen kaynak",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "a",
+     "a"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-11",
+   "aciklama": "altı kaynak",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "bilgi",
+    "guven": 0.82,
+    "kaynaklar": [
+     "k0",
+     "k1",
+     "k2",
+     "k3",
+     "k4",
+     "k5"
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "m-12",
+   "aciklama": "bilinmeyen etiket",
+   "cikti": {
+    "ozet": "Sipariş 42 yarın teslim edilecek.",
+    "etiket": "yonetici",
+    "guven": 0.82,
+    "kaynaklar": [
+     "siparis-42",
+     "kargo_log"
+    ]
+   },
+   "beklenen": null
+  }
+ ]
+}

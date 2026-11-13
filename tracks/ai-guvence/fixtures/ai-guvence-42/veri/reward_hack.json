@@ -1,0 +1,15 @@
+{
+ "aciklama": "Sentetik örnek: proxy ödül, altın ödül ve KL serileri elle yazılmıştır; gerçek RLHF koşusu değildir.",
+ "adimlar": {
+  "proxy_seri": [0.40, 0.58, 0.74, 0.85, 0.93, 0.98],
+  "altin_seri": [0.38, 0.55, 0.70, 0.72, 0.54, 0.39],
+  "kl_seri": [0.02, 0.08, 0.16, 0.28, 0.52, 0.81],
+  "kl_esik": 0.45,
+  "min_dusus": 0.15
+ },
+ "saglikli_kosu": {
+  "proxy_seri": [0.40, 0.52, 0.63, 0.70, 0.74, 0.76],
+  "altin_seri": [0.39, 0.50, 0.61, 0.68, 0.71, 0.73],
+  "kl_seri": [0.01, 0.05, 0.10, 0.14, 0.18, 0.21]
+ }
+}

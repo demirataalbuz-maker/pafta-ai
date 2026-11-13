@@ -1,0 +1,22 @@
+[
+  {
+    "id": "d-1",
+    "uye": false,
+    "skor": 0.8
+  },
+  {
+    "id": "u-2",
+    "uye": true,
+    "skor": 0.7
+  },
+  {
+    "id": "u-1",
+    "uye": true,
+    "skor": 0.9
+  },
+  {
+    "id": "d-2",
+    "uye": false,
+    "skor": 0.7
+  }
+]

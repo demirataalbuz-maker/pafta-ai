@@ -1,0 +1,125 @@
+{
+  "id": "ai-savunma",
+  "name": "AI Savunma ve Blue Team",
+  "status": "active",
+  "group": "ai",
+  "order": 32,
+  "runner": "python",
+  "dil": "python",
+  "role": "Yerel LLM, RAG ve ajan sistemlerinde güven sınırlarını, kontrolleri ve müdahale kanıtlarını savunma bakışıyla kurmak.",
+  "tagline": "Guardrail'den araç yetkisine, RAG karantinasından purple regresyonuna; gerçek model gerektirmeyen deterministik savunma laboratuvarları.",
+  "kahraman": [
+    "Sınırdan",
+    "Kontrol",
+    "e"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Yerel Savunma Temelleri",
+      "rank": "minik",
+      "zen": "Güven, modelin cevabına değil uygulamanın doğruladığı sınıra dayanır.",
+      "lessons": [
+        "ai-savunma-01",
+        "ai-savunma-02",
+        "ai-savunma-03",
+        "ai-savunma-04",
+        "ai-savunma-05"
+      ]
+    },
+    {
+      "title": "Girdi ve Çıktı Muhafızı",
+      "rank": "tesviye",
+      "lessons": [
+        "ai-savunma-06",
+        "ai-savunma-07",
+        "ai-savunma-08",
+        "ai-savunma-09",
+        "ai-savunma-10",
+        "ai-savunma-32"
+      ]
+    },
+    {
+      "title": "Araç ve Yürütme Bekçisi",
+      "rank": "kucuk-orta",
+      "zen": "Model bir eylem önerir; politika ve yetki onu sınırlar.",
+      "lessons": [
+        "ai-savunma-11",
+        "ai-savunma-12",
+        "ai-savunma-38",
+        "ai-savunma-13",
+        "ai-savunma-14",
+        "ai-savunma-15",
+        "ai-savunma-34"
+      ]
+    },
+    {
+      "title": "RAG ve Tedarik Zinciri Koruyucusu",
+      "rank": "buyuk-orta",
+      "lessons": [
+        "ai-savunma-16",
+        "ai-savunma-17",
+        "ai-savunma-18",
+        "ai-savunma-19",
+        "ai-savunma-20",
+        "ai-savunma-36",
+        "ai-savunma-37"
+      ]
+    },
+    {
+      "title": "Tespit ve Müdahale Uzmanı",
+      "rank": "basalti",
+      "lessons": [
+        "ai-savunma-21",
+        "ai-savunma-22",
+        "ai-savunma-23",
+        "ai-savunma-31",
+        "ai-savunma-24",
+        "ai-savunma-25"
+      ]
+    },
+    {
+      "title": "Adversarial Güvence ve Mor Tatbikat",
+      "rank": "baspehlivan",
+      "zen": "Bir kontrol ancak saldırı ve regresyon kanıtıyla güvence verir.",
+      "lessons": [
+        "ai-savunma-26",
+        "ai-savunma-27",
+        "ai-savunma-28",
+        "ai-savunma-29",
+        "ai-savunma-30",
+        "ai-savunma-33",
+        "ai-savunma-39",
+        "ai-savunma-35",
+        "ai-savunma-40",
+        "ai-savunma-41",
+        "ai-savunma-42"
+      ]
+    }
+  ]
+}

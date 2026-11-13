@@ -1,0 +1,35 @@
+{
+  "kaynak": "sentetik",
+  "token_etiketleri": [
+    "kedi",
+    "köpek",
+    "hayvan"
+  ],
+  "matris": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      2.0
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ],
+  "kimlikler": [
+    2,
+    0,
+    2
+  ],
+  "sorgu": [
+    2.0,
+    2.0
+  ],
+  "karsilastirma": [
+    1.0,
+    0.0
+  ]
+}

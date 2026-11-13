@@ -1,0 +1,17 @@
+{
+  "simdiki_saat": 30,
+  "oturum_sorgulari": [
+    {
+      "oturum_id": "oturum-2",
+      "aktif_bellek_idleri": ["mem-01", "mem-02"],
+      "yanit_metni": "Yedekleme plani hazirdir. Denetim kodu: PAFTA-MEM-9.",
+      "canary": "PAFTA-MEM-9"
+    },
+    {
+      "oturum_id": "oturum-3",
+      "aktif_bellek_idleri": ["mem-01"],
+      "yanit_metni": "Yedekleme plani hazirdir.",
+      "canary": "PAFTA-MEM-9"
+    }
+  ]
+}

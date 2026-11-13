@@ -1,0 +1,252 @@
+{
+ "aciklama": "İki uç noktanın aynı sorgu setine sentetik yanıtları. Eşleşme kimlik kanıtı değildir.",
+ "uc_a": [
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 1,
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 2,
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 1,
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 2,
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-dil",
+   "tekrar": 1,
+   "yanit": "Türkçe"
+  }
+ ],
+ "uc_b": [
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 2,
+   "yanit": "Evet, 17 asaldır."
+  },
+  {
+   "vaka_id": "q-dil",
+   "tekrar": 1,
+   "yanit": "Türkçe"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 2,
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 1,
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 1,
+   "yanit": "HAYIR"
+  }
+ ],
+ "beklenen": {
+  "gozlem": 5,
+  "ayni": 4,
+  "eslesme": 0.8,
+  "farkli_vakalar": [
+   "q-sayi"
+  ]
+ },
+ "eksik_uc_b": [
+  {
+   "vaka_id": "q-dil",
+   "tekrar": 1,
+   "yanit": "Türkçe"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 2,
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 1,
+   "yanit": "HAYIR"
+  }
+ ],
+ "bozuk_ciftler": [
+  {
+   "sol": [
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 2,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 1,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 2,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-dil",
+     "tekrar": 1,
+     "yanit": "Türkçe"
+    }
+   ],
+   "sag": [
+    {
+     "vaka_id": "q-dil",
+     "tekrar": 1,
+     "yanit": "Türkçe"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 2,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    }
+   ]
+  },
+  {
+   "sol": [
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 2,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 1,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 2,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-dil",
+     "tekrar": 1,
+     "yanit": "Türkçe"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    }
+   ],
+   "sag": [
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 2,
+     "yanit": "Evet, 17 asaldır."
+    },
+    {
+     "vaka_id": "q-dil",
+     "tekrar": 1,
+     "yanit": "Türkçe"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 2,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 1,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 2,
+     "yanit": "Evet, 17 asaldır."
+    }
+   ]
+  },
+  {
+   "sol": [
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 2,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 1,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 2,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-dil",
+     "tekrar": 1,
+     "yanit": "Türkçe"
+    }
+   ],
+   "sag": [
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 2,
+     "yanit": "Evet, 17 asaldır."
+    },
+    {
+     "vaka_id": "q-dil",
+     "tekrar": 1,
+     "yanit": null
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 2,
+     "yanit": "HAYIR"
+    },
+    {
+     "vaka_id": "q-sayi",
+     "tekrar": 1,
+     "yanit": "EVET"
+    },
+    {
+     "vaka_id": "q-renk",
+     "tekrar": 1,
+     "yanit": "HAYIR"
+    }
+   ]
+  }
+ ]
+}

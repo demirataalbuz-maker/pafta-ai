@@ -1,0 +1,122 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Kanıtların kimden kime geçtiğini gösteren devir kayıtları. Kayıtlar dışa aktarımdan geldiği gibi karışık sıradadır.",
+  "kayitlar": [
+    {
+      "kanit_id": "gateway-log",
+      "sira": 2,
+      "zaman": 400,
+      "gonderen": "olay-yoneticisi",
+      "alan": "adli-depo",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+    },
+    {
+      "kanit_id": "sohbet-kaydi",
+      "sira": 0,
+      "zaman": 130,
+      "gonderen": "otomatik-toplayici",
+      "alan": "nobetci-muhendis",
+      "sha256": "2786b6829c5a92b0dfe00ce7dfc41f81f20b580ef91b348ce8c209fcc863ac26"
+    },
+    {
+      "kanit_id": "gateway-log",
+      "sira": 0,
+      "zaman": 120,
+      "gonderen": "otomatik-toplayici",
+      "alan": "nobetci-muhendis",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+    },
+    {
+      "kanit_id": "gateway-log",
+      "sira": 1,
+      "zaman": 400,
+      "gonderen": "nobetci-muhendis",
+      "alan": "olay-yoneticisi",
+      "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+    }
+  ],
+  "bozuk_zincirler": {
+    "sira-atlama": [
+      {
+        "kanit_id": "k",
+        "sira": 0,
+        "zaman": 1,
+        "gonderen": "a",
+        "alan": "b",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      },
+      {
+        "kanit_id": "k",
+        "sira": 2,
+        "zaman": 2,
+        "gonderen": "b",
+        "alan": "c",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      }
+    ],
+    "zaman-geri": [
+      {
+        "kanit_id": "k",
+        "sira": 0,
+        "zaman": 50,
+        "gonderen": "a",
+        "alan": "b",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      },
+      {
+        "kanit_id": "k",
+        "sira": 1,
+        "zaman": 40,
+        "gonderen": "b",
+        "alan": "c",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      }
+    ],
+    "sahip-kopuk": [
+      {
+        "kanit_id": "k",
+        "sira": 0,
+        "zaman": 1,
+        "gonderen": "a",
+        "alan": "b",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      },
+      {
+        "kanit_id": "k",
+        "sira": 1,
+        "zaman": 2,
+        "gonderen": "x",
+        "alan": "c",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      }
+    ],
+    "ozet-degisti": [
+      {
+        "kanit_id": "k",
+        "sira": 0,
+        "zaman": 1,
+        "gonderen": "a",
+        "alan": "b",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      },
+      {
+        "kanit_id": "k",
+        "sira": 1,
+        "zaman": 2,
+        "gonderen": "b",
+        "alan": "c",
+        "sha256": "2786b6829c5a92b0dfe00ce7dfc41f81f20b580ef91b348ce8c209fcc863ac26"
+      }
+    ],
+    "sifirdan-baslamiyor": [
+      {
+        "kanit_id": "k",
+        "sira": 1,
+        "zaman": 1,
+        "gonderen": "a",
+        "alan": "b",
+        "sha256": "142fd184709eda883c0aac34ea6c882180c65153345cfa83ea3692fefe4f4c8e"
+      }
+    ]
+  }
+}

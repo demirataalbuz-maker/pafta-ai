@@ -1,0 +1,29 @@
+{
+  "izinli_hostlar": [
+    "docs.example.com",
+    "api.example.com"
+  ],
+  "urller": [
+    "https://docs.example.com/x",
+    "http://127.0.0.1/admin",
+    "https://evil.test/y"
+  ],
+  "sahiplik": {
+    "k1": "ali",
+    "k2": "veli"
+  },
+  "istekler": [
+    {
+      "kullanici": "ali",
+      "kaynak": "k1"
+    },
+    {
+      "kullanici": "ali",
+      "kaynak": "k2"
+    },
+    {
+      "kullanici": "ali",
+      "kaynak": "k9"
+    }
+  ]
+}

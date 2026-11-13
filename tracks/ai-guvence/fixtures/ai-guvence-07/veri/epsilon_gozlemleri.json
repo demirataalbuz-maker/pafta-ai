@@ -1,0 +1,13 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Elle yazılmış ε-doğruluk gözlemleri. Sayılar FGSM eğrilerinde sık görülen biçimi taklit eder (kırpma yüzünden L∞ < ε, büyük ε'da doğrulukta doyma); gerçek bir ölçüm kaydı değildir.",
+  "model_notu": "temsilî 'kucuk-mlp' sınıflandırıcı, 200 test örneği",
+  "gozlemler": [
+    {"epsilon": 0.2, "taban_dogruluk": 0.82, "saldiri_dogruluk": 0.11, "l_inf": 0.2},
+    {"epsilon": 0, "taban_dogruluk": 0.82, "saldiri_dogruluk": 0.82, "l_inf": 0},
+    {"epsilon": 0.05, "taban_dogruluk": 0.82, "saldiri_dogruluk": 0.64, "l_inf": 0.05},
+    {"epsilon": 0.3, "taban_dogruluk": 0.82, "saldiri_dogruluk": 0.11, "l_inf": 0.27},
+    {"epsilon": 0.1, "taban_dogruluk": 0.82, "saldiri_dogruluk": 0.37, "l_inf": 0.1}
+  ],
+  "bozuk_gozlem": {"epsilon": 0.15, "taban_dogruluk": 0.82, "saldiri_dogruluk": 0.2, "l_inf": 0.2}
+}

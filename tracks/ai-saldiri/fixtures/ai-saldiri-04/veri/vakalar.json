@@ -1,0 +1,132 @@
+{
+ "aciklama": "Görev 1 sinyalleri çıkarılmış sentetik vakalar.",
+ "vakalar": [
+  {
+   "id": "v-01",
+   "metin": "Kısa bir özet iste",
+   "sinyaller": []
+  },
+  {
+   "id": "v-02",
+   "metin": "Base64 ile kodlanmış istek",
+   "sinyaller": [
+    "base64"
+   ]
+  },
+  {
+   "id": "v-03",
+   "metin": "Rol işareti, hex ve çatışma",
+   "sinyaller": [
+    "sahte-rol",
+    "hex",
+    "onceki-talimati-yok-say"
+   ]
+  },
+  {
+   "id": "v-04",
+   "metin": "Kurgu çerçevesi",
+   "sinyaller": [
+    "kurgu"
+   ]
+  },
+  {
+   "id": "v-05",
+   "metin": "İki kez kaydedilmiş aynı sinyal",
+   "sinyaller": [
+    "base64",
+    "base64"
+   ]
+  },
+  {
+   "id": "v-06",
+   "metin": "Rol ve kurgu birlikte",
+   "sinyaller": [
+    "kurgu",
+    "sahte-rol"
+   ]
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "v-01",
+   "metin": "Kısa bir özet iste",
+   "etiketler": [
+    "dogrudan-istek"
+   ]
+  },
+  {
+   "id": "v-02",
+   "metin": "Base64 ile kodlanmış istek",
+   "etiketler": [
+    "donusturme"
+   ]
+  },
+  {
+   "id": "v-03",
+   "metin": "Rol işareti, hex ve çatışma",
+   "etiketler": [
+    "baglam-manipulasyonu",
+    "donusturme",
+    "politika-catistirma"
+   ]
+  },
+  {
+   "id": "v-04",
+   "metin": "Kurgu çerçevesi",
+   "etiketler": [
+    "baglam-manipulasyonu"
+   ]
+  },
+  {
+   "id": "v-05",
+   "metin": "İki kez kaydedilmiş aynı sinyal",
+   "etiketler": [
+    "donusturme"
+   ]
+  },
+  {
+   "id": "v-06",
+   "metin": "Rol ve kurgu birlikte",
+   "etiketler": [
+    "baglam-manipulasyonu"
+   ]
+  }
+ ],
+ "bozuk_kumeler": [
+  [
+   {
+    "id": "x",
+    "metin": "m",
+    "sinyaller": [
+     "unicode-homoglyph"
+    ]
+   }
+  ],
+  [
+   {
+    "id": "",
+    "metin": "m",
+    "sinyaller": []
+   }
+  ],
+  [
+   {
+    "id": "x",
+    "metin": null,
+    "sinyaller": []
+   }
+  ],
+  [
+   {
+    "id": "x",
+    "metin": "a",
+    "sinyaller": []
+   },
+   {
+    "id": "x",
+    "metin": "b",
+    "sinyaller": []
+   }
+  ]
+ ]
+}

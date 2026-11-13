@@ -1,0 +1,4 @@
+{
+  "izinli_komutlar": ["listele", "detay", "durum"],
+  "zorunlu_alanlar": ["komut", "limit"]
+}

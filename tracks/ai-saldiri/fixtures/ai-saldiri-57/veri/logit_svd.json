@@ -1,0 +1,21 @@
+{
+  "logit_matrisi": [
+    [12.0, 14.0, 10.0, 16.0],
+    [2.0, 6.0, -2.0, 10.0],
+    [7.0, 8.0, 6.0, 9.0],
+    [-3.0, 1.0, -7.0, 5.0]
+  ],
+  "spektrumlar": {
+    "dusuk_rank_gizli_8": {
+      "tekil_degerler": [42.0, 35.0, 28.0, 21.0, 14.0, 9.0, 6.0, 4.0, 0.002, 0.001, 0.0005, 0.0],
+      "sorgu_sayisi": 32,
+      "sozluk_boyutu": 128
+    },
+    "gurultulu_tam_rank": {
+      "tekil_degerler": [20.0, 18.0, 15.0, 12.0, 10.0, 8.0, 6.0, 5.0],
+      "sorgu_sayisi": 8,
+      "sozluk_boyutu": 64
+    }
+  },
+  "tol": 0.01
+}

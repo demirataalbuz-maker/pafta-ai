@@ -1,0 +1,133 @@
+{
+  "kaynak": "sentetik",
+  "kimlik": {
+    "baslik": "Bearer ornek-anahtar-20",
+    "anahtarlar": {
+      "k1": {
+        "ozet": "cc346060c288013b9df30922b792f6d298471fa3881a66c61cc9b4a59f72be1d",
+        "kapsamlar": [
+          "sohbet"
+        ]
+      }
+    },
+    "gerekli": "sohbet"
+  },
+  "kova": {
+    "olaylar": [
+      [
+        0,
+        "k1"
+      ],
+      [
+        0,
+        "k1"
+      ],
+      [
+        0,
+        "k2"
+      ],
+      [
+        1000,
+        "k1"
+      ]
+    ],
+    "kapasite": 1,
+    "aralik_ms": 1000
+  },
+  "alarmlar": {
+    "gizli": "ORNEK-SUNUCU-SIRRI-20",
+    "olaylar": [
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": null,
+        "durum": 401,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": null,
+        "durum": 401,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": null,
+        "durum": 401,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": null,
+        "durum": 401,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": null,
+        "durum": 401,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 429,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 429,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 429,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 429,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 429,
+        "istem": "Merhaba",
+        "token": 0
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 200,
+        "istem": "Merhaba",
+        "token": 8000
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 200,
+        "istem": "MERHABA",
+        "token": 7000
+      },
+      {
+        "istemci": "192.0.2.10",
+        "anahtar": "k1",
+        "durum": 200,
+        "istem": " merhaba ",
+        "token": 5000
+      }
+    ]
+  }
+}

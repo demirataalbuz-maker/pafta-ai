@@ -1,0 +1,16 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir URL getirme aracına model/kullanıcı tarafından verilmiş gibi yazılmış URL'ler. Ağ erişimi yapılmaz; hostlar uydurma veya ayrılmış adreslerdir.",
+  "urller": [
+    "http://public.test:80/belge?x=1",
+    "http://PUBLIC.test.:80/a",
+    "http://169.254.169.254:80/latest/meta-data",
+    "http://public.test/ok",
+    "https://public.test:443/ok",
+    "http://user@public.test:80/ok",
+    "http://public.test:80/ok#bolum",
+    "http://public.test:80\\@internal.test/",
+    "http://public.test:0/",
+    "http://[::1]:80/"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kesif_c": 1.414,
+  "prm_fark_esik": 0.35,
+  "dallar": [
+    {
+      "ad": "sahte_ikna_adimi",
+      "prm_skoru": 0.95,
+      "gercek_deger": 0.15,
+      "ebeveyn_ziyaret": 50,
+      "dugum_ziyaret": 5
+    },
+    {
+      "ad": "dogru_ispat_adimi",
+      "prm_skoru": 0.70,
+      "gercek_deger": 0.90,
+      "ebeveyn_ziyaret": 50,
+      "dugum_ziyaret": 20
+    },
+    {
+      "ad": "yanlis_yonlendirme",
+      "prm_skoru": 0.40,
+      "gercek_deger": 0.20,
+      "ebeveyn_ziyaret": 50,
+      "dugum_ziyaret": 10
+    }
+  ],
+  "tek_adim": {
+    "ortalama_odul": 0.85,
+    "ebeveyn_ziyaret": 100,
+    "dugum_ziyaret": 10,
+    "kesif_c": 1.414
+  }
+}

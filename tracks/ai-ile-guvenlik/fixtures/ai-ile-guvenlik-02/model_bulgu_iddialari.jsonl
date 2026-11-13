@@ -1,0 +1,4 @@
+{"iddia_id": "id-01", "dosya_adi": "auth_servisi.py", "satir_no": 4, "kanit_alt_dizgesi": "SELECT id FROM users", "onerilen_paket": "sqlite3"}
+{"iddia_id": "id-02", "dosya_adi": "auth_servisi.py", "satir_no": 99, "kanit_alt_dizgesi": "SELECT id", "onerilen_paket": "sqlite3"}
+{"iddia_id": "id-03", "dosya_adi": "olmayan_dosya.py", "satir_no": 1, "kanit_alt_dizgesi": "import os", "onerilen_paket": "json"}
+{"iddia_id": "id-04", "dosya_adi": "ayarlar.py", "satir_no": 1, "kanit_alt_dizgesi": "DEBUG_MODU = True", "onerilen_paket": "uydurma-sec-shield"}

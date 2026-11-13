@@ -1,0 +1,24 @@
+{
+  "kaynak": "elle yazılmış sentetik örnek; kayıt sisteminden doğrulanmadı",
+  "supheli": "reqeusts",
+  "populer": [
+    "requests",
+    "numpy",
+    "pandas"
+  ],
+  "esik": 2,
+  "paketler": [
+    "requests",
+    "numpy",
+    "bs4",
+    "reqeusts",
+    "pafta-uydurma-ornek"
+  ],
+  "guvenilir": [
+    "requests",
+    "numpy",
+    "pandas",
+    "flask",
+    "beautifulsoup4"
+  ]
+}

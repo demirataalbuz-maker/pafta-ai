@@ -1,0 +1,28 @@
+title: LLM girdisinde talimat ezme
+id: 3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e01
+status: experimental
+description: Kullanıcı veya belge girdisinde bilinen talimat ezme kalıpları (sentetik ders kuralı)
+level: high
+logsource:
+  product: llm
+  category: injection
+detection:
+  secim:
+    metin|contains:
+      - ignore previous
+      - system message
+  condition: secim
+---
+title: Sistem mesajı taklidiyle yetki ezme
+id: 3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e02
+status: experimental
+level: medium
+logsource:
+  product: llm
+  category: injection
+detection:
+  secim:
+    metin|contains|all:
+      - system message
+      - override
+  condition: secim

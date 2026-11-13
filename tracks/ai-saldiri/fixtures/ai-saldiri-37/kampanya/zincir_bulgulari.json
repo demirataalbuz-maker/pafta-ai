@@ -1,0 +1,20 @@
+[
+  {
+    "bulgu_id": "B-01",
+    "adimlar": ["dolayli-rag", "arac-yetki", "ag-ssrf"],
+    "etki_turu": "dis-ag-exfil",
+    "kanit_durumu": "dogrulandi"
+  },
+  {
+    "bulgu_id": "B-02",
+    "adimlar": ["dogrudan-istem"],
+    "etki_turu": "veri-sizintisi",
+    "kanit_durumu": "dogrulandi"
+  },
+  {
+    "bulgu_id": "B-03",
+    "adimlar": ["dolayli-rag", "cikti-tuketici"],
+    "etki_turu": "yetkisiz-arac",
+    "kanit_durumu": "teorik"
+  }
+]

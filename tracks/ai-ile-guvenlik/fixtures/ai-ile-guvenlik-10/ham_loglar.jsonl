@@ -1,0 +1,4 @@
+{"olay_id": "log-101", "kaynak_ip": "10.10.4.21", "olay_turu": "basarisiz_giris", "kullanici": "admin"}
+{"olay_id": "log-102", "kaynak_ip": "10.10.4.21", "olay_turu": "basarisiz_giris", "kullanici": "root"}
+{"olay_id": "log-103", "kaynak_ip": "10.10.4.21", "olay_turu": "basarili_giris", "kullanici": "admin"}
+{"olay_id": "log-104", "kaynak_ip": "10.10.8.55", "olay_turu": "dosya_okuma", "kullanici": "analist"}

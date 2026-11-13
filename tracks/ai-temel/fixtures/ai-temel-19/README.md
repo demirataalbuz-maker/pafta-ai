@@ -1,0 +1,3 @@
+# Temel19 görünür dosyalar
+
+Kontrollü üretilmiş sentetik safetensors:2F32 değeri1.0,2.0;model indirmesi değil. model.lfs bu küçük dosyanın gerçek hesaplanmış boyut/sha256 değerini taşır. baslik.json okunabilir görünüm;kartlar.json sentetik beyan,politika ve manifesttir;aaaaaaaa commit değeri gerçek sürüm iddiası değil. İlk2görev aynı ikili dosyayı,3kartları okur. Setup veri/ altına geçici kopya hazırlar;kalıcılık yok. Dosyaları editörde aç;ikiliyi kodda bytearray kopyasında değiştirip bytes ile doğrula. Gizli testler ayrı. Gerçek final kurulu SmolLM2 önbelleğini okur;yalnız kendi geçici kopyalarını kurcalar.

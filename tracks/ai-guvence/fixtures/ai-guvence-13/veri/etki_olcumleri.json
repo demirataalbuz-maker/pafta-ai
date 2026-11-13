@@ -1,0 +1,16 @@
+{
+  "egri": [
+    {"oran": 0.2, "dogruluk": 0.55},
+    {"oran": 0, "dogruluk": 0.9},
+    {"oran": 0.05, "dogruluk": 0.86},
+    {"oran": 0.1, "dogruluk": 0.7},
+    {"oran": 0.3, "dogruluk": 0.52}
+  ],
+  "kayip_noktalari": [
+    {"oran": 0.3, "kayip": 0.38},
+    {"oran": 0, "kayip": 0},
+    {"oran": 0.05, "kayip": 0.04},
+    {"oran": 0.1, "kayip": 0.2},
+    {"oran": 0.2, "kayip": 0.35}
+  ]
+}

@@ -1,0 +1,3 @@
+# Savunma03 katmanlı savunma referans mimarisi verisi
+
+veri/savunma.json elle hazırlanmış sentetik katman, olay ve arıza senaryoları kayıtlarıdır; canlı telemetri veya gerçek servis yapılandırması değildir. İlk 3 görev bu dosyayı okur: Görev 1 katmanlar listesini mimari sırayla doğrular. Görev 2 olaylar listesinden fail-closed istek kararı üretir. Görev 3 senaryolar listesiyle arızalanan kontrollerin oluşturduğu tek hata noktalarını çıkarır. Setup veri/savunma.json geçici kopyasını hazırlar; kalıcılık yoktur. Kaynağı harici editörde aç veya kodda yüklenen kopyayı değiştirip Run dene. Gizli testler ayrıdır. Gerçek deney adımı Ollama yerel modelini çağırarak çıktı şeması uyumunu doğrular; yeni model indirilmez.

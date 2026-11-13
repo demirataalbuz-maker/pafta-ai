@@ -1,0 +1,6 @@
+[
+  {"id": "egitim-02", "etiket": "diger", "bolum": "egitim"},
+  {"id": "test-01", "etiket": "yelkovan", "bolum": "test"},
+  {"id": "egitim-01", "etiket": "yelkovan", "bolum": "egitim"},
+  {"id": "test-02", "etiket": "diger", "bolum": "test"}
+]

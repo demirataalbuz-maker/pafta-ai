@@ -1,0 +1,7 @@
+[
+  {"epsilon": 0.1, "adim": 0, "dogruluk": 0.85, "l_inf": 0.0},
+  {"epsilon": 0.1, "adim": 1, "dogruluk": 0.65, "l_inf": 0.05},
+  {"epsilon": 0.1, "adim": 2, "dogruluk": 0.52, "l_inf": 0.1},
+  {"epsilon": 0.2, "adim": 0, "dogruluk": 0.85, "l_inf": 0.0},
+  {"epsilon": 0.2, "adim": 1, "dogruluk": 0.45, "l_inf": 0.2}
+]

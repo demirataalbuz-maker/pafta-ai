@@ -1,0 +1,50 @@
+{
+  "kaynak": "sentetik",
+  "cache": {
+    "k": [
+      1,
+      3
+    ],
+    "v": [
+      9,
+      7
+    ]
+  },
+  "parca": {
+    "k": 5,
+    "v": 6
+  },
+  "istekler": [
+    {
+      "id": "a",
+      "bellek": 2
+    },
+    {
+      "id": "b",
+      "bellek": 3
+    },
+    {
+      "id": "c",
+      "bellek": 1
+    }
+  ],
+  "kapasite": 3,
+  "kayitlar": [
+    {
+      "tenant": "a",
+      "k": 1,
+      "v": 9
+    },
+    {
+      "tenant": "b",
+      "k": 2,
+      "v": 8
+    },
+    {
+      "tenant": "a",
+      "k": 3,
+      "v": 7
+    }
+  ],
+  "kiraci": "a"
+}

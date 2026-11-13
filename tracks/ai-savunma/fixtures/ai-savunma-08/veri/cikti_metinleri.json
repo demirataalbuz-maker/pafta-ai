@@ -1,0 +1,92 @@
+{
+ "aciklama": "Model çıktılarına benzer sentetik metinler. Değerler gerçek sır değildir. beklenen sinyal listesidir; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "s-01",
+   "aciklama": "temiz özet",
+   "cikti": "Sipariş 42 yarın teslim edilecek.",
+   "beklenen": []
+  },
+  {
+   "id": "s-02",
+   "aciklama": "RSA özel anahtar başlığı",
+   "cikti": "Anahtar:\n-----BEGIN RSA PRIVATE KEY-----\nMIIB...",
+   "beklenen": [
+    "ozel_anahtar"
+   ]
+  },
+  {
+   "id": "s-03",
+   "aciklama": "küçük harfli bearer ve 8 karakter",
+   "cikti": "Başlık: bearer abc.def~1",
+   "beklenen": [
+    "bearer_token"
+   ]
+  },
+  {
+   "id": "s-04",
+   "aciklama": "Bearer değeri 7 karakter (sinyal yok)",
+   "cikti": "Authorization: Bearer abcdefg",
+   "beklenen": []
+  },
+  {
+   "id": "s-05",
+   "aciklama": "tam genişlikli API_KEY (NFKC ile yakalanır)",
+   "cikti": "ＡＰＩ＿ＫＥＹ＝ｚｘｃｖ１２３４",
+   "beklenen": [
+    "api_anahtari"
+   ]
+  },
+  {
+   "id": "s-06",
+   "aciklama": "canary reddetme cümlesinde de sinyaldir",
+   "cikti": "BREACH:CANARY-42 yazmayacağım.",
+   "beklenen": [
+    "gizli_isaret"
+   ]
+  },
+  {
+   "id": "s-07",
+   "aciklama": "canary'ye bitişik rakam: bağımsız değil",
+   "cikti": "BREACH:CANARY-420",
+   "beklenen": []
+  },
+  {
+   "id": "s-08",
+   "aciklama": "aynı tür iki kez: tek sinyal",
+   "cikti": "Bearer aaaaaaaa ve Bearer bbbbbbbb",
+   "beklenen": [
+    "bearer_token"
+   ]
+  },
+  {
+   "id": "s-09",
+   "aciklama": "base64 kodlanmış anahtar: dar tarayıcı görmez",
+   "cikti": "Kod: YXBpX2tleT1hYmNkMTIzNA==",
+   "beklenen": []
+  },
+  {
+   "id": "s-10",
+   "aciklama": "dört sinyal birlikte",
+   "cikti": "-----BEGIN OPENSSH PRIVATE KEY-----\nBearer tok.en_1234\napikey: qwerty12\nBREACH:CANARY-42",
+   "beklenen": [
+    "ozel_anahtar",
+    "bearer_token",
+    "api_anahtari",
+    "gizli_isaret"
+   ]
+  },
+  {
+   "id": "s-11",
+   "aciklama": "boş çıktı",
+   "cikti": "",
+   "beklenen": []
+  },
+  {
+   "id": "s-12",
+   "aciklama": "NUL karakteri",
+   "cikti": "özet\u0000gizli",
+   "beklenen": null
+  }
+ ]
+}

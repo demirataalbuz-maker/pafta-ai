@@ -1,0 +1,64 @@
+{
+ "aciklama": "Gerçek etiketi bilinen sentetik ölçümler. Eşiğe eşit süre hit tahminidir.",
+ "esik": 60,
+ "olcumler": [
+  {
+   "gercek": "hit",
+   "sure_ms": 41
+  },
+  {
+   "gercek": "hit",
+   "sure_ms": 60
+  },
+  {
+   "gercek": "hit",
+   "sure_ms": 95
+  },
+  {
+   "gercek": "miss",
+   "sure_ms": 88
+  },
+  {
+   "gercek": "miss",
+   "sure_ms": 55
+  },
+  {
+   "gercek": "miss",
+   "sure_ms": 91
+  }
+ ],
+ "yalniz_miss": [
+  {
+   "gercek": "miss",
+   "sure_ms": 88
+  },
+  {
+   "gercek": "miss",
+   "sure_ms": 55
+  }
+ ],
+ "bozuk_listeler": [
+  {
+   "id": "b-sinif",
+   "olcumler": [
+    {
+     "gercek": "hit?",
+     "sure_ms": 40
+    }
+   ]
+  },
+  {
+   "id": "b-negatif",
+   "olcumler": [
+    {
+     "gercek": "hit",
+     "sure_ms": -3
+    }
+   ]
+  },
+  {
+   "id": "b-bos",
+   "olcumler": []
+  }
+ ]
+}

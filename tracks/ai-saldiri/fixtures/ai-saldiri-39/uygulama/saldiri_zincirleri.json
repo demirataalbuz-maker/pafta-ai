@@ -1,0 +1,20 @@
+[
+  {
+    "zincir_id": "Z-01",
+    "uygulama_acigi": "idor-baglam-oku",
+    "model_yetenegi": "sohbet-ozetleme",
+    "ag_kisiti_var": true
+  },
+  {
+    "zincir_id": "Z-02",
+    "uygulama_acigi": "idor-belge-yaz",
+    "model_yetenegi": "arac-cagrisi",
+    "ag_kisiti_var": true
+  },
+  {
+    "zincir_id": "Z-03",
+    "uygulama_acigi": "ic-uc-nokta-sizintisi",
+    "model_yetenegi": "url-getirme-araci",
+    "ag_kisiti_var": false
+  }
+]

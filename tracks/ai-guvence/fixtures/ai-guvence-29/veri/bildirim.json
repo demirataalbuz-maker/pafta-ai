@@ -1,0 +1,21 @@
+{
+  "id": "AI-SENT-01",
+  "baslik": "Sentetik politika sapması",
+  "yetki": "sentetik",
+  "cvss": 7.5,
+  "etki": "yuksek",
+  "durum": "dogrulandi",
+  "kapsam": [
+    "sentetik-eval"
+  ],
+  "kanit": [
+    "fixture-sonucu"
+  ],
+  "adimlar": [
+    "Fixture verisini yükle",
+    "Raporu çalıştır"
+  ],
+  "belirsizlikler": [
+    "Yalnız sentetik kapsam"
+  ]
+}

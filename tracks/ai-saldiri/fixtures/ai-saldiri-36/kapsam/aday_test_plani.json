@@ -1,0 +1,26 @@
+[
+  {
+    "test_id": "T-01",
+    "hedef": "lab://yerel-musteri-asistani",
+    "hedef_turu": "yerel-model",
+    "istek_dakika": 12,
+    "kategori": "vekil-kapsam-kontrolu",
+    "saklama_gun": 7
+  },
+  {
+    "test_id": "T-02",
+    "hedef": "https://api.ornek-bulut-llm.test/v1/chat",
+    "hedef_turu": "ucuncu-taraf-api",
+    "istek_dakika": 10,
+    "kategori": "vekil-kapsam-kontrolu",
+    "saklama_gun": 7
+  },
+  {
+    "test_id": "T-03",
+    "hedef": "lab://yerel-musteri-asistani",
+    "hedef_turu": "yerel-model",
+    "istek_dakika": 45,
+    "kategori": "gercek-pii",
+    "saklama_gun": 30
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "koken": "elle hazırlanmış sentetik eğitim verisi; gerçek tokenizer kaydı değil",
+  "tokenlar": [
+    "eski_kural",
+    "ara_not",
+    "yeni_istek",
+    "son_mesaj"
+  ],
+  "sinir": 2,
+  "pozisyonlar": [
+    0,
+    1,
+    127
+  ],
+  "mesajlar": [
+    {
+      "id": "s",
+      "rol": "system",
+      "uzunluk": 4
+    },
+    {
+      "id": "a",
+      "rol": "user",
+      "uzunluk": 3
+    },
+    {
+      "id": "b",
+      "rol": "user",
+      "uzunluk": 2
+    }
+  ],
+  "butce": 5,
+  "aralik_ornegi": {
+    "mesajlar": [
+      {
+        "id": "old",
+        "rol": "system",
+        "uzunluk": 1
+      },
+      {
+        "id": "big",
+        "rol": "user",
+        "uzunluk": 8
+      },
+      {
+        "id": "new",
+        "rol": "user",
+        "uzunluk": 1
+      }
+    ],
+    "butce": 2
+  }
+}

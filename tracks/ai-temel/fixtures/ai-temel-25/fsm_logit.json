@@ -1,0 +1,39 @@
+{
+  "gecisler": {
+    "S_AC": [
+      {"token": 1, "hedef": "S_ANAHTAR"},
+      {"token": 5, "hedef": "S_KAPAT"}
+    ],
+    "S_ANAHTAR": [
+      {"token": 2, "hedef": "S_IKI_NOKTA"}
+    ],
+    "S_IKI_NOKTA": [
+      {"token": 3, "hedef": "S_DEGER"},
+      {"token": 4, "hedef": "S_DEGER"}
+    ],
+    "S_DEGER": [
+      {"token": 5, "hedef": "S_KAPAT"},
+      {"token": 1, "hedef": "S_ANAHTAR"}
+    ],
+    "S_KAPAT": []
+  },
+  "ornek_durum": "S_IKI_NOKTA",
+  "esik": 0.15,
+  "adimlar": [
+    {
+      "ad": "uyumlu_adim",
+      "durum": "S_AC",
+      "logitler": [-1.0, 4.2, 0.5, -0.3, 0.1, 1.8]
+    },
+    {
+      "ad": "yasak_baskin_adim",
+      "durum": "S_IKI_NOKTA",
+      "logitler": [8.5, 6.0, 4.0, 1.2, 0.8, -2.0]
+    },
+    {
+      "ad": "asiri_logit_adimi",
+      "durum": "S_ANAHTAR",
+      "logitler": [900.0, 10.0, 2.0, -5.0, 0.0, 1.0]
+    }
+  ]
+}

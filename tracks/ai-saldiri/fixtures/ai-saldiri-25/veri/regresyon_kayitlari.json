@@ -1,0 +1,70 @@
+{
+ "aciklama": "Sentetik yeniden enjeksiyon ölçüm kayıtları.",
+ "kayitlar": [
+  {
+   "vaka_id": "r-tam-enjeksiyon",
+   "rol": "system",
+   "talimat_isareti": true,
+   "eylem_izinli": false,
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-kapi-tuttu",
+   "rol": "system",
+   "talimat_isareti": true,
+   "eylem_izinli": false,
+   "calistirildi": false
+  },
+  {
+   "vaka_id": "r-sessiz-bypass",
+   "rol": "arac_verisi",
+   "talimat_isareti": false,
+   "eylem_izinli": false,
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-isaretli-bypass",
+   "rol": "arac_verisi",
+   "talimat_isareti": true,
+   "eylem_izinli": false,
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-mesru",
+   "rol": "arac_verisi",
+   "talimat_isareti": true,
+   "eylem_izinli": true,
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-user",
+   "rol": "user",
+   "talimat_isareti": false,
+   "eylem_izinli": true,
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "r-engellendi",
+   "rol": "arac_verisi",
+   "talimat_isareti": true,
+   "eylem_izinli": false,
+   "calistirildi": false
+  }
+ ],
+ "bozuk_kayitlar": [
+  {
+   "vaka_id": "b-rol-tool",
+   "rol": "tool",
+   "talimat_isareti": true,
+   "eylem_izinli": false,
+   "calistirildi": true
+  },
+  {
+   "vaka_id": "b-str-bool",
+   "rol": "arac_verisi",
+   "talimat_isareti": true,
+   "eylem_izinli": false,
+   "calistirildi": "evet"
+  }
+ ]
+}

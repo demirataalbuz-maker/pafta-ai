@@ -1,0 +1,246 @@
+{
+ "aciklama": "OPA/Rego benzeri kural tablolarının sentetik JSON karşılığı. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "p-01",
+   "aciklama": "fail-closed varsayılan ve üç kural",
+   "politika": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     },
+     {
+      "arac": "web_getir",
+      "kaynak": "arac",
+      "risk": "orta",
+      "karar": "insan_onayi"
+     },
+     {
+      "arac": "rapor_yaz",
+      "kaynak": "kullanici",
+      "risk": "yuksek",
+      "karar": "insan_onayi"
+     }
+    ]
+   },
+   "beklenen": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     },
+     {
+      "arac": "web_getir",
+      "kaynak": "arac",
+      "risk": "orta",
+      "karar": "insan_onayi"
+     },
+     {
+      "arac": "rapor_yaz",
+      "kaynak": "kullanici",
+      "risk": "yuksek",
+      "karar": "insan_onayi"
+     }
+    ]
+   }
+  },
+  {
+   "id": "p-02",
+   "aciklama": "insan onayı varsayılanı, boş kural",
+   "politika": {
+    "varsayilan": "insan_onayi",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": []
+   },
+   "beklenen": {
+    "varsayilan": "insan_onayi",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": []
+   }
+  },
+  {
+   "id": "p-03",
+   "aciklama": "varsayılan izin (fail-open)",
+   "politika": {
+    "varsayilan": "izin",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     },
+     {
+      "arac": "web_getir",
+      "kaynak": "arac",
+      "risk": "orta",
+      "karar": "insan_onayi"
+     },
+     {
+      "arac": "rapor_yaz",
+      "kaynak": "kullanici",
+      "risk": "yuksek",
+      "karar": "insan_onayi"
+     }
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "p-04",
+   "aciklama": "kural kaynağı izinli kaynaklarda yok",
+   "politika": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "belge",
+      "risk": "dusuk",
+      "karar": "izin"
+     }
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "p-05",
+   "aciklama": "aynı üçlü iki kez, çelişen kararla",
+   "politika": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "reddet"
+     },
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     }
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "p-06",
+   "aciklama": "bilinmeyen araç shell",
+   "politika": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "shell",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     }
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "p-07",
+   "aciklama": "model kaynağı yinelenmiş",
+   "politika": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "model",
+     "model"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     },
+     {
+      "arac": "web_getir",
+      "kaynak": "arac",
+      "risk": "orta",
+      "karar": "insan_onayi"
+     },
+     {
+      "arac": "rapor_yaz",
+      "kaynak": "kullanici",
+      "risk": "yuksek",
+      "karar": "insan_onayi"
+     }
+    ]
+   },
+   "beklenen": null
+  },
+  {
+   "id": "p-08",
+   "aciklama": "ek alan oncelik",
+   "politika": {
+    "varsayilan": "reddet",
+    "izinli_kaynaklar": [
+     "kullanici",
+     "arac"
+    ],
+    "kurallar": [
+     {
+      "arac": "dosya_oku",
+      "kaynak": "kullanici",
+      "risk": "dusuk",
+      "karar": "izin"
+     },
+     {
+      "arac": "web_getir",
+      "kaynak": "arac",
+      "risk": "orta",
+      "karar": "insan_onayi"
+     },
+     {
+      "arac": "rapor_yaz",
+      "kaynak": "kullanici",
+      "risk": "yuksek",
+      "karar": "insan_onayi"
+     }
+    ],
+    "oncelik": "izin"
+   },
+   "beklenen": null
+  }
+ ]
+}

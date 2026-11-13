@@ -1,0 +1,10 @@
+{
+  "id": "kanit-paketi-01",
+  "veri_surumu": "yelkovan-v1.0",
+  "model_surumu": "logreg-v1.2",
+  "tohum": 42,
+  "ortam": {
+    "python": "3.12.0",
+    "kutuphane": "scikit-learn-1.5"
+  }
+}

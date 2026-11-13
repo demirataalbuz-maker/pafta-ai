@@ -1,0 +1,3 @@
+# ai-guvence-22 görünür sentetik veri
+
+Elle yazılmış yükleme politikası ve sohbet mesajı örnekleridir, gerçek model yanıtı veya tarama kaydı değildir. İlk iki görev yukleme_kayitlari.json dosyasını doğrular ve politika kararı verir. Üçüncü görev mesajlar.json rol/içerik sınırını korur. hazirla/setup her çalıştırmada geçici kopya oluşturur, kalıcılık yoktur; kodlar dosyaları okuyup yazdırır. Kontrol bağımsızdır. Son görev gerçek safetensors yüklemesi yapar; GGUF yalnız sentetik başlık, pickle yalnız inert opcode incelemesidir. Tam GGUF parser, bilinmeyen pickle yürütmesi veya genel enjeksiyon savunması iddiası yoktur.

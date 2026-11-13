@@ -1,0 +1,4 @@
+{"vaka_id":"q1","tekrar":1,"metin":"Sınıfla (EVET/HAYIR): Bu parselde iki mavi klasör var mı?","yanit":"EVET","etiket":"sentetik-fixture"}
+{"vaka_id":"q1","tekrar":2,"metin":"Sınıfla (EVET/HAYIR): Bu parselde iki mavi klasör var mı?","yanit":"EVET","etiket":"sentetik-fixture"}
+{"vaka_id":"q2","tekrar":1,"metin":"Sınıfla (EVET/HAYIR): Kayıt numarası 42 tek sayı mı?","yanit":"HAYIR","etiket":"sentetik-fixture"}
+{"vaka_id":"q2","tekrar":2,"metin":"Sınıfla (EVET/HAYIR): Kayıt numarası 42 tek sayı mı?","yanit":"EVET","etiket":"sentetik-fixture"}

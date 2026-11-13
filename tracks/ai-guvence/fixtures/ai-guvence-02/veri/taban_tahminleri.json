@@ -1,0 +1,5 @@
+{
+  "gercek": ["yelkovan", "yelkovan", "diger", "diger"],
+  "tahmin": ["yelkovan", "diger", "yelkovan", "diger"],
+  "olasiliklar": [0.91, 0.44, 0.52, 0.08]
+}

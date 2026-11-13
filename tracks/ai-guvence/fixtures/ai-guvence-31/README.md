@@ -1,0 +1,2 @@
+# Görünür sentetik gömme örneği
+`veri/gommeler.json` elle yazılmış iki boyutlu vektörlerdir; gerçek model çıktısı veya hasta verisi değildir. Üç görev aynı dosyadan en yakın komşu, recovery ve nitelik ölçer. Çalıştır kodu dosyayı okur; kod içine dosya okuma/değiştirme ekleyip aynı çalıştırmada deneyebilirsin. Koşucu geçicidir: sonraki çalıştırmada kaynak yeniden kopyalanır, değişiklik kalmaz. Gizli testler ayrı girdiler kullanır. Son görev all-minilm:22m ile canlı gömmeler üretir; vec2text ile serbest metin üretmez.

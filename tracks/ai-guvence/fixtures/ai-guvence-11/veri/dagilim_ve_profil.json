@@ -1,0 +1,9 @@
+{
+  "beklenen_dagilim": {"ag": 50, "kimlik": 30, "ucbirim": 20},
+  "gozlenen_dagilim": {"ag": 25, "kimlik": 55, "ucbirim": 20},
+  "aday_kayitlar": [
+    {"id": "k-01", "kaynak": "ic-arsiv", "sapma": 0.18, "etiket_degisti": false},
+    {"id": "k-02", "kaynak": "dis-toplayici", "sapma": 0.74, "etiket_degisti": false},
+    {"id": "k-03", "kaynak": "dis-toplayici", "sapma": 0.12, "etiket_degisti": true}
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "kaynak": "sentetik_fixture_canli_model_ciktisi_degil",
+  "train": [
+    {
+      "id": "train-1-0-0",
+      "etiket": 1,
+      "metin": "urgent verify account password case 0"
+    },
+    {
+      "id": "train-1-0-1",
+      "etiket": 1,
+      "metin": "urgent verify account password case 1"
+    },
+    {
+      "id": "train-1-0-2",
+      "etiket": 1,
+      "metin": "urgent verify account password case 2"
+    },
+    {
+      "id": "train-1-1-0",
+      "etiket": 1,
+      "metin": "confirm bank login immediately case 3"
+    },
+    {
+      "id": "train-1-1-1",
+      "etiket": 1,
+      "metin": "confirm bank login immediately case 4"
+    },
+    {
+      "id": "train-1-1-2",
+      "etiket": 1,
+      "metin": "confirm bank login immediately case 5"
+    },
+    {
+      "id": "train-1-2-0",
+      "etiket": 1,
+      "metin": "security alert validate password case 6"
+    },
+    {
+      "id": "train-1-2-1",
+      "etiket": 1,
+      "metin": "security alert validate password case 7"
+    },
+    {
+      "id": "train-1-2-2",
+      "etiket": 1,
+      "metin": "security alert validate password case 8"
+    },
+    {
+      "id": "train-1-3-0",
+      "etiket": 1,
+      "metin": "account suspended confirm identity case 9"
+    },
+    {
+      "id": "train-1-3-1",
+      "etiket": 1,
+      "metin": "account suspended confirm identity case 10"
+    },
+    {
+      "id": "train-1-3-2",
+      "etiket": 1,
+      "metin": "account suspended confirm identity case 11"
+    },
+    {
+      "id": "train-1-4-0",
+      "etiket": 1,
+      "metin": "claim reward enter password case 12"
+    },
+    {
+      "id": "train-1-4-1",
+      "etiket": 1,
+      "metin": "claim reward enter password case 13"
+    },
+    {
+      "id": "train-1-4-2",
+      "etiket": 1,
+      "metin": "claim reward enter password case 14"
+    },
+    {
+      "id": "train-1-5-0",
+      "etiket": 1,
+      "metin": "payment failed verify credentials case 15"
+    },
+    {
+      "id": "train-1-5-1",
+      "etiket": 1,
+      "metin": "payment failed verify credentials case 16"
+    },
+    {
+      "id": "train-1-5-2",
+      "etiket": 1,
+      "metin": "payment failed verify credentials case 17"
+    },
+    {
+      "id": "train-1-6-0",
+      "etiket": 1,
+      "metin": "reset banking password now case 18"
+    },
+    {
+      "id": "train-1-6-1",
+      "etiket": 1,
+      "metin": "reset banking password now case 19"
+    },
+    {
+      "id": "train-1-6-2",
+      "etiket": 1,
+      "metin": "reset banking password now case 20"
+    },
+    {
+      "id": "train-1-7-0",
+      "etiket": 1,
+      "metin": "unusual login verify account case 21"
+    },
+    {
+      "id": "train-1-7-1",
+      "etiket": 1,
+      "metin": "unusual login verify account case 22"
+    },
+    {
+      "id": "train-1-7-2",
+      "etiket": 1,
+      "metin": "unusual login verify account case 23"
+    },
+    {
+      "id": "train-0-0-0",
+      "etiket": 0,
+      "metin": "project meeting notes agenda case 0"
+    },
+    {
+      "id": "train-0-0-1",
+      "etiket": 0,
+      "metin": "project meeting notes agenda case 1"
+    },
+    {
+      "id": "train-0-0-2",
+      "etiket": 0,
+      "metin": "project meeting notes agenda case 2"
+    },
+    {
+      "id": "train-0-1-0",
+      "etiket": 0,
+      "metin": "team schedule report attached case 3"
+    },
+    {
+      "id": "train-0-1-1",
+      "etiket": 0,
+      "metin": "team schedule report attached case 4"
+    },
+    {
+      "id": "train-0-1-2",
+      "etiket": 0,
+      "metin": "team schedule report attached case 5"
+    },
+    {
+      "id": "train-0-2-0",
+      "etiket": 0,
+      "metin": "weekly minutes planning update case 6"
+    },
+    {
+      "id": "train-0-2-1",
+      "etiket": 0,
+      "metin": "weekly minutes planning update case 7"
+    },
+    {
+      "id": "train-0-2-2",
+      "etiket": 0,
+      "metin": "weekly minutes planning update case 8"
+    },
+    {
+      "id": "train-0-3-0",
+      "etiket": 0,
+      "metin": "lunch meeting team calendar case 9"
+    },
+    {
+      "id": "train-0-3-1",
+      "etiket": 0,
+      "metin": "lunch meeting team calendar case 10"
+    },
+    {
+      "id": "train-0-3-2",
+      "etiket": 0,
+      "metin": "lunch meeting team calendar case 11"
+    },
+    {
+      "id": "train-0-4-0",
+      "etiket": 0,
+      "metin": "budget report review document case 12"
+    },
+    {
+      "id": "train-0-4-1",
+      "etiket": 0,
+      "metin": "budget report review document case 13"
+    },
+    {
+      "id": "train-0-4-2",
+      "etiket": 0,
+      "metin": "budget report review document case 14"
+    },
+    {
+      "id": "train-0-5-0",
+      "etiket": 0,
+      "metin": "project status meeting summary case 15"
+    },
+    {
+      "id": "train-0-5-1",
+      "etiket": 0,
+      "metin": "project status meeting summary case 16"
+    },
+    {
+      "id": "train-0-5-2",
+      "etiket": 0,
+      "metin": "project status meeting summary case 17"
+    },
+    {
+      "id": "train-0-6-0",
+      "etiket": 0,
+      "metin": "release notes schedule planning case 18"
+    },
+    {
+      "id": "train-0-6-1",
+      "etiket": 0,
+      "metin": "release notes schedule planning case 19"
+    },
+    {
+      "id": "train-0-6-2",
+      "etiket": 0,
+      "metin": "release notes schedule planning case 20"
+    },
+    {
+      "id": "train-0-7-0",
+      "etiket": 0,
+      "metin": "technical documentation team update case 21"
+    },
+    {
+      "id": "train-0-7-1",
+      "etiket": 0,
+      "metin": "technical documentation team update case 22"
+    },
+    {
+      "id": "train-0-7-2",
+      "etiket": 0,
+      "metin": "technical documentation team update case 23"
+    }
+  ],
+  "test": [
+    {
+      "id": "test-ph-0",
+      "etiket": 1,
+      "metin": "Verify your account password notice 0 at https://verify.pafta.invalid/session"
+    },
+    {
+      "id": "test-ok-0",
+      "etiket": 0,
+      "metin": "Project meeting notes for the team document 0"
+    },
+    {
+      "id": "test-ph-1",
+      "etiket": 1,
+      "metin": "Urgent banking login confirmation notice 1 at https://verify.pafta.invalid/session"
+    },
+    {
+      "id": "test-ok-1",
+      "etiket": 0,
+      "metin": "Weekly schedule and documentation report document 1"
+    },
+    {
+      "id": "test-ph-2",
+      "etiket": 1,
+      "metin": "Reset account credentials immediately notice 2 at https://verify.pafta.invalid/session"
+    },
+    {
+      "id": "test-ok-2",
+      "etiket": 0,
+      "metin": "Planning agenda and release update document 2"
+    },
+    {
+      "id": "test-ph-3",
+      "etiket": 1,
+      "metin": "Verify your account password notice 3 at https://verify.pafta.invalid/session"
+    },
+    {
+      "id": "test-ok-3",
+      "etiket": 0,
+      "metin": "Project meeting notes for the team document 3"
+    },
+    {
+      "id": "test-ph-4",
+      "etiket": 1,
+      "metin": "Urgent banking login confirmation notice 4 at https://verify.pafta.invalid/session"
+    },
+    {
+      "id": "test-ok-4",
+      "etiket": 0,
+      "metin": "Weekly schedule and documentation report document 4"
+    },
+    {
+      "id": "test-ph-5",
+      "etiket": 1,
+      "metin": "Reset account credentials immediately notice 5 at https://verify.pafta.invalid/session"
+    },
+    {
+      "id": "test-ok-5",
+      "etiket": 0,
+      "metin": "Planning agenda and release update document 5"
+    }
+  ]
+}

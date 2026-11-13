@@ -1,0 +1,69 @@
+{
+  "koken": "elle hazırlanmış sentetik örnek; gerçek aktivasyon/ret kaydı değil",
+  "kayitlar": [
+    {
+      "id": "n-1",
+      "katman": 2,
+      "tur": "normal",
+      "vektor": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "r-1",
+      "katman": 1,
+      "tur": "refusal",
+      "vektor": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "n-2",
+      "katman": 1,
+      "tur": "normal",
+      "vektor": [
+        0,
+        2
+      ]
+    }
+  ],
+  "refusal": [
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "normal": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "katman_bulgulari": [
+    {
+      "katman": 2,
+      "yon_skoru": -3,
+      "refusal_orani": 0
+    },
+    {
+      "katman": 0,
+      "yon_skoru": 2,
+      "refusal_orani": 1
+    },
+    {
+      "katman": 1,
+      "yon_skoru": 1,
+      "refusal_orani": 0.5
+    }
+  ]
+}

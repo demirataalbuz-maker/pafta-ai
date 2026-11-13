@@ -1,0 +1,3 @@
+# Savunma02 birleşik AI risk ve kontrol çerçeveleri verisi
+
+veri/cerceve.json elle hazırlanmış sentetik risk eşleme, kontrol matrisi ve test kanıtı kayıtlarıdır; resmi kurumsal uyumluluk veya canlı telemetri verisi değildir. İlk 3 görev bu dosyayı okur: Görev 1 eslemeler listesini normalize eder. Görev 2 kontroller listesiyle kontrol matrisi kurar ve kontrolsüz riskleri belirler. Görev 3 testler listesindeki kanıtlarla risk güvence durumunu ve özet sayaçlarını hesaplar. Setup veri/cerceve.json geçici kopyasını hazırlar; kalıcılık yoktur. Kaynağı harici editörde aç veya kodda yüklenen kopyayı değiştirip Run dene. Gizli testler ayrıdır. Gerçek deney adımı Ollama yerel modelini çağırarak canlı canary sızıntı testini icra eder; yeni model indirilmez.

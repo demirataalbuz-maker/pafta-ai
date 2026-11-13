@@ -1,0 +1,20 @@
+{
+  "max_deneme": 3,
+  "gorevler": [
+    {
+      "gorev_id": "grv-1",
+      "deneme_yanitlari": [
+        "Açık bulundu ama JSON değil.",
+        "{\"bulgu_id\": \"BLG-201\", \"kategori\": \"enjeksiyon\", \"ciddiyet\": \"yuksek\", \"satir_no\": 12, \"kanit_var\": true}"
+      ]
+    },
+    {
+      "gorev_id": "grv-2",
+      "deneme_yanitlari": [
+        "{\"bulgu_id\": \"BLG-202\", \"kategori\": \"yanlis\", \"ciddiyet\": \"orta\", \"satir_no\": 5, \"kanit_var\": true}",
+        "{\"bulgu_id\": \"BLG-202\", \"kategori\": \"yapilandirma\", \"ciddiyet\": \"orta\", \"satir_no\": 0, \"kanit_var\": true}",
+        "{\"bulgu_id\": \"BLG-202\", \"kategori\": \"yapilandirma\", \"ciddiyet\": \"orta\", \"satir_no\": 5, \"kanit_var\": \"evet\"}"
+      ]
+    }
+  ]
+}

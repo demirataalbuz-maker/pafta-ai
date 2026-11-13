@@ -1,0 +1,2 @@
+# S36 sentetik görünür dosyalar
+model.safetensors geçerli safetensors biçiminde elle üretilmiş weight [2,4] ve bias [2] tensörleri içerir; eğitim sonucu değildir. Format resmi safetensors yükleyicisiyle sınanır. Finaldeki gerçek eğitim dosyası ayrıdır. manifest/policy/verify JSONları elle yazılmıştır. Gerçek cosign veya Fulcio çıktısı değildir. Setup geçici çalışma kopyası kurar; her Run/Check yeniden başlar. Path ile ham dosyayı aç/yazdır, sözlüğü değiştirerek dene. Gizli testler ayrı üretilir. Final gerçek eğitilmiş model kullanır; kurulmamış servis PASS vermez.

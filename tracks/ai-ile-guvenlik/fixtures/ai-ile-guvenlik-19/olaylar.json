@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ssh-ornek",
+    "kural": "high",
+    "user_agent": "Synthetic SSH alert"
+  },
+  {
+    "id": "health-ornek",
+    "kural": "low",
+    "user_agent": "Normal /status"
+  }
+]

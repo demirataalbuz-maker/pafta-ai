@@ -1,0 +1,14 @@
+{
+ "aciklama": "Sentetik 4x4 gri tonlu matrisler; değerler [0,1]. Tetikleyici 2x2 parlak yama.",
+ "tetik": [[1.0, 1.0], [1.0, 1.0]],
+ "goruntuler": [
+  {"ad": "ornek_a", "matris": [[0.1, 0.2, 0.1, 0.0], [0.3, 0.2, 0.1, 0.2], [0.6, 0.7, 0.5, 0.6], [0.7, 0.6, 0.8, 0.5]]},
+  {"ad": "ornek_b", "matris": [[0.0, 0.1, 0.0, 0.1], [0.2, 0.1, 0.2, 0.1], [0.5, 0.6, 0.6, 0.7], [0.8, 0.7, 0.6, 0.6]]}
+ ],
+ "yerlesimler": [
+  {"ad": "kose", "satir": 2, "sutun": 2},
+  {"ad": "merkez", "satir": 1, "sutun": 1},
+  {"ad": "ust_kose", "satir": 0, "sutun": 0},
+  {"ad": "tasan", "satir": 3, "sutun": 3}
+ ]
+}

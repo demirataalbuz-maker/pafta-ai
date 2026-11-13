@@ -1,0 +1,48 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "API ağ geçidine gelen vektör sorguları. Kiracı oturumdan, filtre istemciden gelir.",
+  "sorgular": [
+    {
+      "id": "q-normal",
+      "kiraci": "acme",
+      "filtre_kiraci": "acme",
+      "top_k": 3
+    },
+    {
+      "id": "q-filtre-oyunu",
+      "kiraci": "acme",
+      "filtre_kiraci": "globex",
+      "top_k": 3
+    },
+    {
+      "id": "q-tanimsiz",
+      "kiraci": "initech",
+      "filtre_kiraci": "initech",
+      "top_k": 2
+    },
+    {
+      "id": "q-genis",
+      "kiraci": "globex",
+      "filtre_kiraci": "globex",
+      "top_k": 50
+    },
+    {
+      "id": "q-hepsi",
+      "kiraci": "initech",
+      "filtre_kiraci": "acme",
+      "top_k": 20
+    },
+    {
+      "id": "q-sinir",
+      "kiraci": "globex",
+      "filtre_kiraci": "globex",
+      "top_k": 3
+    }
+  ],
+  "getirme_sorgusu": {
+    "id": "q-acme",
+    "kiraci": "acme",
+    "filtre_kiraci": "acme",
+    "top_k": 3
+  }
+}

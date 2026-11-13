@@ -1,0 +1,3 @@
+# ai-guvence-28 görünür sentetik veri
+
+Elle hazırlanmış öğretim kayıtları; canlı model/API çıktısı değildir. Uzak model kayıtları dosya içinde kalır ve API çağrısı yapmaz. İlk üç görev aynı model_kayitlari.json dosyasını doğrular, özetler ve secim_esikleri.json ile karar verir. Büyük aday kalite farkında iyi, güvenlikte geridir; tek puanla üstün ilan edilmez. hazirla/setup her çalıştırmada geçici kopya oluşturur; kalıcılık yoktur. Kodlar dosyayı okur/yazdırır; aynı çalıştırmada bellekte kopyayla deneme yapılabilir. Gizli testler ayrıdır. Son canlı deneyin opt_in kapısı ve kalıcı ayar dosyası bağımsızdır; varsayılan kapalıdır. İlk görev acik_onay ile canlı opt_in aynı alan değildir.

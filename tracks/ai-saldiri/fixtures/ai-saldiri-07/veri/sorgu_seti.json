@@ -1,0 +1,143 @@
+{
+ "aciklama": "Sabit sorgu seti ve kayıttan oynatılan (replay) yanıt kaseti. Kaset gerçek model yanıtı değildir; elle yazılmış sentetik yanıtlardır.",
+ "sorgular": [
+  {
+   "id": "q-renk",
+   "metin": "Sınıfla (EVET/HAYIR): Gökyüzü yeşil mi?",
+   "tekrar": 3
+  },
+  {
+   "id": "q-sayi",
+   "metin": "Sınıfla (EVET/HAYIR): 17 asal sayı mı?",
+   "tekrar": 2
+  },
+  {
+   "id": "q-dil",
+   "metin": "Tek kelimeyle yanıtla: 'merhaba' hangi dilde?",
+   "tekrar": 1
+  }
+ ],
+ "kaset": {
+  "Sınıfla (EVET/HAYIR): Gökyüzü yeşil mi?": [
+   "HAYIR",
+   "HAYIR",
+   "Hayır."
+  ],
+  "Sınıfla (EVET/HAYIR): 17 asal sayı mı?": [
+   "EVET",
+   "EVET"
+  ],
+  "Tek kelimeyle yanıtla: 'merhaba' hangi dilde?": [
+   "Türkçe"
+  ]
+ },
+ "beklenen": [
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 1,
+   "metin": "Sınıfla (EVET/HAYIR): Gökyüzü yeşil mi?",
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 2,
+   "metin": "Sınıfla (EVET/HAYIR): Gökyüzü yeşil mi?",
+   "yanit": "HAYIR"
+  },
+  {
+   "vaka_id": "q-renk",
+   "tekrar": 3,
+   "metin": "Sınıfla (EVET/HAYIR): Gökyüzü yeşil mi?",
+   "yanit": "Hayır."
+  },
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 1,
+   "metin": "Sınıfla (EVET/HAYIR): 17 asal sayı mı?",
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-sayi",
+   "tekrar": 2,
+   "metin": "Sınıfla (EVET/HAYIR): 17 asal sayı mı?",
+   "yanit": "EVET"
+  },
+  {
+   "vaka_id": "q-dil",
+   "tekrar": 1,
+   "metin": "Tek kelimeyle yanıtla: 'merhaba' hangi dilde?",
+   "yanit": "Türkçe"
+  }
+ ],
+ "bozuk_setler": [
+  [
+   {
+    "id": "q",
+    "metin": "x",
+    "tekrar": 0
+   }
+  ],
+  [
+   {
+    "id": "q",
+    "metin": "x",
+    "tekrar": 5
+   }
+  ],
+  [
+   {
+    "id": "q",
+    "metin": "x",
+    "tekrar": true
+   }
+  ],
+  [
+   {
+    "id": "q",
+    "metin": "x",
+    "tekrar": 2.0
+   }
+  ],
+  [
+   {
+    "id": "q",
+    "metin": "x",
+    "tekrar": 1
+   },
+   {
+    "id": "q",
+    "metin": "y",
+    "tekrar": 1
+   }
+  ],
+  [
+   {
+    "id": "q-ok",
+    "metin": "x",
+    "tekrar": 2
+   },
+   {
+    "id": "",
+    "metin": "y",
+    "tekrar": 1
+   }
+  ],
+  [
+   {
+    "id": "q",
+    "metin": null,
+    "tekrar": 1
+   }
+  ]
+ ],
+ "kesinti": {
+  "sorgular": [
+   {
+    "id": "q-zaman",
+    "metin": "KESİNTİ: bu çağrı zaman aşımına uğrar",
+    "tekrar": 1
+   }
+  ],
+  "aciklama": "Adaptör bu metin için TimeoutError yükseltir; hata yutulmamalı."
+ }
+}

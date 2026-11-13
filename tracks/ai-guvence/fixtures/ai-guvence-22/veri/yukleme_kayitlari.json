@@ -1,0 +1,23 @@
+[
+  {
+    "id": "m1",
+    "bicim": "safetensors",
+    "kaynak": "bilinmeyen",
+    "yukleyici": "safetensors",
+    "yalitim": true
+  },
+  {
+    "id": "m2",
+    "bicim": "pickle",
+    "kaynak": "guvenilir",
+    "yukleyici": "standart_pickle",
+    "yalitim": true
+  },
+  {
+    "id": "m3",
+    "bicim": "gguf",
+    "kaynak": "bilinmeyen",
+    "yukleyici": "llama_cpp",
+    "yalitim": false
+  }
+]

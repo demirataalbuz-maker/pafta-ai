@@ -1,0 +1,52 @@
+{
+ "aciklama": "Sentetik akış; kayıtlar bilerek karışık sırada. Faz sırası: saldir, guardrail, telemetri, mudahale, regresyon.",
+ "kayitlar": [
+  {
+   "id": "k-m",
+   "faz": "mudahale",
+   "basarili": true,
+   "kanit_ids": [
+    "olay-3",
+    "manifest-3"
+   ],
+   "zaman": 9
+  },
+  {
+   "id": "k-s",
+   "faz": "saldir",
+   "basarili": true,
+   "kanit_ids": [],
+   "zaman": 0
+  },
+  {
+   "id": "k-r",
+   "faz": "regresyon",
+   "basarili": true,
+   "kanit_ids": [
+    "eval-a",
+    "eval-b",
+    "eval-c"
+   ],
+   "zaman": 15
+  },
+  {
+   "id": "k-g",
+   "faz": "guardrail",
+   "basarili": true,
+   "kanit_ids": [
+    "guard-1"
+   ],
+   "zaman": 2
+  },
+  {
+   "id": "k-t",
+   "faz": "telemetri",
+   "basarili": true,
+   "kanit_ids": [
+    "trace-1",
+    "trace-2"
+   ],
+   "zaman": 2
+  }
+ ]
+}

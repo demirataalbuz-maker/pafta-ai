@@ -1,0 +1,41 @@
+title: Bulut metadata servisine düz HTTP egress
+id: 3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e03
+status: experimental
+level: critical
+logsource:
+  product: llm
+  category: egress
+detection:
+  secim:
+    metin|contains|all:
+      - http://
+      - metadata
+  condition: secim
+---
+title: Araç çağrısında yönetici rolü talebi
+id: 3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e04
+status: experimental
+level: high
+logsource:
+  product: llm
+  category: yetki
+detection:
+  secim:
+    metin|contains:
+      - role=admin
+      - sudo
+  condition: secim
+---
+title: URL kısaltıcıya egress
+id: 3a1f0c2e-5b7d-4e8a-9c1f-0a2b3c4d5e05
+status: experimental
+level: medium
+logsource:
+  product: llm
+  category: egress
+detection:
+  secim:
+    metin|contains:
+      - bit.ly
+      - tinyurl
+  condition: secim

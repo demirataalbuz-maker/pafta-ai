@@ -1,0 +1,5 @@
+# Gizlilik çalışma dosyası
+
+veri/gizlilik.json elle hazırlanmış sentetik tehdidi, üyelik kararlarını ve rapor girdilerini taşır; gerçek model kaydı değildir. Üç görev aynı dosyayı okur. İlk Çalıştır ham JSON'u gösterir. Doğru üyelik ölçümü TP/FP/TN/FN=1/1/1/1,doğruluk0.5,avantaj0.0; tabana eşit deney kanıt değildir ve olasilik seçilir. Bu karar genel gizlilik veya birey üyeliği kanıtı değildir.
+
+ai_guvence_veri.hazirla her Run/Check için yeni geçici veri/ kopyası kurar. Kaynağı haricî editörde veya yüklenen sözlüğü kodda değiştirip Çalıştır; bu değişiklikler sonraki çalıştırmada korunmaz. Gizli testler ayrıdır. Finalin calisma/ai-guvence-16/gizlilik.json dosyası ayrı kalıcı seed/ornek ayarıdır ve mevcut dosyanın üzerine yazılmaz. Final rastgele sentetik özellik/etiketlerle gerçek PyTorch shadow ve target modelleri eğitir. Üyelik eşiği yalnız shadow verisinden seçilir; target üyeliği son ölçüm içindir. Çalıştırın ağırlıkları kendi deney klasöründe korunur, Kontrolün geçici ağırlıkları kapanınca temizlenir; ölçüm JSON'ları kalır. İndirme yoktur.

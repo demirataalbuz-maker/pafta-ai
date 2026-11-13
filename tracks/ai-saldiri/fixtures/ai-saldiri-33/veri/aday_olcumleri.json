@@ -1,0 +1,151 @@
+{
+ "aciklama": "Sentetik aday önekleri için tekrar ölçümleri. min_ornek=3, min_fark_ms=5.0.",
+ "adaylar": [
+  {
+   "aday": "aday-gurultu",
+   "hit_sureleri": [
+    88,
+    89,
+    87
+   ],
+   "miss_sureleri": [
+    88,
+    89,
+    87
+   ]
+  },
+  {
+   "aday": "aday-tek-sansli",
+   "hit_sureleri": [
+    10,
+    88,
+    87
+   ],
+   "miss_sureleri": [
+    88,
+    89,
+    87
+   ]
+  },
+  {
+   "aday": "aday-esik-sinirinda",
+   "hit_sureleri": [
+    50,
+    50,
+    50
+   ],
+   "miss_sureleri": [
+    55,
+    55,
+    55
+   ]
+  },
+  {
+   "aday": "aday-ortak-onek",
+   "hit_sureleri": [
+    40,
+    41,
+    39
+   ],
+   "miss_sureleri": [
+    90,
+    88,
+    91
+   ]
+  },
+  {
+   "aday": "aday-b",
+   "hit_sureleri": [
+    50,
+    51,
+    49
+   ],
+   "miss_sureleri": [
+    56,
+    55,
+    57
+   ]
+  },
+  {
+   "aday": "aday-a",
+   "hit_sureleri": [
+    50,
+    51,
+    49
+   ],
+   "miss_sureleri": [
+    56,
+    55,
+    57
+   ]
+  }
+ ],
+ "bozuk_listeler": [
+  {
+   "id": "b-az-ornek",
+   "adaylar": [
+    {
+     "aday": "x",
+     "hit_sureleri": [
+      40,
+      41
+     ],
+     "miss_sureleri": [
+      90,
+      88,
+      91
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b-yinelenen",
+   "adaylar": [
+    {
+     "aday": "x",
+     "hit_sureleri": [
+      40,
+      41,
+      39
+     ],
+     "miss_sureleri": [
+      90,
+      88,
+      91
+     ]
+    },
+    {
+     "aday": "x",
+     "hit_sureleri": [
+      40,
+      41,
+      39
+     ],
+     "miss_sureleri": [
+      90,
+      88,
+      91
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b-negatif",
+   "adaylar": [
+    {
+     "aday": "x",
+     "hit_sureleri": [
+      40,
+      -41,
+      39
+     ],
+     "miss_sureleri": [
+      90,
+      88,
+      91
+     ]
+    }
+   ]
+  }
+ ]
+}

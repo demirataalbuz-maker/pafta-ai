@@ -1,0 +1,115 @@
+{
+ "aciklama": "okumalar: yazarın gerçek c2patool 0.28.4 koşusundan alınmış ham çıktılar (sentetik PNG, TEST sertifikası). degerler ve kayitlar elle yazılmış örneklerdir.",
+ "okumalar": [
+  {
+   "id": "imzali",
+   "okuma": {
+    "rc": 0,
+    "stdout": "{\n  \"active_manifest\": \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\",\n  \"manifests\": {\n    \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\": {\n      \"claim_generator_info\": [\n        {\n          \"name\": \"PaftaLab\",\n          \"version\": \"0.1\",\n          \"org.contentauth.c2pa_rs\": \"0.91.7\"\n        }\n      ],\n      \"title\": \"kaynak.png\",\n      \"instance_id\": \"xmp.iid:c3f725ee-c0f5-4fd7-89ca-77dc37355b5e\",\n      \"thumbnail\": {\n        \"format\": \"image/jpeg\",\n        \"identifier\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.thumbnail.claim\"\n      },\n      \"assertions\": [\n        {\n          \"label\": \"c2pa.actions.v2\",\n          \"data\": {\n            \"actions\": [\n              {\n                \"action\": \"c2pa.created\",\n                \"digitalSourceType\": \"http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation\"\n              }\n            ]\n          }\n        }\n      ],\n      \"signature_info\": {\n        \"alg\": \"Es256\",\n        \"issuer\": \"C2PA Test Signing Cert\",\n        \"common_name\": \"C2PA Signer\",\n        \"cert_serial_number\": \"640229841392226413189608867977836244731148734950\"\n      },\n      \"label\": \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\",\n      \"claim_version\": 2\n    }\n  },\n  \"validation_status\": [\n    {\n      \"code\": \"signingCredential.untrusted\",\n      \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n      \"explanation\": \"signing certificate untrusted\"\n    }\n  ],\n  \"validation_results\": {\n    \"activeManifest\": {\n      \"success\": [\n        {\n          \"code\": \"claimSignature.insideValidity\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"claimSignature.validated\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.thumbnail.claim\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.actions.v2\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions.v2\"\n        },\n        {\n          \"code\": \"assertion.dataHash.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"data hash valid\"\n        }\n      ],\n      \"informational\": [\n        {\n          \"code\": \"signingCredential.ocsp.skipped\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"OCSP fetching skipped\"\n        }\n      ],\n      \"failure\": [\n        {\n          \"code\": \"signingCredential.untrusted\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"signing certificate untrusted\"\n        }\n      ]\n    },\n    \"specVersion\": \"2.4.0\"\n  },\n  \"validation_state\": \"Valid\"\n}\n",
+    "stderr": ""
+   }
+  },
+  {
+   "id": "imzali-test-kok",
+   "okuma": {
+    "rc": 0,
+    "stdout": "{\n  \"active_manifest\": \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\",\n  \"manifests\": {\n    \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\": {\n      \"claim_generator_info\": [\n        {\n          \"name\": \"PaftaLab\",\n          \"version\": \"0.1\",\n          \"org.contentauth.c2pa_rs\": \"0.91.7\"\n        }\n      ],\n      \"title\": \"kaynak.png\",\n      \"instance_id\": \"xmp.iid:c3f725ee-c0f5-4fd7-89ca-77dc37355b5e\",\n      \"thumbnail\": {\n        \"format\": \"image/jpeg\",\n        \"identifier\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.thumbnail.claim\"\n      },\n      \"assertions\": [\n        {\n          \"label\": \"c2pa.actions.v2\",\n          \"data\": {\n            \"actions\": [\n              {\n                \"action\": \"c2pa.created\",\n                \"digitalSourceType\": \"http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation\"\n              }\n            ]\n          }\n        }\n      ],\n      \"signature_info\": {\n        \"alg\": \"Es256\",\n        \"issuer\": \"C2PA Test Signing Cert\",\n        \"common_name\": \"C2PA Signer\",\n        \"cert_serial_number\": \"640229841392226413189608867977836244731148734950\"\n      },\n      \"label\": \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\",\n      \"claim_version\": 2\n    }\n  },\n  \"validation_results\": {\n    \"activeManifest\": {\n      \"success\": [\n        {\n          \"code\": \"signingCredential.trusted\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"signing certificate trusted, found in [system_anchors] trust anchors\"\n        },\n        {\n          \"code\": \"claimSignature.insideValidity\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"claimSignature.validated\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.thumbnail.claim\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.actions.v2\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions.v2\"\n        },\n        {\n          \"code\": \"assertion.dataHash.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"data hash valid\"\n        }\n      ],\n      \"informational\": [\n        {\n          \"code\": \"signingCredential.ocsp.skipped\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"OCSP fetching skipped\"\n        }\n      ],\n      \"failure\": []\n    },\n    \"specVersion\": \"2.4.0\",\n    \"trustListUri\": \"system_anchors\"\n  },\n  \"validation_state\": \"Trusted\"\n}\n",
+    "stderr": ""
+   }
+  },
+  {
+   "id": "meta-eklendi",
+   "okuma": {
+    "rc": 0,
+    "stdout": "{\n  \"active_manifest\": \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\",\n  \"manifests\": {\n    \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\": {\n      \"claim_generator_info\": [\n        {\n          \"name\": \"PaftaLab\",\n          \"version\": \"0.1\",\n          \"org.contentauth.c2pa_rs\": \"0.91.7\"\n        }\n      ],\n      \"title\": \"kaynak.png\",\n      \"instance_id\": \"xmp.iid:c3f725ee-c0f5-4fd7-89ca-77dc37355b5e\",\n      \"thumbnail\": {\n        \"format\": \"image/jpeg\",\n        \"identifier\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.thumbnail.claim\"\n      },\n      \"assertions\": [\n        {\n          \"label\": \"c2pa.actions.v2\",\n          \"data\": {\n            \"actions\": [\n              {\n                \"action\": \"c2pa.created\",\n                \"digitalSourceType\": \"http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation\"\n              }\n            ]\n          }\n        }\n      ],\n      \"signature_info\": {\n        \"alg\": \"Es256\",\n        \"issuer\": \"C2PA Test Signing Cert\",\n        \"common_name\": \"C2PA Signer\",\n        \"cert_serial_number\": \"640229841392226413189608867977836244731148734950\"\n      },\n      \"label\": \"urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085\",\n      \"claim_version\": 2\n    }\n  },\n  \"validation_status\": [\n    {\n      \"code\": \"signingCredential.untrusted\",\n      \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n      \"explanation\": \"signing certificate untrusted\"\n    },\n    {\n      \"code\": \"assertion.dataHash.mismatch\",\n      \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n      \"explanation\": \"asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )\"\n    }\n  ],\n  \"validation_results\": {\n    \"activeManifest\": {\n      \"success\": [\n        {\n          \"code\": \"claimSignature.insideValidity\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"claimSignature.validated\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.thumbnail.claim\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.actions.v2\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions.v2\"\n        }\n      ],\n      \"informational\": [\n        {\n          \"code\": \"signingCredential.ocsp.skipped\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"OCSP fetching skipped\"\n        }\n      ],\n      \"failure\": [\n        {\n          \"code\": \"signingCredential.untrusted\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.signature\",\n          \"explanation\": \"signing certificate untrusted\"\n        },\n        {\n          \"code\": \"assertion.dataHash.mismatch\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:38da907f-8f7e-4fc1-94e5-025951f0d085/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"asset hash error, name: jumbf manifest, error: hash verification( Hashes do not match )\"\n        }\n      ]\n    },\n    \"specVersion\": \"2.4.0\"\n  },\n  \"validation_state\": \"Invalid\"\n}\n",
+    "stderr": ""
+   }
+  },
+  {
+   "id": "png-yeniden",
+   "okuma": {
+    "rc": 1,
+    "stdout": "",
+    "stderr": "Error: No claim found\n"
+   }
+  },
+  {
+   "id": "saldirgan-imzali",
+   "okuma": {
+    "rc": 0,
+    "stdout": "{\n  \"active_manifest\": \"urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b\",\n  \"manifests\": {\n    \"urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b\": {\n      \"claim_generator_info\": [\n        {\n          \"name\": \"PaftaLab\",\n          \"version\": \"0.1\",\n          \"org.contentauth.c2pa_rs\": \"0.91.7\"\n        }\n      ],\n      \"title\": \"kaynak.png\",\n      \"instance_id\": \"xmp.iid:fe183b79-f27f-44e0-8b0b-ccf93059ee24\",\n      \"thumbnail\": {\n        \"format\": \"image/jpeg\",\n        \"identifier\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.assertions/c2pa.thumbnail.claim\"\n      },\n      \"assertions\": [\n        {\n          \"label\": \"c2pa.actions.v2\",\n          \"data\": {\n            \"actions\": [\n              {\n                \"action\": \"c2pa.created\",\n                \"digitalSourceType\": \"http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation\"\n              }\n            ]\n          }\n        }\n      ],\n      \"signature_info\": {\n        \"alg\": \"Es256\",\n        \"issuer\": \"Sahte Org\",\n        \"common_name\": \"Haber Ajansi (sahte)\",\n        \"cert_serial_number\": \"358261364563993353693283137613378575275050013900\"\n      },\n      \"label\": \"urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b\",\n      \"claim_version\": 2\n    }\n  },\n  \"validation_status\": [\n    {\n      \"code\": \"signingCredential.untrusted\",\n      \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.signature\",\n      \"explanation\": \"signing certificate untrusted\"\n    }\n  ],\n  \"validation_results\": {\n    \"activeManifest\": {\n      \"success\": [\n        {\n          \"code\": \"claimSignature.insideValidity\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"claimSignature.validated\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.signature\",\n          \"explanation\": \"claim signature valid\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.assertions/c2pa.thumbnail.claim\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim\"\n        },\n        {\n          \"code\": \"assertion.hashedURI.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.assertions/c2pa.actions.v2\",\n          \"explanation\": \"hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions.v2\"\n        },\n        {\n          \"code\": \"assertion.dataHash.match\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.assertions/c2pa.hash.data\",\n          \"explanation\": \"data hash valid\"\n        }\n      ],\n      \"informational\": [\n        {\n          \"code\": \"signingCredential.ocsp.skipped\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.signature\",\n          \"explanation\": \"OCSP fetching skipped\"\n        }\n      ],\n      \"failure\": [\n        {\n          \"code\": \"signingCredential.untrusted\",\n          \"url\": \"self#jumbf=/c2pa/urn:c2pa:cff598f4-c9da-484d-860c-7aaa03d4bd8b/c2pa.signature\",\n          \"explanation\": \"signing certificate untrusted\"\n        }\n      ]\n    },\n    \"specVersion\": \"2.4.0\"\n  },\n  \"validation_state\": \"Valid\"\n}\n",
+    "stderr": ""
+   }
+  }
+ ],
+ "degerler": [
+  200,
+  201,
+  202,
+  203,
+  204,
+  205,
+  206,
+  207,
+  208,
+  209,
+  210,
+  211
+ ],
+ "bitler": [
+  1,
+  0,
+  1
+ ],
+ "tekrar": 3,
+ "bozulmus": [
+  201,
+  201,
+  200,
+  202,
+  202,
+  203,
+  205,
+  207,
+  209,
+  210,
+  210,
+  211
+ ],
+ "esikler": [
+  0.1,
+  0.0
+ ],
+ "kayitlar": [
+  {
+   "id": "imzali",
+   "varsayilan": "gecerli-guvenilmeyen",
+   "test_kok": "guvenilen",
+   "ber": 0.0
+  },
+  {
+   "id": "meta",
+   "varsayilan": "gecersiz",
+   "test_kok": "gecersiz",
+   "ber": 0.0
+  },
+  {
+   "id": "png",
+   "varsayilan": "manifest-yok",
+   "test_kok": "manifest-yok",
+   "ber": 0.0
+  },
+  {
+   "id": "jpeg",
+   "varsayilan": "manifest-yok",
+   "test_kok": "manifest-yok",
+   "ber": 0.5
+  },
+  {
+   "id": "sald",
+   "varsayilan": "gecerli-guvenilmeyen",
+   "test_kok": "gecerli-guvenilmeyen",
+   "ber": 0.1
+  }
+ ]
+}

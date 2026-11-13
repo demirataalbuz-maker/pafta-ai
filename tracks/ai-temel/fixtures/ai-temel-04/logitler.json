@@ -1,0 +1,29 @@
+{
+  "kaynak": "sentetik",
+  "baglam": "The garden is",
+  "token_etiketleri": [
+    "green",
+    "quiet",
+    "closed"
+  ],
+  "logitler": [
+    0,
+    1,
+    2
+  ],
+  "sicakliklar": [
+    0.5,
+    1,
+    2
+  ],
+  "k_degerleri": [
+    1,
+    2,
+    3
+  ],
+  "p_degerleri": [
+    0.1,
+    0.7,
+    1.0
+  ]
+}

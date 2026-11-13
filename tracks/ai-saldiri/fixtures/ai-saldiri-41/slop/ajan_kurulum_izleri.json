@@ -1,0 +1,30 @@
+[
+  {
+    "iz_id": "kur-01",
+    "paket": "fastapi-jwt-guard",
+    "kurulum_onayi": "otomatik",
+    "ag_erisim": true,
+    "pip_bayraklari": ["--no-cache-dir"]
+  },
+  {
+    "iz_id": "kur-02",
+    "paket": "py-graphql-shield",
+    "kurulum_onayi": "otomatik",
+    "ag_erisim": true,
+    "pip_bayraklari": ["--only-binary=:all:"]
+  },
+  {
+    "iz_id": "kur-03",
+    "paket": "fastapi-jwt-guard",
+    "kurulum_onayi": "insan-onayli",
+    "ag_erisim": true,
+    "pip_bayraklari": []
+  },
+  {
+    "iz_id": "kur-04",
+    "paket": "fastapi",
+    "kurulum_onayi": "otomatik",
+    "ag_erisim": true,
+    "pip_bayraklari": []
+  }
+]

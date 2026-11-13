@@ -1,0 +1,6 @@
+.ai-venv/
+.ai-araclar/
+.deps/
+__pycache__/
+*.pyc
+Pafta.exe

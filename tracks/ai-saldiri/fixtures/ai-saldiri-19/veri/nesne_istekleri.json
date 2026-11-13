@@ -1,0 +1,278 @@
+{
+ "aciklama": "Sentetik nesne ACL'i ve istekler. Sahip ve paylaşım sunucu kaydından gelir; onay nesne+işlem bağlıdır. beklenen=null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "n-01",
+   "aciklama": "sahip okur",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "oku",
+   "onay": null,
+   "beklenen": {
+    "izinli": true,
+    "neden": "izinli"
+   }
+  },
+  {
+   "id": "n-02",
+   "aciklama": "paylaşımlı kullanıcı okur",
+   "kullanici": "mehmet",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "oku",
+   "onay": null,
+   "beklenen": {
+    "izinli": true,
+    "neden": "izinli"
+   }
+  },
+  {
+   "id": "n-03",
+   "aciklama": "paylaşımlı kullanıcı yazmak ister",
+   "kullanici": "mehmet",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "yaz",
+   "onay": null,
+   "beklenen": {
+    "izinli": false,
+    "neden": "sahiplik-gerekli"
+   }
+  },
+  {
+   "id": "n-04",
+   "aciklama": "yabancı kullanıcı nesne kimliğini değiştirip okur (IDOR)",
+   "kullanici": "zeynep",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "oku",
+   "onay": null,
+   "beklenen": {
+    "izinli": false,
+    "neden": "nesne-erisimi-yok"
+   }
+  },
+  {
+   "id": "n-05",
+   "aciklama": "sahip onaysız siler",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": null,
+   "beklenen": {
+    "izinli": false,
+    "neden": "islem-onayi-gerekli"
+   }
+  },
+  {
+   "id": "n-06",
+   "aciklama": "sahip bu nesneye bağlı onayla siler",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": {
+    "nesne_id": "d1",
+    "eylem": "sil"
+   },
+   "beklenen": {
+    "izinli": true,
+    "neden": "izinli"
+   }
+  },
+  {
+   "id": "n-07",
+   "aciklama": "sahip başka nesnenin onayıyla siler",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": {
+    "nesne_id": "d2",
+    "eylem": "sil"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "islem-onayi-gerekli"
+   }
+  },
+  {
+   "id": "n-08",
+   "aciklama": "sahip yazma onayıyla siler",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": {
+    "nesne_id": "d1",
+    "eylem": "yaz"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "islem-onayi-gerekli"
+   }
+  },
+  {
+   "id": "n-09",
+   "aciklama": "paylaşımlı kullanıcı geçerli onayla siler",
+   "kullanici": "mehmet",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": {
+    "nesne_id": "d1",
+    "eylem": "sil"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "sahiplik-gerekli"
+   }
+  },
+  {
+   "id": "n-10",
+   "aciklama": "okuma isteğinde ilgisiz onay kararı değiştirmez",
+   "kullanici": "zeynep",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "oku",
+   "onay": {
+    "nesne_id": "d1",
+    "eylem": "sil"
+   },
+   "beklenen": {
+    "izinli": false,
+    "neden": "nesne-erisimi-yok"
+   }
+  },
+  {
+   "id": "n-11",
+   "aciklama": "onay True değeri (global onay)",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": true,
+   "beklenen": null
+  },
+  {
+   "id": "n-12",
+   "aciklama": "onayda ek kapsam alanı",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "sil",
+   "onay": {
+    "nesne_id": "d1",
+    "eylem": "sil",
+    "kapsam": "hepsi"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "n-13",
+   "aciklama": "yinelenen paylaşım listesi",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet",
+     "mehmet"
+    ]
+   },
+   "eylem": "oku",
+   "onay": null,
+   "beklenen": null
+  },
+  {
+   "id": "n-14",
+   "aciklama": "paylaşım string olarak gelmiş",
+   "kullanici": "mehmet",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": "mehmet"
+   },
+   "eylem": "oku",
+   "onay": null,
+   "beklenen": null
+  },
+  {
+   "id": "n-15",
+   "aciklama": "desteklenmeyen paylas eylemi",
+   "kullanici": "ayse",
+   "nesne": {
+    "id": "d1",
+    "sahip": "ayse",
+    "paylasim": [
+     "mehmet"
+    ]
+   },
+   "eylem": "paylas",
+   "onay": null,
+   "beklenen": null
+  }
+ ]
+}

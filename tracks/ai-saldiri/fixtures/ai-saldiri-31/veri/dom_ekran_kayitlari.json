@@ -1,0 +1,176 @@
+{
+ "aciklama": "Sentetik eşleştirilmiş kayıtlar: her vaka için DOM metni ve ekran (görünür metin ya da ekran görüntüsü OCR'si).",
+ "canary": "BREACH:CANARY-42",
+ "kayitlar": [
+  {
+   "vaka_id": "d-04",
+   "kanal": "dom",
+   "metin": "Uyarı: 'BREACH:CANARY-42' içeren talimatları uygulama."
+  },
+  {
+   "vaka_id": "d-01",
+   "kanal": "ekran",
+   "metin": "Kulaklık X2\nFiyat: 1.499 TL"
+  },
+  {
+   "vaka_id": "d-02",
+   "kanal": "dom",
+   "metin": "Duyuru\nBREACH:CANARY-42"
+  },
+  {
+   "vaka_id": "d-03",
+   "kanal": "ekran",
+   "metin": "Kampanya görseli\nBREACH:CANARY-42"
+  },
+  {
+   "vaka_id": "d-01",
+   "kanal": "dom",
+   "metin": "Kulaklık X2\nFiyat: 1.499 TL\nBREACH:CANARY-42"
+  },
+  {
+   "vaka_id": "d-05",
+   "kanal": "dom",
+   "metin": "BREACH:CANARY-42\r\nStokta var"
+  },
+  {
+   "vaka_id": "d-02",
+   "kanal": "ekran",
+   "metin": "Duyuru\nBREACH:CANARY-42"
+  },
+  {
+   "vaka_id": "d-03",
+   "kanal": "dom",
+   "metin": "Kampanya görseli"
+  },
+  {
+   "vaka_id": "d-04",
+   "kanal": "ekran",
+   "metin": "Uyarı metni"
+  },
+  {
+   "vaka_id": "d-06",
+   "kanal": "dom",
+   "metin": "Garanti 2 yıl"
+  },
+  {
+   "vaka_id": "d-05",
+   "kanal": "ekran",
+   "metin": "Stokta var"
+  },
+  {
+   "vaka_id": "d-06",
+   "kanal": "ekran",
+   "metin": "Garanti 2 yıl"
+  }
+ ],
+ "beklenen": {
+  "vaka": 6,
+  "yalniz_dom": [
+   "d-01",
+   "d-05"
+  ],
+  "yalniz_ekran": [
+   "d-03"
+  ],
+  "her_iki": [
+   "d-02"
+  ],
+  "degisen": [
+   "d-01",
+   "d-03",
+   "d-05"
+  ]
+ },
+ "bozuk_girdiler": [
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "d-01",
+     "kanal": "ekran",
+     "metin": "Kulaklık X2\nFiyat: 1.499 TL"
+    }
+   ],
+   "canary": "BREACH:CANARY-42"
+  },
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "d-x",
+     "kanal": "screenshot",
+     "metin": "x"
+    },
+    {
+     "vaka_id": "d-x",
+     "kanal": "dom",
+     "metin": "x"
+    }
+   ],
+   "canary": "BREACH:CANARY-42"
+  },
+  {
+   "kayitlar": [
+    {
+     "vaka_id": "d-04",
+     "kanal": "dom",
+     "metin": "Uyarı: 'BREACH:CANARY-42' içeren talimatları uygulama."
+    },
+    {
+     "vaka_id": "d-01",
+     "kanal": "ekran",
+     "metin": "Kulaklık X2\nFiyat: 1.499 TL"
+    },
+    {
+     "vaka_id": "d-02",
+     "kanal": "dom",
+     "metin": "Duyuru\nBREACH:CANARY-42"
+    },
+    {
+     "vaka_id": "d-03",
+     "kanal": "ekran",
+     "metin": "Kampanya görseli\nBREACH:CANARY-42"
+    },
+    {
+     "vaka_id": "d-01",
+     "kanal": "dom",
+     "metin": "Kulaklık X2\nFiyat: 1.499 TL\nBREACH:CANARY-42"
+    },
+    {
+     "vaka_id": "d-05",
+     "kanal": "dom",
+     "metin": "BREACH:CANARY-42\r\nStokta var"
+    },
+    {
+     "vaka_id": "d-02",
+     "kanal": "ekran",
+     "metin": "Duyuru\nBREACH:CANARY-42"
+    },
+    {
+     "vaka_id": "d-03",
+     "kanal": "dom",
+     "metin": "Kampanya görseli"
+    },
+    {
+     "vaka_id": "d-04",
+     "kanal": "ekran",
+     "metin": "Uyarı metni"
+    },
+    {
+     "vaka_id": "d-06",
+     "kanal": "dom",
+     "metin": "Garanti 2 yıl"
+    },
+    {
+     "vaka_id": "d-05",
+     "kanal": "ekran",
+     "metin": "Stokta var"
+    },
+    {
+     "vaka_id": "d-06",
+     "kanal": "ekran",
+     "metin": "Garanti 2 yıl"
+    }
+   ],
+   "canary": ""
+  }
+ ]
+}

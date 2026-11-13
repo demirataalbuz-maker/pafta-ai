@@ -1,0 +1,21 @@
+{
+  "kenarlar": [
+    ["finans_raporu", "butce_2026"],
+    ["ik_politikasi", "izin_yonetmeligi"],
+    ["devops_anahtar", "uretim_sunucu"],
+    ["sahte_denetim_notu", "finans_raporu"],
+    ["sahte_denetim_notu", "ik_politikasi"],
+    ["sahte_denetim_notu", "devops_anahtar"]
+  ],
+  "topluluk_atamalari": {
+    "finans_raporu": "finans",
+    "butce_2026": "finans",
+    "ik_politikasi": "ik",
+    "izin_yonetmeligi": "ik",
+    "devops_anahtar": "altyapi",
+    "uretim_sunucu": "altyapi",
+    "sahte_denetim_notu": "finans"
+  },
+  "zehirli_dugumler": ["sahte_denetim_notu"],
+  "esik": 0.3
+}

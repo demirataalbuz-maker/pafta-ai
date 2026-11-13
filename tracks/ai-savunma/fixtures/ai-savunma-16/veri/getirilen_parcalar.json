@@ -1,0 +1,62 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "'İade süresi kaç gün?' sorgusu için getirilen parçalar. Skorlar elle yazılmış benzerlik skorlarıdır; gerçek gömme sonucu değildir.",
+  "parcalar": [
+    {
+      "id": "p-politika",
+      "kaynak_id": "politika-wiki",
+      "belge_id": "iade-politikasi",
+      "surum": "3.1.0",
+      "metin_sha256": "e452e01d7680a7b52fb826150f1d0925085689aa25d0cb79db91b45302cf0831",
+      "skor": 0.81
+    },
+    {
+      "id": "p-tahrif",
+      "kaynak_id": "politika-wiki",
+      "belge_id": "iade-politikasi",
+      "surum": "3.1.1",
+      "metin_sha256": "5a794550fc11dbeef17daa046332e5b8f4e98f3c71f479d84fe8d487409b51b8",
+      "skor": 0.93
+    },
+    {
+      "id": "p-sss",
+      "kaynak_id": "destek-sss",
+      "belge_id": "sss-iade",
+      "surum": "1.0.12",
+      "metin_sha256": "b1ea57b3b6972c52659f4ba8656aa8eb1916a93e95e0016fbfd15fbeb22333d7",
+      "skor": 0.74
+    },
+    {
+      "id": "p-forum",
+      "kaynak_id": "forum-arsivi",
+      "belge_id": "konu-552",
+      "surum": "0.9.0",
+      "metin_sha256": "a23fdb24b78d927a9238c2d8564c0df31d9e3873d996f80ca3db2c7d4fcd9e33",
+      "skor": 0.66
+    },
+    {
+      "id": "p-eski",
+      "kaynak_id": "eski-kilavuz",
+      "belge_id": "kilavuz-2019",
+      "surum": "2.4.1",
+      "metin_sha256": "0d0c86863f7234874cff18836d515886cb389223f6ea580c2ca9d707522a1d49",
+      "skor": 0.79
+    },
+    {
+      "id": "p-not",
+      "kaynak_id": "kullanici-notu",
+      "belge_id": "not-12",
+      "surum": "1.0.0",
+      "metin_sha256": "732cb032b5ae6bba9066c9d0ed36744021c5e5f3c09319d80956c12b234f9aa9",
+      "skor": 0.72
+    },
+    {
+      "id": "p-yetim",
+      "kaynak_id": "bilinmeyen-blog",
+      "belge_id": "yazi-9",
+      "surum": "1.0.0",
+      "metin_sha256": "58b3acbe147a638401c66206c1a091982db4e5dea16a9212e87851eb8304055a",
+      "skor": 0.88
+    }
+  ]
+}

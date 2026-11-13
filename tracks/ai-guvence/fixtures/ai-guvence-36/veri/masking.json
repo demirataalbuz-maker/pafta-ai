@@ -1,0 +1,69 @@
+{
+ "aciklama": "Sentetik örnek: raporlar ve logitler elle yazılmıştır; gerçek model çıktısı değildir.",
+ "projeksiyon": {
+  "x": [
+   0.95,
+   0.2,
+   0.6,
+   1.4
+  ],
+  "x0": [
+   0.7,
+   0.5,
+   0.6,
+   0.9
+  ],
+  "eps": 0.25,
+  "alt": 0.0,
+  "ust": 1.0
+ },
+ "logitler": [
+  {
+   "ad": "normal",
+   "logit": [
+    4.0,
+    1.0,
+    -1.0
+   ],
+   "etiket": 0
+  },
+  {
+   "ad": "doygun",
+   "logit": [
+    30.0,
+    0.0,
+    -5.0
+   ],
+   "etiket": 0
+  },
+  {
+   "ad": "yanlis_sinif",
+   "logit": [
+    2.0,
+    7.0,
+    1.0
+   ],
+   "etiket": 0
+  }
+ ],
+ "raporlar": {
+  "gercek_sald_sonucu": {
+   "temiz": 0.98,
+   "fgsm": 0.4,
+   "pgd_ce": 0.22,
+   "pgd_marjin": 0.24,
+   "rastgele": 0.95,
+   "sifir_grad": 0.0
+  },
+  "cok_iyi_savunma_iddiasi": {
+   "temiz": 0.98,
+   "fgsm": 0.97,
+   "pgd_ce": 0.97,
+   "pgd_marjin": 0.31,
+   "rastgele": 0.9,
+   "sifir_grad": 0.92
+  }
+ },
+ "tol": 0.02,
+ "sinir": 0.5
+}

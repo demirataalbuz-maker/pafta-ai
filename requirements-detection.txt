@@ -1,0 +1,11 @@
+# Project-local dependencies: python -m pip install --target .deps -r requirements-detection.txt
+pysigma==1.5.1
+yara-python==4.5.4
+# SG19-SG22 gerçek hedefleri: sigma-cli ve backend/pipeline eklentileri (.deps'teki kurulu sürümler).
+# pysigma'yı değiştirmemek için: python -m pip install --target .deps --no-deps <paket>==<sürüm>
+sigma-cli==3.1.0
+pysigma-backend-splunk==2.1.0
+pysigma-backend-elasticsearch==2.1.1
+pysigma-backend-kusto==1.0.1
+pysigma-pipeline-sysmon==2.0.0
+pysigma-pipeline-windows==2.0.1

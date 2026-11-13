@@ -1,0 +1,8 @@
+{
+  "id": "deney-yelkovan-01",
+  "veri": "sentetik_yelkovan_v1.csv",
+  "model": "logistic_regression_l2",
+  "tehdit": "etiket_cevirme_zehirlemesi",
+  "olcutler": ["dogruluk", "f1", "asr"],
+  "tohum": 42
+}

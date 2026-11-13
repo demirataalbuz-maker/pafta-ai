@@ -1,0 +1,133 @@
+{
+  "id": "ai-uretim",
+  "name": "Sıfırdan Frontier AI ve LLM İnşası (AI Builder)",
+  "status": "active",
+  "group": "ai",
+  "order": 31,
+  "runner": "python",
+  "dil": "python",
+  "role": "Autograd, tokenizer, Transformer ve MoE bileşenlerinden training, post-training, multimodal, quantization ve evaluation hesaplarına kadar LLM üretiminin yöntemlerini anlamak. Küçük Python görevleriyle bileşenleri kodlamak; PyTorch/GPU örneklerini ayrıca incelemek ve gerçek üretim kabulünün sınırını ayırmak.",
+  "tagline": "36 ders ve 72 Python görevi: model bileşenlerini adım adım kur, hesapları doğrula ve PyTorch/GPU kodlarını incele. Bu yolun simülasyon görevleri tam bir Frontier model eğitimi veya GPU benchmarkı kabulü değildir.",
+  "kahraman": [
+    "Tensörden",
+    "Frontier AI",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Çekirdek Motor: Autograd, Tokenizer Eğitimi ve Modern Transformer (RoPE, SwiGLU, GQA, FlashAttention)",
+      "rank": "minik",
+      "zen": "Bir yapay zeka çatısı sihir değildir; türev grafiği (Autograd), alt-kelime sözlüğü (BPE) ve dikkat matrislerinin donanım dostu bloklarla (FlashAttention & GQA) çarpımıdır.",
+      "lessons": [
+        "ai-uretim-01",
+        "ai-uretim-02",
+        "ai-uretim-03",
+        "ai-uretim-04"
+      ]
+    },
+    {
+      "title": "Frontier Ölçekleme: DeepSeekMoE, Veri Rafinerisi, Pre-Training Loop ve Dağıtık GPU Kümesi (ZeRO-3 / 3D Parallelism)",
+      "rank": "tesviye",
+      "zen": "Trilyon parametreli modeller seyrek uzman yönlendirmesi (MoE), tekilleştirilmiş veri (MinHash LSH), kararlı AdamW/WSD döngüsü ve binlerce GPU'da parçalanmış durumlarla (ZeRO-3) eğitilir.",
+      "lessons": [
+        "ai-uretim-05",
+        "ai-uretim-06",
+        "ai-uretim-07",
+        "ai-uretim-08"
+      ]
+    },
+    {
+      "title": "Post-Training, Reasoning (Opus / R1) ve Üretim Motoru: SFT/LoRA, DPO, GRPO/RLVR ve PagedAttention",
+      "rank": "kucuk-orta",
+      "zen": "Ham model SFT ve LoRA ile talimat izler, DPO ile insan tercihine hizalanır, GRPO ve RLVR ile düşünmeyi (Reasoning) öğrenir, PagedAttention ve Speculative Decoding ile ışık hızında servis edilir.",
+      "lessons": [
+        "ai-uretim-09",
+        "ai-uretim-10",
+        "ai-uretim-11",
+        "ai-uretim-12"
+      ]
+    },
+    {
+      "title": "GPU Donanım Mimarisi, FP8/BF16 Bit Mekaniği, Triton Kernels ve 1M Bağlam (MLA, YaRN, Ring Attention, Hybrid Mamba-2)",
+      "rank": "buyuk-orta",
+      "zen": "Gerçek hız; tensör bellek adımlarını (Strides), kayan nokta bitlerini (FP8/BF16), birleşik GPU çekirdeklerini (Fused Triton Kernels), düşük-ranklı gizli dikkati (DeepSeek MLA) ve 1 milyon tokenlık halka dikkatini (Ring Attention) kontrol etmekten gelir.",
+      "lessons": [
+        "ai-uretim-13",
+        "ai-uretim-14",
+        "ai-uretim-15",
+        "ai-uretim-16",
+        "ai-uretim-17",
+        "ai-uretim-18",
+        "ai-uretim-19",
+        "ai-uretim-20"
+      ]
+    },
+    {
+      "title": "İleri Model Eğitimi: Kod Ajanı (FIM & SWE-bench RL), Constitutional AI (Opus), MCTS ve Multimodal (VLM, Diffusion DiT, Ses)",
+      "rank": "basalti",
+      "zen": "Sıfırdan kod yazan ajan (FIM + Sandbox RL), kendi kendini eleştiren Anayasal AI (CAI), düşünce ağacı arayan MCTS ve görüntü/video/ses üreten Diffusion Transformer (DiT) ile RVQ ses modelleri aynı uçtan uca eğitim disipliniyle inşa edilir.",
+      "lessons": [
+        "ai-uretim-21",
+        "ai-uretim-22",
+        "ai-uretim-23",
+        "ai-uretim-24",
+        "ai-uretim-25",
+        "ai-uretim-26",
+        "ai-uretim-27",
+        "ai-uretim-28",
+        "ai-uretim-29",
+        "ai-uretim-30"
+      ]
+    },
+    {
+      "title": "Model Sıkıştırma, Damıtma, Sürekli Öğrenme ve Bilimsel Değerlendirme (GPTQ, AWQ, Distillation, Eval Harness)",
+      "rank": "baspehlivan",
+      "zen": "Eğitilen dev model Hessian tabanlı GPTQ ve aktivasyon duyarlı AWQ ile 4-bite sıkıştırılır, KL damıtmasıyla (Distillation) küçük modellere aktarılır, unutmayı önleyen Replay ile güncellenir ve yansız Pass@k / Arena Elo ile bilimsel olarak ölçülür.",
+      "lessons": [
+        "ai-uretim-31",
+        "ai-uretim-32",
+        "ai-uretim-33",
+        "ai-uretim-34",
+        "ai-uretim-35",
+        "ai-uretim-36"
+      ]
+    },
+    {
+      "title": "Eğitim Ayıklama: Profilleme, Loss Spike, NaN Avı ve Gradient Sağlığı",
+      "rank": "baspehlivan",
+      "zen": "Tahmin etme, ölç; eğitim bozulduğunda ilk bakacağın yer kaybın kendisi değil, onu üreten sayılardır.",
+      "lessons": [
+        "ai-uretim-37",
+        "ai-uretim-38",
+        "ai-uretim-39",
+        "ai-uretim-40"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "a",
+    "gorev": "g1",
+    "otomatik": "gecerli",
+    "insan": "gecerli",
+    "basarisizlik": "yok"
+  },
+  {
+    "id": "b",
+    "gorev": "g2",
+    "otomatik": "gecerli",
+    "insan": "hatali",
+    "basarisizlik": "politika"
+  },
+  {
+    "id": "c",
+    "gorev": "g1",
+    "otomatik": "hatali",
+    "insan": "gecerli",
+    "basarisizlik": "yok"
+  },
+  {
+    "id": "d",
+    "gorev": "g3",
+    "otomatik": "belirsiz",
+    "insan": "hatali",
+    "basarisizlik": "bicim"
+  },
+  {
+    "id": "e",
+    "gorev": "g2",
+    "otomatik": "hatali",
+    "insan": "hatali",
+    "basarisizlik": "bilgi"
+  },
+  {
+    "id": "f",
+    "gorev": "g1",
+    "otomatik": "gecerli",
+    "insan": "incelemede",
+    "basarisizlik": "yok"
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "id": "ai-saldiri",
+  "name": "AI Saldırı ve Red Team",
+  "status": "active",
+  "group": "ai",
+  "order": 31,
+  "runner": "python",
+  "dil": "python",
+  "role": "Model, RAG ve ajan sistemlerinin saldırı mekaniğini gerçek yerel hedefler ve ölçülebilir kanıtlarla incelemek.",
+  "tagline": "Prompt injection'dan tool-zincirine, AI-SSRF'den çok aşamalı saldırı regresyonuna; fixture ile tekrarlanabilir, gerçek modelle opt-in doğrulama.",
+  "kahraman": [
+    "Talimattan",
+    "Zincir",
+    "e"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Model Etkileşimi ve Saldırı Yüzeyi",
+      "rank": "minik",
+      "zen": "Modelin gördüğü tek akışta talimat ile veri aynı alfabeyi paylaşır.",
+      "lessons": [
+        "ai-saldiri-36",
+        "ai-saldiri-01",
+        "ai-saldiri-02",
+        "ai-saldiri-03",
+        "ai-saldiri-04",
+        "ai-saldiri-45",
+        "ai-saldiri-35",
+        "ai-saldiri-42",
+        "ai-saldiri-05"
+      ]
+    },
+    {
+      "title": "Model Bilgisi, Veri Sızıntısı ve Çıktı Güvenliği",
+      "rank": "tesviye",
+      "lessons": [
+        "ai-saldiri-06",
+        "ai-saldiri-07",
+        "ai-saldiri-08",
+        "ai-saldiri-09",
+        "ai-saldiri-10",
+        "ai-saldiri-38",
+        "ai-saldiri-48"
+      ]
+    },
+    {
+      "title": "Dolaylı, Multimodal ve RAG Kaynaklı Enjeksiyon",
+      "rank": "kucuk-orta",
+      "lessons": [
+        "ai-saldiri-11",
+        "ai-saldiri-12",
+        "ai-saldiri-53",
+        "ai-saldiri-13",
+        "ai-saldiri-14",
+        "ai-saldiri-15",
+        "ai-saldiri-31",
+        "ai-saldiri-32",
+        "ai-saldiri-52"
+      ]
+    },
+    {
+      "title": "Ajanlar, Araçlar ve Yetki Sınırları",
+      "rank": "buyuk-orta",
+      "zen": "Model karar verir; yetki uygulama katmanında korunur.",
+      "lessons": [
+        "ai-saldiri-16",
+        "ai-saldiri-47",
+        "ai-saldiri-17",
+        "ai-saldiri-18",
+        "ai-saldiri-19",
+        "ai-saldiri-20",
+        "ai-saldiri-43",
+        "ai-saldiri-44",
+        "ai-saldiri-50"
+      ]
+    },
+    {
+      "title": "Ağ Erişimi, SSRF ve Exfiltration",
+      "rank": "basalti",
+      "zen": "URL'yi model seçer; bağlantının güvenliğini uygulama kanıtlar.",
+      "lessons": [
+        "ai-saldiri-39",
+        "ai-saldiri-21",
+        "ai-saldiri-22",
+        "ai-saldiri-23",
+        "ai-saldiri-24",
+        "ai-saldiri-25",
+        "ai-saldiri-33",
+        "ai-saldiri-40"
+      ]
+    },
+    {
+      "title": "Adaptif Saldırılar ve Purple Doğrulama",
+      "rank": "baspehlivan",
+      "lessons": [
+        "ai-saldiri-54",
+        "ai-saldiri-55",
+        "ai-saldiri-26",
+        "ai-saldiri-41",
+        "ai-saldiri-27",
+        "ai-saldiri-28",
+        "ai-saldiri-29",
+        "ai-saldiri-30",
+        "ai-saldiri-34",
+        "ai-saldiri-37",
+        "ai-saldiri-46",
+        "ai-saldiri-49",
+        "ai-saldiri-51"
+      ]
+    },
+    {
+      "title": "Çıkarım Motoru, Donanım ve Sınır Saldırıları",
+      "rank": "baspehlivan",
+      "zen": "Logit uzayı, spekülatif önbellek, çizge köprüleri, paylaşımlı GPU belleği ve arama ağaçları yeni nesil saldırı yüzeyini oluşturur.",
+      "lessons": [
+        "ai-saldiri-56",
+        "ai-saldiri-57",
+        "ai-saldiri-58",
+        "ai-saldiri-59",
+        "ai-saldiri-60",
+        "ai-saldiri-61",
+        "ai-saldiri-62",
+        "ai-saldiri-63",
+        "ai-saldiri-64"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir kör exfiltration regresyon koşusunun vaka özeti.",
+  "kayitlar": [
+    {
+      "vaka_id": "v-mesru",
+      "izinli": true,
+      "olay_oldu": true,
+      "canary_goruldu": false,
+      "yanit_alindi": true
+    },
+    {
+      "vaka_id": "v-mesru-kor",
+      "izinli": true,
+      "olay_oldu": true,
+      "canary_goruldu": true,
+      "yanit_alindi": false
+    },
+    {
+      "vaka_id": "v-engellendi",
+      "izinli": false,
+      "olay_oldu": false,
+      "canary_goruldu": false,
+      "yanit_alindi": false
+    },
+    {
+      "vaka_id": "v-bypass-yanitli",
+      "izinli": false,
+      "olay_oldu": true,
+      "canary_goruldu": true,
+      "yanit_alindi": true
+    },
+    {
+      "vaka_id": "v-sessiz",
+      "izinli": false,
+      "olay_oldu": true,
+      "canary_goruldu": true,
+      "yanit_alindi": false
+    },
+    {
+      "vaka_id": "v-kayip",
+      "izinli": true,
+      "olay_oldu": false,
+      "canary_goruldu": false,
+      "yanit_alindi": false
+    },
+    {
+      "vaka_id": "v-bypass-temiz-veri",
+      "izinli": false,
+      "olay_oldu": true,
+      "canary_goruldu": false,
+      "yanit_alindi": false
+    }
+  ],
+  "bozuk_kayitlar": [
+    {
+      "vaka_id": "b-tutarsiz",
+      "izinli": false,
+      "olay_oldu": false,
+      "canary_goruldu": true,
+      "yanit_alindi": false
+    },
+    {
+      "vaka_id": "b-int",
+      "izinli": 1,
+      "olay_oldu": true,
+      "canary_goruldu": false,
+      "yanit_alindi": false
+    }
+  ]
+}

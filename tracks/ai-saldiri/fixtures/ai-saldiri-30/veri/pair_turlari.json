@@ -1,0 +1,174 @@
+{
+ "aciklama": "Değerlendirici skorları verilmiş sentetik PAIR turları. beklenen karar sözlüğüdür; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "p-01",
+   "aciklama": "eşit skor: kimlikle tie-break",
+   "adaylar": [
+    {
+     "id": "b",
+     "skor": 0.7
+    },
+    {
+     "id": "a",
+     "skor": 0.7
+    },
+    {
+     "id": "c",
+     "skor": 0.4
+    }
+   ],
+   "mevcut_skor": 0.5,
+   "esik": 0.8,
+   "beklenen": {
+    "durum": "devam",
+    "secilen": "a",
+    "skor": 0.7
+   }
+  },
+  {
+   "id": "p-02",
+   "aciklama": "skor tam eşikte: başarılı",
+   "adaylar": [
+    {
+     "id": "x",
+     "skor": 0.8
+    },
+    {
+     "id": "y",
+     "skor": 0.1
+    }
+   ],
+   "mevcut_skor": 0.3,
+   "esik": 0.8,
+   "beklenen": {
+    "durum": "basarili",
+    "secilen": "x",
+    "skor": 0.8
+   }
+  },
+  {
+   "id": "p-03",
+   "aciklama": "skor mevcut seviyeyi aşmıyor",
+   "adaylar": [
+    {
+     "id": "x",
+     "skor": 0.5
+    },
+    {
+     "id": "y",
+     "skor": 0.5
+    }
+   ],
+   "mevcut_skor": 0.5,
+   "esik": 0.8,
+   "beklenen": {
+    "durum": "iyilesme-yok",
+    "secilen": "x",
+    "skor": 0.5
+   }
+  },
+  {
+   "id": "p-04",
+   "aciklama": "iyileşme var, eşik yok",
+   "adaylar": [
+    {
+     "id": "z",
+     "skor": 0.65
+    },
+    {
+     "id": "y",
+     "skor": 0.6
+    }
+   ],
+   "mevcut_skor": 0.4,
+   "esik": 0.8,
+   "beklenen": {
+    "durum": "devam",
+    "secilen": "z",
+    "skor": 0.65
+   }
+  },
+  {
+   "id": "p-05",
+   "aciklama": "tamsayı skor 1 geçerli",
+   "adaylar": [
+    {
+     "id": "w",
+     "skor": 1
+    }
+   ],
+   "mevcut_skor": 0.0,
+   "esik": 0.8,
+   "beklenen": {
+    "durum": "basarili",
+    "secilen": "w",
+    "skor": 1.0
+   }
+  },
+  {
+   "id": "p-06",
+   "aciklama": "yinelenen aday kimliği",
+   "adaylar": [
+    {
+     "id": "a",
+     "skor": 0.3
+    },
+    {
+     "id": "a",
+     "skor": 0.9
+    }
+   ],
+   "mevcut_skor": 0.1,
+   "esik": 0.8,
+   "beklenen": null
+  },
+  {
+   "id": "p-07",
+   "aciklama": "skor 1.2 aralık dışı",
+   "adaylar": [
+    {
+     "id": "a",
+     "skor": 1.2
+    }
+   ],
+   "mevcut_skor": 0.1,
+   "esik": 0.8,
+   "beklenen": null
+  },
+  {
+   "id": "p-08",
+   "aciklama": "skor True (bool)",
+   "adaylar": [
+    {
+     "id": "a",
+     "skor": true
+    }
+   ],
+   "mevcut_skor": 0.1,
+   "esik": 0.8,
+   "beklenen": null
+  },
+  {
+   "id": "p-09",
+   "aciklama": "eşik 0",
+   "adaylar": [
+    {
+     "id": "a",
+     "skor": 0.3
+    }
+   ],
+   "mevcut_skor": 0.1,
+   "esik": 0,
+   "beklenen": null
+  },
+  {
+   "id": "p-10",
+   "aciklama": "boş aday listesi",
+   "adaylar": [],
+   "mevcut_skor": 0.1,
+   "esik": 0.8,
+   "beklenen": null
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "aciklama": "Sentetik metin, bulunan varlık konumları ve politika. beklenen {metin, islem_sayisi} sözlüğüdür; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "d-01",
+   "aciklama": "standart politika: e-posta ve telefon redakte, kart maskeli, IP korunur",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 25
+    },
+    {
+     "tur": "kart",
+     "baslangic": 26,
+     "bitis": 42
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 43,
+     "bitis": 60
+    },
+    {
+     "tur": "ipv4",
+     "baslangic": 61,
+     "bitis": 71
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "kart": "maskele",
+    "telefon": "redakte"
+   },
+   "beklenen": {
+    "metin": "Kayıt: [PII:eposta] ************1111 [PII:telefon] 192.0.2.10",
+    "islem_sayisi": 3
+   }
+  },
+  {
+   "id": "d-02",
+   "aciklama": "her şeyi redakte",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 25
+    },
+    {
+     "tur": "kart",
+     "baslangic": 26,
+     "bitis": 42
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 43,
+     "bitis": 60
+    },
+    {
+     "tur": "ipv4",
+     "baslangic": 61,
+     "bitis": 71
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "redakte",
+    "kart": "redakte",
+    "telefon": "redakte"
+   },
+   "beklenen": {
+    "metin": "Kayıt: [PII:eposta] [PII:kart] [PII:telefon] [PII:ipv4]",
+    "islem_sayisi": 4
+   }
+  },
+  {
+   "id": "d-03",
+   "aciklama": "her şeyi koru: işlem sayısı 0",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 25
+    },
+    {
+     "tur": "kart",
+     "baslangic": 26,
+     "bitis": 42
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 43,
+     "bitis": 60
+    },
+    {
+     "tur": "ipv4",
+     "baslangic": 61,
+     "bitis": 71
+    }
+   ],
+   "politika": {
+    "eposta": "koru",
+    "ipv4": "koru",
+    "kart": "koru",
+    "telefon": "koru"
+   },
+   "beklenen": {
+    "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+    "islem_sayisi": 0
+   }
+  },
+  {
+   "id": "d-04",
+   "aciklama": "4 karakterden kısa değer tamamen maskelenir",
+   "metin": "PIN 123",
+   "varliklar": [
+    {
+     "tur": "kart",
+     "baslangic": 4,
+     "bitis": 7
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "kart": "maskele",
+    "telefon": "redakte"
+   },
+   "beklenen": {
+    "metin": "PIN ***",
+    "islem_sayisi": 1
+   }
+  },
+  {
+   "id": "d-05",
+   "aciklama": "bitişik iki aralık",
+   "metin": "abcdef",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 0,
+     "bitis": 3
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 3,
+     "bitis": 6
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "kart": "maskele",
+    "telefon": "redakte"
+   },
+   "beklenen": {
+    "metin": "[PII:eposta][PII:telefon]",
+    "islem_sayisi": 2
+   }
+  },
+  {
+   "id": "d-06",
+   "aciklama": "çakışan aralıklar",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 25
+    },
+    {
+     "tur": "kart",
+     "baslangic": 23,
+     "bitis": 42
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "kart": "maskele",
+    "telefon": "redakte"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "d-07",
+   "aciklama": "politikada eksik tür",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 25
+    },
+    {
+     "tur": "kart",
+     "baslangic": 26,
+     "bitis": 42
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 43,
+     "bitis": 60
+    },
+    {
+     "tur": "ipv4",
+     "baslangic": 61,
+     "bitis": 71
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "telefon": "redakte"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "d-08",
+   "aciklama": "bilinmeyen eylem sil",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 25
+    },
+    {
+     "tur": "kart",
+     "baslangic": 26,
+     "bitis": 42
+    },
+    {
+     "tur": "telefon",
+     "baslangic": 43,
+     "bitis": 60
+    },
+    {
+     "tur": "ipv4",
+     "baslangic": 61,
+     "bitis": 71
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "kart": "sil",
+    "telefon": "redakte"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "d-09",
+   "aciklama": "metin dışına taşan bitiş",
+   "metin": "Kayıt: ornek@example.test 4111111111111111 +90 555 123 45 67 192.0.2.10",
+   "varliklar": [
+    {
+     "tur": "eposta",
+     "baslangic": 7,
+     "bitis": 76
+    }
+   ],
+   "politika": {
+    "eposta": "redakte",
+    "ipv4": "koru",
+    "kart": "maskele",
+    "telefon": "redakte"
+   },
+   "beklenen": null
+  }
+ ]
+}

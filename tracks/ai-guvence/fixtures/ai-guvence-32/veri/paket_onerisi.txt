@@ -1,0 +1,5 @@
+pip install requests numpy==1.26.0
+pip install flask[async] -U
+import pandas
+from bs4 import BeautifulSoup
+pip install reqeusts pafta-uydurma-ornek

@@ -1,0 +1,374 @@
+{
+ "aciklama": "Politika kararı, beklenen argv ve çalıştırıcının gerçekte yaptığı ayrı tutulan sentetik regresyon kayıtları.",
+ "kayitlar": [
+  {
+   "vaka_id": "r-temiz-yazdir",
+   "izinli": true,
+   "beklenen_argv": [
+    "yazdir",
+    "--",
+    "Merhaba PAFTA"
+   ],
+   "gerceklesen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "shell": false,
+    "calistirildi": true
+   }
+  },
+  {
+   "vaka_id": "r-cmd-calisti",
+   "izinli": false,
+   "beklenen_argv": [],
+   "gerceklesen": {
+    "argv": [
+     "cmd",
+     "/c",
+     "echo x"
+    ],
+    "shell": false,
+    "calistirildi": true
+   }
+  },
+  {
+   "vaka_id": "r-shell-true",
+   "izinli": true,
+   "beklenen_argv": [
+    "yazdir",
+    "--",
+    "Merhaba PAFTA"
+   ],
+   "gerceklesen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "shell": true,
+    "calistirildi": true
+   }
+  },
+  {
+   "vaka_id": "r-shell-calismadi",
+   "izinli": false,
+   "beklenen_argv": [],
+   "gerceklesen": {
+    "argv": [
+     "sh",
+     "-c",
+     "id"
+    ],
+    "shell": true,
+    "calistirildi": false
+   }
+  },
+  {
+   "vaka_id": "r-sinir-dustu",
+   "izinli": true,
+   "beklenen_argv": [
+    "yazdir",
+    "--",
+    "--help"
+   ],
+   "gerceklesen": {
+    "argv": [
+     "yazdir",
+     "--help"
+    ],
+    "shell": false,
+    "calistirildi": true
+   }
+  },
+  {
+   "vaka_id": "r-bolundu",
+   "izinli": true,
+   "beklenen_argv": [
+    "yazdir",
+    "--",
+    "Merhaba PAFTA"
+   ],
+   "gerceklesen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "Merhaba",
+     "PAFTA"
+    ],
+    "shell": false,
+    "calistirildi": true
+   }
+  },
+  {
+   "vaka_id": "r-hic-cagri",
+   "izinli": true,
+   "beklenen_argv": [
+    "yazdir",
+    "--",
+    "Merhaba PAFTA"
+   ],
+   "gerceklesen": null
+  },
+  {
+   "vaka_id": "r-dogru-ret",
+   "izinli": false,
+   "beklenen_argv": [],
+   "gerceklesen": null
+  },
+  {
+   "vaka_id": "r-calismadi",
+   "izinli": true,
+   "beklenen_argv": [
+    "yazdir",
+    "--",
+    "Merhaba PAFTA"
+   ],
+   "gerceklesen": {
+    "argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "shell": false,
+    "calistirildi": false
+   }
+  }
+ ],
+ "beklenen": {
+  "vaka": 9,
+  "yetkisiz_calisma": [
+   "r-cmd-calisti"
+  ],
+  "kabuk_kullanimi": [
+   "r-shell-calismadi",
+   "r-shell-true"
+  ],
+  "argv_sapmasi": [
+   "r-bolundu",
+   "r-cmd-calisti",
+   "r-shell-calismadi",
+   "r-sinir-dustu"
+  ],
+  "beklenen_calismadi": [
+   "r-calismadi",
+   "r-hic-cagri"
+  ],
+  "temiz": [
+   "r-dogru-ret",
+   "r-temiz-yazdir"
+  ]
+ },
+ "bozuk_girdiler": [
+  [
+   {
+    "vaka_id": "r-temiz-yazdir",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "shell": false,
+     "calistirildi": true
+    }
+   },
+   {
+    "vaka_id": "r-cmd-calisti",
+    "izinli": false,
+    "beklenen_argv": [],
+    "gerceklesen": {
+     "argv": [
+      "cmd",
+      "/c",
+      "echo x"
+     ],
+     "shell": false,
+     "calistirildi": true
+    }
+   },
+   {
+    "vaka_id": "r-shell-true",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "shell": true,
+     "calistirildi": true
+    }
+   },
+   {
+    "vaka_id": "r-shell-calismadi",
+    "izinli": false,
+    "beklenen_argv": [],
+    "gerceklesen": {
+     "argv": [
+      "sh",
+      "-c",
+      "id"
+     ],
+     "shell": true,
+     "calistirildi": false
+    }
+   },
+   {
+    "vaka_id": "r-sinir-dustu",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "--help"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--help"
+     ],
+     "shell": false,
+     "calistirildi": true
+    }
+   },
+   {
+    "vaka_id": "r-bolundu",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba",
+      "PAFTA"
+     ],
+     "shell": false,
+     "calistirildi": true
+    }
+   },
+   {
+    "vaka_id": "r-hic-cagri",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": null
+   },
+   {
+    "vaka_id": "r-dogru-ret",
+    "izinli": false,
+    "beklenen_argv": [],
+    "gerceklesen": null
+   },
+   {
+    "vaka_id": "r-calismadi",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "shell": false,
+     "calistirildi": false
+    }
+   },
+   {
+    "vaka_id": "r-temiz-yazdir",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "shell": false,
+     "calistirildi": true
+    }
+   }
+  ],
+  [
+   {
+    "vaka_id": "r-temiz-yazdir",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "shell": "false",
+     "calistirildi": true
+    }
+   }
+  ],
+  [
+   {
+    "vaka_id": "r-temiz-yazdir",
+    "izinli": true,
+    "beklenen_argv": "yazdir -- Merhaba",
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "shell": false,
+     "calistirildi": true
+    }
+   }
+  ],
+  [
+   {
+    "vaka_id": "r-temiz-yazdir",
+    "izinli": true,
+    "beklenen_argv": [
+     "yazdir",
+     "--",
+     "Merhaba PAFTA"
+    ],
+    "gerceklesen": {
+     "argv": [
+      "yazdir",
+      "--",
+      "Merhaba PAFTA"
+     ],
+     "calistirildi": true
+    }
+   }
+  ]
+ ]
+}

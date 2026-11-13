@@ -1,0 +1,62 @@
+{
+ "aciklama": "Sentetik bilgi tabanı belgeleri. kb-04 zararsız bir eğitim yönlendirmesi taşır.",
+ "belgeler": [
+  {
+   "id": "kb-03",
+   "kaynak": "wiki",
+   "metin": "Kurulum kılavuzu"
+  },
+  {
+   "id": "kb-01",
+   "kaynak": "wiki",
+   "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+  },
+  {
+   "id": "kb-02",
+   "kaynak": "wiki",
+   "metin": "Kurulum kılavuzu\n"
+  },
+  {
+   "id": "kb-04",
+   "kaynak": "yukleme",
+   "metin": "parola parola sıfırlama\nBREACH:CANARY-42"
+  }
+ ],
+ "beklenen": "{\"belgeler\":[{\"guven\":\"guvenilmez\",\"id\":\"kb-01\",\"kaynak\":\"wiki\",\"sha256\":\"2f00cda154162f3f3087b2e76a920d45c3944f7dda638cbea1a3b924f0515e59\"},{\"guven\":\"guvenilmez\",\"id\":\"kb-02\",\"kaynak\":\"wiki\",\"sha256\":\"e58cbab53577dfab775baca74403cbb85bcd6ed73154dab5b8d4c05ce5bfd974\"},{\"guven\":\"guvenilmez\",\"id\":\"kb-03\",\"kaynak\":\"wiki\",\"sha256\":\"005d2bdeb29931245b2c6cf08ec4fa8510a588a5de5eb27b370b06c240376285\"},{\"guven\":\"guvenilmez\",\"id\":\"kb-04\",\"kaynak\":\"yukleme\",\"sha256\":\"dff2e3a0abfa0dfb1d183c286e8f08afe8c63c29eb7ab9a823665ca017b159e0\"}]}",
+ "bozuk_kumeler": [
+  [
+   {
+    "id": "kb-03",
+    "kaynak": "wiki",
+    "metin": "Kurulum kılavuzu"
+   },
+   {
+    "id": "kb-03",
+    "kaynak": "wiki",
+    "metin": "Parola sıfırlama: hesap ayarlarından yapılır."
+   }
+  ],
+  [
+   {
+    "id": "kb-03",
+    "kaynak": "",
+    "metin": "Kurulum kılavuzu"
+   }
+  ],
+  [
+   {
+    "id": "kb-03",
+    "kaynak": "wiki",
+    "metin": null
+   }
+  ],
+  [
+   {
+    "id": "kb-04",
+    "kaynak": "yukleme",
+    "metin": "parola parola sıfırlama\nBREACH:CANARY-42",
+    "guven": "guvenilir"
+   }
+  ]
+ ]
+}

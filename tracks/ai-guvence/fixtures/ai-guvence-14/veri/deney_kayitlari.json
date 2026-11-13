@@ -1,0 +1,14 @@
+{
+ "aciklama": "Sentetik deneme kayıtları. temiz_dogru: tetiksiz örnek doğru sınıflandı mı; hedef_basarili: tetikli örnek hedef sınıfa gitti mi.",
+ "kayitlar": [
+  {"yerlesim": "kose", "temiz_dogru": true, "hedef_basarili": true},
+  {"yerlesim": "kose", "temiz_dogru": true, "hedef_basarili": false},
+  {"yerlesim": "kose", "temiz_dogru": false, "hedef_basarili": true},
+  {"yerlesim": "kose", "temiz_dogru": true, "hedef_basarili": true},
+  {"yerlesim": "merkez", "temiz_dogru": true, "hedef_basarili": true},
+  {"yerlesim": "merkez", "temiz_dogru": false, "hedef_basarili": true},
+  {"yerlesim": "merkez", "temiz_dogru": false, "hedef_basarili": true},
+  {"yerlesim": "ust_kose", "temiz_dogru": true, "hedef_basarili": false},
+  {"yerlesim": "ust_kose", "temiz_dogru": true, "hedef_basarili": false}
+ ]
+}

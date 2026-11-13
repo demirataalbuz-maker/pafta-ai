@@ -1,0 +1,21 @@
+{
+  "kayitlar": [
+    {
+      "istemci": "a",
+      "giris_token": 1200,
+      "cikis_token": 300
+    },
+    {
+      "istemci": "a",
+      "giris_token": 800,
+      "cikis_token": 1500
+    },
+    {
+      "istemci": "b",
+      "giris_token": 1000,
+      "cikis_token": 0
+    }
+  ],
+  "giris_1k": 0.05,
+  "cikis_1k": 0.15
+}

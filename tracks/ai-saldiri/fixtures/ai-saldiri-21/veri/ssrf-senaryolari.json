@@ -1,0 +1,25 @@
+{
+  "kaynak": "elle yazılmış sentetik senaryolar; gerçek yanıt kaydı değil",
+  "zincir": {
+    "path": "/start",
+    "prompt": "Bu yerel örnek sayfayı özetle"
+  },
+  "kapilar": [
+    {
+      "path": "/ok",
+      "max_hop": 0
+    },
+    {
+      "path": "/hop1",
+      "max_hop": 2
+    },
+    {
+      "path": "/start",
+      "max_hop": 2
+    },
+    {
+      "path": "/loop",
+      "max_hop": 1
+    }
+  ]
+}

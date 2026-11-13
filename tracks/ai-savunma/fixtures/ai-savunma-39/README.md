@@ -1,0 +1,1 @@
+unlearning/ornek.json geçici çalışma kopyasıdır; düzenleyip aynı çalıştırmada tekrar okuyabilirsin. Sonraki çalıştırmada sıfırdan hazırlanır. Canlı torch eğitim verisi ve gerçek posteriorlar ayrı kanıttadır.

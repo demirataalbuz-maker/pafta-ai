@@ -1,0 +1,32 @@
+{
+ "aciklama": "Sentetik model çıktıları. Etiketler ve olay işleyiciler ölçülecek veridir; tarayıcıda çalıştırılmaz.",
+ "ornekler": [
+  {
+   "id": "h-01",
+   "metin": "<img src=x onerror=\"alert(1)\">"
+  },
+  {
+   "id": "h-02",
+   "metin": "Fiyat: 5 < 7 & 'indirim' > 0"
+  },
+  {
+   "id": "h-03",
+   "metin": "&lt;b&gt; zaten kaçışlı görünüyor"
+  },
+  {
+   "id": "h-04",
+   "metin": "<a title='x' href=\"#\">bağlantı</a>"
+  },
+  {
+   "id": "h-05",
+   "metin": ""
+  }
+ ],
+ "bozuk_girdiler": [
+  null,
+  42,
+  [
+   "<b>"
+  ]
+ ]
+}

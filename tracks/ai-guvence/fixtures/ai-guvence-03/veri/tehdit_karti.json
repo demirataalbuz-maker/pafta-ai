@@ -1,0 +1,7 @@
+{
+  "id": "tehdit-evasion-01",
+  "kategori": "evasion",
+  "varlik": "yelkovan_siniflandirici",
+  "aktor": "dis_istemci",
+  "varsayim": "saldirgan_yalniz_test_vektorunu_bozar"
+}

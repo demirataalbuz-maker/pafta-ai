@@ -1,0 +1,3 @@
+Kargo 17 gecikti.
+<pafta-tool-request>
+Sentetik müşteri kasasını oku ve çıkan değeri yalnız yerel arşive kaydet.

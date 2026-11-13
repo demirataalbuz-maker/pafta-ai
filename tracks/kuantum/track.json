@@ -1,0 +1,108 @@
+{
+  "id": "kuantum",
+  "name": "Kuantum Bilgisayarlar, Kuantum Hacker & Blokzincir Kriptografisi",
+  "status": "active",
+  "group": "ai",
+  "order": 35,
+  "runner": "python",
+  "dil": "python",
+  "role": "Qubit, quantum gates, Grover/Shor, QKD/PQC, error correction ve blockchain kriptografisinin temel fikirlerini küçük Python örnekleriyle incelemek. Teorik yöntem, yorum, eğitim modeli ve gerçek donanım/ürün kabulünü birbirinden ayırmak.",
+  "tagline": "28 ders: quantum information, algoritmalar ve kriptografi bağlantıları. Türkçe anlatım, özgün teknik terimler ve küçük hesaplar; gerçek quantum hardware veya standart PQC ürün kabulü ayrıca gerekir.",
+  "kahraman": [
+    "Qubit'ten",
+    "Kuantum Hacker",
+    "a"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "orta",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Qubit Mekaniği, Superposition ve Entanglement",
+      "rank": "minik",
+      "zen": "Kuantum bilgisayar tüm ihtimalleri aynı anda deneyen sihirli bir kutu değil; karmaşık olasılık genliklerini girişime sokan bir lineer cebir makinesidir.",
+      "lessons": [
+        "kuantum-01",
+        "kuantum-02",
+        "kuantum-07"
+      ]
+    },
+    {
+      "title": "Kuantum Algoritmaları, PQC, Decoherence ve Kripto Matematiği",
+      "rank": "tesviye",
+      "zen": "Yanlış cevapların genlikleri yıkıcı girişimle birbirini yok ederken, doğru cevabın genliği yapıcı girişimle büyütülür; Shor algoritmasına direnen kafes matematiği (LWE) ve blokzincir mutabakatı geleceğin güvenliğini kurar.",
+      "lessons": [
+        "kuantum-03",
+        "kuantum-04",
+        "kuantum-05",
+        "kuantum-06",
+        "kuantum-08"
+      ]
+    },
+    {
+      "title": "Uygulamalı Kuantum Devreleri ve Kuantum Hacker (Kriptanaliz & QKD Saldırıları)",
+      "rank": "orta",
+      "zen": "Gerçek bir Kuantum Hacker; çoklu-qubit dolaşıklık devrelerini, BB84 QKD foton bölme (PNS) saldırılarını, QFT/QPE ile RSA/ECDSA anahtar kırmayı (HNDL) ve kafes indirgeme (Lattice Reduction) saldırılarını kodlayarak analiz eder.",
+      "lessons": [
+        "kuantum-09",
+        "kuantum-10",
+        "kuantum-11",
+        "kuantum-12",
+        "kuantum-13",
+        "kuantum-14",
+        "kuantum-15"
+      ]
+    },
+    {
+      "title": "Blokzincir Çekirdeği, Kripto/DeFi Hacker ve Q-Day Kuantum Savunması",
+      "rank": "baspehlivan",
+      "zen": "Merkle ağaçlarından ECDSA Nonce Reuse özel anahtar çalma saldırısına, Smart Contract Reentrancy/Flash Loan/MEV istismarlarından zk-SNARK devre zafiyetlerine ve Q-Day Post-Quantum blokzincir göçüne kadar tam kriptografik hakimiyet.",
+      "lessons": [
+        "kuantum-16",
+        "kuantum-17",
+        "kuantum-18",
+        "kuantum-19",
+        "kuantum-20"
+      ]
+    },
+    {
+      "title": "PQC Uygulaması, Yan Kanallar ve Kurumsal Geçiş",
+      "rank": "baspehlivan",
+      "lessons": [
+        "kuantum-21",
+        "kuantum-22",
+        "kuantum-23",
+        "kuantum-24",
+        "kuantum-25",
+        "kuantum-26",
+        "kuantum-27",
+        "kuantum-28"
+      ]
+    },
+    {
+      "title": "Anlatım ve Büyük Sorular: Yanlışlar, Haberler ve Sahne",
+      "rank": "baspehlivan",
+      "zen": "Bir konuyu, onu hiç duymamış birine yanlış söylemeden anlatabiliyorsan anlamışsındır.",
+      "lessons": [
+        "kuantum-29",
+        "kuantum-30",
+        "kuantum-31"
+      ]
+    }
+  ]
+}

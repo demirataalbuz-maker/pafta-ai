@@ -1,0 +1,3 @@
+# Temel21 görünür RAG mimarisi verisi
+
+Elle yazılmış sentetik parçalama metni, normalize vektörler, sorgu ve kanıt bağlamı girdileri; model çıktısı değildir. İlk 3 görev parcalama, arama ve baglam bölümlerini aynı dosyadan okur. Görev 1 politika metnini karakter ofsetleriyle pencerelere böler. Görev 2 birim vektörlerle tam iç çarpım araması ve -1 dolgusunu test eder. Görev 3 HTML kaçışlı ve bütçe kısıtlı bağlam kurar. Setup veri/rag.json geçici kopyasını hazırlar; kalıcılık yoktur. Kaynağı editörde aç veya kodda yüklenen kopyayı değiştirip Run dene. Gizli testler ayrı. Gerçek final adımı kurulu all-minilm:22m gömme modeli ve yerel sohbet modeliyle çalışır.

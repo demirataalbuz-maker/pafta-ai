@@ -1,0 +1,11 @@
+{
+ "aciklama": "Sentetik örnek: sabit nokta (fixed-point) girdileri, ağırlıklar ve taahhüt özeti elle hazırlanmıştır; gerçek SNARK kanıtı değildir.",
+ "degerler": [0.5, -0.25, 0.75, 0.123],
+ "olcek_us": 8,
+ "q_girdi": [128, 64, 192],
+ "q_agirlik": [128, -64, 192],
+ "q_bias": 32,
+ "dogru_cikti": 224,
+ "sahte_cikti": 250,
+ "beklenen_ozet": "30f9289012f1379277f62506d380358250666920c5c75d45fb29a1f168857d3c"
+}

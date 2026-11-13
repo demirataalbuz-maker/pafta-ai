@@ -1,0 +1,14 @@
+{
+  "yerel_dizin": {
+    "fastapi": "resmi",
+    "requests": "resmi",
+    "internal-core-auth": "rezerve-yasakli",
+    "fastapi-jwt-guard": "sahipsiz"
+  },
+  "adaylar": [
+    {"paket": "fastapi-jwt-guard", "tekrar_orani": 0.75, "hedef_ortam": "ci-cd"},
+    {"paket": "py-graphql-shield", "tekrar_orani": 0.5, "hedef_ortam": "gelistirici-yerel"},
+    {"paket": "internal-core-auth", "tekrar_orani": 0.9, "hedef_ortam": "ci-cd"},
+    {"paket": "deneme-slop-util", "tekrar_orani": 0.2, "hedef_ortam": "izole-kum-havuzu"}
+  ]
+}

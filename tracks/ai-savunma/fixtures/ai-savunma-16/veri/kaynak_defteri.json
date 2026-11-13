@@ -1,0 +1,106 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Bir RAG sisteminin kaynak defteri. Kaynaklar ve sürümler uydurmadır.",
+  "kaynaklar": [
+    {
+      "kaynak_id": "politika-wiki",
+      "tur": "kurumsal",
+      "surum": "3.1.0",
+      "guven": "yuksek",
+      "imzali": true,
+      "aktif": true
+    },
+    {
+      "kaynak_id": "destek-sss",
+      "tur": "kurumsal",
+      "surum": "1.0.12",
+      "guven": "orta",
+      "imzali": true,
+      "aktif": true
+    },
+    {
+      "kaynak_id": "forum-arsivi",
+      "tur": "acik",
+      "surum": "0.9.0",
+      "guven": "dusuk",
+      "imzali": true,
+      "aktif": true
+    },
+    {
+      "kaynak_id": "eski-kilavuz",
+      "tur": "kurumsal",
+      "surum": "2.4.1",
+      "guven": "yuksek",
+      "imzali": true,
+      "aktif": false
+    },
+    {
+      "kaynak_id": "kullanici-notu",
+      "tur": "kullanici",
+      "surum": "1.0.0",
+      "guven": "orta",
+      "imzali": false,
+      "aktif": true
+    }
+  ],
+  "bozuk_defterler": [
+    [
+      {
+        "kaynak_id": "politika-wiki",
+        "tur": "kurumsal",
+        "surum": "3.01.0",
+        "guven": "yuksek",
+        "imzali": true,
+        "aktif": true
+      }
+    ],
+    [
+      {
+        "kaynak_id": "politika-wiki",
+        "tur": "kurumsal",
+        "surum": "v3.1.0",
+        "guven": "yuksek",
+        "imzali": true,
+        "aktif": true
+      }
+    ],
+    [
+      {
+        "kaynak_id": "a",
+        "tur": "kurumsal",
+        "surum": "1.0.0",
+        "guven": "cok-yuksek",
+        "imzali": true,
+        "aktif": true
+      }
+    ],
+    [
+      {
+        "kaynak_id": "a",
+        "tur": "kurumsal",
+        "surum": "1.0.0",
+        "guven": "orta",
+        "imzali": 1,
+        "aktif": true
+      }
+    ],
+    [
+      {
+        "kaynak_id": "a",
+        "tur": "kurumsal",
+        "surum": "1.0.0",
+        "guven": "orta",
+        "imzali": true,
+        "aktif": true
+      },
+      {
+        "kaynak_id": "a",
+        "tur": "acik",
+        "surum": "1.0.0",
+        "guven": "orta",
+        "imzali": true,
+        "aktif": true
+      }
+    ]
+  ]
+}

@@ -1,0 +1,203 @@
+{
+ "aciklama": "Sandbox yürütücüsünden dönmüş gibi sentetik sonuç kayıtları.",
+ "profil": {
+  "kullanici": "sandbox",
+  "ag": false,
+  "kok": "/sandbox",
+  "izinli_programlar": [
+   "python",
+   "hesap"
+  ],
+  "max_sure_ms": 2000,
+  "max_cikti_bayt": 8192
+ },
+ "sonuclar": [
+  {
+   "id": "tam-sinir",
+   "sure_ms": 2000,
+   "cikti_bayt": 8192,
+   "cikis_kodu": 0,
+   "sistem_hatasi": null
+  },
+  {
+   "id": "bir-fazla-sure",
+   "sure_ms": 2001,
+   "cikti_bayt": 10,
+   "cikis_kodu": 0,
+   "sistem_hatasi": null
+  },
+  {
+   "id": "bir-fazla-cikti",
+   "sure_ms": 10,
+   "cikti_bayt": 8193,
+   "cikis_kodu": 0,
+   "sistem_hatasi": null
+  },
+  {
+   "id": "negatif-cikis",
+   "sure_ms": 10,
+   "cikti_bayt": 10,
+   "cikis_kodu": -9,
+   "sistem_hatasi": null
+  },
+  {
+   "id": "sistem",
+   "sure_ms": 2500,
+   "cikti_bayt": 9000,
+   "cikis_kodu": 137,
+   "sistem_hatasi": "OOMKilled"
+  },
+  {
+   "id": "hizli",
+   "sure_ms": 0,
+   "cikti_bayt": 0,
+   "cikis_kodu": 0,
+   "sistem_hatasi": null
+  }
+ ],
+ "beklenen": [
+  {
+   "id": "bir-fazla-cikti",
+   "durum": "cikti_siniri",
+   "nedenler": [
+    "cikti"
+   ],
+   "sinir_icinde": false
+  },
+  {
+   "id": "bir-fazla-sure",
+   "durum": "zaman_asimi",
+   "nedenler": [
+    "zaman"
+   ],
+   "sinir_icinde": false
+  },
+  {
+   "id": "hizli",
+   "durum": "tamamlandi",
+   "nedenler": [],
+   "sinir_icinde": true
+  },
+  {
+   "id": "negatif-cikis",
+   "durum": "basarisiz",
+   "nedenler": [
+    "cikis"
+   ],
+   "sinir_icinde": false
+  },
+  {
+   "id": "sistem",
+   "durum": "calisamadi",
+   "nedenler": [
+    "sistem",
+    "zaman",
+    "cikti",
+    "cikis"
+   ],
+   "sinir_icinde": false
+  },
+  {
+   "id": "tam-sinir",
+   "durum": "tamamlandi",
+   "nedenler": [],
+   "sinir_icinde": true
+  }
+ ],
+ "bozuk_girdiler": [
+  {
+   "id": "x-01",
+   "aciklama": "yinelenen kimlik",
+   "girdi": [
+    {
+     "id": "tam-sinir",
+     "sure_ms": 2000,
+     "cikti_bayt": 8192,
+     "cikis_kodu": 0,
+     "sistem_hatasi": null
+    },
+    {
+     "id": "bir-fazla-sure",
+     "sure_ms": 2001,
+     "cikti_bayt": 10,
+     "cikis_kodu": 0,
+     "sistem_hatasi": null
+    },
+    {
+     "id": "bir-fazla-cikti",
+     "sure_ms": 10,
+     "cikti_bayt": 8193,
+     "cikis_kodu": 0,
+     "sistem_hatasi": null
+    },
+    {
+     "id": "negatif-cikis",
+     "sure_ms": 10,
+     "cikti_bayt": 10,
+     "cikis_kodu": -9,
+     "sistem_hatasi": null
+    },
+    {
+     "id": "sistem",
+     "sure_ms": 2500,
+     "cikti_bayt": 9000,
+     "cikis_kodu": 137,
+     "sistem_hatasi": "OOMKilled"
+    },
+    {
+     "id": "hizli",
+     "sure_ms": 0,
+     "cikti_bayt": 0,
+     "cikis_kodu": 0,
+     "sistem_hatasi": null
+    },
+    {
+     "id": "tam-sinir",
+     "sure_ms": 2000,
+     "cikti_bayt": 8192,
+     "cikis_kodu": 0,
+     "sistem_hatasi": null
+    }
+   ]
+  },
+  {
+   "id": "x-02",
+   "aciklama": "çıkış kodu 256",
+   "girdi": [
+    {
+     "id": "a",
+     "sure_ms": 1,
+     "cikti_bayt": 1,
+     "cikis_kodu": 256,
+     "sistem_hatasi": null
+    }
+   ]
+  },
+  {
+   "id": "x-03",
+   "aciklama": "sistem hatası boş metin",
+   "girdi": [
+    {
+     "id": "a",
+     "sure_ms": 1,
+     "cikti_bayt": 1,
+     "cikis_kodu": 0,
+     "sistem_hatasi": ""
+    }
+   ]
+  },
+  {
+   "id": "x-04",
+   "aciklama": "süre True",
+   "girdi": [
+    {
+     "id": "a",
+     "sure_ms": true,
+     "cikti_bayt": 1,
+     "cikis_kodu": 0,
+     "sistem_hatasi": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "aciklama": "docker run --memory/--memory-swap/--cpus örnekleri ve host çekirdek sayısı. beklenen HostConfig alanlarıdır; null, ValueError demektir.",
+ "ornekler": [
+  {
+   "id": "r-01",
+   "aciklama": "llama.cpp sunucusu: 8g bellek, takas yok, 4 CPU",
+   "bellek": "8g",
+   "takas": "8g",
+   "cpus": "4",
+   "cekirdek": 8,
+   "beklenen": {
+    "Memory": 8589934592,
+    "MemorySwap": 8589934592,
+    "NanoCpus": 4000000000
+   }
+  },
+  {
+   "id": "r-02",
+   "aciklama": "takas toplamı: 2g bellek + 1g takas = 3g",
+   "bellek": "2g",
+   "takas": "3g",
+   "cpus": "1.5",
+   "cekirdek": 4,
+   "beklenen": {
+    "Memory": 2147483648,
+    "MemorySwap": 3221225472,
+    "NanoCpus": 1500000000
+   }
+  },
+  {
+   "id": "r-03",
+   "aciklama": "takas belirtilmemiş",
+   "bellek": "512m",
+   "takas": null,
+   "cpus": "0.5",
+   "cekirdek": 2,
+   "beklenen": {
+    "Memory": 536870912,
+    "MemorySwap": 0,
+    "NanoCpus": 500000000
+   }
+  },
+  {
+   "id": "r-04",
+   "aciklama": "sınırsız takas",
+   "bellek": "1G",
+   "takas": "-1",
+   "cpus": "2",
+   "cekirdek": 2,
+   "beklenen": {
+    "Memory": 1073741824,
+    "MemorySwap": -1,
+    "NanoCpus": 2000000000
+   }
+  },
+  {
+   "id": "r-05",
+   "aciklama": "kesirli CPU kayan nokta olmadan",
+   "bellek": "6m",
+   "takas": "0",
+   "cpus": "1.000000001",
+   "cekirdek": 2,
+   "beklenen": {
+    "Memory": 6291456,
+    "MemorySwap": 0,
+    "NanoCpus": 1000000001
+   }
+  },
+  {
+   "id": "r-06",
+   "aciklama": "en küçük CPU 0.01",
+   "bellek": "64m",
+   "takas": null,
+   "cpus": "0.01",
+   "cekirdek": 1,
+   "beklenen": {
+    "Memory": 67108864,
+    "MemorySwap": 0,
+    "NanoCpus": 10000000
+   }
+  },
+  {
+   "id": "r-07",
+   "aciklama": "1000 tabanı değil: 1k = 1024 bayt",
+   "bellek": "6144k",
+   "takas": null,
+   "cpus": "1",
+   "cekirdek": 1,
+   "beklenen": {
+    "Memory": 6291456,
+    "MemorySwap": 0,
+    "NanoCpus": 1000000000
+   }
+  },
+  {
+   "id": "r-08",
+   "aciklama": "iki harfli ek mb",
+   "bellek": "512mb",
+   "takas": null,
+   "cpus": "1",
+   "cekirdek": 1,
+   "beklenen": null
+  },
+  {
+   "id": "r-09",
+   "aciklama": "ondalık bellek 1.5g",
+   "bellek": "1.5g",
+   "takas": null,
+   "cpus": "1",
+   "cekirdek": 1,
+   "beklenen": null
+  },
+  {
+   "id": "r-10",
+   "aciklama": "takas bellekten küçük",
+   "bellek": "2g",
+   "takas": "1g",
+   "cpus": "1",
+   "cekirdek": 1,
+   "beklenen": null
+  },
+  {
+   "id": "r-11",
+   "aciklama": "6m alt sınırının altı",
+   "bellek": "4m",
+   "takas": null,
+   "cpus": "1",
+   "cekirdek": 1,
+   "beklenen": null
+  },
+  {
+   "id": "r-12",
+   "aciklama": "çekirdekten fazla CPU",
+   "bellek": "1g",
+   "takas": null,
+   "cpus": "5",
+   "cekirdek": 4,
+   "beklenen": null
+  },
+  {
+   "id": "r-13",
+   "aciklama": "0.01'den küçük CPU",
+   "bellek": "1g",
+   "takas": null,
+   "cpus": "0.005",
+   "cekirdek": 4,
+   "beklenen": null
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "ai-temel",
+  "name": "AI Temelleri ve Sistem Mimarisi",
+  "status": "active",
+  "group": "ai",
+  "order": 30,
+  "runner": "python",
+  "dil": "python",
+  "role": "Tokenizasyondan transformer ve eğitim mekaniğine, güvenli model dağıtımından RAG ve araç kullanan ajanlara kadar AI sistemlerinin temel mimarisini öğretmek.",
+  "tagline": "Tokenlerden olasılıklara, attention'dan ince ayara, üretim API'sinden en az ayrıcalıklı RAG ve araç savunmasına; gerçek model gerektirmeyen deterministik temel laboratuvarları.",
+  "kahraman": [
+    "Tokendan",
+    "Sistem",
+    "e"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Tokenler ve Olasılıklar",
+      "rank": "minik",
+      "zen": "Modelin kararı, metnin tokenlara dönüşümü ve olasılık dağılımıyla başlar.",
+      "lessons": [
+        "ai-temel-01",
+        "ai-temel-02",
+        "ai-temel-03",
+        "ai-temel-04"
+      ]
+    },
+    {
+      "title": "Transformer ve Bağlam Mekaniği",
+      "rank": "tesviye",
+      "lessons": [
+        "ai-temel-05",
+        "ai-temel-06",
+        "ai-temel-07",
+        "ai-temel-08"
+      ]
+    },
+    {
+      "title": "Eğitim ve Hizalama",
+      "rank": "kucuk-orta",
+      "zen": "Ağırlık ve tercih değişikliği ancak aynı ölçüm setiyle değerlendirilir.",
+      "lessons": [
+        "ai-temel-09",
+        "ai-temel-10",
+        "ai-temel-11",
+        "ai-temel-12"
+      ]
+    },
+    {
+      "title": "Model Çıktısını Güvenilir Kılmak",
+      "rank": "buyuk-orta",
+      "lessons": [
+        "ai-temel-13",
+        "ai-temel-14",
+        "ai-temel-15",
+        "ai-temel-16"
+      ]
+    },
+    {
+      "title": "Güvenli Model ve API Dağıtımı",
+      "rank": "basalti",
+      "zen": "Model servisi kadar istek, kaynak ve kanıt yaşam döngüsü de sınırlandırılır.",
+      "lessons": [
+        "ai-temel-17",
+        "ai-temel-18",
+        "ai-temel-19",
+        "ai-temel-20"
+      ]
+    },
+    {
+      "title": "Modern Çıkarım, Akıl Yürütme ve Mimariler",
+      "rank": "baspehlivan",
+      "zen": "Kısıtlı üretim, grup içi politika optimizasyonu, taslak doğrulama, seyrek uzman yönlendirmesi ve durum uzayı modelleri aynı deterministik sözleşmeyle ölçülür.",
+      "lessons": [
+        "ai-temel-25",
+        "ai-temel-26",
+        "ai-temel-27",
+        "ai-temel-28",
+        "ai-temel-30"
+      ]
+    },
+    {
+      "title": "Anlatım ve Büyük Sorular",
+      "rank": "baspehlivan",
+      "zen": "Anlatamadığın şeyi ölçmemişsindir; her büyük soruya bir ölçüm ve bir karşı görüşle cevap ver.",
+      "lessons": [
+        "ai-temel-38",
+        "ai-temel-39",
+        "ai-temel-40",
+        "ai-temel-41",
+        "ai-temel-42"
+      ]
+    }
+  ]
+}

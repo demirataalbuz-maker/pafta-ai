@@ -1,0 +1,88 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Kullanıcı, ajan ve istenen kapsam üçlüleri. 'paylas:dis' bu derste yalnız yerel sentetik arşivdir.",
+  "senaryolar": [
+    {
+      "ad": "ayse-paylasim-istegi",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor",
+        "yaz:rapor",
+        "paylas:dis"
+      ],
+      "istenen": [
+        "oku:rapor",
+        "paylas:dis"
+      ]
+    },
+    {
+      "ad": "editor-duzeltme",
+      "kullanici": [
+        "oku:rapor",
+        "yaz:rapor"
+      ],
+      "ajan": [
+        "oku:rapor"
+      ],
+      "istenen": [
+        "yaz:rapor"
+      ]
+    },
+    {
+      "ad": "tam-yetki",
+      "kullanici": [
+        "oku:rapor",
+        "yaz:rapor",
+        "paylas:dis"
+      ],
+      "ajan": [
+        "oku:rapor",
+        "yaz:rapor",
+        "paylas:dis"
+      ],
+      "istenen": [
+        "paylas:dis",
+        "yaz:rapor"
+      ]
+    },
+    {
+      "ad": "bos-istek",
+      "kullanici": [
+        "oku:rapor"
+      ],
+      "ajan": [
+        "oku:rapor"
+      ],
+      "istenen": []
+    }
+  ],
+  "bozuk_senaryolar": [
+    {
+      "ad": "joker",
+      "kullanici": [
+        "*"
+      ],
+      "ajan": [],
+      "istenen": []
+    },
+    {
+      "ad": "buyuk-harf",
+      "kullanici": [
+        "oku:Rapor"
+      ],
+      "ajan": [],
+      "istenen": []
+    },
+    {
+      "ad": "yinelenen",
+      "kullanici": [
+        "oku:rapor",
+        "oku:rapor"
+      ],
+      "ajan": [],
+      "istenen": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "koken": "elle hazırlanmış sentetik lab policy; gerçek training kaydı değil",
+  "bolmeler": [
+    {
+      "id": "a",
+      "bolme": "train",
+      "metin": "RED 1"
+    },
+    {
+      "id": "b",
+      "bolme": "test",
+      "metin": "BLUE 2"
+    }
+  ],
+  "tokenler": [
+    11,
+    12,
+    13,
+    14
+  ],
+  "prompt_uzunlugu": 3,
+  "skorlar": [
+    {
+      "id": "red",
+      "grup": "yasak",
+      "once": 0.1,
+      "sonra": 0.8
+    },
+    {
+      "id": "blue",
+      "grup": "izinli",
+      "once": 0.9,
+      "sonra": 0.7
+    }
+  ]
+}

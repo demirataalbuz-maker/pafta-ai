@@ -1,0 +1,19 @@
+{
+  "kaynak": "sentetik",
+  "logitler": [
+    0,
+    1,
+    2
+  ],
+  "tokenlar": [
+    " bir",
+    " kitap",
+    " geldi"
+  ],
+  "hedef": 0,
+  "buyuk_logitler": [
+    1000,
+    1001,
+    1002
+  ]
+}

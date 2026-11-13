@@ -1,0 +1,98 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Aynı sorgu için temiz ve manipüle edilmiş retrieval'dan dönen bağlam kimlikleri. Kanıt belgesi 'iade-politikasi'.",
+  "kanit_id": "iade-politikasi",
+  "kayitlar": [
+    {
+      "vaka_id": "q-iade",
+      "kume": "temiz",
+      "baglam": [
+        "iade-politikasi",
+        "kargo-sss"
+      ]
+    },
+    {
+      "vaka_id": "q-iade",
+      "kume": "manipule",
+      "baglam": [
+        "sahte-iade",
+        "kargo-sss"
+      ]
+    },
+    {
+      "vaka_id": "q-kargo",
+      "kume": "temiz",
+      "baglam": [
+        "kargo-sss",
+        "iade-politikasi"
+      ]
+    },
+    {
+      "vaka_id": "q-kargo",
+      "kume": "manipule",
+      "baglam": [
+        "iade-politikasi",
+        "kargo-sss"
+      ]
+    },
+    {
+      "vaka_id": "q-saat",
+      "kume": "temiz",
+      "baglam": [
+        "calisma-saatleri"
+      ]
+    },
+    {
+      "vaka_id": "q-saat",
+      "kume": "manipule",
+      "baglam": [
+        "calisma-saatleri",
+        "reklam"
+      ]
+    }
+  ],
+  "bozuk_kayitlar": [
+    [
+      {
+        "vaka_id": "q-x",
+        "kume": "temiz",
+        "baglam": [
+          "a"
+        ]
+      }
+    ],
+    [
+      {
+        "vaka_id": "q-x",
+        "kume": "temiz",
+        "baglam": [
+          "a"
+        ]
+      },
+      {
+        "vaka_id": "q-x",
+        "kume": "temiz",
+        "baglam": [
+          "b"
+        ]
+      }
+    ],
+    [
+      {
+        "vaka_id": "q-x",
+        "kume": "temiz",
+        "baglam": [
+          "a",
+          "a"
+        ]
+      },
+      {
+        "vaka_id": "q-x",
+        "kume": "manipule",
+        "baglam": [
+          "a"
+        ]
+      }
+    ]
+  ]
+}

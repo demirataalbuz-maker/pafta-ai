@@ -1,0 +1,112 @@
+{
+ "aciklama": "Sentetik zincir olayları. Kanıt alanı gerçek sistemde span kimliği veya istek kaydıdır.",
+ "olaylar": [
+  {
+   "zincir_id": "z-tam",
+   "asama": "rag",
+   "kanit": "span-101 retrieval d-03"
+  },
+  {
+   "zincir_id": "z-tam",
+   "asama": "arac-cagrisi",
+   "kanit": "span-102 http_get önerisi"
+  },
+  {
+   "zincir_id": "z-tam",
+   "asama": "ssrf",
+   "kanit": "span-103 internal.test TLS bağlantısı"
+  },
+  {
+   "zincir_id": "z-tam",
+   "asama": "exfiltration",
+   "kanit": "span-104 canary toplayıcıda"
+  },
+  {
+   "zincir_id": "z-eksik",
+   "asama": "rag",
+   "kanit": "span-201 retrieval d-03"
+  },
+  {
+   "zincir_id": "z-eksik",
+   "asama": "arac-cagrisi",
+   "kanit": "span-202 http_get önerisi"
+  },
+  {
+   "zincir_id": "z-eksik",
+   "asama": "ssrf",
+   "kanit": "span-203 internal.test TLS bağlantısı"
+  },
+  {
+   "zincir_id": "z-atlama",
+   "asama": "rag",
+   "kanit": "span-301 retrieval d-01"
+  },
+  {
+   "zincir_id": "z-atlama",
+   "asama": "exfiltration",
+   "kanit": "span-302 model yanıtında canary"
+  }
+ ],
+ "bozuk_listeler": [
+  {
+   "id": "b-sira",
+   "olaylar": [
+    {
+     "zincir_id": "z",
+     "asama": "ssrf",
+     "kanit": "s1"
+    },
+    {
+     "zincir_id": "z",
+     "asama": "rag",
+     "kanit": "s2"
+    }
+   ]
+  },
+  {
+   "id": "b-ardisik-degil",
+   "olaylar": [
+    {
+     "zincir_id": "a",
+     "asama": "rag",
+     "kanit": "s1"
+    },
+    {
+     "zincir_id": "b",
+     "asama": "rag",
+     "kanit": "s2"
+    },
+    {
+     "zincir_id": "a",
+     "asama": "arac-cagrisi",
+     "kanit": "s3"
+    }
+   ]
+  },
+  {
+   "id": "b-tekrar",
+   "olaylar": [
+    {
+     "zincir_id": "z",
+     "asama": "rag",
+     "kanit": "s1"
+    },
+    {
+     "zincir_id": "z",
+     "asama": "rag",
+     "kanit": "s2"
+    }
+   ]
+  },
+  {
+   "id": "b-bos-kanit",
+   "olaylar": [
+    {
+     "zincir_id": "z",
+     "asama": "rag",
+     "kanit": ""
+    }
+   ]
+  }
+ ]
+}

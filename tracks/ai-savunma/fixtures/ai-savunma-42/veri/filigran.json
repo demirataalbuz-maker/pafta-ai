@@ -1,0 +1,14 @@
+{
+ "aciklama": "Sentetik örnek: token dizileri ve logit vektörü elle yazılmıştır; gerçek dil modeli çıktısı değildir.",
+ "sozluk_boyutu": 16,
+ "gamma": 0.5,
+ "delta": 2.0,
+ "z_esik": 2.0,
+ "ornek_onceki_token": 3,
+ "ornek_logitler": [1.0, 0.5, -0.2, 1.4, 0.1, -0.8, 2.1, 0.0, 0.3, -1.1, 0.9, 1.2, -0.4, 0.7, 1.5, -0.5],
+ "diziler": {
+  "insan_yazimi": [3, 1, 2, 0, 2, 3, 4, 1, 0, 4, 2, 3, 0],
+  "filigranli_uretim": [3, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0],
+  "kismi_degistirilmis": [3, 1, 2, 0, 1, 2, 0, 4, 3, 0, 1, 2, 0]
+ }
+}

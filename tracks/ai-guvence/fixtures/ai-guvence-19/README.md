@@ -1,0 +1,3 @@
+# ai-guvence-19 görünür sentetik veri
+
+Elle yazılmış öğretim fixture'larıdır, DP eğitimi veya Opacus kaydı değildir. Adım bütçeleri varsayılmıştır, gürültüden türetilmez. İlk iki görev aynı dp_kayitlari.json kayıtlarını doğrular ve toplamlarını çıkarır; üçüncü görev politika.json sınırlarıyla seçim yapar. hazirla/setup dosyaları her çalıştırmada geçici dizine yeniden kopyalar, kalıcılık yoktur. Başlangıç kodları dosyaları okur/yazdırır; aynı çalıştırmada bellekte kopya üzerinde deneme yapılabilir. Kontrol ayrı girdiler kullanır. Gerçek görev başka bir Gaussian mekanizması hesabı ve canlı CPU eğitimi kullanır; açık seed/ham izler sentetik öğretim içindir, üretim gizlilik garantisi değildir.

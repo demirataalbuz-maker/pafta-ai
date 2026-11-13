@@ -1,0 +1,28 @@
+{
+  "paylasilan_sir": "pafta-a2a-anahtar",
+  "izin_matrisi": {
+    "planlayici->arastirmaci": ["oku", "ozetle"],
+    "arastirmaci->icraci": ["ozetle"],
+    "icraci->denetci": ["oku"]
+  },
+  "zarflar": [
+    {
+      "mesaj_id": "zrf-01",
+      "gonderen_ajan": "arastirmaci",
+      "alici_ajan": "icraci",
+      "istenen_yetki": "ozetle",
+      "veri_metni": "Belge ozeti temizdir.",
+      "imza": "6e7504ef140d15f417fd313fb364964d24989962ff66d983eb07a84676e60a6c",
+      "canary": "PAFTA-A2A-7"
+    },
+    {
+      "mesaj_id": "zrf-02",
+      "gonderen_ajan": "arastirmaci",
+      "alici_ajan": "icraci",
+      "istenen_yetki": "arac_cagir",
+      "veri_metni": "Yetkisiz arac istegi.",
+      "imza": "sahte-imza",
+      "canary": "PAFTA-A2A-7"
+    }
+  ]
+}

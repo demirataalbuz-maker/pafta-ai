@@ -1,0 +1,12 @@
+{
+  "hedef_kutu": {"kutu": [100.0, 200.0, 220.0, 260.0], "z_index": 10},
+  "sahte_kutu": {"kutu": [110.0, 205.0, 230.0, 265.0], "z_index": 50},
+  "tiklama_noktasi": [150.0, 230.0],
+  "aday_kutular": [
+    {"id": "btn_onay", "kaynak": "sistem_ui", "kutu": [100.0, 200.0, 220.0, 260.0], "z_index": 10},
+    {"id": "popup_reklam", "kaynak": "web_iframe", "kutu": [105.0, 200.0, 225.0, 260.0], "z_index": 99},
+    {"id": "bilgi_karti", "kaynak": "web_iframe", "kutu": [400.0, 100.0, 520.0, 180.0], "z_index": 5}
+  ],
+  "guvenilir_kaynaklar": ["sistem_ui"],
+  "iou_esik": 0.3
+}

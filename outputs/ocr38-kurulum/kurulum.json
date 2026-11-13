@@ -1,0 +1,355 @@
+{
+  "index_download_bytes_estimate": 9398000,
+  "package_download_bytes": 30358840,
+  "network_plan_bytes": 39756840,
+  "packages": [
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/e/expat/libexpat1_2.5.0-1%2bdeb12u5_amd64.deb",
+      "file": "libexpat1_2.5.0-1+deb12u5_amd64.deb",
+      "bytes": 107940,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/b/brotli/libbrotli1_1.0.9-2%2bdeb12u1_amd64.deb",
+      "file": "libbrotli1_1.0.9-2+deb12u1_amd64.deb",
+      "bytes": 274704,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng16-16_1.6.39-2%2bdeb12u6_amd64.deb",
+      "file": "libpng16-16_1.6.39-2+deb12u6_amd64.deb",
+      "bytes": 277048,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/f/freetype/libfreetype6_2.12.1%2bdfsg-5%2bdeb12u4_amd64.deb",
+      "file": "libfreetype6_2.12.1+dfsg-5+deb12u4_amd64.deb",
+      "bytes": 397736,
+      "upstream_checksum": "MD5Sum:8ee3bd604ace008bee4083b14746dedb"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-6_all.deb",
+      "file": "fonts-dejavu-core_2.37-6_all.deb",
+      "bytes": 1067728,
+      "upstream_checksum": "MD5Sum:755d6c59d57accb3000de0cdba40918d"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig-config_2.14.1-4_amd64.deb",
+      "file": "fontconfig-config_2.14.1-4_amd64.deb",
+      "bytes": 314864,
+      "upstream_checksum": "MD5Sum:88cb4a667a75c108ddf316da4683f12e"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/f/fontconfig/libfontconfig1_2.14.1-4_amd64.deb",
+      "file": "libfontconfig1_2.14.1-4_amd64.deb",
+      "bytes": 385664,
+      "upstream_checksum": "MD5Sum:522c4fa1fecd36d0f11eb6970fcd1364"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.1-4_amd64.deb",
+      "file": "fontconfig_2.14.1-4_amd64.deb",
+      "bytes": 449212,
+      "upstream_checksum": "MD5Sum:a88a18a6dc4b8000683132012c9db832"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/i/icu/libicu72_72.1-3%2bdeb12u1_amd64.deb",
+      "file": "libicu72_72.1-3+deb12u1_amd64.deb",
+      "bytes": 9376124,
+      "upstream_checksum": "MD5Sum:81a7519057b13803f30783061c4409b5"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u6_amd64.deb",
+      "file": "libxml2_2.9.14+dfsg-1.3~deb12u6_amd64.deb",
+      "bytes": 688760,
+      "upstream_checksum": "MD5Sum:e0fc4937b830f48f3959d116df942d99"
+    },
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive13_3.6.2-1%2bdeb12u5_amd64.deb",
+      "file": "libarchive13_3.6.2-1+deb12u5_amd64.deb",
+      "bytes": 345488,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd0_0.11.7-2_amd64.deb",
+      "file": "libbsd0_0.11.7-2_amd64.deb",
+      "bytes": 117416,
+      "upstream_checksum": "MD5Sum:5d382c22b266715b019f46576a3f3146"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/p/pixman/libpixman-1-0_0.42.2-1_amd64.deb",
+      "file": "libpixman-1-0_0.42.2-1_amd64.deb",
+      "bytes": 545588,
+      "upstream_checksum": "MD5Sum:65313d4125a22ed2ca198dee3fdabdd1"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxau/libxau6_1.0.9-1_amd64.deb",
+      "file": "libxau6_1%3a1.0.9-1_amd64.deb",
+      "bytes": 19720,
+      "upstream_checksum": "MD5Sum:317e939fdeb6d7b0dbd9eecba8e5cd11"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp6_1.1.2-3_amd64.deb",
+      "file": "libxdmcp6_1%3a1.1.2-3_amd64.deb",
+      "bytes": 26344,
+      "upstream_checksum": "MD5Sum:4a27341c3dfb3067bc473fc241144ca9"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb1_1.15-1_amd64.deb",
+      "file": "libxcb1_1.15-1_amd64.deb",
+      "bytes": 144052,
+      "upstream_checksum": "MD5Sum:f35728a21c52c5e591aff7baa950d56a"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libx11/libx11-data_1.8.4-2%2bdeb12u2_all.deb",
+      "file": "libx11-data_2%3a1.8.4-2+deb12u2_all.deb",
+      "bytes": 291884,
+      "upstream_checksum": "MD5Sum:85ab85cc2396aafb5a525bac782d8ec9"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libx11/libx11-6_1.8.4-2%2bdeb12u2_amd64.deb",
+      "file": "libx11-6_2%3a1.8.4-2+deb12u2_amd64.deb",
+      "bytes": 759544,
+      "upstream_checksum": "MD5Sum:0c6481c14ab6815f2d2983310157421e"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-render0_1.15-1_amd64.deb",
+      "file": "libxcb-render0_1.15-1_amd64.deb",
+      "bytes": 115012,
+      "upstream_checksum": "MD5Sum:2d439ba4286c2ed03fbb8349084bf2ef"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb-shm0_1.15-1_amd64.deb",
+      "file": "libxcb-shm0_1.15-1_amd64.deb",
+      "bytes": 105472,
+      "upstream_checksum": "MD5Sum:ba6aaee1156c74780ad00539cb23a936"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxext/libxext6_1.3.4-1%2bb1_amd64.deb",
+      "file": "libxext6_2%3a1.3.4-1+b1_amd64.deb",
+      "bytes": 52932,
+      "upstream_checksum": "MD5Sum:73b96dd0229e3dc10ff7409521fb0761"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libx/libxrender/libxrender1_0.9.10-1.1_amd64.deb",
+      "file": "libxrender1_1%3a0.9.10-1.1_amd64.deb",
+      "bytes": 33228,
+      "upstream_checksum": "MD5Sum:93b87c3eed7cc375e93b1fcb8f7d754b"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/c/cairo/libcairo2_1.16.0-7_amd64.deb",
+      "file": "libcairo2_1.16.0-7_amd64.deb",
+      "bytes": 574676,
+      "upstream_checksum": "MD5Sum:bc4ee8d605f36a5dd1cc307bf28a9fa8"
+    },
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.28%2bdfsg-10%2bdeb12u1_amd64.deb",
+      "file": "libsasl2-modules-db_2.1.28+dfsg-10+deb12u1_amd64.deb",
+      "bytes": 20524,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/libsasl2-2_2.1.28%2bdfsg-10%2bdeb12u1_amd64.deb",
+      "file": "libsasl2-2_2.1.28+dfsg-10+deb12u1_amd64.deb",
+      "bytes": 59908,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/o/openldap/libldap-2.5-0_2.5.13%2bdfsg-5_amd64.deb",
+      "file": "libldap-2.5-0_2.5.13+dfsg-5_amd64.deb",
+      "bytes": 183248,
+      "upstream_checksum": "MD5Sum:aa52ea68ca3ad4e9a9acc863fa70343a"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/n/nghttp2/libnghttp2-14_1.52.0-1%2bdeb12u3_amd64.deb",
+      "file": "libnghttp2-14_1.52.0-1+deb12u3_amd64.deb",
+      "bytes": 72404,
+      "upstream_checksum": "MD5Sum:d681e56846f2d3d68a237da84943b2d9"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl5_0.21.2-1_amd64.deb",
+      "file": "libpsl5_0.21.2-1_amd64.deb",
+      "bytes": 58684,
+      "upstream_checksum": "MD5Sum:37ebfb57fdbf01631629ee9f36c8b478"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/r/rtmpdump/librtmp1_2.4%2b20151223.gitfa8646d.1-2%2bb2_amd64.deb",
+      "file": "librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb",
+      "bytes": 60824,
+      "upstream_checksum": "MD5Sum:d757abb668fc1ee0d9488805bfb4371e"
+    },
+    {
+      "url": "http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2-1_1.10.0-3%2bdeb12u1_amd64.deb",
+      "file": "libssh2-1_1.10.0-3+deb12u1_amd64.deb",
+      "bytes": 175976,
+      "upstream_checksum": null
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/c/curl/libcurl4_7.88.1-10%2bdeb12u15_amd64.deb",
+      "file": "libcurl4_7.88.1-10+deb12u15_amd64.deb",
+      "bytes": 392184,
+      "upstream_checksum": "MD5Sum:31f3ce5464013ac2f6f580533dbeb9fb"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie1_0.2.13-2%2bb1_amd64.deb",
+      "file": "libdatrie1_0.2.13-2+b1_amd64.deb",
+      "bytes": 43320,
+      "upstream_checksum": "MD5Sum:ad938e26b2280bfe54171f58341d95be"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate0_1.14-1_amd64.deb",
+      "file": "libdeflate0_1.14-1_amd64.deb",
+      "bytes": 61416,
+      "upstream_checksum": "MD5Sum:e505f1277c856889aa2b539320e3e154"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/f/fribidi/libfribidi0_1.0.8-2.1_amd64.deb",
+      "file": "libfribidi0_1.0.8-2.1_amd64.deb",
+      "bytes": 64952,
+      "upstream_checksum": "MD5Sum:4945592ecf009abf51a1ac015b681b86"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/g/giflib/libgif7_5.2.1-2.5%2bdeb12u1_amd64.deb",
+      "file": "libgif7_5.2.1-2.5+deb12u1_amd64.deb",
+      "bytes": 42956,
+      "upstream_checksum": "MD5Sum:63cf3dd05c8f28e6ab6559567b2e4ff0"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.74.6-2%2bdeb12u9_amd64.deb",
+      "file": "libglib2.0-0_2.74.6-2+deb12u9_amd64.deb",
+      "bytes": 1403216,
+      "upstream_checksum": "MD5Sum:0285a2e88f28faa17284d92e3ba6f166"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/g/gcc-12/libgomp1_12.2.0-14%2bdeb12u1_amd64.deb",
+      "file": "libgomp1_12.2.0-14+deb12u1_amd64.deb",
+      "bytes": 115772,
+      "upstream_checksum": "MD5Sum:898439c6702dbfd9723d747fb99086d4"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/g/graphite2/libgraphite2-3_1.3.14-1%2bdeb12u1_amd64.deb",
+      "file": "libgraphite2-3_1.3.14-1+deb12u1_amd64.deb",
+      "bytes": 74564,
+      "upstream_checksum": "MD5Sum:efee3be4ddae8bb456d3f0f6d09acbff"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz0b_6.0.0%2bdfsg-3_amd64.deb",
+      "file": "libharfbuzz0b_6.0.0+dfsg-3_amd64.deb",
+      "bytes": 1945396,
+      "upstream_checksum": "MD5Sum:acc3df6078788d93f55a6aaa59b658dd"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/j/jbigkit/libjbig0_2.1-6.1_amd64.deb",
+      "file": "libjbig0_2.1-6.1_amd64.deb",
+      "bytes": 31704,
+      "upstream_checksum": "MD5Sum:5e126e3852ae239341c233a50690e2d6"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_2.1.5-2_amd64.deb",
+      "file": "libjpeg62-turbo_1%3a2.1.5-2_amd64.deb",
+      "bytes": 166332,
+      "upstream_checksum": "MD5Sum:c43c12e2144cad5b82c10d63dcc57ecd"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/o/openjpeg2/libopenjp2-7_2.5.0-2%2bdeb12u3_amd64.deb",
+      "file": "libopenjp2-7_2.5.0-2+deb12u3_amd64.deb",
+      "bytes": 189312,
+      "upstream_checksum": "MD5Sum:bb7b72ae72a38620bed002a063d5dc64"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/l/lerc/liblerc4_4.0.0%2bds-2_amd64.deb",
+      "file": "liblerc4_4.0.0+ds-2_amd64.deb",
+      "bytes": 170368,
+      "upstream_checksum": "MD5Sum:100ad75d6812ac853407f24c40076b02"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp7_1.2.4-0.2%2bdeb12u1_amd64.deb",
+      "file": "libwebp7_1.2.4-0.2+deb12u1_amd64.deb",
+      "bytes": 285512,
+      "upstream_checksum": "MD5Sum:19f6c9801f036b0615b9bf650c3ee1fa"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/t/tiff/libtiff6_4.5.0-6%2bdeb12u4_amd64.deb",
+      "file": "libtiff6_4.5.0-6+deb12u4_amd64.deb",
+      "bytes": 316172,
+      "upstream_checksum": "MD5Sum:f283ac0d100dc6a749470b06e3908a8a"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libw/libwebp/libwebpmux3_1.2.4-0.2%2bdeb12u1_amd64.deb",
+      "file": "libwebpmux3_1.2.4-0.2+deb12u1_amd64.deb",
+      "bytes": 109492,
+      "upstream_checksum": "MD5Sum:218141480dac594c22ab26ac9eac70af"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/l/leptonlib/liblept5_1.82.0-3%2bb3_amd64.deb",
+      "file": "liblept5_1.82.0-3+b3_amd64.deb",
+      "bytes": 1049560,
+      "upstream_checksum": "MD5Sum:5e30a685bf42efb364e0b8d76fbf0ef8"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libt/libthai/libthai-data_0.1.29-1_all.deb",
+      "file": "libthai-data_0.1.29-1_all.deb",
+      "bytes": 176200,
+      "upstream_checksum": "MD5Sum:2d7fe29106323274a458bc114e3049ea"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/libt/libthai/libthai0_0.1.29-1_amd64.deb",
+      "file": "libthai0_0.1.29-1_amd64.deb",
+      "bytes": 57468,
+      "upstream_checksum": "MD5Sum:3d73542cb037cb9cb5015e9ac43aed8d"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/p/pango1.0/libpango-1.0-0_1.50.12%2bds-1_amd64.deb",
+      "file": "libpango-1.0-0_1.50.12+ds-1_amd64.deb",
+      "bytes": 211788,
+      "upstream_checksum": "MD5Sum:5c9051d5bf37660b1dac92e5410033da"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/p/pango1.0/libpangoft2-1.0-0_1.50.12%2bds-1_amd64.deb",
+      "file": "libpangoft2-1.0-0_1.50.12+ds-1_amd64.deb",
+      "bytes": 47384,
+      "upstream_checksum": "MD5Sum:2e98735072a64d66e8bb663c6a8e9590"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/p/pango1.0/libpangocairo-1.0-0_1.50.12%2bds-1_amd64.deb",
+      "file": "libpangocairo-1.0-0_1.50.12+ds-1_amd64.deb",
+      "bytes": 34184,
+      "upstream_checksum": "MD5Sum:75df25dbf6dcadc7612abe6f48eb3da1"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/t/tesseract/libtesseract5_5.3.0-2_amd64.deb",
+      "file": "libtesseract5_5.3.0-2_amd64.deb",
+      "bytes": 1278876,
+      "upstream_checksum": "MD5Sum:4cb9b90ecb23ee54d8030b72b4149dbc"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/t/tesseract-lang/tesseract-ocr-eng_4.1.0-2_all.deb",
+      "file": "tesseract-ocr-eng_1%3a4.1.0-2_all.deb",
+      "bytes": 1593640,
+      "upstream_checksum": "MD5Sum:496001dc0df6b4ebf7cb5c0560abe921"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/t/tesseract-lang/tesseract-ocr-osd_4.1.0-2_all.deb",
+      "file": "tesseract-ocr-osd_1%3a4.1.0-2_all.deb",
+      "bytes": 2992152,
+      "upstream_checksum": "MD5Sum:575467104299f7beb8c1428eaac76d92"
+    },
+    {
+      "url": "http://deb.debian.org/debian/pool/main/t/tesseract/tesseract-ocr_5.3.0-2_amd64.deb",
+      "file": "tesseract-ocr_5.3.0-2_amd64.deb",
+      "bytes": 402216,
+      "upstream_checksum": "MD5Sum:06ae2165e36e1a2eb7f54529c5a619c3"
+    }
+  ],
+  "dpkg": "adduser\t3.134\napt\t2.6.1\nbase-files\t12.4+deb12u15\nbase-passwd\t3.6.1\nbash\t5.2.15-2+b13\nbsdutils\t1:2.38.1-5+deb12u3\nca-certificates\t20250419~deb12u1\ncoreutils\t9.1-1\ndash\t0.5.12-2\ndebconf\t1.5.82\ndebian-archive-keyring\t2023.3+deb12u2\ndebianutils\t5.7-0.5~deb12u1\ndiffutils\t1:3.8-4\ndpkg\t1.21.23\ne2fsprogs\t1.47.0-2+b2\nfindutils\t4.9.0-4\nfontconfig\t2.14.1-4\nfontconfig-config\t2.14.1-4\nfonts-dejavu-core\t2.37-6\ngcc-12-base\t12.2.0-14+deb12u1\ngpgv\t2.2.40-1.1+deb12u2\ngrep\t3.8-5\ngzip\t1.12-1\nhostname\t3.23+nmu1\ninit-system-helpers\t1.65.2+deb12u1\nlibacl1\t2.3.1-3\nlibapt-pkg6.0\t2.6.1\nlibarchive13\t3.6.2-1+deb12u5\nlibattr1\t1:2.5.1-4\nlibaudit-common\t1:3.0.9-1\nlibaudit1\t1:3.0.9-1\nlibblkid1\t2.38.1-5+deb12u3\nlibbrotli1\t1.0.9-2+deb12u1\nlibbsd0\t0.11.7-2\nlibbz2-1.0\t1.0.8-5+b1\nlibc-bin\t2.36-9+deb12u14\nlibc6\t2.36-9+deb12u14\nlibcairo2\t1.16.0-7\nlibcap-ng0\t0.8.3-1+b3\nlibcap2\t1:2.66-4+deb12u3+b1\nlibcom-err2\t1.47.0-2+b2\nlibcrypt1\t1:4.4.33-2\nlibcurl4\t7.88.1-10+deb12u15\nlibdatrie1\t0.2.13-2+b1\nlibdb5.3\t5.3.28+dfsg2-1\nlibdebconfclient0\t0.270\nlibdeflate0\t1.14-1\nlibexpat1\t2.5.0-1+deb12u5\nlibext2fs2\t1.47.0-2+b2\nlibffi8\t3.4.4-1\nlibfontconfig1\t2.14.1-4\nlibfreetype6\t2.12.1+dfsg-5+deb12u4\nlibfribidi0\t1.0.8-2.1\nlibgcc-s1\t12.2.0-14+deb12u1\nlibgcrypt20\t1.10.1-3+deb12u1\nlibgdbm6\t1.23-3\nlibgif7\t5.2.1-2.5+deb12u1\nlibglib2.0-0\t2.74.6-2+deb12u9\nlibgmp10\t2:6.2.1+dfsg1-1.1\nlibgnutls30\t3.7.9-2+deb12u7\nlibgomp1\t12.2.0-14+deb12u1\nlibgpg-error0\t1.46-1\nlibgraphite2-3\t1.3.14-1+deb12u1\nlibgssapi-krb5-2\t1.20.1-2+deb12u5\nlibharfbuzz0b\t6.0.0+dfsg-3\nlibhogweed6\t3.8.1-2\nlibicu72\t72.1-3+deb12u1\nlibidn2-0\t2.3.3-1+b1\nlibjbig0\t2.1-6.1\nlibjpeg62-turbo\t1:2.1.5-2\nlibk5crypto3\t1.20.1-2+deb12u5\nlibkeyutils1\t1.6.3-2\nlibkrb5-3\t1.20.1-2+deb12u5\nlibkrb5support0\t1.20.1-2+deb12u5\nlibldap-2.5-0\t2.5.13+dfsg-5\nliblept5\t1.82.0-3+b3\nliblerc4\t4.0.0+ds-2\nliblz4-1\t1.9.4-1\nliblzma5\t5.4.1-1+deb12u2\nlibmd0\t1.0.4-2\nlibmount1\t2.38.1-5+deb12u3\nlibncursesw6\t6.4-4\nlibnettle8\t3.8.1-2\nlibnghttp2-14\t1.52.0-1+deb12u3\nlibnsl2\t1.3.0-2\nlibopenjp2-7\t2.5.0-2+deb12u3\nlibp11-kit0\t0.24.1-2\nlibpam-modules\t1.5.2-6+deb12u2\nlibpam-modules-bin\t1.5.2-6+deb12u2\nlibpam-runtime\t1.5.2-6+deb12u2\nlibpam0g\t1.5.2-6+deb12u2\nlibpango-1.0-0\t1.50.12+ds-1\nlibpangocairo-1.0-0\t1.50.12+ds-1\nlibpangoft2-1.0-0\t1.50.12+ds-1\nlibpcre2-8-0\t10.42-1+deb12u2\nlibpixman-1-0\t0.42.2-1\nlibpng16-16\t1.6.39-2+deb12u6\nlibpsl5\t0.21.2-1\nlibreadline8\t8.2-1.3\nlibrtmp1\t2.4+20151223.gitfa8646d.1-2+b2\nlibsasl2-2\t2.1.28+dfsg-10+deb12u1\nlibsasl2-modules-db\t2.1.28+dfsg-10+deb12u1\nlibseccomp2\t2.5.4-1+deb12u1\nlibselinux1\t3.4-1+b6\nlibsemanage-common\t3.4-1\nlibsemanage2\t3.4-1+b5\nlibsepol2\t3.4-2.1\nlibsmartcols1\t2.38.1-5+deb12u3\nlibsqlite3-0\t3.40.1-2+deb12u2\nlibss2\t1.47.0-2+b2\nlibssh2-1\t1.10.0-3+deb12u1\nlibssl3\t3.0.22-1~deb12u1\nlibstdc++6\t12.2.0-14+deb12u1\nlibsystemd0\t252.39-1~deb12u2\nlibtasn1-6\t4.19.0-2+deb12u1\nlibtesseract5\t5.3.0-2\nlibthai-data\t0.1.29-1\nlibthai0\t0.1.29-1\nlibtiff6\t4.5.0-6+deb12u4\nlibtinfo6\t6.4-4\nlibtirpc-common\t1.3.3+ds-1\nlibtirpc3\t1.3.3+ds-1\nlibudev1\t252.39-1~deb12u2\nlibunistring2\t1.0-2\nlibuuid1\t2.38.1-5+deb12u3\nlibwebp7\t1.2.4-0.2+deb12u1\nlibwebpmux3\t1.2.4-0.2+deb12u1\nlibx11-6\t2:1.8.4-2+deb12u2\nlibx11-data\t2:1.8.4-2+deb12u2\nlibxau6\t1:1.0.9-1\nlibxcb-render0\t1.15-1\nlibxcb-shm0\t1.15-1\nlibxcb1\t1.15-1\nlibxdmcp6\t1:1.1.2-3\nlibxext6\t2:1.3.4-1+b1\nlibxml2\t2.9.14+dfsg-1.3~deb12u6\nlibxrender1\t1:0.9.10-1.1\nlibxxhash0\t0.8.1-1\nlibzstd1\t1.5.4+dfsg2-5\nlogin\t1:4.13+dfsg1-1+deb12u2\nlogsave\t1.47.0-2+b2\nmawk\t1.3.4.20200120-3.1\nmount\t2.38.1-5+deb12u3\nncurses-base\t6.4-4\nncurses-bin\t6.4-4\nnetbase\t6.4\nopenssl\t3.0.22-1~deb12u1\npasswd\t1:4.13+dfsg1-1+deb12u2\nperl-base\t5.36.0-7+deb12u4\nreadline-common\t8.2-1.3\nsed\t4.9-1+deb12u1\nsysvinit-utils\t3.06-4\ntar\t1.34+dfsg-1.2+deb12u1\ntesseract-ocr\t5.3.0-2\ntesseract-ocr-eng\t1:4.1.0-2\ntesseract-ocr-osd\t1:4.1.0-2\ntzdata\t2026c-0+deb12u1\nusr-is-merged\t37~deb12u1\nutil-linux\t2.38.1-5+deb12u3\nutil-linux-extra\t2.38.1-5+deb12u3\nzlib1g\t1:1.2.13.dfsg-1\n",
+  "tesseract_version": "tesseract 5.3.0\n leptonica-1.82.0\n  libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.1.2) : libpng 1.6.39 : libtiff 4.5.0 : zlib 1.2.13 : libwebp 1.2.4 : libopenjp2 2.5.0\n Found AVX512BW\n Found AVX512F\n Found AVX512VNNI\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found OpenMP 201511\n Found libarchive 3.6.2 zlib/1.2.13 liblzma/5.4.1 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.4\n Found libcurl/7.88.1 OpenSSL/3.0.22 zlib/1.2.13 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.3 libpsl/0.21.2 (+libidn2/2.3.3) libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3 OpenLDAP/2.5.13\n",
+  "languages": "List of available languages in \"/usr/share/tesseract-ocr/5/tessdata/\" (2):\neng\nosd\n",
+  "tesseract_sha256": "1e8c7ce7f27d2d1c902fb648efed443483f2a8fc7b60c48a5d3b61d647a2649e",
+  "approved": true,
+  "image": "pafta-ocr38:tesseract-5.3.0-2",
+  "image_id": "sha256:04aaaa2f101c54cfa7d914c2a151b8f4028a47100185434f9540401bfc664b04",
+  "base_image": "pafta-ai-s51:mlflow-2.2.1",
+  "base_id": "sha256:9cdffb4dab78a63f0fed292c39ba54f2ecd6b368ec018caeb7a154670eb76fca",
+  "extra_uncompressed_bytes": 128336723,
+  "new_base_image": false,
+  "new_python_packages": []
+}

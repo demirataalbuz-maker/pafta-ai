@@ -1,0 +1,99 @@
+{
+  "id": "ai-matematik",
+  "name": "AI Matematiği ve ML Çekirdeği",
+  "status": "active",
+  "group": "ai",
+  "order": 36,
+  "runner": "python",
+  "dil": "python",
+  "role": "AI derslerinin dayandığı matematiği (lineer cebir, olasılık, optimizasyon, bilgi kuramı), klasik ML yöntemlerini ve pekiştirmeli öğrenmenin çekirdeğini kitaplıksız, saf Python ile kurmak.",
+  "tagline": "Normdan gradient'e, Bayes'ten PPO'ya: modellerin altındaki matematik, satır satır kendi kodunla.",
+  "kahraman": [
+    "Vektörden",
+    "Model",
+    "e"
+  ],
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "Lineer Cebir",
+      "rank": "minik",
+      "zen": "Bir embedding bir oktur; iki ok arasındaki açı, iki metin arasındaki anlamdır.",
+      "lessons": [
+        "ai-matematik-01",
+        "ai-matematik-02",
+        "ai-matematik-03",
+        "ai-matematik-04"
+      ]
+    },
+    {
+      "title": "Olasılık ve İstatistik",
+      "rank": "tesviye",
+      "zen": "Bir ölçüm bir sayı değil, bir aralıktır; aralığı söylemeden sonucu söyleme.",
+      "lessons": [
+        "ai-matematik-05",
+        "ai-matematik-06",
+        "ai-matematik-07"
+      ]
+    },
+    {
+      "title": "Türev, Optimizasyon ve Bilgi Kuramı",
+      "rank": "kucuk-orta",
+      "zen": "Gradient yönü söyler, adımı sen seçersin; kayıp ise neyi küçülttüğünü.",
+      "lessons": [
+        "ai-matematik-08",
+        "ai-matematik-09",
+        "ai-matematik-10"
+      ]
+    },
+    {
+      "title": "Klasik ML",
+      "rank": "buyuk-orta",
+      "zen": "Eğitim verisinde iyi olmak kolaydır; marifet, görmediğin veride iyi olmaktır.",
+      "lessons": [
+        "ai-matematik-11",
+        "ai-matematik-12",
+        "ai-matematik-13",
+        "ai-matematik-14"
+      ]
+    },
+    {
+      "title": "Pekiştirmeli Öğrenme Çekirdeği",
+      "rank": "basalti",
+      "zen": "Ajan ödülü büyütür, niyetini değil; ödülü yazan sensin.",
+      "lessons": [
+        "ai-matematik-15",
+        "ai-matematik-16",
+        "ai-matematik-17",
+        "ai-matematik-18",
+        "ai-matematik-19",
+        "ai-matematik-20"
+      ]
+    }
+  ]
+}

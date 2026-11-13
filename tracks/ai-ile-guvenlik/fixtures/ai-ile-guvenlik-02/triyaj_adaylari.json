@@ -1,0 +1,8 @@
+{
+  "max_halusinasyon_orani": 0.35,
+  "iddialar": [
+    {"iddia_id": "id-01", "dosya_adi": "auth_servisi.py", "satir_no": 4, "kanit_alt_dizgesi": "SELECT id FROM users", "onerilen_paket": "sqlite3"},
+    {"iddia_id": "id-02", "dosya_adi": "ayarlar.py", "satir_no": 1, "kanit_alt_dizgesi": "DEBUG_MODU = True", "onerilen_paket": "json"},
+    {"iddia_id": "id-03", "dosya_adi": "auth_servisi.py", "satir_no": 2, "kanit_alt_dizgesi": "eval(x)", "onerilen_paket": "sqlite3"}
+  ]
+}

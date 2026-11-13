@@ -1,0 +1,30 @@
+{
+  "kaynak": "sentetik_betik_model_degildir",
+  "istek": "Ankara havası ve saat nedir?",
+  "max_adim": 3,
+  "model_betigi": [
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_hava",
+          "ad": "hava",
+          "argumanlar": {
+            "sehir": "Ankara"
+          }
+        },
+        {
+          "id": "call_saat",
+          "ad": "saat",
+          "argumanlar": {}
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Ankara güneşli,örnek saat12:00.",
+      "tool_calls": []
+    }
+  ]
+}

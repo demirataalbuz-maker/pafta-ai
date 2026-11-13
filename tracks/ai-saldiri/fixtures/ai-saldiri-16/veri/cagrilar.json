@@ -1,0 +1,152 @@
+{
+ "aciklama": "Model native tool-call biçiminde sentetik çağrılar ve siparis_oku şeması. beklenen=null, ValueError demektir.",
+ "sema": {
+  "tip": "object",
+  "alanlar": {
+   "siparis_no": {
+    "tip": "integer"
+   },
+   "ayrinti": {
+    "tip": "boolean"
+   },
+   "not": {
+    "tip": "string"
+   }
+  },
+  "zorunlu": [
+   "siparis_no"
+  ]
+ },
+ "ornekler": [
+  {
+   "id": "c-01",
+   "aciklama": "geçerli, yalnız zorunlu alan",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 42
+    }
+   },
+   "beklenen": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 42
+    }
+   }
+  },
+  {
+   "id": "c-02",
+   "aciklama": "geçerli, bütün alanlar",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 7,
+     "ayrinti": true,
+     "not": "acil"
+    }
+   },
+   "beklenen": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 7,
+     "ayrinti": true,
+     "not": "acil"
+    }
+   }
+  },
+  {
+   "id": "c-03",
+   "aciklama": "integer yerine True",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": true
+    }
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-04",
+   "aciklama": "integer yerine string",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": "42"
+    }
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-05",
+   "aciklama": "zorunlu alan eksik",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "ayrinti": true
+    }
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-06",
+   "aciklama": "şemada olmayan yol alanı",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 42,
+     "yol": "../../gizli.json"
+    }
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-07",
+   "aciklama": "boolean yerine 'true' metni",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 42,
+     "ayrinti": "true"
+    }
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-08",
+   "aciklama": "arg JSON metni olarak gelmiş",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": "{\"siparis_no\": 42}"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-09",
+   "aciklama": "çağrıda ek izin alanı",
+   "cagri": {
+    "arac": "siparis_oku",
+    "arg": {
+     "siparis_no": 42
+    },
+    "izin": "admin"
+   },
+   "beklenen": null
+  },
+  {
+   "id": "c-10",
+   "aciklama": "kayıtlı olmayan araç adı; bu işlev reddetmez",
+   "cagri": {
+    "arac": "dosya_sil",
+    "arg": {
+     "siparis_no": 42
+    }
+   },
+   "beklenen": {
+    "arac": "dosya_sil",
+    "arg": {
+     "siparis_no": 42
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Saldırganın kontrolündeki sentetik alıcıda görülmüş gibi yazılmış olaylar. 'yanit': null = doğrudan cevap yok; \"\" = boş cevap alındı.",
+  "canary": "CANARY-7",
+  "olaylar": [
+    {
+      "id": "e-01",
+      "kanal": "dns",
+      "hedef": "c2.saldirgan.test",
+      "veri": "q-canary-7.parca1",
+      "yanit": null
+    },
+    {
+      "id": "e-02",
+      "kanal": "dns",
+      "hedef": "c2.saldirgan.test",
+      "veri": "CANARY-7-p2",
+      "yanit": null
+    },
+    {
+      "id": "e-03",
+      "kanal": "http",
+      "hedef": "toplayici.saldirgan.test",
+      "veri": "parca-CANARY-7",
+      "yanit": ""
+    },
+    {
+      "id": "e-04",
+      "kanal": "http",
+      "hedef": "rapor.sirket.test",
+      "veri": "ozet",
+      "yanit": "200 OK"
+    },
+    {
+      "id": "e-05",
+      "kanal": "arac",
+      "hedef": "log.sirket.test",
+      "veri": "id=CANARY-7",
+      "yanit": "kaydedildi"
+    },
+    {
+      "id": "e-06",
+      "kanal": "arac",
+      "hedef": "log.sirket.test",
+      "veri": "is tamamlandi",
+      "yanit": null
+    }
+  ],
+  "bozuk_olaylar": [
+    {
+      "id": "b-1",
+      "kanal": "smtp",
+      "hedef": "x.test",
+      "veri": "a",
+      "yanit": null
+    },
+    {
+      "id": "b-2",
+      "kanal": "http",
+      "hedef": "x.test",
+      "veri": "a",
+      "yanit": 5
+    },
+    {
+      "id": "b-3",
+      "kanal": "http",
+      "hedef": "x.test",
+      "veri": "ç",
+      "yanit": null
+    }
+  ]
+}

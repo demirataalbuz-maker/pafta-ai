@@ -1,0 +1,100 @@
+{
+ "aciklama": "Sentetik istek süreleri (ms). 950 ms'lik hit, GC/kuyruk gecikmesi gibi tek bir aykırı ölçümü temsil eder.",
+ "olcumler": [
+  {
+   "grup": "hit",
+   "sure_ms": 41.2
+  },
+  {
+   "grup": "miss",
+   "sure_ms": 88.1
+  },
+  {
+   "grup": "hit",
+   "sure_ms": 43.0
+  },
+  {
+   "grup": "miss",
+   "sure_ms": 91.4
+  },
+  {
+   "grup": "hit",
+   "sure_ms": 39.8
+  },
+  {
+   "grup": "miss",
+   "sure_ms": 86.9
+  },
+  {
+   "grup": "hit",
+   "sure_ms": 950.0
+  }
+ ],
+ "bozuk_listeler": [
+  {
+   "id": "b-grup",
+   "olcumler": [
+    {
+     "grup": "HIT",
+     "sure_ms": 40
+    },
+    {
+     "grup": "miss",
+     "sure_ms": 90
+    }
+   ]
+  },
+  {
+   "id": "b-sifir",
+   "olcumler": [
+    {
+     "grup": "hit",
+     "sure_ms": 0
+    },
+    {
+     "grup": "miss",
+     "sure_ms": 90
+    }
+   ]
+  },
+  {
+   "id": "b-bool",
+   "olcumler": [
+    {
+     "grup": "hit",
+     "sure_ms": true
+    },
+    {
+     "grup": "miss",
+     "sure_ms": 90
+    }
+   ]
+  },
+  {
+   "id": "b-metin",
+   "olcumler": [
+    {
+     "grup": "hit",
+     "sure_ms": "40"
+    },
+    {
+     "grup": "miss",
+     "sure_ms": 90
+    }
+   ]
+  },
+  {
+   "id": "b-tek-grup",
+   "olcumler": [
+    {
+     "grup": "hit",
+     "sure_ms": 40
+    },
+    {
+     "grup": "hit",
+     "sure_ms": 42
+    }
+   ]
+  }
+ ]
+}

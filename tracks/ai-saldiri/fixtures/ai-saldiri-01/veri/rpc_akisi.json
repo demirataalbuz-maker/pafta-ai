@@ -1,0 +1,349 @@
+{
+ "aciklama": "MCP stdio oturumlarından alınmış gibi sentetik JSON-RPC 2.0 mesaj akışları. beklenen=null, ValueError demektir; tuple'lar JSON'da liste olarak yazılır.",
+ "akislar": [
+  {
+   "id": "r-01",
+   "aciklama": "tam oturum; yanıtlar ters sırada, biri error",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "method": "initialize",
+     "params": {
+      "protocolVersion": "2025-06-18",
+      "clientInfo": {
+       "name": "pafta-host"
+      }
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "result": {
+      "protocolVersion": "2025-06-18",
+      "serverInfo": {
+       "name": "yerel"
+      }
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "method": "notifications/initialized"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "liste-1",
+     "method": "tools/list"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "cagri-2",
+     "method": "tools/call",
+     "params": {
+      "name": "read",
+      "arguments": {
+       "path": "/lab/not.txt"
+      }
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "cagri-3",
+     "method": "tools/call",
+     "params": {
+      "name": "list",
+      "arguments": {}
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "cagri-3",
+     "result": {
+      "content": [
+       {
+        "type": "text",
+        "text": "not.txt"
+       }
+      ]
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "cagri-2",
+     "error": {
+      "code": -32602,
+      "message": "Invalid params"
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "liste-1",
+     "result": {
+      "tools": [
+       {
+        "name": "read"
+       },
+       {
+        "name": "list"
+       }
+      ]
+     }
+    }
+   ],
+   "beklenen": {
+    "istekler": [
+     [
+      1,
+      "initialize"
+     ],
+     [
+      "liste-1",
+      "tools/list"
+     ],
+     [
+      "cagri-2",
+      "tools/call"
+     ],
+     [
+      "cagri-3",
+      "tools/call"
+     ]
+    ],
+    "yanitlar": [
+     [
+      1,
+      "initialize"
+     ],
+     [
+      "cagri-3",
+      "tools/call"
+     ],
+     [
+      "cagri-2",
+      "tools/call"
+     ],
+     [
+      "liste-1",
+      "tools/list"
+     ]
+    ],
+    "bildirimler": [
+     "notifications/initialized"
+    ],
+    "acik": []
+   }
+  },
+  {
+   "id": "r-02",
+   "aciklama": "yanıtı gelmemiş iki istek açık kalır",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "method": "initialize",
+     "params": {
+      "protocolVersion": "2025-06-18",
+      "clientInfo": {
+       "name": "pafta-host"
+      }
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 7,
+     "method": "tools/list"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": "a",
+     "method": "ping"
+    }
+   ],
+   "beklenen": {
+    "istekler": [
+     [
+      1,
+      "initialize"
+     ],
+     [
+      7,
+      "tools/list"
+     ],
+     [
+      "a",
+      "ping"
+     ]
+    ],
+    "yanitlar": [],
+    "bildirimler": [],
+    "acik": [
+     1,
+     7,
+     "a"
+    ]
+   }
+  },
+  {
+   "id": "r-03",
+   "aciklama": "params.requestId taşıyan iptal bildirimi istek değildir",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 4,
+     "method": "tools/call",
+     "params": {
+      "name": "read"
+     }
+    },
+    {
+     "jsonrpc": "2.0",
+     "method": "notifications/cancelled",
+     "params": {
+      "requestId": 4
+     }
+    }
+   ],
+   "beklenen": {
+    "istekler": [
+     [
+      4,
+      "tools/call"
+     ]
+    ],
+    "yanitlar": [],
+    "bildirimler": [
+     "notifications/cancelled"
+    ],
+    "acik": [
+     4
+    ]
+   }
+  },
+  {
+   "id": "r-04",
+   "aciklama": "kapanmış kimlik yeniden kullanılabilir",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "method": "ping"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "result": {}
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "method": "tools/list"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "result": {
+      "tools": []
+     }
+    }
+   ],
+   "beklenen": {
+    "istekler": [
+     [
+      1,
+      "ping"
+     ],
+     [
+      1,
+      "tools/list"
+     ]
+    ],
+    "yanitlar": [
+     [
+      1,
+      "ping"
+     ],
+     [
+      1,
+      "tools/list"
+     ]
+    ],
+    "bildirimler": [],
+    "acik": []
+   }
+  },
+  {
+   "id": "r-05",
+   "aciklama": "jsonrpc 1.0 sürümü",
+   "mesajlar": [
+    {
+     "jsonrpc": "1.0",
+     "id": 1,
+     "method": "initialize"
+    }
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "r-06",
+   "aciklama": "kimlik True (bool)",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": true,
+     "method": "initialize"
+    }
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "r-07",
+   "aciklama": "açık kimlik yinelendi",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 5,
+     "method": "tools/list"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 5,
+     "method": "tools/call"
+    }
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "r-08",
+   "aciklama": "hiç istenmemiş kimliğe yanıt",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "method": "initialize"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 2,
+     "result": {}
+    }
+   ],
+   "beklenen": null
+  },
+  {
+   "id": "r-09",
+   "aciklama": "result/error taşımayan yanıt biçimi",
+   "mesajlar": [
+    {
+     "jsonrpc": "2.0",
+     "id": 1,
+     "method": "initialize"
+    },
+    {
+     "jsonrpc": "2.0",
+     "id": 1
+    }
+   ],
+   "beklenen": null
+  }
+ ]
+}

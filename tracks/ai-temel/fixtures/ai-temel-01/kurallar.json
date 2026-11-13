@@ -1,0 +1,13 @@
+[
+ {"sol": "s", "sag": "i", "yeni": "si"},
+ {"sol": "r", "sag": "e", "yeni": "re"},
+ {"sol": "si", "sag": "f", "yeni": "sif"},
+ {"sol": "sif", "sag": "re", "yeni": "sifre"},
+ {"sol": "sifre", "sag": "</w>", "yeni": "sifre</w>"},
+ {"sol": "p", "sag": "a", "yeni": "pa"},
+ {"sol": "r", "sag": "o", "yeni": "ro"},
+ {"sol": "pa", "sag": "ro", "yeni": "paro"},
+ {"sol": "l", "sag": "a", "yeni": "la"},
+ {"sol": "la", "sag": "</w>", "yeni": "la</w>"},
+ {"sol": "paro", "sag": "la</w>", "yeni": "parola</w>"}
+]

@@ -1,0 +1,8 @@
+SENTETİK BİÇİM ÖRNEĞİ — gerçek sunucu kaydı değildir
+GET /start HTTP/1.1
+Host: public.test:<geçici-public-port>
+
+HTTP/1.1 302 Found
+Location: http://internal.test:<geçici-internal-port>/canary
+
+Bu dosya yalnız biçimi gösterir. Gerçek portlar Çalıştır sırasında deneye ait sunuculardan alınır.

@@ -1,0 +1,57 @@
+{
+  "kaynak": "sentetik",
+  "aciklama": "Temsilî bir LLM API'si için elle yazılmış abuse sınırlama politikası. Gerçek Elastic/FastAPI yapılandırması değildir.",
+  "politika": {
+    "pencere_ms": 60000,
+    "max_olay": 50,
+    "jailbreak_esigi": 3,
+    "arac_esigi": 5,
+    "sizinti_esigi": 1,
+    "bekleme_ms": 30000
+  },
+  "bozuk_politikalar": [
+    {
+      "ad": "sifir-esik",
+      "politika": {
+        "pencere_ms": 60000,
+        "max_olay": 50,
+        "jailbreak_esigi": 0,
+        "arac_esigi": 5,
+        "sizinti_esigi": 1,
+        "bekleme_ms": 30000
+      }
+    },
+    {
+      "ad": "dev-pencere",
+      "politika": {
+        "pencere_ms": 3600000,
+        "max_olay": 50,
+        "jailbreak_esigi": 3,
+        "arac_esigi": 5,
+        "sizinti_esigi": 1,
+        "bekleme_ms": 30000
+      }
+    },
+    {
+      "ad": "bool-bekleme",
+      "politika": {
+        "pencere_ms": 60000,
+        "max_olay": 50,
+        "jailbreak_esigi": 3,
+        "arac_esigi": 5,
+        "sizinti_esigi": 1,
+        "bekleme_ms": true
+      }
+    },
+    {
+      "ad": "eksik-alan",
+      "politika": {
+        "pencere_ms": 60000,
+        "max_olay": 50,
+        "jailbreak_esigi": 3,
+        "arac_esigi": 5,
+        "bekleme_ms": 30000
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "cagrilar": [
+    {"cagri_id": "c-1", "arac": "http_baslik_oku", "hedef": "127.0.0.1:8080"},
+    {"cagri_id": "c-2", "arac": "dosya_sil", "hedef": "127.0.0.1:8080"},
+    {"cagri_id": "c-3", "arac": "dns_kayit_sorgula", "hedef": "dis-sunucu.example"},
+    {"cagri_id": "c-4", "arac": "sertifika_ozeti", "hedef": "lab.local"},
+    {"cagri_id": "c-5", "arac": "sertifika_ozeti", "hedef": "lab.local"}
+  ]
+}

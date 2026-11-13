@@ -1,0 +1,180 @@
+{
+ "aciklama": "Guardrail çağrısının sentetik deneme geçmişleri ve politika ayarları. beklenen plan sözlüğüdür; null, ValueError demektir. Hiçbir gerçek bekleme yapılmaz.",
+ "ornekler": [
+  {
+   "id": "r-01",
+   "aciklama": "iki geçici hata sonra başarı",
+   "hatalar": [
+    "zaman_asimi",
+    "gecici_hata",
+    "basarili"
+   ],
+   "ayar": {
+    "maks_deneme": 4,
+    "taban_ms": 250,
+    "tavan_ms": 800
+   },
+   "beklenen": {
+    "adimlar": [
+     {
+      "deneme": 1,
+      "eylem": "yeniden_dene",
+      "bekle_ms": 250
+     },
+     {
+      "deneme": 2,
+      "eylem": "yeniden_dene",
+      "bekle_ms": 500
+     },
+     {
+      "deneme": 3,
+      "eylem": "dur",
+      "bekle_ms": 0
+     }
+    ],
+    "toplam_bekle_ms": 750
+   }
+  },
+  {
+   "id": "r-02",
+   "aciklama": "bütçe dolana kadar geçici hata; 1000 ms tavanla 800 olur",
+   "hatalar": [
+    "gecici_hata",
+    "gecici_hata",
+    "gecici_hata",
+    "gecici_hata"
+   ],
+   "ayar": {
+    "maks_deneme": 4,
+    "taban_ms": 250,
+    "tavan_ms": 800
+   },
+   "beklenen": {
+    "adimlar": [
+     {
+      "deneme": 1,
+      "eylem": "yeniden_dene",
+      "bekle_ms": 250
+     },
+     {
+      "deneme": 2,
+      "eylem": "yeniden_dene",
+      "bekle_ms": 500
+     },
+     {
+      "deneme": 3,
+      "eylem": "yeniden_dene",
+      "bekle_ms": 800
+     },
+     {
+      "deneme": 4,
+      "eylem": "guvenli_yedek",
+      "bekle_ms": 0
+     }
+    ],
+    "toplam_bekle_ms": 1550
+   }
+  },
+  {
+   "id": "r-03",
+   "aciklama": "ilk denemede kalıcı hata",
+   "hatalar": [
+    "kalici_hata"
+   ],
+   "ayar": {
+    "maks_deneme": 4,
+    "taban_ms": 250,
+    "tavan_ms": 800
+   },
+   "beklenen": {
+    "adimlar": [
+     {
+      "deneme": 1,
+      "eylem": "guvenli_yedek",
+      "bekle_ms": 0
+     }
+    ],
+    "toplam_bekle_ms": 0
+   }
+  },
+  {
+   "id": "r-04",
+   "aciklama": "tek deneme bütçesi",
+   "hatalar": [
+    "zaman_asimi"
+   ],
+   "ayar": {
+    "maks_deneme": 1,
+    "taban_ms": 100,
+    "tavan_ms": 100
+   },
+   "beklenen": {
+    "adimlar": [
+     {
+      "deneme": 1,
+      "eylem": "guvenli_yedek",
+      "bekle_ms": 0
+     }
+    ],
+    "toplam_bekle_ms": 0
+   }
+  },
+  {
+   "id": "r-05",
+   "aciklama": "kalıcı hatadan sonra deneme",
+   "hatalar": [
+    "kalici_hata",
+    "gecici_hata"
+   ],
+   "ayar": {
+    "maks_deneme": 4,
+    "taban_ms": 250,
+    "tavan_ms": 800
+   },
+   "beklenen": null
+  },
+  {
+   "id": "r-06",
+   "aciklama": "bütçeden fazla kayıt",
+   "hatalar": [
+    "gecici_hata",
+    "gecici_hata",
+    "gecici_hata",
+    "gecici_hata",
+    "gecici_hata"
+   ],
+   "ayar": {
+    "maks_deneme": 4,
+    "taban_ms": 250,
+    "tavan_ms": 800
+   },
+   "beklenen": null
+  },
+  {
+   "id": "r-07",
+   "aciklama": "tavan tabandan küçük",
+   "hatalar": [
+    "gecici_hata"
+   ],
+   "ayar": {
+    "maks_deneme": 3,
+    "taban_ms": 500,
+    "tavan_ms": 400
+   },
+   "beklenen": null
+  },
+  {
+   "id": "r-08",
+   "aciklama": "taban float",
+   "hatalar": [
+    "gecici_hata"
+   ],
+   "ayar": {
+    "maks_deneme": 3,
+    "taban_ms": 250.0,
+    "tavan_ms": 800
+   },
+   "beklenen": null
+  }
+ ]
+}

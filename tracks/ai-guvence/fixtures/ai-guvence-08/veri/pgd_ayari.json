@@ -1,0 +1,5 @@
+{
+  "ayar": {"id": "pgd-ornek-01", "epsilon": 0.15, "alpha": 0.1, "adim": 2},
+  "x": [0.5, 0.95],
+  "gradyanlar": [[1.0, 1.0], [-1.0, 1.0]]
+}
