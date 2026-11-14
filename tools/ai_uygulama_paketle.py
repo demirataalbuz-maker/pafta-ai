@@ -24,6 +24,11 @@ KLASORLER = ["engine", "web", "sandbox", "tools"]
 KAYITLAR = ["outputs/ocr38-kurulum", "outputs/vlm53-kurulum"]
 BELGELER = ["docs/ai-gercek-kurulum-onayi.md", "docs/ai-gercek-lab.md"]
 ARACTA_YOK = ["PaftaAMDLauncher.cs", "PaftaNVIDIALauncher.cs", "amd_rocm_kur.py", "nvidia_cuda_kur.py", "amd-rocm"]
+# AI grubunda olmayan ama AI eğitimi için gereken yollar; yalnız kesin 100 olan dersleri girer
+EK_YOLLAR = ["python"]
+# Ek yolların AI uygulamasındaki adı ve tanıtımı (tam yolun yalnız bir kısmı girdiği için)
+YOL_ADLARI = {"python": {"name": "Python · AI için temel",
+                         "tagline": "Sıfırdan Python: ilk satırdan dosya ve veri biçimlerine 30 ders. Her ders, konunun AI derslerinde nerede kullanıldığını gösterir."}}
 YOK_SAY = shutil.ignore_patterns("__pycache__", "*.pyc")
 
 
@@ -40,7 +45,7 @@ def ai_yollari():
         p = os.path.join(KAYNAK, "tracks", ad, "track.json")
         if os.path.isfile(p):
             with open(p, encoding="utf-8") as f:
-                if json.load(f).get("group") == "ai":
+                if json.load(f).get("group") == "ai" or ad in EK_YOLLAR:
                     out.append(ad)
     return out
 
@@ -59,6 +64,8 @@ def yol_kopyala(ad, kesin, hedef):
             moduller.append(dict(m, lessons=dersler))
             alinan += len(dersler)
     tr["modules"] = moduller
+    if ad in YOL_ADLARI:
+        tr.update(YOL_ADLARI[ad])
     with open(os.path.join(hed, "track.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(tr, f, ensure_ascii=False, indent=2)
         f.write("\n")

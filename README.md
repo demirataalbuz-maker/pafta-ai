@@ -1,6 +1,6 @@
 # Pafta AI
 
-Türkçe, ücretsiz ve tamamen yerelde çalışan AI güvenlik eğitimi: AI red team, AI savunma, gerçek AI güvenlik olayları ve kuantum kriptografi.
+Türkçe, ücretsiz ve tamamen yerelde çalışan AI güvenlik eğitimi: sıfırdan Python, AI red team, AI savunma, gerçek AI güvenlik olayları ve kuantum kriptografi.
 
 Her ders önce anlatır, sonra çıktıyı tahmin ettirir, ardından Python ile çözülen görevler verir; her görevin cevabı testlerle sınanır. Teknik terimler orijinal haliyle kalır, anlatım Türkçedir.
 
@@ -8,6 +8,7 @@ Her ders önce anlatır, sonra çıktıyı tahmin ettirir, ardından Python ile 
 
 | Yol | Ne öğretir |
 |---|---|
+| `python` | Sıfırdan Python (30 ders): AI derslerinin görevlerini yazmaya yetecek temel |
 | `ai-temel` | Token, attention, RAG, ajanlar: modelin nasıl çalıştığı |
 | `ai-saldiri` | AI red team: prompt injection, jailbreak, araç zinciri, AI-SSRF, veri sızdırma |
 | `ai-savunma` | AI blue team: guardrail, telemetri, tespit kuralları, olay müdahalesi |

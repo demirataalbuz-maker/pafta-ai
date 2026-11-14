@@ -1,0 +1,109 @@
+{
+  "id": "python",
+  "name": "Python · AI için temel",
+  "status": "active",
+  "group": "her-iki",
+  "order": 1,
+  "runner": "python",
+  "role": "Her iki taraf için bir numara: exploit, otomasyon, log analizi, tespit araçları.",
+  "tagline": "Sıfırdan Python: ilk satırdan dosya ve veri biçimlerine 30 ders. Her ders, konunun AI derslerinde nerede kullanıldığını gösterir.",
+  "ranks": [
+    {
+      "id": "minik",
+      "name": "Minik"
+    },
+    {
+      "id": "tesviye",
+      "name": "Tesviye"
+    },
+    {
+      "id": "kucuk-orta",
+      "name": "Küçük Orta"
+    },
+    {
+      "id": "buyuk-orta",
+      "name": "Büyük Orta"
+    },
+    {
+      "id": "basalti",
+      "name": "Başaltı"
+    },
+    {
+      "id": "baspehlivan",
+      "name": "Başpehlivan"
+    }
+  ],
+  "modules": [
+    {
+      "title": "İlk Adım",
+      "rank": "minik",
+      "zen": "Güzel, çirkinden iyidir.",
+      "lessons": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07"
+      ]
+    },
+    {
+      "title": "Akış Kontrolü",
+      "rank": "minik",
+      "zen": "Açık olan, örtük olandan iyidir.",
+      "lessons": [
+        "p08",
+        "p09",
+        "p10",
+        "p11",
+        "p12"
+      ]
+    },
+    {
+      "title": "Koleksiyonlar",
+      "rank": "tesviye",
+      "zen": "Basit, karmaşıktan iyidir.",
+      "lessons": [
+        "p13",
+        "p14",
+        "p15",
+        "p16",
+        "p17",
+        "p18",
+        "p19"
+      ]
+    },
+    {
+      "title": "Fonksiyonlar",
+      "rank": "tesviye",
+      "zen": "Okunabilirlik önemlidir.",
+      "lessons": [
+        "p20",
+        "p21",
+        "p22",
+        "p23",
+        "p24"
+      ]
+    },
+    {
+      "title": "Hatalar ve Dosyalar",
+      "rank": "kucuk-orta",
+      "zen": "Hatalar asla sessizce geçiştirilmemeli.",
+      "lessons": [
+        "p25",
+        "p26",
+        "p27",
+        "p28",
+        "p29",
+        "p30"
+      ]
+    }
+  ],
+  "dil": "python",
+  "kahraman": [
+    "Minik'ten",
+    "Başpehlivan",
+    "'a"
+  ]
+}
